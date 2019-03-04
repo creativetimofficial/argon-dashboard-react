@@ -96,9 +96,9 @@ class Admin extends React.Component {
           routes={routes}
           bgColor={this.state.backgroundColor}
           logo={{
-            outterLink: "https://www.creative-tim.com/",
-            text: "Creative Tim"
-            // imgSrc: logo
+            innerLink: "/admin/index",
+            imgSrc: require("assets/img/brand/blue.png"),
+            imgAlt: "..."
           }}
           toggleSidebar={this.toggleSidebar}
         />

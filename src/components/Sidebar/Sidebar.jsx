@@ -67,7 +67,18 @@ class Sidebar extends React.Component {
   };
   render() {
     const { bgColor, routes, logo } = this.props;
-
+    let navbarBrandProps;
+    if(logo && logo.innerLink){
+      navbarBrandProps = {
+        to: logo.innerLink,
+        tag: Link
+      }
+    } else if (logo && logo.outterLink) {
+      navbarBrandProps = {
+        href: logo.outterLink,
+        target: "_blank"
+      }
+    }
     return (
       <Navbar
         className="navbar-vertical fixed-left navbar-light bg-white"
@@ -84,13 +95,17 @@ class Sidebar extends React.Component {
             <span className="navbar-toggler-icon" />
           </button>
           {/* Brand */}
-          <NavbarBrand className="pt-0" href="./index.html">
-            <img
-              alt="..."
-              className="navbar-brand-img"
-              src={require("assets/img/brand/blue.png")}
-            />
-          </NavbarBrand>
+          {
+            logo ? (
+              <NavbarBrand className="pt-0" {...navbarBrandProps}>
+                <img
+                  alt={logo.imgAlt}
+                  className="navbar-brand-img"
+                  src={logo.imgSrc}
+                />
+              </NavbarBrand>
+            ):null
+          }
           {/* User */}
           <Nav className="align-items-center d-md-none">
             <UncontrolledDropdown nav>
@@ -269,12 +284,10 @@ class Sidebar extends React.Component {
 }
 
 Sidebar.defaultProps = {
-  bgColor: "primary",
   routes: [{}]
 };
 
 Sidebar.propTypes = {
-  bgColor: PropTypes.oneOf(["primary", "blue", "green"]),
   routes: PropTypes.arrayOf(PropTypes.object),
   logo: PropTypes.shape({
     // innerLink is for links that will direct the user within the app
@@ -283,10 +296,10 @@ Sidebar.propTypes = {
     // outterLink is for links that will direct the user outside the app
     // it will be rendered as simple <a href="...">...</a> tag
     outterLink: PropTypes.string,
-    // the text of the logo
-    text: PropTypes.node,
     // the image src of the logo
-    imgSrc: PropTypes.string
+    imgSrc: PropTypes.string.isRequired,
+    // the alt for the img
+    imgAlt: PropTypes.string.isRequired
   })
 };
 
