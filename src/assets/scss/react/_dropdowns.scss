@@ -1,0 +1,8 @@
+.dropdown-menu[x-placement^="top"], .dropdown-menu[x-placement^="right"], .dropdown-menu[x-placement^="bottom"], .dropdown-menu[x-placement^="left"]{
+  bottom: unset;
+}
+.dropdown-menu.dropdown-menu-right{
+  right: 0;
+  top: unset !important;
+  left: unset !important;
+}
