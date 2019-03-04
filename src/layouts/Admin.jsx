@@ -2,16 +2,16 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 // javascript plugin used to create scrollbars on windows
 import PerfectScrollbar from "perfect-scrollbar";
-
+// reactstrap components
+import { Container } from "reactstrap";
 // core components
 import AdminNavbar from "components/Navbars/AdminNavbar.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import Sidebar from "components/Sidebar/Sidebar.jsx";
-import FixedPlugin from "components/FixedPlugin/FixedPlugin.jsx";
 
 import routes from "routes.js";
 
-import logo from "assets/img/react-logo.png";
+// import logo from "assets/img/react-logo.png";
 
 var ps;
 
@@ -75,9 +75,6 @@ class Admin extends React.Component {
       }
     });
   };
-  handleBgClick = color => {
-    this.setState({ backgroundColor: color });
-  };
   getBrandText = path => {
     for (let i = 0; i < routes.length; i++) {
       if (
@@ -91,6 +88,7 @@ class Admin extends React.Component {
     return "Brand";
   };
   render() {
+    console.log(this.getRoutes(routes));
     return (
       <>
         <Sidebar
@@ -99,8 +97,8 @@ class Admin extends React.Component {
           bgColor={this.state.backgroundColor}
           logo={{
             outterLink: "https://www.creative-tim.com/",
-            text: "Creative Tim",
-            imgSrc: logo
+            text: "Creative Tim"
+            // imgSrc: logo
           }}
           toggleSidebar={this.toggleSidebar}
         />
@@ -116,10 +114,9 @@ class Admin extends React.Component {
             sidebarOpened={this.state.sidebarOpened}
           />
           <Switch>{this.getRoutes(routes)}</Switch>
-          {// we don't want the Footer to be rendered on map page
-          this.props.location.pathname.indexOf("maps") !== -1 ? null : (
-            <Footer fluid />
-          )}
+          <Container fluid>
+            <Footer />
+          </Container>
         </div>
       </>
     );

@@ -73,7 +73,7 @@ class AdminNavbar extends React.Component {
                 </NavLink>
 
                 <DropdownMenu className="dropdown-menu-arrow" right>
-                  <DropdownItem className="noti-title" header>
+                  <DropdownItem className="noti-title" header tag="div">
                     <h6 className="text-overflow m-0">Welcome!</h6>
                   </DropdownItem>
 

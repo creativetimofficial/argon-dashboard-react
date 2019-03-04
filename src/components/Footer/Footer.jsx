@@ -4,7 +4,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 // reactstrap components
-import { Container, Row, Nav, NavItem, NavLink } from "reactstrap";
+import { Container, Row, Col, Nav, NavItem, NavLink } from "reactstrap";
 
 class Footer extends React.Component {
   render() {

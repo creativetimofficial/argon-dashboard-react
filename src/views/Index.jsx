@@ -19,6 +19,7 @@ import {
 
 class Index extends React.Component {
   render() {
+    console.log("hey");
     return (
       <>
         {/* Header */}
@@ -32,7 +33,7 @@ class Index extends React.Component {
                     <CardBody>
                       <Row>
                         <div className="col">
-                          <CardTitle className="text-uppercase text-muted mb-0">
+                          <CardTitle className="text-uppercase text-muted mb-0" tag="h5">
                             Traffic
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
@@ -60,7 +61,7 @@ class Index extends React.Component {
                     <CardBody>
                       <Row>
                         <div className="col">
-                          <CardTitle className="text-uppercase text-muted mb-0">
+                          <CardTitle className="text-uppercase text-muted mb-0" tag="h5">
                             New users
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
@@ -88,7 +89,7 @@ class Index extends React.Component {
                     <CardBody>
                       <Row>
                         <div className="col">
-                          <CardTitle className="text-uppercase text-muted mb-0">
+                          <CardTitle className="text-uppercase text-muted mb-0"  tag="h5">
                             Sales
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">924</span>
@@ -114,7 +115,7 @@ class Index extends React.Component {
                     <CardBody>
                       <Row>
                         <div className="col">
-                          <CardTitle className="text-uppercase text-muted mb-0">
+                          <CardTitle className="text-uppercase text-muted mb-0" tag="h5">
                             Performance
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
@@ -339,7 +340,7 @@ class Index extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">60%</span>
                           <div>
-                            <Progress max="100" value="60" />
+                            <Progress max="100" value="60" barClassName="bg-gradient-danger"/>
                           </div>
                         </div>
                       </td>
@@ -351,7 +352,7 @@ class Index extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">70%</span>
                           <div>
-                            <Progress max="100" value="70" />
+                            <Progress max="100" value="70" barClassName="bg-gradient-success"/>
                           </div>
                         </div>
                       </td>
@@ -363,7 +364,7 @@ class Index extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">80%</span>
                           <div>
-                            <Progress max="100" value="80" />
+                            <Progress max="100" value="80" barClassName="bg-gradient-primary"/>
                           </div>
                         </div>
                       </td>
@@ -375,7 +376,7 @@ class Index extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">75%</span>
                           <div>
-                            <Progress max="100" value="75" />
+                            <Progress max="100" value="75" barClassName="bg-gradient-info"/>
                           </div>
                         </div>
                       </td>
@@ -387,7 +388,7 @@ class Index extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">30%</span>
                           <div>
-                            <Progress max="100" value="30" />
+                            <Progress max="100" value="30" barClassName="bg-gradient-warning"/>
                           </div>
                         </div>
                       </td>
@@ -397,64 +398,6 @@ class Index extends React.Component {
               </Card>
             </Col>
           </Row>
-          {/* Footer */}
-          <footer className="footer">
-            <Row className="align-items-center justify-content-xl-between">
-              <Col xl="6">
-                <div className="copyright text-center text-xl-left text-muted">
-                  © 2018{" "}
-                  <a
-                    className="font-weight-bold ml-1"
-                    href="https://www.creative-tim.com"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    Creative Tim
-                  </a>
-                </div>
-              </Col>
-              <Col xl="6">
-                <Nav className="nav-footer justify-content-center justify-content-xl-end">
-                  <NavItem>
-                    <NavLink
-                      href="https://www.creative-tim.com"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      Creative Tim
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink
-                      href="https://www.creative-tim.com/presentation"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      About Us
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink
-                      href="http://blog.creative-tim.com"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      Blog
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink
-                      href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      MIT License
-                    </NavLink>
-                  </NavItem>
-                </Nav>
-              </Col>
-            </Row>
-          </footer>
         </Container>
       </>
     );
