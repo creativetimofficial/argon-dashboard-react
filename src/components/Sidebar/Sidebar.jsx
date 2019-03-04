@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React from "react";
-// import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // nodejs library to set properties for components
 import { PropTypes } from "prop-types";
 
@@ -18,6 +18,7 @@ import {
   DropdownMenu,
   DropdownItem,
   UncontrolledDropdown,
+  DropdownToggle,
   FormGroup,
   Form,
   Input,
@@ -66,100 +67,42 @@ class Sidebar extends React.Component {
   };
   render() {
     const { bgColor, routes, logo } = this.props;
-    let logoImg = null;
-    let logoText = null;
-    if (logo !== undefined) {
-      if (logo.outterLink !== undefined) {
-        logoImg = (
-          <a
-            href={logo.outterLink}
-            className="simple-text logo-mini"
-            target="_blank"
-            onClick={this.props.toggleSidebar}
-          >
-            <div className="logo-img">
-              <img src={logo.imgSrc} alt="react-logo" />
-            </div>
-          </a>
-        );
-        logoText = (
-          <a
-            href={logo.outterLink}
-            className="simple-text logo-normal"
-            target="_blank"
-            onClick={this.props.toggleSidebar}
-          >
-            {logo.text}
-          </a>
-        );
-      } else {
-        logoImg = (
-          <Link
-            to={logo.innerLink}
-            className="simple-text logo-mini"
-            onClick={this.props.toggleSidebar}
-          >
-            <div className="logo-img">
-              <img src={logo.imgSrc} alt="react-logo" />
-            </div>
-          </Link>
-        );
-        logoText = (
-          <Link
-            to={logo.innerLink}
-            className="simple-text logo-normal"
-            onClick={this.props.toggleSidebar}
-          >
-            {logo.text}
-          </Link>
-        );
-      }
-    }
+
     return (
       <Navbar
-        className=" navbar-vertical fixed-left navbar-light bg-white"
+        className="navbar-vertical fixed-left navbar-light bg-white"
         expand="md"
         id="sidenav-main"
       >
         <Container fluid>
           {/* Toggler */}
           <button
-            aria-controls="sidenav-main"
-            aria-expanded={false}
-            aria-label="Toggle navigation"
-            className=" navbar-toggler"
-            data-target="#sidenav-collapse-main"
-            data-toggle="collapse"
+            className="navbar-toggler"
             id="sidenav-collapse-main"
             type="button"
           >
-            <span className=" navbar-toggler-icon" />
+            <span className="navbar-toggler-icon" />
           </button>
           {/* Brand */}
-          <NavbarBrand className=" pt-0" href="./index.html">
+          <NavbarBrand className="pt-0" href="./index.html">
             <img
               alt="..."
-              className=" navbar-brand-img"
+              className="navbar-brand-img"
               src={require("assets/img/brand/blue.png")}
             />
           </NavbarBrand>
           {/* User */}
-          <Nav className=" align-items-center d-md-none">
+          <Nav className="align-items-center d-md-none">
             <UncontrolledDropdown nav>
-              <NavLink
-                aria-expanded={false}
-                aria-haspopup={true}
-                className=" nav-link-icon"
-                data-toggle="dropdown"
-                href="#pablo"
-                onClick={e => e.preventDefault()}
-                role="button"
+              <DropdownToggle
+                nav
+                className="nav-link-icon"
               >
-                <i className=" ni ni-bell-55" />
-              </NavLink>
+                <i className="ni ni-bell-55" />
+              </DropdownToggle>
               <DropdownMenu
                 aria-labelledby="navbar-default_dropdown_1"
-                className=" dropdown-menu-arrow"
+                className="dropdown-menu-arrow"
                 right
               >
                 <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
@@ -175,46 +118,41 @@ class Sidebar extends React.Component {
               </DropdownMenu>
             </UncontrolledDropdown>
             <UncontrolledDropdown nav>
-              <NavLink
-                aria-expanded={false}
-                aria-haspopup={true}
-                data-toggle="dropdown"
-                href="#pablo"
-                onClick={e => e.preventDefault()}
-                role="button"
+              <DropdownToggle
+                nav
               >
-                <Media className=" align-items-center">
-                  <span className=" avatar avatar-sm rounded-circle">
+                <Media className="align-items-center">
+                  <span className="avatar avatar-sm rounded-circle">
                     <img
                       alt="..."
                       src={require("assets/img/theme/team-1-800x800.jpg")}
                     />
                   </span>
                 </Media>
-              </NavLink>
-              <DropdownMenu className=" dropdown-menu-arrow" right>
-                <DropdownItem className=" noti-title" header tag="div">
-                  <h6 className=" text-overflow m-0">Welcome!</h6>
+              </DropdownToggle>
+              <DropdownMenu className="dropdown-menu-arrow" right>
+                <DropdownItem className="noti-title" header tag="div">
+                  <h6 className="text-overflow m-0">Welcome!</h6>
                 </DropdownItem>
                 <DropdownItem href="./examples/profile.html">
-                  <i className=" ni ni-single-02" />
+                  <i className="ni ni-single-02" />
                   <span>My profile</span>
                 </DropdownItem>
                 <DropdownItem href="./examples/profile.html">
-                  <i className=" ni ni-settings-gear-65" />
+                  <i className="ni ni-settings-gear-65" />
                   <span>Settings</span>
                 </DropdownItem>
                 <DropdownItem href="./examples/profile.html">
-                  <i className=" ni ni-calendar-grid-58" />
+                  <i className="ni ni-calendar-grid-58" />
                   <span>Activity</span>
                 </DropdownItem>
                 <DropdownItem href="./examples/profile.html">
-                  <i className=" ni ni-support-16" />
+                  <i className="ni ni-support-16" />
                   <span>Support</span>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
-                  <i className=" ni ni-user-run" />
+                  <i className="ni ni-user-run" />
                   <span>Logout</span>
                 </DropdownItem>
               </DropdownMenu>
@@ -222,26 +160,20 @@ class Sidebar extends React.Component {
           </Nav>
           {/* Collapse */}
           <UncontrolledCollapse
-            id="sidenav-collapse-main"
             navbar
             toggler="#sidenav-collapse-main"
           >
             {/* Collapse header */}
-            <div className=" navbar-collapse-header d-md-none">
+            <div className="navbar-collapse-header d-md-none">
               <Row>
-                <Col className=" collapse-brand" xs="6">
+                <Col className="collapse-brand" xs="6">
                   <a href="./index.html">
                     <img alt="..." src={require("assets/img/brand/blue.png")} />
                   </a>
                 </Col>
-                <Col className=" collapse-close" xs="6">
+                <Col className="collapse-close" xs="6">
                   <button
-                    aria-controls="sidenav-main"
-                    aria-expanded={false}
-                    aria-label="Toggle sidenav"
-                    className=" navbar-toggler"
-                    data-target="#sidenav-collapse-main"
-                    data-toggle="collapse"
+                    className="navbar-toggler"
                     id="sidenav-collapse-main"
                     type="button"
                   >
@@ -252,17 +184,17 @@ class Sidebar extends React.Component {
               </Row>
             </div>
             {/* Form */}
-            <Form className=" mt-4 mb-3 d-md-none">
-              <InputGroup className=" input-group-rounded input-group-merge">
+            <Form className="mt-4 mb-3 d-md-none">
+              <InputGroup className="input-group-rounded input-group-merge">
                 <Input
                   aria-label="Search"
-                  className=" form-control-rounded form-control-prepended"
+                  className="form-control-rounded form-control-prepended"
                   placeholder="Search"
                   type="search"
                 />
                 <InputGroupAddon addonType="prepend">
                   <InputGroupText>
-                    <span className=" fa fa-search" />
+                    <span className="fa fa-search" />
                   </InputGroupText>
                 </InputGroupAddon>
               </InputGroup>
@@ -271,68 +203,68 @@ class Sidebar extends React.Component {
             <Nav navbar>
               <NavItem>
                 <NavLink href="./index.html">
-                  <i className=" ni ni-tv-2 text-primary" />
+                  <i className="ni ni-tv-2 text-primary" />
                   Dashboard
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="./examples/icons.html">
-                  <i className=" ni ni-planet text-blue" />
+                  <i className="ni ni-planet text-blue" />
                   Icons
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="./examples/maps.html">
-                  <i className=" ni ni-pin-3 text-orange" />
+                  <i className="ni ni-pin-3 text-orange" />
                   Maps
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="./examples/profile.html">
-                  <i className=" ni ni-single-02 text-yellow" />
+                  <i className="ni ni-single-02 text-yellow" />
                   User profile
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="./examples/tables.html">
-                  <i className=" ni ni-bullet-list-67 text-red" />
+                  <i className="ni ni-bullet-list-67 text-red" />
                   Tables
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="./examples/login.html">
-                  <i className=" ni ni-key-25 text-info" />
+                  <i className="ni ni-key-25 text-info" />
                   Login
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="./examples/register.html">
-                  <i className=" ni ni-circle-08 text-pink" />
+                  <i className="ni ni-circle-08 text-pink" />
                   Register
                 </NavLink>
               </NavItem>
             </Nav>
             {/* Divider */}
-            <hr className=" my-3" />
+            <hr className="my-3" />
             {/* Heading */}
-            <h6 className=" navbar-heading text-muted">Documentation</h6>
+            <h6 className="navbar-heading text-muted">Documentation</h6>
             {/* Navigation */}
-            <Nav className=" mb-md-3" navbar>
+            <Nav className="mb-md-3" navbar>
               <NavItem>
-                <NavLink href="https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html">
-                  <i className=" ni ni-spaceship" />
+                <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/documentation/overview">
+                  <i className="ni ni-spaceship" />
                   Getting started
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://demos.creative-tim.com/argon-dashboard/docs/foundation/colors.html">
-                  <i className=" ni ni-palette" />
+                <NavLink href="https://demos.creative-tim.com/argon-dashboard/documentation/colors">
+                  <i className="ni ni-palette" />
                   Foundation
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://demos.creative-tim.com/argon-dashboard/docs/components/alerts.html">
-                  <i className=" ni ni-ui-04" />
+                <NavLink href="https://demos.creative-tim.com/argon-dashboard/documentation/alerts">
+                  <i className="ni ni-ui-04" />
                   Components
                 </NavLink>
               </NavItem>

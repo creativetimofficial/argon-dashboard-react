@@ -19,7 +19,6 @@ import {
 
 class Index extends React.Component {
   render() {
-    console.log("hey");
     return (
       <>
         {/* Header */}
