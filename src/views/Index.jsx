@@ -32,7 +32,10 @@ class Index extends React.Component {
                     <CardBody>
                       <Row>
                         <div className="col">
-                          <CardTitle className="text-uppercase text-muted mb-0" tag="h5">
+                          <CardTitle
+                            className="text-uppercase text-muted mb-0"
+                            tag="h5"
+                          >
                             Traffic
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
@@ -60,7 +63,10 @@ class Index extends React.Component {
                     <CardBody>
                       <Row>
                         <div className="col">
-                          <CardTitle className="text-uppercase text-muted mb-0" tag="h5">
+                          <CardTitle
+                            className="text-uppercase text-muted mb-0"
+                            tag="h5"
+                          >
                             New users
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
@@ -88,7 +94,10 @@ class Index extends React.Component {
                     <CardBody>
                       <Row>
                         <div className="col">
-                          <CardTitle className="text-uppercase text-muted mb-0"  tag="h5">
+                          <CardTitle
+                            className="text-uppercase text-muted mb-0"
+                            tag="h5"
+                          >
                             Sales
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">924</span>
@@ -114,7 +123,10 @@ class Index extends React.Component {
                     <CardBody>
                       <Row>
                         <div className="col">
-                          <CardTitle className="text-uppercase text-muted mb-0" tag="h5">
+                          <CardTitle
+                            className="text-uppercase text-muted mb-0"
+                            tag="h5"
+                          >
                             Performance
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
@@ -339,7 +351,11 @@ class Index extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">60%</span>
                           <div>
-                            <Progress max="100" value="60" barClassName="bg-gradient-danger"/>
+                            <Progress
+                              max="100"
+                              value="60"
+                              barClassName="bg-gradient-danger"
+                            />
                           </div>
                         </div>
                       </td>
@@ -351,7 +367,11 @@ class Index extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">70%</span>
                           <div>
-                            <Progress max="100" value="70" barClassName="bg-gradient-success"/>
+                            <Progress
+                              max="100"
+                              value="70"
+                              barClassName="bg-gradient-success"
+                            />
                           </div>
                         </div>
                       </td>
@@ -363,7 +383,11 @@ class Index extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">80%</span>
                           <div>
-                            <Progress max="100" value="80" barClassName="bg-gradient-primary"/>
+                            <Progress
+                              max="100"
+                              value="80"
+                              barClassName="bg-gradient-primary"
+                            />
                           </div>
                         </div>
                       </td>
@@ -375,7 +399,11 @@ class Index extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">75%</span>
                           <div>
-                            <Progress max="100" value="75" barClassName="bg-gradient-info"/>
+                            <Progress
+                              max="100"
+                              value="75"
+                              barClassName="bg-gradient-info"
+                            />
                           </div>
                         </div>
                       </td>
@@ -387,7 +415,11 @@ class Index extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">30%</span>
                           <div>
-                            <Progress max="100" value="30" barClassName="bg-gradient-warning"/>
+                            <Progress
+                              max="100"
+                              value="30"
+                              barClassName="bg-gradient-warning"
+                            />
                           </div>
                         </div>
                       </td>

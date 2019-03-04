@@ -94,10 +94,7 @@ class Sidebar extends React.Component {
           {/* User */}
           <Nav className="align-items-center d-md-none">
             <UncontrolledDropdown nav>
-              <DropdownToggle
-                nav
-                className="nav-link-icon"
-              >
+              <DropdownToggle nav className="nav-link-icon">
                 <i className="ni ni-bell-55" />
               </DropdownToggle>
               <DropdownMenu
@@ -118,9 +115,7 @@ class Sidebar extends React.Component {
               </DropdownMenu>
             </UncontrolledDropdown>
             <UncontrolledDropdown nav>
-              <DropdownToggle
-                nav
-              >
+              <DropdownToggle nav>
                 <Media className="align-items-center">
                   <span className="avatar avatar-sm rounded-circle">
                     <img
@@ -159,10 +154,7 @@ class Sidebar extends React.Component {
             </UncontrolledDropdown>
           </Nav>
           {/* Collapse */}
-          <UncontrolledCollapse
-            navbar
-            toggler="#sidenav-collapse-main"
-          >
+          <UncontrolledCollapse navbar toggler="#sidenav-collapse-main">
             {/* Collapse header */}
             <div className="navbar-collapse-header d-md-none">
               <Row>
