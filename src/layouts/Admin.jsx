@@ -18,7 +18,7 @@ class Admin extends React.Component {
     if (navigator.platform.indexOf("Win") > -1) {
       document.documentElement.className += " perfect-scrollbar-on";
       document.documentElement.classList.remove("perfect-scrollbar-off");
-      ps = new PerfectScrollbar(this.refs.mainPanel, { suppressScrollX: true });
+      ps = new PerfectScrollbar(this.refs.mainContent, { suppressScrollX: true });
       let tables = document.querySelectorAll(".table-responsive");
       for (let i = 0; i < tables.length; i++) {
         ps = new PerfectScrollbar(tables[i]);
@@ -42,7 +42,7 @@ class Admin extends React.Component {
       }
       document.documentElement.scrollTop = 0;
       document.scrollingElement.scrollTop = 0;
-      this.refs.mainPanel.scrollTop = 0;
+      this.refs.mainContent.scrollTop = 0;
     }
   }
   getRoutes = routes => {
@@ -83,15 +83,10 @@ class Admin extends React.Component {
             imgSrc: require("assets/img/brand/blue.png"),
             imgAlt: "..."
           }}
-          notifications={[
-            { text: "Action", props: {href: "#pablo", onClick: e => e.preventDefault()}},
-            {text: "Another action", props: {href: "#pablo", onClick: e => e.preventDefault()}},
-            { text: "Something else here", props: {href: "#pablo", onClick: e => e.preventDefault()}}
-          ]}
         />
         <div
           className="main-content"
-          ref="mainPanel"
+          ref="mainContent"
         >
           <AdminNavbar
             {...this.props}
