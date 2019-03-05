@@ -13,7 +13,13 @@ import AuthFooter from "components/Footers/AuthFooter.jsx";
 
 import routes from "routes.js";
 
-class Login extends React.Component {
+class Auth extends React.Component {
+  componentDidMount() {
+    document.body.classList.add("bg-default");
+  }
+  componentWillUnmount() {
+    document.body.classList.remove("bg-default");
+  }
   getRoutes = routes => {
     return routes.map((prop, key) => {
       if (prop.layout === "/auth") {
@@ -77,4 +83,4 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+export default Auth;
