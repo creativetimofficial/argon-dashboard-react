@@ -77,6 +77,7 @@ class Sidebar extends React.Component {
       collapseOpen: false
     });
   }
+  // creates the links that appear in the left menu / Sidebar
   createLinks = (routes) => {
     return routes.map((prop,key)=>{
       return (

@@ -11,19 +11,9 @@ import Sidebar from "components/Sidebar/Sidebar.jsx";
 
 import routes from "routes.js";
 
-// import logo from "assets/img/react-logo.png";
-
 var ps;
 
 class Admin extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      backgroundColor: "blue",
-      sidebarOpened:
-        document.documentElement.className.indexOf("nav-open") !== -1
-    };
-  }
   componentDidMount() {
     if (navigator.platform.indexOf("Win") > -1) {
       document.documentElement.className += " perfect-scrollbar-on";
@@ -55,11 +45,6 @@ class Admin extends React.Component {
       this.refs.mainPanel.scrollTop = 0;
     }
   }
-  // this function opens and closes the sidebar on small devices
-  toggleSidebar = () => {
-    document.documentElement.classList.toggle("nav-open");
-    this.setState({ sidebarOpened: !this.state.sidebarOpened });
-  };
   getRoutes = routes => {
     return routes.map((prop, key) => {
       if (prop.layout === "/admin") {
@@ -107,13 +92,10 @@ class Admin extends React.Component {
         <div
           className="main-content"
           ref="mainPanel"
-          data={this.state.backgroundColor}
         >
           <AdminNavbar
             {...this.props}
             brandText={this.getBrandText(this.props.location.pathname)}
-            toggleSidebar={this.toggleSidebar}
-            sidebarOpened={this.state.sidebarOpened}
           />
           <Switch>{this.getRoutes(routes)}</Switch>
           <Container fluid>
