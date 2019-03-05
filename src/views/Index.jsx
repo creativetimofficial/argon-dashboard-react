@@ -1,5 +1,8 @@
 import React from "react";
 import classnames from "classnames";
+import Chart from "chart.js";
+// react plugin used to create charts
+import { Line, Bar } from "react-chartjs-2";
 // reactstrap components
 import {
   Button,
@@ -17,6 +20,13 @@ import {
   Col
 } from "reactstrap";
 
+// core components
+import {
+  chartOptions,
+  parseOptions,
+  chartExample2
+} from "variables/charts.jsx";
+
 class Index extends React.Component {
   state = {
     activeNav: 1
@@ -25,6 +35,11 @@ class Index extends React.Component {
     this.setState({
       activeNav: index
     });
+  }
+  componentWillMount() {
+    if (window.Chart) {
+  		parseOptions(Chart, chartOptions());
+  	}
   }
   render() {
     return (
@@ -225,7 +240,10 @@ class Index extends React.Component {
                 <CardBody>
                   {/* Chart */}
                   <div className="chart">
-                    <canvas className="chart-canvas" id="chart-orders" />
+                    <Bar
+                      data={chartExample2.data}
+                      options={chartExample2.options}
+                    />
                   </div>
                 </CardBody>
               </Card>
