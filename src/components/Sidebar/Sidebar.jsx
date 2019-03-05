@@ -43,7 +43,7 @@ var ps;
 class Sidebar extends React.Component {
   state = {
     collapseOpen: false
-  }
+  };
   constructor(props) {
     super(props);
     this.activeRoute.bind(this);
@@ -70,39 +70,43 @@ class Sidebar extends React.Component {
     this.setState({
       collapseOpen: !this.state.collapseOpen
     });
-  }
+  };
   // closes the collapse
   closeCollapse = () => {
     this.setState({
       collapseOpen: false
     });
-  }
+  };
   // creates the links that appear in the left menu / Sidebar
-  createLinks = (routes) => {
-    return routes.map((prop,key)=>{
+  createLinks = routes => {
+    return routes.map((prop, key) => {
       return (
         <NavItem key={key}>
-          <NavLink to={prop.layout + prop.path} tag={Link} onClick={this.closeCollapse}>
+          <NavLink
+            to={prop.layout + prop.path}
+            tag={Link}
+            onClick={this.closeCollapse}
+          >
             <i className={prop.icon} />
             {prop.name}
           </NavLink>
         </NavItem>
       );
-    })
-  }
+    });
+  };
   render() {
     const { bgColor, routes, logo } = this.props;
     let navbarBrandProps;
-    if(logo && logo.innerLink){
+    if (logo && logo.innerLink) {
       navbarBrandProps = {
         to: logo.innerLink,
         tag: Link
-      }
+      };
     } else if (logo && logo.outterLink) {
       navbarBrandProps = {
         href: logo.outterLink,
         target: "_blank"
-      }
+      };
     }
     return (
       <Navbar
@@ -120,17 +124,15 @@ class Sidebar extends React.Component {
             <span className="navbar-toggler-icon" />
           </button>
           {/* Brand */}
-          {
-            logo ? (
-              <NavbarBrand className="pt-0" {...navbarBrandProps}>
-                <img
-                  alt={logo.imgAlt}
-                  className="navbar-brand-img"
-                  src={logo.imgSrc}
-                />
-              </NavbarBrand>
-            ):null
-          }
+          {logo ? (
+            <NavbarBrand className="pt-0" {...navbarBrandProps}>
+              <img
+                alt={logo.imgAlt}
+                className="navbar-brand-img"
+                src={logo.imgSrc}
+              />
+            </NavbarBrand>
+          ) : null}
           {/* User */}
           <Nav className="align-items-center d-md-none">
             <UncontrolledDropdown nav>
@@ -142,16 +144,10 @@ class Sidebar extends React.Component {
                 className="dropdown-menu-arrow"
                 right
               >
-                <DropdownItem>
-                  Action
-                </DropdownItem>
-                <DropdownItem>
-                  Another action
-                </DropdownItem>
+                <DropdownItem>Action</DropdownItem>
+                <DropdownItem>Another action</DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem>
-                  Something else here
-                </DropdownItem>
+                <DropdownItem>Something else here</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
             <UncontrolledDropdown nav>
@@ -198,23 +194,19 @@ class Sidebar extends React.Component {
             {/* Collapse header */}
             <div className="navbar-collapse-header d-md-none">
               <Row>
-                {
-                  logo ? (
-                    <Col className="collapse-brand" xs="6">
-                      {
-                        logo.innerLink ? (
-                          <Link to={logo.innerLink}>
-                            <img alt={logo.imgAlt} src={logo.imgSrc} />
-                          </Link>
-                        ):(
-                          <a href={logo.outterLink}>
-                            <img alt={logo.imgAlt} src={logo.imgSrc} />
-                          </a>
-                        )
-                      }
-                    </Col>
-                  ):null
-                }
+                {logo ? (
+                  <Col className="collapse-brand" xs="6">
+                    {logo.innerLink ? (
+                      <Link to={logo.innerLink}>
+                        <img alt={logo.imgAlt} src={logo.imgSrc} />
+                      </Link>
+                    ) : (
+                      <a href={logo.outterLink}>
+                        <img alt={logo.imgAlt} src={logo.imgSrc} />
+                      </a>
+                    )}
+                  </Col>
+                ) : null}
                 <Col className="collapse-close" xs="6">
                   <button
                     className="navbar-toggler"
@@ -244,11 +236,7 @@ class Sidebar extends React.Component {
               </InputGroup>
             </Form>
             {/* Navigation */}
-            <Nav navbar>
-              {
-                this.createLinks(routes)
-              }
-            </Nav>
+            <Nav navbar>{this.createLinks(routes)}</Nav>
             {/* Divider */}
             <hr className="my-3" />
             {/* Heading */}

@@ -6,7 +6,7 @@ import PerfectScrollbar from "perfect-scrollbar";
 import { Container } from "reactstrap";
 // core components
 import AdminNavbar from "components/Navbars/AdminNavbar.jsx";
-import Footer from "components/Footer/Footer.jsx";
+import AdminFooter from "components/Footers/AdminFooter.jsx";
 import Sidebar from "components/Sidebar/Sidebar.jsx";
 
 import routes from "routes.js";
@@ -18,7 +18,9 @@ class Admin extends React.Component {
     if (navigator.platform.indexOf("Win") > -1) {
       document.documentElement.className += " perfect-scrollbar-on";
       document.documentElement.classList.remove("perfect-scrollbar-off");
-      ps = new PerfectScrollbar(this.refs.mainContent, { suppressScrollX: true });
+      ps = new PerfectScrollbar(this.refs.mainContent, {
+        suppressScrollX: true
+      });
       let tables = document.querySelectorAll(".table-responsive");
       for (let i = 0; i < tables.length; i++) {
         ps = new PerfectScrollbar(tables[i]);
@@ -84,17 +86,14 @@ class Admin extends React.Component {
             imgAlt: "..."
           }}
         />
-        <div
-          className="main-content"
-          ref="mainContent"
-        >
+        <div className="main-content" ref="mainContent">
           <AdminNavbar
             {...this.props}
             brandText={this.getBrandText(this.props.location.pathname)}
           />
           <Switch>{this.getRoutes(routes)}</Switch>
           <Container fluid>
-            <Footer />
+            <AdminFooter />
           </Container>
         </div>
       </>
