@@ -14,7 +14,7 @@ import {
   CardHeader,
   CardBody,
   CardTitle,
-  UncontrolledCollapse,
+  Collapse,
   DropdownMenu,
   DropdownItem,
   UncontrolledDropdown,
@@ -41,6 +41,9 @@ import {
 var ps;
 
 class Sidebar extends React.Component {
+  state = {
+    collapseOpen: false
+  }
   constructor(props) {
     super(props);
     this.activeRoute.bind(this);
@@ -62,9 +65,30 @@ class Sidebar extends React.Component {
       ps.destroy();
     }
   }
-  linkOnClick = () => {
-    document.documentElement.classList.remove("nav-open");
-  };
+  // toggles collapse between opened and closed (true/false)
+  toggleCollapse = () => {
+    this.setState({
+      collapseOpen: !this.state.collapseOpen
+    });
+  }
+  // closes the collapse
+  closeCollapse = () => {
+    this.setState({
+      collapseOpen: false
+    });
+  }
+  createLinks = (routes) => {
+    return routes.map((prop,key)=>{
+      return (
+        <NavItem key={key}>
+          <NavLink to={prop.layout + prop.path} tag={Link} onClick={this.closeCollapse}>
+            <i className={prop.icon} />
+            {prop.name}
+          </NavLink>
+        </NavItem>
+      );
+    })
+  }
   render() {
     const { bgColor, routes, logo } = this.props;
     let navbarBrandProps;
@@ -89,8 +113,8 @@ class Sidebar extends React.Component {
           {/* Toggler */}
           <button
             className="navbar-toggler"
-            id="sidenav-collapse-main"
             type="button"
+            onClick={this.toggleCollapse}
           >
             <span className="navbar-toggler-icon" />
           </button>
@@ -117,14 +141,14 @@ class Sidebar extends React.Component {
                 className="dropdown-menu-arrow"
                 right
               >
-                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+                <DropdownItem>
                   Action
                 </DropdownItem>
-                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+                <DropdownItem>
                   Another action
                 </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+                <DropdownItem>
                   Something else here
                 </DropdownItem>
               </DropdownMenu>
@@ -144,19 +168,19 @@ class Sidebar extends React.Component {
                 <DropdownItem className="noti-title" header tag="div">
                   <h6 className="text-overflow m-0">Welcome!</h6>
                 </DropdownItem>
-                <DropdownItem href="./examples/profile.html">
+                <DropdownItem to="/admin/user-profile" tag={Link}>
                   <i className="ni ni-single-02" />
                   <span>My profile</span>
                 </DropdownItem>
-                <DropdownItem href="./examples/profile.html">
+                <DropdownItem to="/admin/user-profile" tag={Link}>
                   <i className="ni ni-settings-gear-65" />
                   <span>Settings</span>
                 </DropdownItem>
-                <DropdownItem href="./examples/profile.html">
+                <DropdownItem to="/admin/user-profile" tag={Link}>
                   <i className="ni ni-calendar-grid-58" />
                   <span>Activity</span>
                 </DropdownItem>
-                <DropdownItem href="./examples/profile.html">
+                <DropdownItem to="/admin/user-profile" tag={Link}>
                   <i className="ni ni-support-16" />
                   <span>Support</span>
                 </DropdownItem>
@@ -169,20 +193,32 @@ class Sidebar extends React.Component {
             </UncontrolledDropdown>
           </Nav>
           {/* Collapse */}
-          <UncontrolledCollapse navbar toggler="#sidenav-collapse-main">
+          <Collapse navbar isOpen={this.state.collapseOpen}>
             {/* Collapse header */}
             <div className="navbar-collapse-header d-md-none">
               <Row>
-                <Col className="collapse-brand" xs="6">
-                  <a href="./index.html">
-                    <img alt="..." src={require("assets/img/brand/blue.png")} />
-                  </a>
-                </Col>
+                {
+                  logo ? (
+                    <Col className="collapse-brand" xs="6">
+                      {
+                        logo.innerLink ? (
+                          <Link to={logo.innerLink}>
+                            <img alt={logo.imgAlt} src={logo.imgSrc} />
+                          </Link>
+                        ):(
+                          <a href={logo.outterLink}>
+                            <img alt={logo.imgAlt} src={logo.imgSrc} />
+                          </a>
+                        )
+                      }
+                    </Col>
+                  ):null
+                }
                 <Col className="collapse-close" xs="6">
                   <button
                     className="navbar-toggler"
-                    id="sidenav-collapse-main"
                     type="button"
+                    onClick={this.toggleCollapse}
                   >
                     <span />
                     <span />
@@ -208,48 +244,9 @@ class Sidebar extends React.Component {
             </Form>
             {/* Navigation */}
             <Nav navbar>
-              <NavItem>
-                <NavLink href="./index.html">
-                  <i className="ni ni-tv-2 text-primary" />
-                  Dashboard
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="./examples/icons.html">
-                  <i className="ni ni-planet text-blue" />
-                  Icons
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="./examples/maps.html">
-                  <i className="ni ni-pin-3 text-orange" />
-                  Maps
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="./examples/profile.html">
-                  <i className="ni ni-single-02 text-yellow" />
-                  User profile
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="./examples/tables.html">
-                  <i className="ni ni-bullet-list-67 text-red" />
-                  Tables
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="./examples/login.html">
-                  <i className="ni ni-key-25 text-info" />
-                  Login
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="./examples/register.html">
-                  <i className="ni ni-circle-08 text-pink" />
-                  Register
-                </NavLink>
-              </NavItem>
+              {
+                this.createLinks(routes)
+              }
             </Nav>
             {/* Divider */}
             <hr className="my-3" />
@@ -276,7 +273,7 @@ class Sidebar extends React.Component {
                 </NavLink>
               </NavItem>
             </Nav>
-          </UncontrolledCollapse>
+          </Collapse>
         </Container>
       </Navbar>
     );
@@ -288,6 +285,7 @@ Sidebar.defaultProps = {
 };
 
 Sidebar.propTypes = {
+  // links that will be displayed inside the component
   routes: PropTypes.arrayOf(PropTypes.object),
   logo: PropTypes.shape({
     // innerLink is for links that will direct the user within the app

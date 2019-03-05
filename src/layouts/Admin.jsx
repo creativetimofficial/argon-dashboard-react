@@ -88,19 +88,21 @@ class Admin extends React.Component {
     return "Brand";
   };
   render() {
-    console.log(this.getRoutes(routes));
     return (
       <>
         <Sidebar
           {...this.props}
           routes={routes}
-          bgColor={this.state.backgroundColor}
           logo={{
             innerLink: "/admin/index",
             imgSrc: require("assets/img/brand/blue.png"),
             imgAlt: "..."
           }}
-          toggleSidebar={this.toggleSidebar}
+          notifications={[
+            { text: "Action", props: {href: "#pablo", onClick: e => e.preventDefault()}},
+            {text: "Another action", props: {href: "#pablo", onClick: e => e.preventDefault()}},
+            { text: "Something else here", props: {href: "#pablo", onClick: e => e.preventDefault()}}
+          ]}
         />
         <div
           className="main-content"
