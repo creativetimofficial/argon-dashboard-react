@@ -250,13 +250,13 @@ class Sidebar extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://demos.creative-tim.com/argon-dashboard/documentation/colors">
+                <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/documentation/colors">
                   <i className="ni ni-palette" />
                   Foundation
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://demos.creative-tim.com/argon-dashboard/documentation/alerts">
+                <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/documentation/alerts">
                   <i className="ni ni-ui-04" />
                   Components
                 </NavLink>
