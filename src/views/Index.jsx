@@ -1,5 +1,5 @@
 import React from "react";
-
+import classnames from "classnames";
 // reactstrap components
 import {
   Button,
@@ -18,6 +18,14 @@ import {
 } from "reactstrap";
 
 class Index extends React.Component {
+  state = {
+    activeNav: 1
+  }
+  toggleNavs = (index) => {
+    this.setState({
+      activeNav: index
+    });
+  }
   render() {
     return (
       <>
@@ -168,36 +176,22 @@ class Index extends React.Component {
                     </div>
                     <div className="col">
                       <Nav className="justify-content-end" pills>
-                        <NavItem
-                          className="mr-2 mr-md-0"
-                          data-prefix="$"
-                          data-suffix="k"
-                          data-target="#chart-sales"
-                          data-toggle="chart"
-                          data-update='{"data":{"datasets":[{"data":[0, 20, 10, 30, 15, 40, 20, 60, 60]}]}}'
-                        >
+                        <NavItem>
                           <NavLink
-                            className="py-2 px-3 active"
-                            data-toggle="tab"
+                            className={classnames("py-2 px-3",{active: this.state.activeNav === 1})}
                             href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            onClick={() => this.toggleNavs(1)}
                           >
                             <span className="d-none d-md-block">Month</span>
                             <span className="d-md-none">M</span>
                           </NavLink>
                         </NavItem>
-                        <NavItem
-                          data-prefix="$"
-                          data-suffix="k"
-                          data-target="#chart-sales"
-                          data-toggle="chart"
-                          data-update='{"data":{"datasets":[{"data":[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}'
-                        >
+                        <NavItem>
                           <NavLink
-                            className="py-2 px-3"
+                            className={classnames("py-2 px-3",{active: this.state.activeNav === 2})}
                             data-toggle="tab"
                             href="#pablo"
-                            onClick={e => e.preventDefault()}
+                            onClick={() => this.toggleNavs(2)}
                           >
                             <span className="d-none d-md-block">Week</span>
                             <span className="d-md-none">W</span>
