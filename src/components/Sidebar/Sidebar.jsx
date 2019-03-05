@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink as NavLinkRRD, Link } from "react-router-dom";
 // nodejs library to set properties for components
 import { PropTypes } from "prop-types";
 
@@ -84,8 +84,9 @@ class Sidebar extends React.Component {
         <NavItem key={key}>
           <NavLink
             to={prop.layout + prop.path}
-            tag={Link}
+            tag={NavLinkRRD}
             onClick={this.closeCollapse}
+            activeClassName="active"
           >
             <i className={prop.icon} />
             {prop.name}
