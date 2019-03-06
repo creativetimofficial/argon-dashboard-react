@@ -27,14 +27,14 @@ import {
   chartExample2
 } from "variables/charts.jsx";
 
-import Header from "components/Header/Header.jsx";
+import Header from "components/Headers/Header.jsx";
 
 class Index extends React.Component {
   state = {
     activeNav: 1,
     chartExample1Data: "data1"
   };
-  toggleNavs = (e,index) => {
+  toggleNavs = (e, index) => {
     e.preventDefault();
     this.setState({
       activeNav: index,
@@ -78,7 +78,7 @@ class Index extends React.Component {
                               active: this.state.activeNav === 1
                             })}
                             href="#pablo"
-                            onClick={(e) => this.toggleNavs(e,1)}
+                            onClick={e => this.toggleNavs(e, 1)}
                           >
                             <span className="d-none d-md-block">Month</span>
                             <span className="d-md-none">M</span>
@@ -91,7 +91,7 @@ class Index extends React.Component {
                             })}
                             data-toggle="tab"
                             href="#pablo"
-                            onClick={(e) => this.toggleNavs(e,2)}
+                            onClick={e => this.toggleNavs(e, 2)}
                           >
                             <span className="d-none d-md-block">Week</span>
                             <span className="d-md-none">W</span>

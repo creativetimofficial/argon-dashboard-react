@@ -1,9 +1,74 @@
 import React from "react";
+// react plugin used to create google maps
+import {
+  withScriptjs,
+  withGoogleMap,
+  GoogleMap,
+  Marker
+} from "react-google-maps";
 
 // reactstrap components
 import { Card, Container, Row } from "reactstrap";
-// corec components
-import Header from "components/Header/Header.jsx";
+
+// core components
+import Header from "components/Headers/Header.jsx";
+// mapTypeId={google.maps.MapTypeId.ROADMAP}
+const MapWrapper = withScriptjs(
+  withGoogleMap(props => (
+    <GoogleMap
+      defaultZoom={12}
+      defaultCenter={{ lat: 40.748817, lng: -73.985428 }}
+      defaultOptions={{
+        scrollwheel: false,
+        styles: [
+          {
+            featureType: "administrative",
+            elementType: "labels.text.fill",
+            stylers: [{ color: "#444444" }]
+          },
+          {
+            featureType: "landscape",
+            elementType: "all",
+            stylers: [{ color: "#f2f2f2" }]
+          },
+          {
+            featureType: "poi",
+            elementType: "all",
+            stylers: [{ visibility: "off" }]
+          },
+          {
+            featureType: "road",
+            elementType: "all",
+            stylers: [{ saturation: -100 }, { lightness: 45 }]
+          },
+          {
+            featureType: "road.highway",
+            elementType: "all",
+            stylers: [{ visibility: "simplified" }]
+          },
+          {
+            featureType: "road.arterial",
+            elementType: "labels.icon",
+            stylers: [{ visibility: "off" }]
+          },
+          {
+            featureType: "transit",
+            elementType: "all",
+            stylers: [{ visibility: "off" }]
+          },
+          {
+            featureType: "water",
+            elementType: "all",
+            stylers: [{ color: "#5e72e4" }, { visibility: "on" }]
+          }
+        ]
+      }}
+    >
+      <Marker position={{ lat: 40.748817, lng: -73.985428 }} />
+    </GoogleMap>
+  ))
+);
+
 class Maps extends React.Component {
   render() {
     return (
@@ -14,12 +79,17 @@ class Maps extends React.Component {
           <Row>
             <div className="col">
               <Card className="shadow border-0">
-                <div
-                  className="map-canvas"
-                  data-lat="40.748817"
-                  data-lng="-73.985428"
-                  id="map-canvas"
-                  style={{ height: "600px" }}
+                <MapWrapper
+                  googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
+                  loadingElement={<div style={{ height: `100%` }} />}
+                  containerElement={
+                    <div
+                      style={{ height: `600px` }}
+                      className="map-canvas"
+                      id="map-canvas"
+                    />
+                  }
+                  mapElement={<div style={{ height: `100%`, borderRadius: "inherit" }} />}
                 />
               </Card>
             </div>

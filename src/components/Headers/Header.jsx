@@ -17,7 +17,7 @@ class Header extends React.Component {
                     <CardBody>
                       <Row>
                         <div className="col">
-                          <CardTitle className="text-uppercase text-muted mb-0">
+                          <CardTitle tag="h5" className="text-uppercase text-muted mb-0">
                             Traffic
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
@@ -45,7 +45,7 @@ class Header extends React.Component {
                     <CardBody>
                       <Row>
                         <div className="col">
-                          <CardTitle className="text-uppercase text-muted mb-0">
+                          <CardTitle tag="h5" className="text-uppercase text-muted mb-0">
                             New users
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
@@ -73,7 +73,7 @@ class Header extends React.Component {
                     <CardBody>
                       <Row>
                         <div className="col">
-                          <CardTitle className="text-uppercase text-muted mb-0">
+                          <CardTitle tag="h5" className="text-uppercase text-muted mb-0">
                             Sales
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">924</span>
@@ -99,7 +99,7 @@ class Header extends React.Component {
                     <CardBody>
                       <Row>
                         <div className="col">
-                          <CardTitle className="text-uppercase text-muted mb-0">
+                          <CardTitle tag="h5" className="text-uppercase text-muted mb-0">
                             Performance
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
