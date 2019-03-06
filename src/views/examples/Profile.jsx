@@ -295,10 +295,10 @@ class Profile extends React.Component {
                           className="form-control-alternative"
                           placeholder="A few words about you ..."
                           rows="4"
-                        >
-                          A beautiful Dashboard for Bootstrap 4. It is Free and
-                          Open Source.
-                        </Input>
+                          defaultValue="A beautiful Dashboard for Bootstrap 4. It is Free and
+                          Open Source."
+                          type="textarea"
+                        />
                       </FormGroup>
                     </div>
                   </Form>
