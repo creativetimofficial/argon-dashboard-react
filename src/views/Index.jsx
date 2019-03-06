@@ -34,7 +34,8 @@ class Index extends React.Component {
     activeNav: 1,
     chartExample1Data: "data1"
   };
-  toggleNavs = index => {
+  toggleNavs = (e,index) => {
+    e.preventDefault();
     this.setState({
       activeNav: index,
       chartExample1Data:
@@ -77,7 +78,7 @@ class Index extends React.Component {
                               active: this.state.activeNav === 1
                             })}
                             href="#pablo"
-                            onClick={() => this.toggleNavs(1)}
+                            onClick={(e) => this.toggleNavs(e,1)}
                           >
                             <span className="d-none d-md-block">Month</span>
                             <span className="d-md-none">M</span>
@@ -90,7 +91,7 @@ class Index extends React.Component {
                             })}
                             data-toggle="tab"
                             href="#pablo"
-                            onClick={() => this.toggleNavs(2)}
+                            onClick={(e) => this.toggleNavs(e,2)}
                           >
                             <span className="d-none d-md-block">Week</span>
                             <span className="d-md-none">W</span>
