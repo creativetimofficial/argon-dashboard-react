@@ -31,6 +31,7 @@
     "perfect-scrollbar": "^1.4.0",
     "react": "16.8.3",
     "react-chartjs-2": "2.7.4",
+    "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "16.8.3",
     "react-router-dom": "4.3.1",
     "react-scripts": "2.1.5",
