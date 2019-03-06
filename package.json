@@ -23,20 +23,6 @@
     "url": "https://github.com/creativetimofficial/argon-dashboard-react/issues"
   },
   "homepage": "https://demos.creative-tim.com/argon-dashboard-react/",
-  "dependencies": {
-    "chart.js": "2.7.3",
-    "classnames": "^2.2.6",
-    "moment": "2.24.0",
-    "node-sass": "4.11.0",
-    "perfect-scrollbar": "^1.4.0",
-    "react": "16.8.3",
-    "react-chartjs-2": "2.7.4",
-    "react-copy-to-clipboard": "^5.0.1",
-    "react-dom": "16.8.3",
-    "react-router-dom": "4.3.1",
-    "react-scripts": "2.1.5",
-    "reactstrap": "7.1.0"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -55,5 +41,26 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "dependencies": {
+    "chart.js": "2.7.3",
+    "classnames": "2.2.6",
+    "moment": "2.24.0",
+    "node-sass": "4.11.0",
+    "perfect-scrollbar": "1.4.0",
+    "react": "16.8.3",
+    "react-chartjs-2": "2.7.4",
+    "react-copy-to-clipboard": "5.0.1",
+    "react-dom": "16.8.3",
+    "react-google-maps": "9.4.5",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "2.1.5",
+    "reactstrap": "7.1.0"
+  },
+  "devDependencies": {
+    "@types/googlemaps": "3.30.18",
+    "@types/markerclustererplus": "2.1.33",
+    "@types/react": "16.8.6",
+    "typescript": "3.3.3333"
+  }
 }
