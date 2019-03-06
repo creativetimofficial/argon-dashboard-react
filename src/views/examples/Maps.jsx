@@ -89,7 +89,9 @@ class Maps extends React.Component {
                       id="map-canvas"
                     />
                   }
-                  mapElement={<div style={{ height: `100%`, borderRadius: "inherit" }} />}
+                  mapElement={
+                    <div style={{ height: `100%`, borderRadius: "inherit" }} />
+                  }
                 />
               </Card>
             </div>
