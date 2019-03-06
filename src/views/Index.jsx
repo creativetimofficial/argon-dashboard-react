@@ -32,23 +32,24 @@ class Index extends React.Component {
   state = {
     activeNav: 1,
     chartExample1Data: "data1"
-  }
-  toggleNavs = (index) => {
+  };
+  toggleNavs = index => {
     this.setState({
       activeNav: index,
-      chartExample1Data: this.state.chartExample1Data === "data1" ? "data2":"data1"
+      chartExample1Data:
+        this.state.chartExample1Data === "data1" ? "data2" : "data1"
     });
-    let wow = ()=>{
+    let wow = () => {
       console.log(this.state);
-    }
+    };
     wow.bind(this);
-    setTimeout(()=>wow(),1000)
+    setTimeout(() => wow(), 1000);
     // this.chartReference.update();
-  }
+  };
   componentWillMount() {
     if (window.Chart) {
-  		parseOptions(Chart, chartOptions());
-  	}
+      parseOptions(Chart, chartOptions());
+    }
   }
   render() {
     return (
@@ -202,7 +203,9 @@ class Index extends React.Component {
                       <Nav className="justify-content-end" pills>
                         <NavItem>
                           <NavLink
-                            className={classnames("py-2 px-3",{active: this.state.activeNav === 1})}
+                            className={classnames("py-2 px-3", {
+                              active: this.state.activeNav === 1
+                            })}
                             href="#pablo"
                             onClick={() => this.toggleNavs(1)}
                           >
@@ -212,7 +215,9 @@ class Index extends React.Component {
                         </NavItem>
                         <NavItem>
                           <NavLink
-                            className={classnames("py-2 px-3",{active: this.state.activeNav === 2})}
+                            className={classnames("py-2 px-3", {
+                              active: this.state.activeNav === 2
+                            })}
                             data-toggle="tab"
                             href="#pablo"
                             onClick={() => this.toggleNavs(2)}
@@ -231,7 +236,7 @@ class Index extends React.Component {
                     <Line
                       data={chartExample1[this.state.chartExample1Data]}
                       options={chartExample1.options}
-                      getDatasetAtEvent={(e) => console.log(e)}
+                      getDatasetAtEvent={e => console.log(e)}
                     />
                   </div>
                 </CardBody>

@@ -25,16 +25,10 @@ class AdminNavbar extends React.Component {
             <NavbarBrand href="../index.html">
               <img alt="..." src={require("assets/img/brand/white.png")} />
             </NavbarBrand>
-            <button
-              className="navbar-toggler"
-              id="navbar-collapse-main"
-            >
+            <button className="navbar-toggler" id="navbar-collapse-main">
               <span className="navbar-toggler-icon" />
             </button>
-            <UncontrolledCollapse
-              navbar
-              toggler="#navbar-collapse-main"
-            >
+            <UncontrolledCollapse navbar toggler="#navbar-collapse-main">
               <div className="navbar-collapse-header d-md-none">
                 <Row>
                   <Col className="collapse-brand" xs="6">
