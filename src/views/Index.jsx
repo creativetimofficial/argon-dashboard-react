@@ -24,17 +24,26 @@ import {
 import {
   chartOptions,
   parseOptions,
+  chartExample1,
   chartExample2
 } from "variables/charts.jsx";
 
 class Index extends React.Component {
   state = {
-    activeNav: 1
+    activeNav: 1,
+    chartExample1Data: "data1"
   }
   toggleNavs = (index) => {
     this.setState({
-      activeNav: index
+      activeNav: index,
+      chartExample1Data: this.state.chartExample1Data === "data1" ? "data2":"data1"
     });
+    let wow = ()=>{
+      console.log(this.state);
+    }
+    wow.bind(this);
+    setTimeout(()=>wow(),1000)
+    // this.chartReference.update();
   }
   componentWillMount() {
     if (window.Chart) {
@@ -219,8 +228,11 @@ class Index extends React.Component {
                 <CardBody>
                   {/* Chart */}
                   <div className="chart">
-                    {/* Chart wrapper */}
-                    <canvas className="chart-canvas" id="chart-sales" />
+                    <Line
+                      data={chartExample1[this.state.chartExample1Data]}
+                      options={chartExample1.options}
+                      getDatasetAtEvent={(e) => console.log(e)}
+                    />
                   </div>
                 </CardBody>
               </Card>

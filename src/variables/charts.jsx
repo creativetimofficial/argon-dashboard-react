@@ -265,6 +265,58 @@ function parseOptions(parent, options) {
   }
 }
 
+// Example 1 of Chart inside src/views/Index.jsx (Sales value - Card)
+let chartExample1 = {
+  options: {
+    scales: {
+      yAxes: [{
+        gridLines: {
+          color: colors.gray[900],
+          zeroLineColor: colors.gray[900]
+        },
+        ticks: {
+          callback: function(value) {
+            if (!(value % 10)) {
+              return '$' + value + 'k';
+            }
+          }
+        }
+      }]
+    },
+    tooltips: {
+      callbacks: {
+        label: function(item, data) {
+          var label = data.datasets[item.datasetIndex].label || '';
+          var yLabel = item.yLabel;
+          var content = '';
+
+          if (data.datasets.length > 1) {
+            content += '<span class="popover-body-label mr-auto">' + label + '</span>';
+          }
+
+          content += '<span class="popover-body-value">$' + yLabel + 'k</span>';
+          return content;
+        }
+      }
+    }
+  },
+  data1: {
+    labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    datasets: [{
+      label: 'Performance',
+      data: [0, 20, 10, 30, 15, 40, 20, 60, 60]
+    }]
+  },
+  data2: {
+    labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    datasets: [{
+      label: 'Performance',
+      data: [0, 20, 5, 25, 10, 30, 15, 40, 40]
+    }]
+  },
+}
+
+// Example 2 of Chart inside src/views/Index.jsx (Total orders - Card)
 let chartExample2 = {
   options: {
     scales: {
@@ -306,5 +358,6 @@ let chartExample2 = {
 module.exports = {
   chartOptions, // used inside src/views/Index.jsx
   parseOptions, // used inside src/views/Index.jsx
+  chartExample1, // used inside src/views/Index.jsx
   chartExample2 // used inside src/views/Index.jsx
 };
