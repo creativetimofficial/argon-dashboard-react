@@ -1146,8 +1146,7 @@ body:not(.creativetim):not(.mdbootstrap) .partner.mdbootstrap {
     border: 0
 }
 
-.ct-team img,
-.color-swatch {
+.ct-team img {
     float: left;
     border-radius: .25rem
 }
@@ -1220,13 +1219,6 @@ body:not(.creativetim):not(.mdbootstrap) .partner.mdbootstrap {
 .color-swatches {
     margin: 0 -5px;
     overflow: hidden
-}
-
-.color-swatch {
-    width: 4rem;
-    height: 4rem;
-    margin-right: .25rem;
-    margin-left: .25rem
 }
 
 .color-swatches .ct-purple-light {
@@ -1422,10 +1414,6 @@ body:not(.creativetim):not(.mdbootstrap) .partner.mdbootstrap {
 }
 
 @media (min-width:768px) {
-    .color-swatch {
-        width: 6rem;
-        height: 6rem
-    }
     .ct-clipboard {
         display: block
     }

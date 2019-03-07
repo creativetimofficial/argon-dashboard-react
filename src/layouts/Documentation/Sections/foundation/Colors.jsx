@@ -9,15 +9,10 @@ class Colors extends React.Component {
       <>
         <div className="ct-page-title">
           <h1 className="ct-title" id="content">
-            Icons
+            Colors
           </h1>
           <div className="avatar-group mt-3" />
         </div>
-        <p className="ct-lead">
-          Get started with Bootstrap, the world’s most popular framework for
-          building responsive, mobile-first sites, with BootstrapCDN and a
-          template starter page.
-        </p>
         <hr />
         <h2 id="primary-colors">Primary colors</h2>
         <p>
