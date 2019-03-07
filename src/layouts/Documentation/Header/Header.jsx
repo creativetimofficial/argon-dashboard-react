@@ -32,7 +32,7 @@ class Header extends React.Component {
           </NavItem>
           <NavItem>
             <NavLink
-              href="https://github.com/creativetimofficial/argon-dashboard/issues"
+              href="https://github.com/creativetimofficial/argon-dashboard-react/issues"
               target="_blank"
             >
               Support
@@ -41,30 +41,10 @@ class Header extends React.Component {
         </Nav>
         <div className=" d-none d-sm-block ml-auto">
           <Nav className=" ct-navbar-nav flex-row align-items-center" navbar>
-            <UncontrolledDropdown className=" d-none" nav>
-              <DropdownToggle
-                aria-expanded={false}
-                aria-haspopup={true}
-                caret
-                className=" text-white mr-sm-3"
-                color="link"
-                data-toggle="dropdown"
-                href="#pablo"
-                id="ct-versions"
-                onClick={e => e.preventDefault()}
-              >
-                1.0.0
-              </DropdownToggle>
-              <DropdownMenu aria-labelledby="ct-versions">
-                <DropdownItem active href="../..//docs/1.0.0/">
-                  Latest - 1.0.0
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
             <NavItem>
               <NavLink
                 className=" nav-link-icon"
-                href="https://www.facebook.com/creativetim"
+                href="https://www.facebook.com/creativetim?ref=adr-documentation-header"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -74,7 +54,7 @@ class Header extends React.Component {
             <NavItem>
               <NavLink
                 className=" nav-link-icon"
-                href="https://twitter.com/creativetim"
+                href="https://twitter.com/creativetim?ref=adr-documentation-header"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -84,7 +64,7 @@ class Header extends React.Component {
             <NavItem>
               <NavLink
                 className=" nav-link-icon"
-                href="https://www.instagram.com/creativetimofficial"
+                href="https://www.instagram.com/creativetimofficial?ref=adr-documentation-header"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -94,7 +74,7 @@ class Header extends React.Component {
             <NavItem>
               <NavLink
                 className=" nav-link-icon"
-                href="https://www.instagram.com/creativetimofficial"
+                href="https://www.instagram.com/creativetimofficial?ref=adr-documentation-header"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -104,7 +84,7 @@ class Header extends React.Component {
             <NavItem>
               <NavLink
                 className=" nav-link-icon"
-                href="https://github.com/creativetimofficial"
+                href="https://github.com/creativetimofficial?ref=adr-documentation-header"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -116,8 +96,7 @@ class Header extends React.Component {
         <Button
           className=" btn-neutral btn-icon ml-sm-3 d-none d-md-block"
           color="default"
-          href="https://www.creative-tim.com/product/argon-dashboard"
-          rel="noopener noreferrer"
+          href="https://www.creative-tim.com/product/argon-dashboard-react?ref=adr-documentation-header"
           target="_blank"
         >
           <span className=" btn-inner--icon">
