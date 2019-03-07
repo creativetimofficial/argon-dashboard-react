@@ -229,19 +229,19 @@ class Sidebar extends React.Component {
             {/* Navigation */}
             <Nav className="mb-md-3" navbar>
               <NavItem>
-                <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/documentation/overview">
+                <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/documentation/overview?ref=adr-admin-sidebar">
                   <i className="ni ni-spaceship" />
                   Getting started
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/documentation/colors">
+                <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/documentation/colors?ref=adr-admin-sidebar">
                   <i className="ni ni-palette" />
                   Foundation
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/documentation/alerts">
+                <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/documentation/alerts?ref=adr-admin-sidebar">
                   <i className="ni ni-ui-04" />
                   Components
                 </NavLink>
