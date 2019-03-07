@@ -1,127 +1,158 @@
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
 
-import { Progress } from "reactstrap";
+// reactstrap components
+import {
+  NavItem,
+  NavLink,
+  Nav,
+  Progress,
+  TabContent,
+  TabPane
+} from "reactstrap";
 
-const example = `import React from "react";
-
-import { Progress } from "reactstrap";
-
-class ProgressDocs extends React.Component {
+class Progresses extends React.Component {
   render() {
     return (
       <>
-        <div className="progress-container">
-          <span className="progress-badge">Default</span>
-          <Progress max="100" value="25">
-            <span className="progress-value">25%</span>
-          </Progress>
+        <div className=" ct-page-title">
+          <h1 className=" ct-title" id="content">
+            Progress
+          </h1>
+          <div className=" avatar-group mt-3" />
         </div>
-        <div className="progress-container progress-primary">
-          <span className="progress-badge">Primary</span>
-          <Progress max="100" value="60" barClassName="progress-bar-primary">
-            <span className="progress-value">60%</span>
-          </Progress>
-        </div>
-        <div className="progress-container progress-danger">
-          <span className="progress-badge">Danger</span>
-          <Progress max="100" value="50" barClassName="progress-bar-danger">
-            <span className="progress-value">50%</span>
-          </Progress>
-        </div>
-        <div className="progress-container progress-warning">
-          <span className="progress-badge">Warning</span>
-          <Progress max="100" value="77" barClassName="progress-bar-warning">
-            <span className="progress-value">77%</span>
-          </Progress>
-        </div>
-        <div className="progress-container progress-success">
-          <span className="progress-badge">Success</span>
-          <Progress max="100" value="46" barClassName="progress-bar-success">
-            <span className="progress-value">46%</span>
-          </Progress>
-        </div>
-        <div className="progress-container progress-info">
-          <span className="progress-badge">Info</span>
-          <Progress max="100" value="90" barClassName="progress-bar-info">
-            <span className="progress-value">90%</span>
-          </Progress>
+        <p className=" ct-lead">
+          Documentation and examples for Bootstrap’s powerful, responsive
+          navigation header, the navbar. Includes support for branding,
+          navigation, and more, including support for our collapse plugin.
+        </p>
+        <hr />
+        <h2 id="example">Example</h2>
+        <div className=" ct-example">
+          <Nav className=" nav-tabs-code" id="progress-tab" role="tablist">
+            <NavItem>
+              <NavLink
+                aria-controls="progress-component"
+                aria-selected={true}
+                className=" active"
+                data-toggle="tab"
+                href="#pablo"
+                id="progress-component-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                Result
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                aria-controls="progress-html"
+                aria-selected={false}
+                data-toggle="tab"
+                href="#pablo"
+                id="progress-html-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                HTML
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent>
+            <TabPane
+              aria-labelledby="progress-component-tab"
+              className=" tab-example-result fade show active"
+              id="progress-component"
+              role="tabpanel"
+            >
+              <div className=" progress-wrapper">
+                <div className=" progress-info">
+                  <div className=" progress-label">
+                    <span>Task completed</span>
+                  </div>
+                  <div className=" progress-percentage">
+                    <span>60%</span>
+                  </div>
+                </div>
+                <Progress max="100" value="60" />
+              </div>
+              <div className=" progress-wrapper">
+                <div className=" progress-info">
+                  <div className=" progress-label">
+                    <span>Task completed</span>
+                  </div>
+                  <div className=" progress-percentage">
+                    <span>60%</span>
+                  </div>
+                </div>
+                <Progress max="100" value="60" />
+              </div>
+              <div className=" progress-wrapper">
+                <div className=" progress-info">
+                  <div className=" progress-label">
+                    <span>Task completed</span>
+                  </div>
+                  <div className=" progress-percentage">
+                    <span>60%</span>
+                  </div>
+                </div>
+                <Progress max="100" value="60" />
+              </div>
+              <div className=" progress-wrapper">
+                <div className=" progress-info">
+                  <div className=" progress-label">
+                    <span>Task completed</span>
+                  </div>
+                  <div className=" progress-percentage">
+                    <span>60%</span>
+                  </div>
+                </div>
+                <Progress max="100" value="60" />
+              </div>
+              <div className=" progress-wrapper">
+                <div className=" progress-info">
+                  <div className=" progress-label">
+                    <span>Task completed</span>
+                  </div>
+                  <div className=" progress-percentage">
+                    <span>60%</span>
+                  </div>
+                </div>
+                <Progress max="100" value="60" />
+              </div>
+              <div className=" progress-wrapper">
+                <div className=" progress-info">
+                  <div className=" progress-label">
+                    <span>Task completed</span>
+                  </div>
+                  <div className=" progress-percentage">
+                    <span>60%</span>
+                  </div>
+                </div>
+                <Progress max="100" value="60" />
+              </div>
+              <div className=" progress-wrapper">
+                <div className=" progress-info">
+                  <div className=" progress-label">
+                    <span>Task completed</span>
+                  </div>
+                  <div className=" progress-percentage">
+                    <span>60%</span>
+                  </div>
+                </div>
+                <Progress max="100" value="60" />
+              </div>
+            </TabPane>
+            <TabPane
+              aria-labelledby="progress-html-tab"
+              className=" fade"
+              id="progress-html"
+              role="tabpanel"
+            />
+          </TabContent>
         </div>
       </>
     );
   }
 }
 
-export default ProgressDocs;
-`;
-
-class ProgressDocs extends React.Component {
-  render() {
-    return (
-      <>
-        <h1 className="ct-title">Progress</h1>
-        <h2 id="content">Backgrounds</h2>
-        <p>
-          Use background utility classes to change the appearance of individual
-          progress bars.
-        </p>
-        <div className="ct-example">
-          <div className="progress-container">
-            <span className="progress-badge">Default</span>
-            <Progress max="100" value="25">
-              <span className="progress-value">25%</span>
-            </Progress>
-          </div>
-          <div className="progress-container progress-primary">
-            <span className="progress-badge">Primary</span>
-            <Progress max="100" value="60" barClassName="progress-bar-primary">
-              <span className="progress-value">60%</span>
-            </Progress>
-          </div>
-          <div className="progress-container progress-danger">
-            <span className="progress-badge">Danger</span>
-            <Progress max="100" value="50" barClassName="progress-bar-danger">
-              <span className="progress-value">50%</span>
-            </Progress>
-          </div>
-          <div className="progress-container progress-warning">
-            <span className="progress-badge">Warning</span>
-            <Progress max="100" value="77" barClassName="progress-bar-warning">
-              <span className="progress-value">77%</span>
-            </Progress>
-          </div>
-          <div className="progress-container progress-success">
-            <span className="progress-badge">Success</span>
-            <Progress max="100" value="46" barClassName="progress-bar-success">
-              <span className="progress-value">46%</span>
-            </Progress>
-          </div>
-          <div className="progress-container progress-info">
-            <span className="progress-badge">Info</span>
-            <Progress max="100" value="90" barClassName="progress-bar-info">
-              <span className="progress-value">90%</span>
-            </Progress>
-          </div>
-        </div>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {example}
-        </SyntaxHighlighter>
-        <h2 id="content">Props</h2>
-        <p>
-          For props please refer to{" "}
-          <a
-            href="https://reactstrap.github.io/components/progress/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            reactstrap documentation
-          </a>
-          .
-        </p>
-      </>
-    );
-  }
-}
-
-export default ProgressDocs;
+export default Progresses;

@@ -1,239 +1,153 @@
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
-import { Line } from "react-chartjs-2";
 
-const codeExample = `import React from 'react';
-import { Line } from 'react-chartjs-2';
-const chartColor = '#FFFFFF';
-
-const data = (canvas) => {
-    var ctx = canvas.getContext("2d");
-
-    var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
-    gradientStroke.addColorStop(0, '#80b6f4');
-    gradientStroke.addColorStop(1, chartColor);
-
-    var gradientFill = ctx.createLinearGradient(0, 170, 0, 50);
-    gradientFill.addColorStop(0, "rgba(128, 182, 244, 0)");
-    gradientFill.addColorStop(1, "rgba(249, 99, 59, 0.40)");
-    return {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-        datasets: [{
-            label: "Active Users",
-            borderColor: "#f96332",
-            pointBorderColor: "#FFF",
-            pointBackgroundColor: "#f96332",
-            pointBorderWidth: 2,
-            pointHoverRadius: 4,
-            pointHoverBorderWidth: 1,
-            pointRadius: 4,
-            fill: true,
-            backgroundColor: gradientFill,
-            borderWidth: 2,
-            data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 630]
-        }]
-    }
-};
-const options = {
-    maintainAspectRatio: false,
-    legend: {
-        display: false
-    },
-    tooltips: {
-        bodySpacing: 4,
-        mode:"nearest",
-        intersect: 0,
-        position:"nearest",
-        xPadding:10,
-        yPadding:10,
-        caretPadding:10
-    },
-    responsive: 1,
-    scales: {
-        yAxes: [{
-            display:0,
-            ticks: {
-                display: false
-            },
-            gridLines: {
-                zeroLineColor: "transparent",
-                drawTicks: false,
-                display: false,
-                drawBorder: false
-            }
-        }],
-        xAxes: [{
-            display:0,
-            ticks: {
-                display: false
-            },
-            gridLines: {
-                zeroLineColor: "transparent",
-                drawTicks: false,
-                display: false,
-                drawBorder: false
-            }
-        }]
-    },
-    layout:{
-        padding:{left:0,right:0,top:15,bottom:15}
-    }
-};
-
-class Example extends React.Component{
-    render(){
-        return(
-            <Line data={data} options={options} />
-        );
-    }
-}`;
-
-const chartColor = "#FFFFFF";
-
-const data = canvas => {
-  var ctx = canvas.getContext("2d");
-
-  var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
-  gradientStroke.addColorStop(0, "#80b6f4");
-  gradientStroke.addColorStop(1, chartColor);
-
-  var gradientFill = ctx.createLinearGradient(0, 170, 0, 50);
-  gradientFill.addColorStop(0, "rgba(128, 182, 244, 0)");
-  gradientFill.addColorStop(1, "rgba(249, 99, 59, 0.40)");
-  return {
-    labels: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec"
-    ],
-    datasets: [
-      {
-        label: "Active Users",
-        borderColor: "#f96332",
-        pointBorderColor: "#FFF",
-        pointBackgroundColor: "#f96332",
-        pointBorderWidth: 2,
-        pointHoverRadius: 4,
-        pointHoverBorderWidth: 1,
-        pointRadius: 4,
-        fill: true,
-        backgroundColor: gradientFill,
-        borderWidth: 2,
-        data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 630]
-      }
-    ]
-  };
-};
-const options = {
-  maintainAspectRatio: false,
-  legend: {
-    display: false
-  },
-  tooltips: {
-    bodySpacing: 4,
-    mode: "nearest",
-    intersect: 0,
-    position: "nearest",
-    xPadding: 10,
-    yPadding: 10,
-    caretPadding: 10
-  },
-  responsive: 1,
-  scales: {
-    yAxes: [
-      {
-        display: 0,
-        ticks: {
-          display: false
-        },
-        gridLines: {
-          zeroLineColor: "transparent",
-          drawTicks: false,
-          display: false,
-          drawBorder: false
-        }
-      }
-    ],
-    xAxes: [
-      {
-        display: 0,
-        ticks: {
-          display: false
-        },
-        gridLines: {
-          zeroLineColor: "transparent",
-          drawTicks: false,
-          display: false,
-          drawBorder: false
-        }
-      }
-    ]
-  },
-  layout: {
-    padding: { left: 0, right: 0, top: 15, bottom: 15 }
-  }
-};
+// reactstrap components
+import {
+  Card,
+  CardBody,
+  NavItem,
+  NavLink,
+  Nav,
+  TabContent,
+  TabPane
+} from "reactstrap";
 
 class Charts extends React.Component {
   render() {
     return (
-      <div>
-        <h1 className="ct-title" id="content">
-          React wrapper (v2.7.4) for Chart.js (v2.7.3)
-        </h1>
-        <p>
-          Simple yet flexible React charting for designers & developers. Made by{" "}
-          <a
-            href="https://github.com/jerairrest"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Jeremy Ayerst
-          </a>{" "}
-          over the{" "}
-          <a
-            href="https://www.chartjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Charts.js
-          </a>{" "}
-          Javascript plugin. Please check the{" "}
-          <a
-            href="https://www.chartjs.org/docs/latest/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Charts.js full documentation
-          </a>{" "}
-          and{" "}
-          <a
-            href="https://github.com/jerairrest/react-chartjs-2"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            react-chartjs-2 full documentation
-          </a>
-          .
-        </p>
-        <div className="ct-example">
-          <Line data={data} options={options} />
+      <>
+        <div className=" ct-page-title">
+          <h1 className=" ct-title" id="content">
+            Charts
+          </h1>
+          <div className=" avatar-group mt-3" />
         </div>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeExample}
-        </SyntaxHighlighter>
-      </div>
+        <p className=" ct-lead">
+          Simple yet flexible Javascript charting for designers &amp; developers
+        </p>
+        <hr />
+        <h2 id="example">Example</h2>
+        <div className=" ct-example">
+          <Nav className=" nav-tabs-code" id="chart-tab" role="tablist">
+            <NavItem>
+              <NavLink
+                aria-controls="chart-component"
+                aria-selected={true}
+                className=" active"
+                data-toggle="tab"
+                href="#pablo"
+                id="chart-component-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                Result
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                aria-controls="chart-html"
+                aria-selected={false}
+                data-toggle="tab"
+                href="#pablo"
+                id="chart-html-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                HTML
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent>
+            <TabPane
+              aria-labelledby="chart-component-tab"
+              className=" tab-example-result fade show active"
+              id="chart-component"
+              role="tabpanel"
+            >
+              <Card>
+                <CardBody>
+                  <div className=" chart">
+                    {/* Chart wrapper */}
+                    <canvas className=" chart-canvas" id="chart-orders" />
+                  </div>
+                </CardBody>
+              </Card>
+            </TabPane>
+            <TabPane
+              aria-labelledby="chart-html-tab"
+              className=" fade"
+              id="chart-html"
+              role="tabpanel"
+            />
+          </TabContent>
+        </div>
+        <h2 id="dark-card-with-chart">Dark card with chart</h2>
+        <div className=" ct-example">
+          <Nav className=" nav-tabs-code" id="chart-tab" role="tablist">
+            <NavItem>
+              <NavLink
+                aria-controls="chart-component"
+                aria-selected={true}
+                className=" active"
+                data-toggle="tab"
+                href="#pablo"
+                id="chart-component-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                Result
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                aria-controls="chart-html"
+                aria-selected={false}
+                data-toggle="tab"
+                href="#pablo"
+                id="chart-html-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                HTML
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent>
+            <TabPane
+              aria-labelledby="chart-component-tab"
+              className=" tab-example-result fade show active"
+              id="chart-component"
+              role="tabpanel"
+            >
+              <Card className=" bg-default">
+                <CardBody>
+                  <div className=" chart">
+                    {/* Chart wrapper */}
+                    <canvas className=" chart-canvas" id="chart-sales" />
+                  </div>
+                </CardBody>
+              </Card>
+            </TabPane>
+            <TabPane
+              aria-labelledby="chart-html-tab"
+              className=" fade"
+              id="chart-html"
+              role="tabpanel"
+            />
+          </TabContent>
+        </div>
+        <h2 id="usage">Usage</h2>
+        <p>
+          In order to use this charts on your page you will need to include the
+          following script in the “Optional JS” area from the page’s footer:
+        </p>
+        <h3 id="markup">Markup</h3>
+        <p>
+          Simply copy one of the code examples demonstrated above and include it
+          in your page.
+        </p>
+      </>
     );
   }
 }
+
 export default Charts;

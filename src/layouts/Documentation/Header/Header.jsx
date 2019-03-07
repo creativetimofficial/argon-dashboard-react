@@ -16,7 +16,11 @@ import {
 class Header extends React.Component {
   render() {
     return (
-      <Navbar className=" navbar-horizontal navbar-expand navbar-dark flex-row align-items-md-center ct-navbar" color="info" tag="header">
+      <Navbar
+        className=" navbar-horizontal navbar-expand navbar-dark flex-row align-items-md-center ct-navbar"
+        color="info"
+        tag="header"
+      >
         <NavbarBrand
           aria-label="Bootstrap"
           className=" mr-0 mr-md-2"
@@ -28,7 +32,9 @@ class Header extends React.Component {
         </NavbarBrand>
         <Nav className=" flex-row mr-auto ml-4 d-none d-md-flex" navbar>
           <NavItem>
-            <NavLink to="/" tag={Link}>Live Preview</NavLink>
+            <NavLink to="/" tag={Link}>
+              Live Preview
+            </NavLink>
           </NavItem>
           <NavItem>
             <NavLink

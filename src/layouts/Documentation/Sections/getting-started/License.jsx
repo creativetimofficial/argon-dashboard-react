@@ -4,22 +4,44 @@ class License extends React.Component {
   render() {
     return (
       <>
-        <h1 className="ct-title" id="content">
-          License
-        </h1>
-        <p className="ct-lead" />
+        <div className=" ct-page-title">
+          <h1 className=" ct-title" id="content">
+            License
+          </h1>
+          <div className=" avatar-group mt-3" />
+        </div>
+        <p className=" ct-lead">
+          Get started with Bootstrap, the world’s most popular framework for
+          building responsive, mobile-first sites, with BootstrapCDN and a
+          template starter page.
+        </p>
+        <hr />
+        <p>MIT License</p>
         <p>
-          Currently, on <a href="https://www.creative-tim.com/">Creative Tim</a>{" "}
-          you can get the products with two types of licenses: Personal or
-          Developer. All the freebies are licensed to Personal License as
-          default. If you are making a paid purchase, be sure to go through the
-          table with the rights and the guidelines, so you can know what is the
-          best fit for you. View the rights table and the description for each
-          license on our{" "}
-          <a href="http://www.creative-tim.com/license?ref=license-page-blkds-react">
-            Official License Page
-          </a>
-          .
+          Copyright (c) 2018{" "}
+          <a href="https://www.creative-tim.com">Creative Tim</a>
+        </p>
+        <p>
+          Permission is hereby granted, free of charge, to any person obtaining
+          a copy of this software and associated documentation files (the
+          “Software”), to deal in the Software without restriction, including
+          without limitation the rights to use, copy, modify, merge, publish,
+          distribute, sublicense, and/or sell copies of the Software, and to
+          permit persons to whom the Software is furnished to do so, subject to
+          the following conditions:
+        </p>
+        <p>
+          The above copyright notice and this permission notice shall be
+          included in all copies or substantial portions of the Software.
+        </p>
+        <p>
+          THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,
+          EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+          MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+          IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+          CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+          TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+          SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         </p>
       </>
     );

@@ -5,8 +5,8 @@ import Download from "layouts/Documentation/Sections/getting-started/Download.js
 import License from "layouts/Documentation/Sections/getting-started/License.jsx";
 import Contents from "layouts/Documentation/Sections/getting-started/Contents.jsx";
 import BuildTools from "layouts/Documentation/Sections/getting-started/BuildTools.jsx";
-import Tutorial from "layouts/Documentation/Sections/getting-started/Tutorial.jsx";
-import Variables from "layouts/Documentation/Sections/getting-started/Variables.jsx";
+// import Tutorial from "layouts/Documentation/Sections/getting-started/Tutorial.jsx";
+// import Variables from "layouts/Documentation/Sections/getting-started/Variables.jsx";
 // Foundation
 import Colors from "layouts/Documentation/Sections/foundation/Colors.jsx";
 import Grid from "layouts/Documentation/Sections/foundation/Grid.jsx";
@@ -19,7 +19,6 @@ import PageHeader from "layouts/Documentation/Sections/core-components/PageHeade
 // Reasctrap components
 import Alerts from "layouts/Documentation/Sections/restyled-components/Alerts.jsx";
 import Badge from "layouts/Documentation/Sections/restyled-components/Badge.jsx";
-import Breadcrumb from "layouts/Documentation/Sections/restyled-components/Breadcrumb.jsx";
 import Buttons from "layouts/Documentation/Sections/restyled-components/Buttons.jsx";
 import Carousel from "layouts/Documentation/Sections/restyled-components/Carousel.jsx";
 import Dropdowns from "layouts/Documentation/Sections/restyled-components/Dropdowns.jsx";
@@ -65,17 +64,17 @@ var docsRoutes = [
         path: "/documentation/license",
         component: License,
         name: "License"
-      },
-      {
-        path: "/documentation/tutorial",
-        component: Tutorial,
-        name: "Tutorial"
-      },
-      {
-        path: "/documentation/variables",
-        component: Variables,
-        name: "Variables"
       }
+      // {
+      //   path: "/documentation/tutorial",
+      //   component: Tutorial,
+      //   name: "Tutorial"
+      // },
+      // {
+      //   path: "/documentation/variables",
+      //   component: Variables,
+      //   name: "Variables"
+      // }
     ]
   },
   {
@@ -138,11 +137,6 @@ var docsRoutes = [
         path: "/documentation/badge",
         component: Badge,
         name: "Badge"
-      },
-      {
-        path: "/documentation/breadcrumbs",
-        component: Breadcrumb,
-        name: "Breadcrumb"
       },
       {
         path: "/documentation/buttons",

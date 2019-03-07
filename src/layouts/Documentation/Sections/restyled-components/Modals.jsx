@@ -1,443 +1,385 @@
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
-import { Modal, ModalBody, ModalFooter, ModalHeader, Button } from "reactstrap";
 
-const codeExampleModalDemoDep = `constructor(props) {
-    super(props);
-    this.state = {
-        modalDemo: false,
-    };
-    this.toggleModalDemo = this.toggleModalDemo.bind(this);
-}
-toggleModalDemo(){
-    this.setState({
-        modalDemo: !this.state.modalDemo
-    });
-}`;
-
-const codeExampleModalDemo = `<Button color="primary" onClick={this.toggleModalDemo}>
-    Launch demo modal
-</Button>
-<Modal isOpen={this.state.modalDemo} toggle={this.toggleModalDemo}>
-    <div className="modal-header">
-      <h5 className="modal-title" id="exampleModalLabel">
-        Modal title
-      </h5>
-      <button
-        type="button"
-        className="close"
-        data-dismiss="modal"
-        aria-hidden="true"
-        onClick={this.toggleModalDemo}
-      >
-        <i className="ni ni-simple-remove" />
-      </button>
-    </div>
-    <ModalBody>
-        <p>Woohoo, you're reading this text in a modal!</p>
-    </ModalBody>
-    <ModalFooter>
-        <Button color="secondary" onClick={this.toggleModalDemo}>
-            Close
-        </Button>
-        <Button color="primary">
-            Save changes
-        </Button>
-    </ModalFooter>
-</Modal>`;
-
-const codeExampleModalLongDep = `constructor(props) {
-    super(props);
-    this.state = {
-        modalDemo: false,
-    };
-    this.toggleModalDemo = this.toggleModalDemo.bind(this);
-}
-toggleModalDemo(){
-    this.setState({
-        modalDemo: !this.state.modalDemo
-    });
-}`;
-
-const codeExampleModalLong = `<Button color="primary" onClick={this.toggleModalDemo}>
-    Launch demo modal
-</Button>
-<Modal isOpen={this.state.modalDemo} toggle={this.toggleModalDemo}>
-    <div className="modal-header">
-      <h5 className="modal-title" id="exampleModalLongTitle">
-        Modal title
-      </h5>
-      <button
-        type="button"
-        className="close"
-        data-dismiss="modal"
-        aria-hidden="true"
-        onClick={this.toggleModalLong}
-      >
-        <i className="ni ni-simple-remove" />
-      </button>
-    </div>
-    <ModalBody>
-        ...
-    </ModalBody>
-    <ModalFooter>
-        <Button color="secondary" onClick={this.toggleModalDemo}>
-            Close
-        </Button>
-        <Button color="primary">
-            Save changes
-        </Button>
-    </ModalFooter>
-</Modal>`;
-
-const codeExampleModalSizeDep = `constructor(props) {
-    super(props);
-    this.state = {
-        modalMini: false,
-        modalLarge: false
-    };
-    this.toggleModalMini = this.toggleModalMini.bind(this);
-    this.toggleModalLarge = this.toggleModalLarge.bind(this);
-}
-toggleModalLarge(){
-    this.setState({
-        modalLarge: !this.state.modalLarge
-    });
-}
-toggleModalMini(){
-    this.setState({
-        modalMini: !this.state.modalMini
-    });
-}`;
-const codeExampleModalSize = `<Button color="primary" onClick={this.toggleModalLarge}>
-    Launch demo modal
-</Button>
-<Modal isOpen={this.state.modalLarge} toggle={this.toggleModalLarge} size="lg">
-    <ModalHeader className="justify-content-center" toggle={this.toggleModalLarge}>
-        Large modal
-    </ModalHeader>
-    <ModalBody>
-        ...
-    </ModalBody>
-</Modal>
-<Button color="primary" onClick={this.toggleModalMini}>
-    Launch demo modal
-</Button>
-<Modal isOpen={this.state.modalMini} toggle={this.toggleModalMini} size="sm">
-    <ModalHeader className="justify-content-center" toggle={this.toggleModalMini}>
-        Small modal
-    </ModalHeader>
-    <ModalBody>
-        ...
-    </ModalBody>
-</Modal>`;
+// reactstrap components
+import {
+  Button,
+  Card,
+  CardHeader,
+  CardBody,
+  FormGroup,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  Modal,
+  NavItem,
+  NavLink,
+  Nav,
+  TabContent,
+  TabPane,
+  Row,
+  Col
+} from "reactstrap";
 
 class Modals extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      modalLong: false,
-      modalDemo: false,
-      modalLogin: false,
-      modalTooltips: false,
-      popover: false,
-      modalMini: false,
-      modalLarge: false
-    };
-    this.toggleModalDemo = this.toggleModalDemo.bind(this);
-    this.toggleModalLong = this.toggleModalLong.bind(this);
-    this.toggleModalLogin = this.toggleModalLogin.bind(this);
-    this.toggleModalTooltips = this.toggleModalTooltips.bind(this);
-    this.toggleModalMini = this.toggleModalMini.bind(this);
-    this.toggleModalLarge = this.toggleModalLarge.bind(this);
-  }
-  toggleModalDemo() {
-    this.setState({
-      modalDemo: !this.state.modalDemo
-    });
-  }
-  toggleModalLong() {
-    this.setState({
-      modalLong: !this.state.modalLong
-    });
-  }
-  toggleModalLogin() {
-    this.setState({
-      modalLogin: !this.state.modalLogin
-    });
-  }
-  toggleModalTooltips() {
-    this.setState({
-      modalTooltips: !this.state.modalTooltips
-    });
-  }
-  toggleModalLarge() {
-    this.setState({
-      modalLarge: !this.state.modalLarge
-    });
-  }
-  toggleModalMini() {
-    this.setState({
-      modalMini: !this.state.modalMini
-    });
-  }
   render() {
     return (
-      <div>
-        <h1 className="ct-title" id="content">
-          Modals
-        </h1>
-        <p className="ct-lead">
-          Use reacstrap's modal component to add dialogs to your site for
-          lightboxes, user notifications, or completely custom content.
+      <>
+        <div className=" ct-page-title">
+          <h1 className=" ct-title" id="content">
+            Modal
+          </h1>
+          <div className=" avatar-group mt-3" />
+        </div>
+        <p className=" ct-lead">
+          Use Bootstrap’s JavaScript modal plugin to add dialogs to your site
+          for lightboxes, user notifications, or completely custom content.
         </p>
-        <h2>Examples</h2>
-        <h3>Live demo</h3>
-        <div className="ct-example">
-          <Button color="primary" onClick={this.toggleModalDemo}>
-            Launch demo modal
-          </Button>
-          <Modal isOpen={this.state.modalDemo} toggle={this.toggleModalDemo}>
-            <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLabel">
-                Modal title
-              </h5>
-              <button
-                type="button"
-                className="close"
-                data-dismiss="modal"
-                aria-hidden="true"
-                onClick={this.toggleModalDemo}
+        <hr />
+        <h2 id="example">Example</h2>
+        <div className=" ct-example">
+          <Nav className=" nav-tabs-code" id="modal-tab" role="tablist">
+            <NavItem>
+              <NavLink
+                aria-controls="modal-component"
+                aria-selected={true}
+                className=" active"
+                data-toggle="tab"
+                href="#pablo"
+                id="modal-component-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
               >
-                <i className="ni ni-simple-remove" />
-              </button>
-            </div>
-            <ModalBody>
-              <p>Woohoo, you're reading this text in a modal!</p>
-            </ModalBody>
-            <ModalFooter>
-              <Button color="secondary" onClick={this.toggleModalDemo}>
-                Close
-              </Button>
-              <Button color="primary">Save changes</Button>
-            </ModalFooter>
-          </Modal>
-        </div>
-        <SyntaxHighlighter
-          language="jsx"
-          style={prism}
-        >{`import{ Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';`}</SyntaxHighlighter>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeExampleModalDemoDep}
-        </SyntaxHighlighter>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeExampleModalDemo}
-        </SyntaxHighlighter>
-        <h3>Scrolling long content</h3>
-        <div className="ct-example">
-          <Button color="primary" onClick={this.toggleModalLong}>
-            Launch demo modal
-          </Button>
-          <Modal isOpen={this.state.modalLong} toggle={this.toggleModalLong}>
-            <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLongTitle">
-                Modal title
-              </h5>
-              <button
-                type="button"
-                className="close"
-                data-dismiss="modal"
-                aria-hidden="true"
-                onClick={this.toggleModalLong}
+                Result
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                aria-controls="modal-html"
+                aria-selected={false}
+                data-toggle="tab"
+                href="#pablo"
+                id="modal-html-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
               >
-                <i className="ni ni-simple-remove" />
-              </button>
-            </div>
-            <ModalBody>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-              <p>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
-              </p>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
-              </p>
-              <p>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-              </p>
-            </ModalBody>
-            <ModalFooter>
-              <Button color="secondary" onClick={this.toggleModalLong}>
-                Close
+                HTML
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent>
+            <TabPane
+              aria-labelledby="modal-component-tab"
+              className=" tab-example-result fade show active"
+              id="modal-component"
+              role="tabpanel"
+            >
+              {/* Button trigger modal */}
+              <Button
+                color="primary"
+                data-target="#exampleModal"
+                data-toggle="modal"
+                type="button"
+              >
+                Launch demo modal
               </Button>
-              <Button color="primary">Save changes</Button>
-            </ModalFooter>
-          </Modal>
+              {/* Modal */}
+              <Modal>
+                <div className=" modal-header">
+                  <h5 className=" modal-title" id="exampleModalLabel">
+                    Modal title
+                  </h5>
+                  <button
+                    aria-label="Close"
+                    className=" close"
+                    data-dismiss="modal"
+                    type="button"
+                  >
+                    <span aria-hidden={true}>×</span>
+                  </button>
+                </div>
+                <div className=" modal-body">...</div>
+                <div className=" modal-footer">
+                  <Button color="secondary" data-dismiss="modal" type="button">
+                    Close
+                  </Button>
+                  <Button color="primary" type="button">
+                    Save changes
+                  </Button>
+                </div>
+              </Modal>
+            </TabPane>
+            <TabPane
+              aria-labelledby="modal-html-tab"
+              className=" fade"
+              id="modal-html"
+              role="tabpanel"
+            />
+          </TabContent>
         </div>
-        <SyntaxHighlighter
-          language="jsx"
-          style={prism}
-        >{`import{ Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';`}</SyntaxHighlighter>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeExampleModalLongDep}
-        </SyntaxHighlighter>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeExampleModalLong}
-        </SyntaxHighlighter>
-        <h3>Embedding YouTube videos</h3>
-        <p>
-          Embedding YouTube videos in modals requires additional JavaScript not
-          in Bootstrap to automatically stop playback and more.{" "}
-          <a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">
-            See this helpful Stack Overflow post
-          </a>{" "}
-          for more information.
-        </p>
-        <h2>Optional sizes</h2>
-        <p>
-          Modals have two optional sizes, available via modifier classes to be
-          placed on <code className="highlighter-rouge">size</code> prop of the{" "}
-          <code className="highlighter-rouge">{`<Modal>`}</code> tag. These
-          sizes kick in at certain breakpoints to avoid horizontal scrollbars on
-          narrower viewports.
-        </p>
-        <div className="ct-example">
-          <Button color="primary" onClick={this.toggleModalLarge}>
-            Launch demo modal
-          </Button>
-          <Modal
-            isOpen={this.state.modalLarge}
-            toggle={this.toggleModalLarge}
-            size="lg"
-          >
-            <ModalHeader
-              className="justify-content-center"
-              toggle={this.toggleModalLarge}
+        <h2 id="variations">Variations</h2>
+        <div className=" ct-example">
+          <Nav className=" nav-tabs-code" id="modal-colors-tab" role="tablist">
+            <NavItem>
+              <NavLink
+                aria-controls="modal-colors-component"
+                aria-selected={true}
+                className=" active"
+                data-toggle="tab"
+                href="#pablo"
+                id="modal-colors-component-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                Result
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                aria-controls="modal-colors-html"
+                aria-selected={false}
+                data-toggle="tab"
+                href="#pablo"
+                id="modal-colors-html-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                HTML
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent>
+            <TabPane
+              aria-labelledby="modal-colors-component-tab"
+              className=" tab-example-result fade show active"
+              id="modal-colors-component"
+              role="tabpanel"
             >
-              Large modal
-            </ModalHeader>
-            <ModalBody>...</ModalBody>
-          </Modal>
-          <Button color="primary" onClick={this.toggleModalMini}>
-            Launch demo modal
-          </Button>
-          <Modal
-            isOpen={this.state.modalMini}
-            toggle={this.toggleModalMini}
-            size="sm"
-          >
-            <ModalHeader
-              className="justify-content-center"
-              toggle={this.toggleModalMini}
-            >
-              Small modal
-            </ModalHeader>
-            <ModalBody>...</ModalBody>
-          </Modal>
+              <Row>
+                <Col md="4">
+                  <Button
+                    block
+                    className=" mb-3"
+                    color="primary"
+                    data-target="#modal-default"
+                    data-toggle="modal"
+                    type="button"
+                  >
+                    Default
+                  </Button>
+                  <Modal>
+                    <div className=" modal-header">
+                      <h6 className=" modal-title" id="modal-title-default">
+                        Type your modal title
+                      </h6>
+                      <button
+                        aria-label="Close"
+                        className=" close"
+                        data-dismiss="modal"
+                        type="button"
+                      >
+                        <span aria-hidden={true}>×</span>
+                      </button>
+                    </div>
+                    <div className=" modal-body">
+                      <p>
+                        Far far away, behind the word mountains, far from the
+                        countries Vokalia and Consonantia, there live the blind
+                        texts. Separated they live in Bookmarksgrove right at
+                        the coast of the Semantics, a large language ocean.
+                      </p>
+                      <p>
+                        A small river named Duden flows by their place and
+                        supplies it with the necessary regelialia. It is a
+                        paradisematic country, in which roasted parts of
+                        sentences fly into your mouth.
+                      </p>
+                    </div>
+                    <div className=" modal-footer">
+                      <Button color="primary" type="button">
+                        Save changes
+                      </Button>
+                      <Button
+                        className=" ml-auto"
+                        color="link"
+                        data-dismiss="modal"
+                        type="button"
+                      >
+                        Close
+                      </Button>
+                    </div>
+                  </Modal>
+                </Col>
+                <Col md="4">
+                  <Button
+                    block
+                    className=" mb-3"
+                    color="warning"
+                    data-target="#modal-notification"
+                    data-toggle="modal"
+                    type="button"
+                  >
+                    Notification
+                  </Button>
+                  <Modal contentClassName="bg-gradient-danger">
+                    <div className=" modal-header">
+                      <h6
+                        className=" modal-title"
+                        id="modal-title-notification"
+                      >
+                        Your attention is required
+                      </h6>
+                      <button
+                        aria-label="Close"
+                        className=" close"
+                        data-dismiss="modal"
+                        type="button"
+                      >
+                        <span aria-hidden={true}>×</span>
+                      </button>
+                    </div>
+                    <div className=" modal-body">
+                      <div className=" py-3 text-center">
+                        <i className=" ni ni-bell-55 ni-3x" />
+                        <h4 className=" heading mt-4">You should read this!</h4>
+                        <p>
+                          A small river named Duden flows by their place and
+                          supplies it with the necessary regelialia.
+                        </p>
+                      </div>
+                    </div>
+                    <div className=" modal-footer">
+                      <Button
+                        className=" btn-white"
+                        color="default"
+                        type="button"
+                      >
+                        Ok, Got it
+                      </Button>
+                      <Button
+                        className=" text-white ml-auto"
+                        color="link"
+                        data-dismiss="modal"
+                        type="button"
+                      >
+                        Close
+                      </Button>
+                    </div>
+                  </Modal>
+                </Col>
+                <Col md="4">
+                  <Button
+                    block
+                    color="default"
+                    data-target="#modal-form"
+                    data-toggle="modal"
+                    type="button"
+                  >
+                    Form
+                  </Button>
+                  <Modal>
+                    <div className=" modal-body p-0">
+                      <Card className=" bg-secondary shadow border-0">
+                        <CardHeader className=" bg-transparent pb-5">
+                          <div className=" text-muted text-center mt-2 mb-3">
+                            <small>Sign in with</small>
+                          </div>
+                          <div className=" btn-wrapper text-center">
+                            <Button
+                              className=" btn-neutral btn-icon"
+                              color="default"
+                              href="#pablo"
+                              onClick={e => e.preventDefault()}
+                            >
+                              <span className=" btn-inner--icon">
+                                <img
+                                  alt="..."
+                                  src={require("assets/img/icons/common/github.svg")}
+                                />
+                              </span>
+                              <span className=" btn-inner--text">Github</span>
+                            </Button>
+                            <Button
+                              className=" btn-neutral btn-icon"
+                              color="default"
+                              href="#pablo"
+                              onClick={e => e.preventDefault()}
+                            >
+                              <span className=" btn-inner--icon">
+                                <img
+                                  alt="..."
+                                  src={require("assets/img/icons/common/google.svg")}
+                                />
+                              </span>
+                              <span className=" btn-inner--text">Google</span>
+                            </Button>
+                          </div>
+                        </CardHeader>
+                        <CardBody className=" px-lg-5 py-lg-5">
+                          <div className=" text-center text-muted mb-4">
+                            <small>Or sign in with credentials</small>
+                          </div>
+                          <Form role="form">
+                            <FormGroup className=" mb-3">
+                              <InputGroup className=" input-group-alternative">
+                                <InputGroupAddon addonType="prepend">
+                                  <InputGroupText>
+                                    <i className=" ni ni-email-83" />
+                                  </InputGroupText>
+                                </InputGroupAddon>
+                                <Input placeholder="Email" type="email" />
+                              </InputGroup>
+                            </FormGroup>
+                            <FormGroup>
+                              <InputGroup className=" input-group-alternative">
+                                <InputGroupAddon addonType="prepend">
+                                  <InputGroupText>
+                                    <i className=" ni ni-lock-circle-open" />
+                                  </InputGroupText>
+                                </InputGroupAddon>
+                                <Input placeholder="Password" type="password" />
+                              </InputGroup>
+                            </FormGroup>
+                            <div className=" custom-control custom-control-alternative custom-checkbox">
+                              <input
+                                className=" custom-control-input"
+                                id=" customCheckLogin"
+                                type="checkbox"
+                              />
+                              <label
+                                className=" custom-control-label"
+                                htmlFor=" customCheckLogin"
+                              >
+                                <span className=" text-muted">Remember me</span>
+                              </label>
+                            </div>
+                            <div className=" text-center">
+                              <Button
+                                className=" my-4"
+                                color="primary"
+                                type="button"
+                              >
+                                Sign in
+                              </Button>
+                            </div>
+                          </Form>
+                        </CardBody>
+                      </Card>
+                    </div>
+                  </Modal>
+                </Col>
+              </Row>
+            </TabPane>
+            <TabPane
+              aria-labelledby="modal-colors-html-tab"
+              className=" fade"
+              id="modal-colors-html"
+              role="tabpanel"
+            />
+          </TabContent>
         </div>
-        <SyntaxHighlighter
-          language="jsx"
-          style={prism}
-        >{`import{ Button, Modal, ModalHeader, ModalBody } from 'reactstrap';`}</SyntaxHighlighter>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeExampleModalSizeDep}
-        </SyntaxHighlighter>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeExampleModalSize}
-        </SyntaxHighlighter>
-        <h2>Props</h2>
-        <p>
-          For props please refer to{" "}
-          <a
-            href="https://reactstrap.github.io/components/modals/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            reactstrap modal documentation
-          </a>
-          .
-        </p>
-      </div>
+      </>
     );
   }
 }

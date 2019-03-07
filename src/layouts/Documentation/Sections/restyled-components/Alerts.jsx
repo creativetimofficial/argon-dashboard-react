@@ -1,312 +1,276 @@
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
-
-import { Alert, UncontrolledAlert } from "reactstrap";
-
-const codeExamples = `import React from "react";
-
-// reacstrap components
-import { Alert } from "reactstrap";
-
-class Alerts extends React.Component {
-  render() {
-    return (
-      <>
-        <Alert color="primary">This is a primary alert—check it out!</Alert>
-        <Alert color="info">This is a info alert—check it out!</Alert>
-        <Alert color="success">This is a success alert—check it out!</Alert>
-        <Alert color="danger">This is a danger alert—check it out!</Alert>
-        <Alert color="warning">This is a warning alert—check it out!</Alert>
-        <Alert color="default">This is a default alert—check it out!</Alert>
-      </>
-    );
-  }
-}
-
-export default Alerts;`;
-
-const codeLinkColor = `import React from "react";
-
-// reacstrap components
-import { Alert } from "reactstrap";
-
-class Alerts extends React.Component {
-  render() {
-    return (
-      <>
-        <Alert color="primary">
-          This is a primary alert with{" "}
-          <a href="#pablo" className="alert-link">
-            an example link
-          </a>. Give it a click if you like.
-        </Alert>
-        <Alert color="info">
-          This is a info alert with{" "}
-          <a
-            href="#pablo"
-            className="alert-link"
-            onClick={e => e.preventDefault()}
-          >
-            an example link
-          </a>. Give it a click if you like.
-        </Alert>
-        <Alert color="success">
-          This is a success alert with{" "}
-          <a
-            href="#pablo"
-            className="alert-link"
-            onClick={e => e.preventDefault()}
-          >
-            an example link
-          </a>. Give it a click if you like.
-        </Alert>
-        <Alert color="danger">
-          This is a danger alert with{" "}
-          <a
-            href="#pablo"
-            className="alert-link"
-            onClick={e => e.preventDefault()}
-          >
-            an example link
-          </a>. Give it a click if you like.
-        </Alert>
-        <Alert color="warning">
-          This is a warning alert with{" "}
-          <a
-            href="#pablo"
-            className="alert-link"
-            onClick={e => e.preventDefault()}
-          >
-            an example link
-          </a>. Give it a click if you like.
-        </Alert>
-        <Alert color="default">
-          This is a default alert with{" "}
-          <a
-            href="#pablo"
-            className="alert-link"
-            onClick={e => e.preventDefault()}
-          >
-            an example link
-          </a>. Give it a click if you like.
-        </Alert>
-      </>
-    );
-  }
-}
-
-export default Alerts;`;
-
-const codeDismissingToggle = `import React from "react";
 
 // reactstrap components
-import { Alert } from "reactstrap";
-
-class Alerts extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      visible: true
-    };
-  }
-  onDismiss = () => {
-    this.setState({ visible: false });
-  };
-  render() {
-    return (
-      <>
-        <Alert
-          color="info"
-          isOpen={this.state.visible}
-          toggle={this.onDismiss}
-        >
-          <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-        </Alert>
-      </>
-    );
-  }
-}
-
-export default Alerts;
-`;
-
-const codeDismissingUncontrolledAlert = `import React from "react";
-
-// reactstrap components
-import { UncontrolledAlert } from "reactstrap";
+import {
+  UncontrolledAlert,
+  Alert,
+  NavItem,
+  NavLink,
+  Nav,
+  TabContent,
+  TabPane
+} from "reactstrap";
 
 class Alerts extends React.Component {
   render() {
     return (
       <>
-        <UncontrolledAlert color="info">
-          <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-        </UncontrolledAlert>
-      </>
-    );
-  }
-}
-
-export default Alerts;
-`;
-
-class Alerts extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      visible: true
-    };
-  }
-  onDismiss = () => {
-    this.setState({ visible: false });
-  };
-  render() {
-    return (
-      <>
-        <h1 className="ct-title">Alerts</h1>
-        <p>
+        <div className=" ct-page-title">
+          <h1 className=" ct-title" id="content">
+            Alerts
+          </h1>
+          <div className=" avatar-group mt-3" />
+        </div>
+        <p className=" ct-lead">
           Provide contextual feedback messages for typical user actions with the
           handful of available and flexible alert messages.
         </p>
-        <h2>Examples</h2>
-        <p>
-          Alerts are available for any length of text, as well as an optional
-          dismiss button. For proper styling, use one of the eight required
-          contextual classes (e.g., .alert-success). For inline dismissal, you
-          can either use them with{" "}
-          <code className="highlighter-rouge">toggle</code> function, or use the{" "}
-          <code className="highlighter-rouge">UncontrolledAlert</code> instead
-          (see examples down bellow);
-        </p>
-        <div className="ct-example">
-          <Alert color="primary">This is a primary alert—check it out!</Alert>
-          <Alert color="info">This is a info alert—check it out!</Alert>
-          <Alert color="success">This is a success alert—check it out!</Alert>
-          <Alert color="danger">This is a danger alert—check it out!</Alert>
-          <Alert color="warning">This is a warning alert—check it out!</Alert>
-          <Alert color="default">This is a default alert—check it out!</Alert>
+        <hr />
+        <h3 id="examples">Examples</h3>
+        <div className=" ct-example">
+          <Nav className=" nav-tabs-code" id="alerts-tab" role="tablist">
+            <NavItem>
+              <NavLink
+                aria-controls="alerts-component"
+                aria-selected={true}
+                className=" active"
+                data-toggle="tab"
+                href="#pablo"
+                id="alerts-component-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                Result
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                aria-controls="alerts-html"
+                aria-selected={false}
+                data-toggle="tab"
+                href="#pablo"
+                id="alerts-html-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                HTML
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent>
+            <TabPane
+              aria-labelledby="alerts-component-tab"
+              className=" tab-example-result fade show active"
+              id="alerts-component"
+              role="tabpanel"
+            >
+              <Alert className=" alert-default">
+                <strong>Default!</strong>
+                This is a default alert—check it out!
+              </Alert>
+              <Alert color="primary">
+                <strong>Primary!</strong>
+                This is a primary alert—check it out!
+              </Alert>
+              <Alert color="secondary">
+                <strong>Secondary!</strong>
+                This is a secondary alert—check it out!
+              </Alert>
+              <Alert color="info">
+                <strong>Info!</strong>
+                This is a info alert—check it out!
+              </Alert>
+              <Alert color="success">
+                <strong>Success!</strong>
+                This is a success alert—check it out!
+              </Alert>
+              <Alert color="danger">
+                <strong>Danger!</strong>
+                This is a danger alert—check it out!
+              </Alert>
+              <Alert color="warning">
+                <strong>Warning!</strong>
+                This is a warning alert—check it out!
+              </Alert>
+            </TabPane>
+            <TabPane
+              aria-labelledby="alerts-html-tab"
+              className=" fade"
+              id="alerts-html"
+              role="tabpanel"
+            />
+          </TabContent>
         </div>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeExamples}
-        </SyntaxHighlighter>
-        <h2>Link color</h2>
-        <p>
-          Use the <code className="highlighter-rouge">.alert-link</code> utility
-          class to quickly provide matching colored links within any alert.
-        </p>
-        <div className="ct-example">
-          <Alert color="primary">
-            This is a primary alert with{" "}
-            <a href="#pablo" className="alert-link">
-              an example link
-            </a>
-            . Give it a click if you like.
-          </Alert>
-          <Alert color="info">
-            This is a info alert with{" "}
-            <a
-              href="#pablo"
-              className="alert-link"
-              onClick={e => e.preventDefault()}
+        <h3 id="with-icon">With icon</h3>
+        <div className=" ct-example">
+          <Nav className=" nav-tabs-code" id="alerts-icons-tab" role="tablist">
+            <NavItem>
+              <NavLink
+                aria-controls="alerts-icons-component"
+                aria-selected={true}
+                className=" active"
+                data-toggle="tab"
+                href="#pablo"
+                id="alerts-icons-component-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                Result
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                aria-controls="alerts-icons-html"
+                aria-selected={false}
+                data-toggle="tab"
+                href="#pablo"
+                id="alerts-icons-html-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                HTML
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent>
+            <TabPane
+              aria-labelledby="alerts-icons-component-tab"
+              className=" tab-example-result fade show active"
+              id="alerts-icons-component"
+              role="tabpanel"
             >
-              an example link
-            </a>
-            . Give it a click if you like.
-          </Alert>
-          <Alert color="success">
-            This is a success alert with{" "}
-            <a
-              href="#pablo"
-              className="alert-link"
-              onClick={e => e.preventDefault()}
-            >
-              an example link
-            </a>
-            . Give it a click if you like.
-          </Alert>
-          <Alert color="danger">
-            This is a danger alert with{" "}
-            <a
-              href="#pablo"
-              className="alert-link"
-              onClick={e => e.preventDefault()}
-            >
-              an example link
-            </a>
-            . Give it a click if you like.
-          </Alert>
-          <Alert color="warning">
-            This is a warning alert with{" "}
-            <a
-              href="#pablo"
-              className="alert-link"
-              onClick={e => e.preventDefault()}
-            >
-              an example link
-            </a>
-            . Give it a click if you like.
-          </Alert>
-          <Alert color="default">
-            This is a default alert with{" "}
-            <a
-              href="#pablo"
-              className="alert-link"
-              onClick={e => e.preventDefault()}
-            >
-              an example link
-            </a>
-            . Give it a click if you like.
-          </Alert>
+              <Alert color="warning">
+                <span className=" alert-inner--icon">
+                  <i className=" ni ni-like-2" />
+                </span>
+                <span className=" alert-inner--text">
+                  <strong>Warning!</strong>
+                  This is a warning alert—check it out that has an icon too!
+                </span>
+              </Alert>
+            </TabPane>
+            <TabPane
+              aria-labelledby="alerts-icons-html-tab"
+              className=" fade"
+              id="alerts-icons-html"
+              role="tabpanel"
+            />
+          </TabContent>
         </div>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeLinkColor}
-        </SyntaxHighlighter>
-        <h2>
-          Dismissing with <code className="highlighter-rouge">toggle</code>{" "}
-          function
-        </h2>
-        <div className="ct-example">
-          <Alert
-            color="info"
-            isOpen={this.state.visible}
-            toggle={this.onDismiss}
+        <h3 id="dismissing">Dismissing</h3>
+        <div className=" ct-example">
+          <Nav
+            className=" nav-tabs-code"
+            id="alerts-disimissible-tab"
+            role="tablist"
           >
-            <strong>Holy guacamole!</strong> You should check in on some of
-            those fields below.
-          </Alert>
+            <NavItem>
+              <NavLink
+                aria-controls="alerts-disimissible-component"
+                aria-selected={true}
+                className=" active"
+                data-toggle="tab"
+                href="#pablo"
+                id="alerts-disimissible-component-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                Result
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                aria-controls="alerts-disimissible-html"
+                aria-selected={false}
+                data-toggle="tab"
+                href="#pablo"
+                id="alerts-disimissible-html-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                HTML
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent>
+            <TabPane
+              aria-labelledby="alerts-disimissible-component-tab"
+              className=" tab-example-result fade show active"
+              id="alerts-disimissible-component"
+              role="tabpanel"
+            >
+              <UncontrolledAlert className=" alert-default" fade={false}>
+                <span className=" alert-inner--icon">
+                  <i className=" ni ni-like-2" />
+                </span>
+                <span className=" alert-inner--text">
+                  <strong>Default!</strong>
+                  This is a default alert—check it out!
+                </span>
+              </UncontrolledAlert>
+              <UncontrolledAlert color="primary" fade={false}>
+                <span className=" alert-inner--icon">
+                  <i className=" ni ni-like-2" />
+                </span>
+                <span className=" alert-inner--text">
+                  <strong>Primary!</strong>
+                  This is a primary alert—check it out!
+                </span>
+              </UncontrolledAlert>
+              <UncontrolledAlert color="secondary" fade={false}>
+                <span className=" alert-inner--icon">
+                  <i className=" ni ni-like-2" />
+                </span>
+                <span className=" alert-inner--text">
+                  <strong>Secondary!</strong>
+                  This is a secondary alert—check it out!
+                </span>
+              </UncontrolledAlert>
+              <UncontrolledAlert color="info" fade={false}>
+                <span className=" alert-inner--icon">
+                  <i className=" ni ni-like-2" />
+                </span>
+                <span className=" alert-inner--text">
+                  <strong>Info!</strong>
+                  This is a info alert—check it out!
+                </span>
+              </UncontrolledAlert>
+              <UncontrolledAlert color="success" fade={false}>
+                <span className=" alert-inner--icon">
+                  <i className=" ni ni-like-2" />
+                </span>
+                <span className=" alert-inner--text">
+                  <strong>Success!</strong>
+                  This is a success alert—check it out!
+                </span>
+              </UncontrolledAlert>
+              <UncontrolledAlert color="danger" fade={false}>
+                <span className=" alert-inner--icon">
+                  <i className=" ni ni-like-2" />
+                </span>
+                <span className=" alert-inner--text">
+                  <strong>Danger!</strong>
+                  This is a danger alert—check it out!
+                </span>
+              </UncontrolledAlert>
+              <UncontrolledAlert color="warning" fade={false}>
+                <span className=" alert-inner--icon">
+                  <i className=" ni ni-like-2" />
+                </span>
+                <span className=" alert-inner--text">
+                  <strong>Warning!</strong>
+                  This is a warning alert—check it out!
+                </span>
+              </UncontrolledAlert>
+            </TabPane>
+            <TabPane
+              aria-labelledby="alerts-disimissible-html-tab"
+              className=" fade"
+              id="alerts-disimissible-html"
+              role="tabpanel"
+            />
+          </TabContent>
         </div>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeDismissingToggle}
-        </SyntaxHighlighter>
-        <h2>
-          Dismissing with{" "}
-          <code className="highlighter-rouge">UncontrolledAlert</code> component
-        </h2>
-        <div className="ct-example">
-          <UncontrolledAlert color="info">
-            <strong>Holy guacamole!</strong> You should check in on some of
-            those fields below.
-          </UncontrolledAlert>
-        </div>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeDismissingUncontrolledAlert}
-        </SyntaxHighlighter>
-        <h2>Props</h2>
-        <p>
-          Please refer to{" "}
-          <a
-            href="https://reactstrap.github.io/components/alerts/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            reactstrap alerts documentation
-          </a>
-          .
-        </p>
-        <br />
-        <br />
-        <br />
       </>
     );
   }

@@ -1,354 +1,596 @@
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+
+// reactstrap components
 import {
-  Pagination as Paginations,
+  NavItem,
+  NavLink,
+  Nav,
+  Pagination,
   PaginationItem,
-  PaginationLink
+  PaginationLink,
+  TabContent,
+  TabPane
 } from "reactstrap";
 
-const codeOverview = `import React from 'react';
-import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
-
-class Example extends React.Component{
-    render(){
-        return(
-            <Pagination>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        Previous
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        1
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        2
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        3
-                    </PaginationLink>
-                </PaginationItem>>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        Next
-                    </PaginationLink>
-                </PaginationItem>
-            </Pagination>
-        );
-    }
-}`;
-
-const codeStates = `import React from 'react';
-import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
-
-class Example extends React.Component{
-    render(){
-        return(
-            <Pagination>
-                <PaginationItem disabled>
-                    <PaginationLink href="#">
-                        Previous
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        1
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem active>
-                    <PaginationLink href="#">
-                        2
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        3
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        Next
-                    </PaginationLink>
-                </PaginationItem>
-            </Pagination>
-        );
-    }
-}`;
-
-const codeSpan = `import React from 'react';
-import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
-
-class Example extends React.Component{
-    render(){
-        return(
-            <Pagination>
-                <PaginationItem disabled>
-                    <PaginationLink tag="span">
-                        Previous
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        1
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem active>
-                    <PaginationLink tag="span">
-                        2
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        3
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        Next
-                    </PaginationLink>
-                </PaginationItem>
-            </Pagination>
-        );
-    }
-}`;
-
-const codeCenter = `import React from 'react';
-import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
-
-class Example extends React.Component{
-    render(){
-        return(
-            <Pagination listClassName="justify-content-center">
-                <PaginationItem disabled>
-                    <PaginationLink href="#">
-                        Previous
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        1
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        2
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        3
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        Next
-                    </PaginationLink>
-                </PaginationItem>
-            </Pagination>
-        );
-    }
-}`;
-
-const codeEnd = `import React from 'react';
-import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
-
-class Example extends React.Component{
-    render(){
-        return(
-            <Pagination listClassName="justify-content-end">
-                <PaginationItem disabled>
-                    <PaginationLink href="#">
-                        Previous
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        1
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        2
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        3
-                    </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                    <PaginationLink href="#">
-                        Next
-                    </PaginationLink>
-                </PaginationItem>
-            </Pagination>
-        );
-    }
-}`;
-
-class Pagination extends React.Component {
+class Paginations extends React.Component {
   render() {
     return (
-      <div>
-        <h1 className="ct-title" id="content">
-          Pagination
-        </h1>
-        <p className="ct-lead">
+      <>
+        <div className=" ct-page-title">
+          <h1 className=" ct-title" id="content">
+            Pagination
+          </h1>
+          <div className=" avatar-group mt-3" />
+        </div>
+        <p className=" ct-lead">
           Documentation and examples for showing pagination to indicate a series
           of related content exists across multiple pages.
         </p>
-        <h2 id="content">Overview</h2>
-        <div className="ct-example" data-example-id="">
-          <Paginations>
-            <PaginationItem>
-              <PaginationLink href="#">Previous</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">1</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">2</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">3</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">Next</PaginationLink>
-            </PaginationItem>
-          </Paginations>
+        <hr />
+        <h2 id="examples">Examples</h2>
+        <div className=" ct-example">
+          <Nav className=" nav-tabs-code" id="pagination-tab" role="tablist">
+            <NavItem>
+              <NavLink
+                aria-controls="pagination-component"
+                aria-selected={true}
+                className=" active"
+                data-toggle="tab"
+                href="#pablo"
+                id="pagination-component-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                Result
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                aria-controls="pagination-html"
+                aria-selected={false}
+                data-toggle="tab"
+                href="#pablo"
+                id="pagination-html-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                HTML
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent>
+            <TabPane
+              aria-labelledby="pagination-component-tab"
+              className=" tab-example-result fade show active"
+              id="pagination-component"
+              role="tabpanel"
+            >
+              <nav aria-label="Page navigation example">
+                <Pagination>
+                  <PaginationItem>
+                    <PaginationLink
+                      aria-label="Previous"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className=" fa fa-angle-left" />
+                      <span className=" sr-only">Previous</span>
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      1
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      2
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      3
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      aria-label="Next"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className=" fa fa-angle-right" />
+                      <span className=" sr-only">Next</span>
+                    </PaginationLink>
+                  </PaginationItem>
+                </Pagination>
+              </nav>
+            </TabPane>
+            <TabPane
+              aria-labelledby="pagination-html-tab"
+              className=" fade"
+              id="pagination-html"
+              role="tabpanel"
+            />
+          </TabContent>
         </div>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeOverview}
-        </SyntaxHighlighter>
-        <h2 id="content">Disabled and active states</h2>
+        <h2 id="disabled-and-active-states">Disabled and active states</h2>
+        <div className=" ct-example">
+          <Nav
+            className=" nav-tabs-code"
+            id="pagination-states-tab"
+            role="tablist"
+          >
+            <NavItem>
+              <NavLink
+                aria-controls="pagination-states-component"
+                aria-selected={true}
+                className=" active"
+                data-toggle="tab"
+                href="#pablo"
+                id="pagination-states-component-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                Result
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                aria-controls="pagination-states-html"
+                aria-selected={false}
+                data-toggle="tab"
+                href="#pablo"
+                id="pagination-states-html-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                HTML
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent>
+            <TabPane
+              aria-labelledby="pagination-states-component-tab"
+              className=" tab-example-result fade show active"
+              id="pagination-states-component"
+              role="tabpanel"
+            >
+              <nav aria-label="...">
+                <Pagination>
+                  <PaginationItem className=" disabled">
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                      tabindex="-1"
+                    >
+                      <i className=" fa fa-angle-left" />
+                      <span className=" sr-only">Previous</span>
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      1
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem className=" active">
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      2 <span className=" sr-only">(current)</span>
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      3
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className=" fa fa-angle-right" />
+                      <span className=" sr-only">Next</span>
+                    </PaginationLink>
+                  </PaginationItem>
+                </Pagination>
+              </nav>
+            </TabPane>
+            <TabPane
+              aria-labelledby="pagination-states-html-tab"
+              className=" fade"
+              id="pagination-states-html"
+              role="tabpanel"
+            />
+          </TabContent>
+        </div>
+        <h2 id="sizing">Sizing</h2>
         <p>
-          Pagination links are customizable for different circumstances. Use{" "}
-          <code className="highlighter-rouge">disabled</code> for links that
-          appear un-clickable and{" "}
-          <code className="highlighter-rouge">active</code> to indicate the
-          current page.
+          Fancy larger or smaller pagination? Add{" "}
+          <code className=" highlighter-rouge">.pagination-lg</code>
+          or <code className=" highlighter-rouge">.pagination-sm</code>
+          for additional sizes.
         </p>
-        <div className="ct-example" data-example-id="">
-          <Paginations>
-            <PaginationItem disabled>
-              <PaginationLink href="#">Previous</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">1</PaginationLink>
-            </PaginationItem>
-            <PaginationItem active>
-              <PaginationLink href="#">2</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">3</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">Next</PaginationLink>
-            </PaginationItem>
-          </Paginations>
+        <div className=" ct-example">
+          <Nav className=" nav-tabs-code" id="pagination-lg-tab" role="tablist">
+            <NavItem>
+              <NavLink
+                aria-controls="pagination-lg-component"
+                aria-selected={true}
+                className=" active"
+                data-toggle="tab"
+                href="#pablo"
+                id="pagination-lg-component-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                Result
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                aria-controls="pagination-lg-html"
+                aria-selected={false}
+                data-toggle="tab"
+                href="#pablo"
+                id="pagination-lg-html-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                HTML
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent>
+            <TabPane
+              aria-labelledby="pagination-lg-component-tab"
+              className=" tab-example-result fade show active"
+              id="pagination-lg-component"
+              role="tabpanel"
+            >
+              <nav aria-label="...">
+                <Pagination
+                  className="pagination pagination-lg"
+                  listClassName=" pagination-lg"
+                >
+                  <PaginationItem className=" disabled">
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                      tabindex="-1"
+                    >
+                      1
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      2
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem className=" active">
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      3
+                    </PaginationLink>
+                  </PaginationItem>
+                </Pagination>
+              </nav>
+            </TabPane>
+            <TabPane
+              aria-labelledby="pagination-lg-html-tab"
+              className=" fade"
+              id="pagination-lg-html"
+              role="tabpanel"
+            />
+          </TabContent>
         </div>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeStates}
-        </SyntaxHighlighter>
-        <p>
-          You can optionally swap out active or disabled anchors for{" "}
-          <code className="highlighter-rouge">&lt;span&gt;</code>, or omit the
-          anchor in the case of the prev/next arrows, to remove click
-          functionality and prevent keyboard focus while retaining intended
-          styles.
-        </p>
-        <div className="ct-example" data-example-id="">
-          <Paginations>
-            <PaginationItem disabled>
-              <PaginationLink tag="span">Previous</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">1</PaginationLink>
-            </PaginationItem>
-            <PaginationItem active>
-              <PaginationLink tag="span">2</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">3</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">Next</PaginationLink>
-            </PaginationItem>
-          </Paginations>
+        <div className=" ct-example">
+          <Nav className=" nav-tabs-code" id="pagination-sm-tab" role="tablist">
+            <NavItem>
+              <NavLink
+                aria-controls="pagination-sm-component"
+                aria-selected={true}
+                className=" active"
+                data-toggle="tab"
+                href="#pablo"
+                id="pagination-sm-component-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                Result
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                aria-controls="pagination-sm-html"
+                aria-selected={false}
+                data-toggle="tab"
+                href="#pablo"
+                id="pagination-sm-html-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                HTML
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent>
+            <TabPane
+              aria-labelledby="pagination-sm-component-tab"
+              className=" tab-example-result fade show active"
+              id="pagination-sm-component"
+              role="tabpanel"
+            >
+              <nav aria-label="...">
+                <Pagination
+                  className="pagination pagination-sm"
+                  listClassName=" pagination-sm"
+                >
+                  <PaginationItem className=" disabled">
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                      tabindex="-1"
+                    >
+                      1
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      2
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem className=" active">
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      3
+                    </PaginationLink>
+                  </PaginationItem>
+                </Pagination>
+              </nav>
+            </TabPane>
+            <TabPane
+              aria-labelledby="pagination-sm-html-tab"
+              className=" fade"
+              id="pagination-sm-html"
+              role="tabpanel"
+            />
+          </TabContent>
         </div>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeSpan}
-        </SyntaxHighlighter>
-        <h2 id="content">Alignment</h2>
+        <h2 id="alignment">Alignment</h2>
         <p>
           Change the alignment of pagination components with{" "}
-          <code className="highlighter-rouge">flexbox utilities</code>.
+          <a href="argon-dashboard/docs//utilities/flex/">flexbox utilities</a>.
         </p>
-        <div className="ct-example" data-example-id="">
-          <Paginations listClassName="justify-content-center">
-            <PaginationItem disabled>
-              <PaginationLink href="#">Previous</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">1</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">2</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">3</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">Next</PaginationLink>
-            </PaginationItem>
-          </Paginations>
-        </div>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeCenter}
-        </SyntaxHighlighter>
-        <div className="ct-example" data-example-id="">
-          <Paginations listClassName="justify-content-end">
-            <PaginationItem disabled>
-              <PaginationLink href="#">Previous</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">1</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">2</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">3</PaginationLink>
-            </PaginationItem>
-            <PaginationItem>
-              <PaginationLink href="#">Next</PaginationLink>
-            </PaginationItem>
-          </Paginations>
-        </div>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeEnd}
-        </SyntaxHighlighter>
-        <h2 id="content">Props</h2>
-        <p>
-          For props please refer to{" "}
-          <a
-            href="https://reactstrap.github.io/components/pagination/"
-            target="_blank"
-            rel="noopener noreferrer"
+        <div className=" ct-example">
+          <Nav
+            className=" nav-tabs-code"
+            id="pagination-center-tab"
+            role="tablist"
           >
-            reactstrap's pagination documentation
-          </a>
-          .
-        </p>
-      </div>
+            <NavItem>
+              <NavLink
+                aria-controls="pagination-center-component"
+                aria-selected={true}
+                className=" active"
+                data-toggle="tab"
+                href="#pablo"
+                id="pagination-center-component-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                Result
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                aria-controls="pagination-center-html"
+                aria-selected={false}
+                data-toggle="tab"
+                href="#pablo"
+                id="pagination-center-html-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                HTML
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent>
+            <TabPane
+              aria-labelledby="pagination-center-component-tab"
+              className=" tab-example-result fade show active"
+              id="pagination-center-component"
+              role="tabpanel"
+            >
+              <nav aria-label="Page navigation example">
+                <Pagination
+                  className="pagination justify-content-center"
+                  listClassName=" justify-content-center"
+                >
+                  <PaginationItem className=" disabled">
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                      tabindex="-1"
+                    >
+                      <i className=" fa fa-angle-left" />
+                      <span className=" sr-only">Previous</span>
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      1
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem className=" active">
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      2
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      3
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className=" fa fa-angle-right" />
+                      <span className=" sr-only">Next</span>
+                    </PaginationLink>
+                  </PaginationItem>
+                </Pagination>
+              </nav>
+            </TabPane>
+            <TabPane
+              aria-labelledby="pagination-center-html-tab"
+              className=" fade"
+              id="pagination-center-html"
+              role="tabpanel"
+            />
+          </TabContent>
+        </div>
+        <div className=" ct-example">
+          <Nav
+            className=" nav-tabs-code"
+            id="pagination-right-tab"
+            role="tablist"
+          >
+            <NavItem>
+              <NavLink
+                aria-controls="pagination-right-component"
+                aria-selected={true}
+                className=" active"
+                data-toggle="tab"
+                href="#pablo"
+                id="pagination-right-component-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                Result
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                aria-controls="pagination-right-html"
+                aria-selected={false}
+                data-toggle="tab"
+                href="#pablo"
+                id="pagination-right-html-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                HTML
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent>
+            <TabPane
+              aria-labelledby="pagination-right-component-tab"
+              className=" tab-example-result fade show active"
+              id="pagination-right-component"
+              role="tabpanel"
+            >
+              <nav aria-label="Page navigation example">
+                <Pagination
+                  className="pagination justify-content-end"
+                  listClassName=" justify-content-end"
+                >
+                  <PaginationItem className=" disabled">
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                      tabindex="-1"
+                    >
+                      <i className=" fa fa-angle-left" />
+                      <span className=" sr-only">Previous</span>
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      1
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem className=" active">
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      2
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      3
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className=" fa fa-angle-right" />
+                      <span className=" sr-only">Next</span>
+                    </PaginationLink>
+                  </PaginationItem>
+                </Pagination>
+              </nav>
+            </TabPane>
+            <TabPane
+              aria-labelledby="pagination-right-html-tab"
+              className=" fade"
+              id="pagination-right-html"
+              role="tabpanel"
+            />
+          </TabContent>
+        </div>
+      </>
     );
   }
 }
 
-export default Pagination;
+export default Paginations;

@@ -1,108 +1,179 @@
 import React from "react";
-import Slider from "nouislider";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
 
-const codeExample = `import React from "react";
+// reactstrap components
 import {
-  CardTitle,
+  NavItem,
+  NavLink,
+  Nav,
+  TabContent,
+  TabPane,
   Row,
   Col
 } from "reactstrap";
-// plugin that creates slider
-import Slider from "nouislider";
-
-class Example extends React.Component {
-  componentDidMount() {
-    var slider1 = this.refs.slider1;
-    var slider2 = this.refs.slider2;
-    Slider.create(slider1, {
-      start: [40],
-      connect: [true, false],
-      step: 1,
-      range: { min: 0, max: 100 }
-    });
-    Slider.create(slider2, {
-      start: [20, 60],
-      connect: [false, true, false],
-      step: 1,
-      range: { min: 0, max: 100 }
-    });
-  }
-  render() {
-    return (
-      <Row>
-        <Col xs={12} md={6}>
-          <CardTitle tag="h4">Sliders</CardTitle>
-          <div className="slider" ref="slider1" />
-          <br />
-          <div className="slider slider-primary" ref="slider2" />
-        </Col>
-      </Row>
-    );
-  }
-}
-
-export default Example;
-`;
 
 class Sliders extends React.Component {
-  componentDidMount() {
-    var slider1 = this.refs.slider1;
-    var slider2 = this.refs.slider2;
-    Slider.create(slider1, {
-      start: [40],
-      connect: [true, false],
-      step: 1,
-      range: { min: 0, max: 100 }
-    });
-    Slider.create(slider2, {
-      start: [20, 60],
-      connect: [false, true, false],
-      step: 1,
-      range: { min: 0, max: 100 }
-    });
-  }
   render() {
     return (
-      <div>
-        <h1 className="ct-title" id="content">
-          noUiSlider v13.1.1
-        </h1>
-        <h2 id="content">Example</h2>
-        <div className="ct-example">
-          <div className="slider" ref="slider1" />
-          <br />
-          <div className="slider slider-primary" ref="slider2" />
+      <>
+        <div className=" ct-page-title">
+          <h1 className=" ct-title" id="content">
+            Datepicker
+          </h1>
+          <div className=" avatar-group mt-3" />
         </div>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {codeExample}
-        </SyntaxHighlighter>
-        <p>
-          If you want to add color to your slider you need to add one of the
-          following classes on your div{" "}
-          <code className="highlighter-rouge">"slider slider-$color"</code>,
-          where <code className="highlighter-rouge">$color</code> can be one of{" "}
-          <code className="highlighter-rouge">neutral</code>,{" "}
-          <code className="highlighter-rouge">primary</code>,{" "}
-          <code className="highlighter-rouge">info</code>,{" "}
-          <code className="highlighter-rouge">success</code>,{" "}
-          <code className="highlighter-rouge">warning</code>,{" "}
-          <code className="highlighter-rouge">danger</code>.
+        <p className=" ct-lead">
+          Our customized noUiSlider is a lightweight JavaScript range slider
+          library. It offers a wide selection of options and settings, and is
+          compatible with a ton of (touch) devices, including those running iOS,
+          Android, Windows 8/8.1/10, Windows Phone 8.1 and Windows Mobile 10.
         </p>
-        <h2 id="content">Props</h2>
+        <hr />
+        <h2 id="slider">Slider</h2>
+        <div className=" ct-example">
+          <Nav className=" nav-tabs-code" id="slider-single-tab" role="tablist">
+            <NavItem>
+              <NavLink
+                aria-controls="slider-single-component"
+                aria-selected={true}
+                className=" active"
+                data-toggle="tab"
+                href="#pablo"
+                id="slider-single-component-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                Result
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                aria-controls="slider-single-html"
+                aria-selected={false}
+                data-toggle="tab"
+                href="#pablo"
+                id="slider-single-html-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                HTML
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent>
+            <TabPane
+              aria-labelledby="slider-single-component-tab"
+              className=" tab-example-result fade show active"
+              id="slider-single-component"
+              role="tabpanel"
+            >
+              <div className=" input-slider-container">
+                <div
+                  className=" input-slider"
+                  data-range-value-max="500"
+                  data-range-value-min="100"
+                  id="input-slider"
+                />
+                <Row className=" mt-3 d-none">
+                  <Col xs="6">
+                    <span
+                      className=" range-slider-value"
+                      data-range-value-low="100"
+                      id="input-slider-value"
+                    />
+                  </Col>
+                </Row>
+              </div>
+            </TabPane>
+            <TabPane
+              aria-labelledby="slider-single-html-tab"
+              className=" fade"
+              id="slider-single-html"
+              role="tabpanel"
+            />
+          </TabContent>
+        </div>
+        <h2 id="range-slider">Range slider</h2>
+        <div className=" ct-example">
+          <Nav className=" nav-tabs-code" id="slider-range-tab" role="tablist">
+            <NavItem>
+              <NavLink
+                aria-controls="slider-range-component"
+                aria-selected={true}
+                className=" active"
+                data-toggle="tab"
+                href="#pablo"
+                id="slider-range-component-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                Result
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                aria-controls="slider-range-html"
+                aria-selected={false}
+                data-toggle="tab"
+                href="#pablo"
+                id="slider-range-html-tab"
+                onClick={e => e.preventDefault()}
+                role="tab"
+              >
+                HTML
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <TabContent>
+            <TabPane
+              aria-labelledby="slider-range-component-tab"
+              className=" tab-example-result fade show active"
+              id="slider-range-component"
+              role="tabpanel"
+            >
+              <div>
+                <div
+                  data-range-value-max="500"
+                  data-range-value-min="100"
+                  id="input-slider-range"
+                />
+                <Row className=" d-none">
+                  <Col xs="6">
+                    <span
+                      className=" range-slider-value value-low"
+                      data-range-value-low="200"
+                      id="input-slider-range-value-low"
+                    />
+                  </Col>
+                  <Col className=" text-right" xs="6">
+                    <span
+                      className=" range-slider-value value-high"
+                      data-range-value-high="400"
+                      id="input-slider-range-value-high"
+                    />
+                  </Col>
+                </Row>
+              </div>
+            </TabPane>
+            <TabPane
+              aria-labelledby="slider-range-html-tab"
+              className=" fade"
+              id="slider-range-html"
+              role="tabpanel"
+            />
+          </TabContent>
+        </div>
+        <h2 id="usage">Usage</h2>
         <p>
-          For props please refer to{" "}
-          <a
-            href="https://refreshless.com/nouislider/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            noUiSlider
-          </a>
-          .
+          In order to use this plugin on your page you will need to include the
+          following script in the “Optional JS” area from the page’s footer:
         </p>
-      </div>
+        <h3 id="initialization">Initialization</h3>
+        <p>
+          Simply copy one of the code examples demonstrated above and include it
+          in your page. Afterwards, you can modify the slider’s values with the
+          ones you need.
+        </p>
+      </>
     );
   }
 }

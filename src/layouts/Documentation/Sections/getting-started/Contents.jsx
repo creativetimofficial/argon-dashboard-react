@@ -1,97 +1,191 @@
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
 
-const fileStructure = `Blk• Design System React
-.
-├── CHANGELOG.md
-├── ISSUE_TEMPLATE.md
-├── README.md
-├── package.json
-├── Documentation
-│   └── documentation.html
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── manifest.json
-└── src
-    ├── index.js
-    ├── variables
-    │   └── charts.jsx
-    ├── assets
-    │   ├── css
-    │   │   ├── blk-design-system-react.css
-    │   │   ├── blk-design-system-react.css.map
-    │   │   ├── blk-design-system-react.min.css
-    │   │   └── nucleo-icons.css
-    │   ├── demo
-    │   │   └── demo.css
-    │   ├── fonts
-    │   │   ├── nucleo.eot
-    │   │   ├── nucleo.ttf
-    │   │   ├── nucleo.woff
-    │   │   └── nucleo.woff2
-    │   ├── img
-    │   └── scss
-    │       ├── blk-design-system-react
-    │       │   ├── bootstrap
-    │       │   │   ├── mixins
-    │       │   │   └── utilities
-    │       │   ├── custom
-    │       │   │   ├── cards
-    │       │   │   ├── mixins
-    │       │   │   ├── sections
-    │       │   │   ├── utilities
-    │       │   │   └── vendor
-    │       │   └── react
-    │       │       └── react-differences.scss
-    │       └── blk-design-system-react.scss
-    ├── components
-    │   ├── Footer
-    │   │   └── Footer.jsx
-    │   ├── Navbars
-    │   │   ├── ComponentsNavbar.jsx
-    │   │   └── ExamplesNavbar.jsx
-    │   └── PageHeader
-    │       └── PageHeader.jsx
-    └── views
-        ├── Index.jsx
-        ├── IndexSections
-        │   ├── Basics.jsx
-        │   ├── Download.jsx
-        │   ├── Examples.jsx
-        │   ├── JavaScript.jsx
-        │   ├── Navbars.jsx
-        │   ├── Notifications.jsx
-        │   ├── NucleoIcons.jsx
-        │   ├── Pagination.jsx
-        │   ├── Signup.jsx
-        │   ├── Tabs.jsx
-        │   └── Typography.jsx
-        └── examples
-            ├── LandingPage.jsx
-            ├── ProfilePage.jsx
-            └── RegisterPage.jsx`;
+// reactstrap components
+import { Card, Row, Col } from "reactstrap";
 
 class Contents extends React.Component {
   render() {
     return (
       <>
-        <h1 className="ct-title" id="content">
-          Contents
-        </h1>
-        <p className="ct-lead">
-          Discover what's included in BLK Design System React
+        <div className=" ct-page-title">
+          <h1 className=" ct-title" id="content">
+            Contents
+          </h1>
+          <div className=" avatar-group mt-3" />
+        </div>
+        <p className=" ct-lead">
+          Discover what’s included in Bootstrap, including our precompiled and
+          source code flavors. Remember, Bootstrap’s JavaScript plugins require
+          jQuery.
         </p>
-        <h2 id="precompiled-bootstrap">BLK Design System React</h2>
+        <hr />
+        <h2 id="argon-structure">Argon structure</h2>
         <p>
           Once downloaded, unzip the compressed folder and you’ll see something
           like this:
         </p>
         {/* NOTE: This info is intentionally duplicated in the README. Copy any changes made here over to the README too. */}
-        <SyntaxHighlighter language="bash" style={prism}>
-          {fileStructure}
-        </SyntaxHighlighter>
+        <h2 id="bootstrap-components">Bootstrap components</h2>
+        <p>
+          Here is the list of Bootstrap 4 components that were restyled in
+          Argon:
+        </p>
+        <Row className=" row-grid mt-5">
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Alerts</h6>
+              </div>
+            </Card>
+          </Col>
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Badge</h6>
+              </div>
+            </Card>
+          </Col>
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Buttons</h6>
+              </div>
+            </Card>
+          </Col>
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Carousel</h6>
+              </div>
+            </Card>
+          </Col>
+        </Row>
+        <Row className=" row-grid">
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Dropdowns</h6>
+              </div>
+            </Card>
+          </Col>
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Forms</h6>
+              </div>
+            </Card>
+          </Col>
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Modal</h6>
+              </div>
+            </Card>
+          </Col>
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Navs</h6>
+              </div>
+            </Card>
+          </Col>
+        </Row>
+        <Row className=" row-grid">
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Navbar</h6>
+              </div>
+            </Card>
+          </Col>
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Pagination</h6>
+              </div>
+            </Card>
+          </Col>
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Popover &amp; Tooltip</h6>
+              </div>
+            </Card>
+          </Col>
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Progress</h6>
+              </div>
+            </Card>
+          </Col>
+        </Row>
+        <h2 id="argon-components">Argon components</h2>
+        <p>
+          Besides giving the existing Bootstrap elements a new look, we added
+          new ones, so that the interface and consistent and homogenous. Going
+          through them, we added:
+        </p>
+        <Row className=" row-grid mt-5">
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Datepicker</h6>
+              </div>
+            </Card>
+          </Col>
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Sliders</h6>
+              </div>
+            </Card>
+          </Col>
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Checkboxes</h6>
+              </div>
+            </Card>
+          </Col>
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Radio buttons</h6>
+              </div>
+            </Card>
+          </Col>
+        </Row>
+        <Row className=" row-grid">
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Toggle buttons</h6>
+              </div>
+            </Card>
+          </Col>
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Font Awesome</h6>
+              </div>
+            </Card>
+          </Col>
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Nucleo icons</h6>
+              </div>
+            </Card>
+          </Col>
+          <Col md="3">
+            <Card className=" shadow-sm">
+              <div className=" p-4 text-center">
+                <h6 className=" mb-0">Modals</h6>
+              </div>
+            </Card>
+          </Col>
+        </Row>
       </>
     );
   }
