@@ -23,7 +23,7 @@ class BuildTools extends React.Component {
               assets/scss/blk-design-system-react/custom/_variables.scss
             </code>
             . You can change them with a{" "}
-            <code class="highlighter-rouge">HEX</code> value or with other
+            <code className="highlighter-rouge">HEX</code> value or with other
             predefined variables.
           </li>
         </ul>

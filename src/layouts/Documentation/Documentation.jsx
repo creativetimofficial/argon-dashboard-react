@@ -23,7 +23,7 @@ class Documentation extends React.Component {
         <Container fluid>
           <Row className="flex-xl-nowrap">
             <Col xs={12} md={3} xl={2} className="ct-sidebar">
-              <Sidebar />
+              <Sidebar {...this.props} />
             </Col>
             <Col
               xs={12}

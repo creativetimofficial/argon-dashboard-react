@@ -1,6 +1,7 @@
 import React from "react";
 import { Nav } from "reactstrap";
 import { Link } from "react-router-dom";
+import classnames from "classnames";
 
 import docRoutes from "documentation.js";
 
@@ -20,7 +21,13 @@ class Sidebar extends React.Component {
               <Nav className="ct-sidenav">
                 {prop.routes.map((p, k) => {
                   return (
-                    <li key={k}>
+                    <li
+                      key={k}
+                      className={classnames({
+                        "active ct-sidenav-active":
+                          this.props.location.pathname.indexOf(p.path) !== -1
+                      })}
+                    >
                       <Link to={p.path}>{p.name}</Link>
                     </li>
                   );
