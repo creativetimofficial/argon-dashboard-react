@@ -29,8 +29,7 @@ class Typography extends React.Component {
         <hr />
         <h2 id="headings">Headings</h2>
         <p>
-          All HTML headings,{" "}
-          <code className="highlighter-rouge">{`<h1>`}</code>
+          All HTML headings, <code className="highlighter-rouge">{`<h1>`}</code>
           through <code className="highlighter-rouge">{`<h6>`}</code>, are
           available.
         </p>

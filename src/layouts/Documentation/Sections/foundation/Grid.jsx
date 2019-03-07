@@ -116,8 +116,8 @@ class Grid extends React.Component {
         </p>
         <h2 id="grid-options">Grid options</h2>
         <p>
-          While Bootstrap uses <code className="highlighter-rouge">em</code>s
-          or <code className="highlighter-rouge">rem</code>s for defining most
+          While Bootstrap uses <code className="highlighter-rouge">em</code>s or{" "}
+          <code className="highlighter-rouge">rem</code>s for defining most
           sizes, <code className="highlighter-rouge">px</code>s are used for
           grid breakpoints and container widths. This is because the viewport
           width is in pixels and does not change with the{" "}

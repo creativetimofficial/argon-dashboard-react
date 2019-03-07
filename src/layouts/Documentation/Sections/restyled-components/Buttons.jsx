@@ -84,11 +84,7 @@ class Buttons extends React.Component {
           </TabContent>
         </div>
         <div className="ct-example">
-          <Nav
-            className="nav-tabs-code"
-            id="buttons-colors-tab"
-            role="tablist"
-          >
+          <Nav className="nav-tabs-code" id="buttons-colors-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="buttons-colors-component"
@@ -345,8 +341,8 @@ class Buttons extends React.Component {
         </div>
         <p>
           Create block level buttons—those that span the full width of a
-          parent—by adding{" "}
-          <code className="highlighter-rouge">.btn-block</code>.
+          parent—by adding <code className="highlighter-rouge">.btn-block</code>
+          .
         </p>
         <div className="ct-example">
           <Nav className="nav-tabs-code" id="buttons-block-tab" role="tablist">
@@ -406,8 +402,8 @@ class Buttons extends React.Component {
           and inset shadow) when active.{" "}
           <strong>
             There’s no need to add a class to{" "}
-            <code className="highlighter-rouge">{`<button>`}</code>s as they
-            use a pseudo-class
+            <code className="highlighter-rouge">{`<button>`}</code>s as they use
+            a pseudo-class
           </strong>
           . However, you can still force the same active appearance with{" "}
           <code className="highlighter-rouge">.active</code>

@@ -1,4 +1,7 @@
+/*eslint-disable*/
 import React from "react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
 
 class QuickStart extends React.Component {
   render() {
@@ -11,80 +14,239 @@ class QuickStart extends React.Component {
           <div className="avatar-group mt-3" />
         </div>
         <p className="ct-lead">
-          To start using this design system you will need to import some files
-          in your current project or start from scratch using our template
-          (scroll down in this page to view it).
+          We provide all the necessary CSS resources. So, to immediately change
+          or get started with our design, include the{" "}
+          <code className="highlighter-rouge">
+            src/assets/css/argon-dashboard-react.css
+          </code>{" "}
+          in your template. Or you can include the whole scss from our product (
+          <code className="highlighter-rouge">src/assets/scss/{`*`}</code>) and
+          then import the{" "}
+          <code className="highlighter-rouge">
+            src/assets/scss/argon-dashboard-react.scss
+          </code>{" "}
+          file inside your <code className="highlighter-rouge">index.js</code>.
+          Your project will get the new look.
         </p>
         <hr />
+        <h2 id="local-development">Local Development</h2>
+        <p>Follow the next steps to start using our product:</p>
+        <ul>
+          <li>
+            Install NodeJs from{" "}
+            <a href="https://nodejs.org/en/?ref=creativetim" target="_blank">
+              NodeJs Official Page
+            </a>
+          </li>
+          <li>
+            Go to{" "}
+            <a
+              href="https://www.creative-tim.com/?ref=adr-quick-start-page"
+              target="_blank"
+            >
+              creative tim website
+            </a>{" "}
+            and login into your account
+          </li>
+          <li>
+            Go to the{" "}
+            <a
+              href="https://www.creative-tim.com/product/argon-dashboard-react?ref=adr-quick-start-page"
+              target="_blank"
+            >
+              product page
+            </a>{" "}
+            (be sure to be logged into your account)
+          </li>
+          <li>
+            Press the download button near <b>Argon Dashboard React</b> product
+            (this will download onto your computer a zip file)
+          </li>
+          <li>Unzip the downloaded file to a folder in your computer</li>
+          <li>Open Terminal</li>
+          <li>Go to your file project (where you've unzipped the product)</li>
+          <li>
+            Run in terminal{" "}
+            <SyntaxHighlighter
+              language="jsx"
+              style={prism}
+            >{`npm install`}</SyntaxHighlighter>
+          </li>
+          <li>
+            Then run{" "}
+            <SyntaxHighlighter
+              language="jsx"
+              style={prism}
+            >{`npm start`}</SyntaxHighlighter>
+          </li>
+          <li>
+            Or you can simply run{" "}
+            <SyntaxHighlighter
+              language="jsx"
+              style={prism}
+            >{`npm run install:clean`}</SyntaxHighlighter>{" "}
+            which will install{" "}
+            <code className="highlighter-rouge">node_modules</code> and also
+            will start your project.
+          </li>
+          <li>
+            If you have an error something containing
+            <SyntaxHighlighter
+              language="jsx"
+              style={prism}
+            >{`Module not found`}</SyntaxHighlighter>
+            you need to do the following
+            <SyntaxHighlighter
+              language="jsx"
+              style={prism}
+            >{`npm install --g cross-env`}</SyntaxHighlighter>
+            then change the script, for example the start script from
+            <SyntaxHighlighter
+              language="jsx"
+              style={prism}
+            >{`"start": "react-scripts start",`}</SyntaxHighlighter>
+            to
+            <SyntaxHighlighter
+              language="jsx"
+              style={prism}
+            >{`"start": "NODE_PATH=./src react-scripts start",`}</SyntaxHighlighter>
+            <b>
+              The same should be done with any other script that has the above
+              error.
+            </b>
+          </li>
+          <li>
+            If you have an error containing{" "}
+            <SyntaxHighlighter
+              language="jsx"
+              style={prism}
+            >{`props.history of undefined`}</SyntaxHighlighter>{" "}
+            (this can happen when you integrate our project with another one)
+            then you need to make the changes found{" "}
+            <a
+              href="https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/70?ref=creativetim"
+              target="_blank"
+            >
+              {" "}
+              here
+            </a>
+          </li>
+          <li>
+            (Optional) You can create a new react application like this
+            <ul>
+              <li>
+                Run in terminal{" "}
+                <SyntaxHighlighter
+                  language="jsx"
+                  style={prism}
+                >{`npm install -g create-react-app`}</SyntaxHighlighter>
+              </li>
+              <li>Go to the folder where you want to create your app</li>
+              <li>
+                Run in terminal{" "}
+                <SyntaxHighlighter
+                  language="jsx"
+                  style={prism}
+                >{`create-react-app your-app-name`}</SyntaxHighlighter>
+              </li>
+              <li>
+                Navigate to{" "}
+                <code className="highlighter-rouge">your-app-name</code>
+              </li>
+              <li>
+                Run in terminal{" "}
+                <SyntaxHighlighter
+                  language="jsx"
+                  style={prism}
+                >{`npm start`}</SyntaxHighlighter>
+              </li>
+              <li>
+                And after this, you can copy and paste anything that you want
+                from our product (the most important is the{" "}
+                <code className="highlighter-rouge">src/assets</code> which has
+                all of our style, fonts and images).
+              </li>
+              <li>
+                More information →{" "}
+                <a
+                  href="https://github.com/facebookincubator/create-react-app?ref=creativetim"
+                  target="_blank"
+                >
+                  create-react-app
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Navigate to{" "}
+            <a href="https://localhost:3000" target="_blank">
+              https://localhost:3000
+            </a>
+          </li>
+          <li>
+            More information →{" "}
+            <a
+              href="https://reactjs.org/docs/installation.html?ref=creativetim"
+              target="_blank"
+            >
+              react
+            </a>
+          </li>
+        </ul>
+        <h2 id="live-production">Live Production</h2>
+        <p>
+          These are some free open source tutorial on how to deploy a React app
+          on some servers. Please note that your project might need some
+          additional configs to deploy it on these servers (Our demo product
+          needs no adition configs):
+        </p>
+        <ul>
+          <li>
+            <a
+              href="https://blog.heroku.com/deploying-react-with-zero-configuration?ref=creativetim"
+              target="_blank"
+            >
+              tutorial for deploying on heroku
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://medium.freecodecamp.org/surge-vs-github-pages-deploying-a-create-react-app-project-c0ecbf317089?ref=creativetim"
+              target="_blank"
+            >
+              tutorial for deploying on github pages and surge
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://medium.com/@omgwtfmarc/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af?ref=creativetim"
+              target="_blank"
+            >
+              tutorial for deploying on S3 and CloudFront
+            </a>
+          </li>
+        </ul>
         <h2 id="css">CSS</h2>
         <p>
-          Copy-paste the stylesheet{" "}
-          <code className="highlighter-rouge">{`<link>`}</code>
-          into your <code className="highlighter-rouge">{`<head>`}</code>
-          before all other stylesheets to load our CSS.
+          To get our look, if you've started a new app, you will need to import
+          our styles inside your app like so:
         </p>
-        <h2 id="js">JS</h2>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {`import "assets/vendor/nucleo/css/nucleo.css";\nimport "assets/vendor/@fortawesome/fontawesome-free/css/all.min.css";\nimport "assets/scss/argon-dashboard-react.scss";`}
+        </SyntaxHighlighter>
+        <p>Or you can import our compiled scss</p>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {`import "assets/vendor/nucleo/css/nucleo.css";\nimport "assets/vendor/@fortawesome/fontawesome-free/css/all.min.css";\nimport "assets/css/argon-dashboard-react.css";\n// import "assets/css/argon-dashboard-react.min.css";\n// import "assets/css/argon-dashboard-react.css.map";`}
+        </SyntaxHighlighter>
+        <h2 id="fonts-and-icons">Fonts and Icons</h2>
         <p>
-          Many of our components require the use of JavaScript to function.
-          Specifically, they require <a href="https://jquery.com">jQuery</a>,{" "}
-          <a href="https://popper.js.org/">Popper.js</a>, and our own JavaScript
-          plugins. Place the following{" "}
-          <code className="highlighter-rouge">{`<script>`}</code>s near the end
-          of your pages, right before the closing{" "}
-          <code className="highlighter-rouge">{`</body>`}</code>
-          tag, to enable them. jQuery must come first, then Popper.js, and then
-          our JavaScript plugins.
+          If you've started a new project and are copying our product there, be
+          sure to add the following lines of code inside your{" "}
+          <code className="highlighter-rouge">.html</code> file:
         </p>
-        <p>
-          We use{" "}
-          <a href="https://blog.jquery.com/2016/06/09/jquery-3-0-final-released/">
-            jQuery’s slim build
-          </a>
-          , but the full version is also supported.
-        </p>
-        <p>
-          Need to use a certain plugin in your page? You can find out how to
-          integrate them and make them work in the{" "}
-          <a href="../../docs/plugins/datepicker.html">Plugins</a>
-          dedicated page. In this way you will be sure that your website is
-          optimized and uses only the needed resources.
-        </p>
-        <h2 id="starter-template">Starter template</h2>
-        <p>
-          Be sure to have your pages set up with the latest design and
-          development standards. That means using an HTML5 doctype and including
-          a viewport meta tag for proper responsive behaviors. Put it all
-          together and your pages should look like this:
-        </p>
-        <h2 id="important-globals">Important globals</h2>
-        <p>
-          Argon employs a handful of important global styles and settings that
-          you’ll need to be aware of when using it, all of which are almost
-          exclusively geared towards the <em>normalization</em>
-          of cross browser styles. Let’s dive in.
-        </p>
-        <h3 id="html5-doctype">HTML5 doctype</h3>
-        <p>
-          Bootstrap requires the use of the HTML5 doctype. Without it, you’ll
-          see some funky incomplete styling, but including it shouldn’t cause
-          any considerable hiccups.
-        </p>
-        <h3 id="responsive-meta-tag">Responsive meta tag</h3>
-        <p>
-          Bootstrap is developed <em>mobile first</em>, a strategy in which we
-          optimize code for mobile devices first and then scale up components as
-          necessary using CSS media queries. To ensure proper rendering and
-          touch zooming for all devices,{" "}
-          <strong>add the responsive viewport meta tag</strong>
-          to your <code className="highlighter-rouge">{`<head>`}</code>.
-        </p>
-        <p>
-          You can see an example of this in action in the{" "}
-          <a href="#pablo" onClick={e => e.preventDefault()}>
-            starter template
-          </a>
-          .
-        </p>
+        <SyntaxHighlighter language="html" style={prism}>
+          {`<!-- Fonts -->\n<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />`}
+        </SyntaxHighlighter>
       </>
     );
   }

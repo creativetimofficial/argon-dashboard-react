@@ -136,11 +136,7 @@ class Popovers extends React.Component {
         </div>
         <h2 id="variations">Variations</h2>
         <div className="ct-example">
-          <Nav
-            className="nav-tabs-code"
-            id="popover-colors-tab"
-            role="tablist"
-          >
+          <Nav className="nav-tabs-code" id="popover-colors-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="popover-colors-component"

@@ -228,11 +228,7 @@ class Navs extends React.Component {
         </div>
         <h2 id="tabs">Tabs</h2>
         <div className="ct-example">
-          <Nav
-            className="nav-tabs-code"
-            id="nav-pills-tabs-tab"
-            role="tablist"
-          >
+          <Nav className="nav-tabs-code" id="nav-pills-tabs-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="nav-pills-tabs-component"

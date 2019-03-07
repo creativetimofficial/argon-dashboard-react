@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React from "react";
-
+import { Link } from "react-router-dom";
 // reactstrap components
 import { Button, Row, Col } from "reactstrap";
 
@@ -49,8 +49,8 @@ class Overview extends React.Component {
             </div>
             <h6>Developer First</h6>
             <p className="description">
-              Argon Design System React is a "Developer First" product, with a lot of
-              variables for colors, fonts, sizes and other elements.
+              Argon Design System React is a "Developer First" product, with a
+              lot of variables for colors, fonts, sizes and other elements.
             </p>
           </Col>
           <Col md="4">
@@ -85,21 +85,42 @@ class Overview extends React.Component {
         </p>
         <ul>
           <li>
-            <a href="https://www.getbootstrap.com">Bootstrap 4</a>- Open source
-            front end framework
+            <a href="https://www.getbootstrap.com?ref=creativetim">
+              Bootstrap 4
+            </a>
+            - Open source front end framework
           </li>
           <li>
-            <a href="https://jquery.com/https://jquery.com/">jQuery</a>- Fast,
-            small, and feature-rich JavaScript library
+            <a href="https://reactjs.org/?ref=creativetim">React</a>- Easy to
+            use React Bootstrap 4 components
           </li>
           <li>
-            <a href="https://fonts.google.com/specimen/Open+Sans">
+            <a href="https://facebook.github.io/create-react-app/?ref=creativetim">
+              create-react-app
+            </a>
+            - Whether you’re using React or another library, Create React App
+            lets you focus on code, not build tools.
+          </li>
+          <li>
+            <a
+              href="https://reactstrap.github.io/?ref=creativetim"
+              target="_blank"
+            >
+              Reactstrap
+            </a>
+            - Easy to use React Bootstrap 4 components
+          </li>
+          <li>
+            <a
+              href="https://fonts.google.com/specimen/Open+Sans?ref=creativetim"
+              target="_blank"
+            >
               Open Sans Font
             </a>
             - Google’s Open Source typefaces
           </li>
           <li>
-            <a href="#pablo" onClick={e => e.preventDefault()}>
+            <a href="https://github.com/stripe/elements-examples/#example-1?ref=creativetim">
               Stripe Elements
             </a>
             - Forms, Buttons and Elements
@@ -112,28 +133,28 @@ class Overview extends React.Component {
         <ul>
           <li>
             Follow{" "}
-            <a href="https://twitter.com/creativetim">
+            <a href="https://twitter.com/creativetim?ref=creativetim">
               Creative Tim on Twitter
             </a>
             .
           </li>
           <li>
             Read and subscribe to{" "}
-            <a href="http://blog.creative-tim.com">
+            <a href="http://blog.creative-tim.com?ref=adr-documentation-sidebar">
               The Official Creative Tim Blog
             </a>
             .
           </li>
           <li>
             Follow{" "}
-            <a href="https://www.instagram.com/creativetimofficial">
+            <a href="https://www.instagram.com/creativetimofficial?ref=creativetim">
               Creative Tim on Instagram
             </a>
             .
           </li>
           <li>
             Follow{" "}
-            <a href="https://www.facebook.com/creativetim">
+            <a href="https://www.facebook.com/creativetim?ref=creativetim">
               Creative Tim on Facebook
             </a>
             .
@@ -141,7 +162,12 @@ class Overview extends React.Component {
         </ul>
         <h3 id="quick-start">Quick start</h3>
         <p>
-          <Button className="my-4" color="primary" href="quick-start.html">
+          <Button
+            className="my-4"
+            color="primary"
+            to="/documentation/quick-start"
+            tag={Link}
+          >
             Quick start here
           </Button>
         </p>

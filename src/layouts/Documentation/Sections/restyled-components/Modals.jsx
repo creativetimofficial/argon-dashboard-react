@@ -224,10 +224,7 @@ class Modals extends React.Component {
                   </Button>
                   <Modal contentClassName="bg-gradient-danger">
                     <div className="modal-header">
-                      <h6
-                        className="modal-title"
-                        id="modal-title-notification"
-                      >
+                      <h6 className="modal-title" id="modal-title-notification">
                         Your attention is required
                       </h6>
                       <button

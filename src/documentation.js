@@ -1,6 +1,7 @@
 // Getting started
 // import Colors from "layouts/Documentation/Sections/Colors.jsx";
 import Overview from "layouts/Documentation/Sections/getting-started/Overview.jsx";
+import QuickStart from "layouts/Documentation/Sections/getting-started/QuickStart.jsx";
 import Download from "layouts/Documentation/Sections/getting-started/Download.jsx";
 import License from "layouts/Documentation/Sections/getting-started/License.jsx";
 import Contents from "layouts/Documentation/Sections/getting-started/Contents.jsx";
@@ -46,14 +47,19 @@ var docsRoutes = [
         name: "Overview"
       },
       {
+        path: "/documentation/quick-start",
+        component: QuickStart,
+        name: "Quick Start"
+      },
+      {
+        path: "/documentation/license",
+        component: License,
+        name: "License"
+      },
+      {
         path: "/documentation/download",
         component: Download,
         name: "Download"
-      },
-      {
-        path: "/documentation/build-tools",
-        component: BuildTools,
-        name: "Build Tools"
       },
       {
         path: "/documentation/contents",
@@ -61,9 +67,9 @@ var docsRoutes = [
         name: "Contents"
       },
       {
-        path: "/documentation/license",
-        component: License,
-        name: "License"
+        path: "/documentation/build-tools",
+        component: BuildTools,
+        name: "Build Tools"
       }
       // {
       //   path: "/documentation/tutorial",
