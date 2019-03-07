@@ -1,7 +1,10 @@
 import React from "react";
-
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // reactstrap components
 import { Card, Row, Col } from "reactstrap";
+
+const fileStructure = ``;
 
 class Contents extends React.Component {
   render() {
@@ -14,21 +17,21 @@ class Contents extends React.Component {
           <div className="avatar-group mt-3" />
         </div>
         <p className="ct-lead">
-          Discover what’s included in Bootstrap, including our precompiled and
-          source code flavors. Remember, Bootstrap’s JavaScript plugins require
-          jQuery.
+          Discover what's included in Argon Dashboard React
         </p>
         <hr />
-        <h2 id="argon-structure">Argon structure</h2>
+        <h2 id="argon-structure">Argon Dashboard React structure</h2>
         <p>
           Once downloaded, unzip the compressed folder and you’ll see something
           like this:
         </p>
-        {/* NOTE: This info is intentionally duplicated in the README. Copy any changes made here over to the README too. */}
+        <SyntaxHighlighter language="html" style={prism}>
+          {fileStructure}
+        </SyntaxHighlighter>
         <h2 id="bootstrap-components">Bootstrap components</h2>
         <p>
           Here is the list of Bootstrap 4 components that were restyled in
-          Argon:
+          Argon Dashboard React:
         </p>
         <Row className="row-grid mt-5">
           <Col md="3">
