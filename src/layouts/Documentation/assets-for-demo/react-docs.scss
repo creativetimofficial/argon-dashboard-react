@@ -1,0 +1,28 @@
+body.ct-docs{
+  background: white;
+  .ct-example .navbar {
+    z-index: 2;
+  }
+}
+.ct-docs .ct-example .btn + .btn{
+  margin-left: 5px;
+}
+
+.ct-docs .ct-example .btn-group .btn + .btn{
+  margin: 4px 0;
+}
+
+.ct-docs .ct-example .btn-group + .btn-group{
+  margin-left: 5px;
+}
+
+.ct-docs .ct-sidebar,.ct-docs .ct-navbar{
+  position: sticky;
+}
+
+.ct-docs .ct-navbar .navbar-brand{
+  position: unset;
+}
+.ct-docs .ct-example.ct-color-schemes .navbar-toggler{
+  pointer-events: none;
+}
