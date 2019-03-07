@@ -156,7 +156,11 @@ class Tables extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">60%</span>
                           <div>
-                            <Progress max="100" value="60" barClassName="bg-danger"/>
+                            <Progress
+                              max="100"
+                              value="60"
+                              barClassName="bg-danger"
+                            />
                           </div>
                         </div>
                       </td>
@@ -168,6 +172,7 @@ class Tables extends React.Component {
                             role="button"
                             size="sm"
                             color=""
+                            onClick={e => e.preventDefault()}
                           >
                             <i className="fas fa-ellipsis-v" />
                           </DropdownToggle>
@@ -301,7 +306,11 @@ class Tables extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">100%</span>
                           <div>
-                            <Progress max="100" value="100" barClassName="bg-success"/>
+                            <Progress
+                              max="100"
+                              value="100"
+                              barClassName="bg-success"
+                            />
                           </div>
                         </div>
                       </td>
@@ -313,6 +322,7 @@ class Tables extends React.Component {
                             role="button"
                             size="sm"
                             color=""
+                            onClick={e => e.preventDefault()}
                           >
                             <i className="fas fa-ellipsis-v" />
                           </DropdownToggle>
@@ -446,7 +456,11 @@ class Tables extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">72%</span>
                           <div>
-                            <Progress max="100" value="72" barClassName="bg-danger"/>
+                            <Progress
+                              max="100"
+                              value="72"
+                              barClassName="bg-danger"
+                            />
                           </div>
                         </div>
                       </td>
@@ -458,6 +472,7 @@ class Tables extends React.Component {
                             role="button"
                             size="sm"
                             color=""
+                            onClick={e => e.preventDefault()}
                           >
                             <i className="fas fa-ellipsis-v" />
                           </DropdownToggle>
@@ -591,7 +606,11 @@ class Tables extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">90%</span>
                           <div>
-                            <Progress max="100" value="90" barClassName="bg-info"/>
+                            <Progress
+                              max="100"
+                              value="90"
+                              barClassName="bg-info"
+                            />
                           </div>
                         </div>
                       </td>
@@ -603,6 +622,7 @@ class Tables extends React.Component {
                             role="button"
                             size="sm"
                             color=""
+                            onClick={e => e.preventDefault()}
                           >
                             <i className="fas fa-ellipsis-v" />
                           </DropdownToggle>
@@ -736,7 +756,11 @@ class Tables extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">100%</span>
                           <div>
-                            <Progress max="100" value="100" barClassName="bg-success"/>
+                            <Progress
+                              max="100"
+                              value="100"
+                              barClassName="bg-success"
+                            />
                           </div>
                         </div>
                       </td>
@@ -748,6 +772,7 @@ class Tables extends React.Component {
                             role="button"
                             size="sm"
                             color=""
+                            onClick={e => e.preventDefault()}
                           >
                             <i className="fas fa-ellipsis-v" />
                           </DropdownToggle>
@@ -960,7 +985,11 @@ class Tables extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">60%</span>
                           <div>
-                            <Progress max="100" value="60" barClassName="bg-warning"/>
+                            <Progress
+                              max="100"
+                              value="60"
+                              barClassName="bg-warning"
+                            />
                           </div>
                         </div>
                       </td>
@@ -972,6 +1001,7 @@ class Tables extends React.Component {
                             role="button"
                             size="sm"
                             color=""
+                            onClick={e => e.preventDefault()}
                           >
                             <i className="fas fa-ellipsis-v" />
                           </DropdownToggle>
@@ -1105,7 +1135,11 @@ class Tables extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">100%</span>
                           <div>
-                            <Progress max="100" value="100" barClassName="bg-success"/>
+                            <Progress
+                              max="100"
+                              value="100"
+                              barClassName="bg-success"
+                            />
                           </div>
                         </div>
                       </td>
@@ -1117,6 +1151,7 @@ class Tables extends React.Component {
                             role="button"
                             size="sm"
                             color=""
+                            onClick={e => e.preventDefault()}
                           >
                             <i className="fas fa-ellipsis-v" />
                           </DropdownToggle>
@@ -1250,7 +1285,11 @@ class Tables extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">72%</span>
                           <div>
-                            <Progress max="100" value="72" barClassName="bg-danger"/>
+                            <Progress
+                              max="100"
+                              value="72"
+                              barClassName="bg-danger"
+                            />
                           </div>
                         </div>
                       </td>
@@ -1262,6 +1301,7 @@ class Tables extends React.Component {
                             role="button"
                             size="sm"
                             color=""
+                            onClick={e => e.preventDefault()}
                           >
                             <i className="fas fa-ellipsis-v" />
                           </DropdownToggle>
@@ -1395,7 +1435,11 @@ class Tables extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">90%</span>
                           <div>
-                            <Progress max="100" value="90" barClassName="bg-info"/>
+                            <Progress
+                              max="100"
+                              value="90"
+                              barClassName="bg-info"
+                            />
                           </div>
                         </div>
                       </td>
@@ -1407,6 +1451,7 @@ class Tables extends React.Component {
                             role="button"
                             size="sm"
                             color=""
+                            onClick={e => e.preventDefault()}
                           >
                             <i className="fas fa-ellipsis-v" />
                           </DropdownToggle>
@@ -1540,7 +1585,11 @@ class Tables extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">100%</span>
                           <div>
-                            <Progress max="100" value="100" barClassName="bg-danger"/>
+                            <Progress
+                              max="100"
+                              value="100"
+                              barClassName="bg-danger"
+                            />
                           </div>
                         </div>
                       </td>
@@ -1552,6 +1601,7 @@ class Tables extends React.Component {
                             role="button"
                             size="sm"
                             color=""
+                            onClick={e => e.preventDefault()}
                           >
                             <i className="fas fa-ellipsis-v" />
                           </DropdownToggle>

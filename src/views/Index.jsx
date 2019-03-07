@@ -174,7 +174,8 @@ class Index extends React.Component {
                       <td>4,569</td>
                       <td>340</td>
                       <td>
-                        <i className="fas fa-arrow-up text-success mr-3" /> 46,53%
+                        <i className="fas fa-arrow-up text-success mr-3" />{" "}
+                        46,53%
                       </td>
                     </tr>
                     <tr>
@@ -182,7 +183,8 @@ class Index extends React.Component {
                       <td>3,985</td>
                       <td>319</td>
                       <td>
-                        <i className="fas fa-arrow-down text-warning mr-3" /> 46,53%
+                        <i className="fas fa-arrow-down text-warning mr-3" />{" "}
+                        46,53%
                       </td>
                     </tr>
                     <tr>
@@ -190,7 +192,8 @@ class Index extends React.Component {
                       <td>3,513</td>
                       <td>294</td>
                       <td>
-                        <i className="fas fa-arrow-down text-warning mr-3" /> 36,49%
+                        <i className="fas fa-arrow-down text-warning mr-3" />{" "}
+                        36,49%
                       </td>
                     </tr>
                     <tr>
@@ -198,7 +201,8 @@ class Index extends React.Component {
                       <td>2,050</td>
                       <td>147</td>
                       <td>
-                        <i className="fas fa-arrow-up text-success mr-3" /> 50,87%
+                        <i className="fas fa-arrow-up text-success mr-3" />{" "}
+                        50,87%
                       </td>
                     </tr>
                     <tr>
@@ -206,7 +210,8 @@ class Index extends React.Component {
                       <td>1,795</td>
                       <td>190</td>
                       <td>
-                        <i className="fas fa-arrow-down text-danger mr-3" /> 46,53%
+                        <i className="fas fa-arrow-down text-danger mr-3" />{" "}
+                        46,53%
                       </td>
                     </tr>
                   </tbody>
@@ -280,10 +285,7 @@ class Index extends React.Component {
                         <div className="d-flex align-items-center">
                           <span className="mr-2">80%</span>
                           <div>
-                            <Progress
-                              max="100"
-                              value="80"
-                            />
+                            <Progress max="100" value="80" />
                           </div>
                         </div>
                       </td>
