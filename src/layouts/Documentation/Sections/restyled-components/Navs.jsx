@@ -15,25 +15,25 @@ class Navs extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Modal
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Use Bootstrap’s JavaScript modal plugin to add dialogs to your site
           for lightboxes, user notifications, or completely custom content.
         </p>
         <hr />
         <h3 id="nav-pills">Nav pills</h3>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="nav-pills-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="nav-pills-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="nav-pills-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="nav-pills-component-tab"
@@ -60,12 +60,12 @@ class Navs extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="nav-pills-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="nav-pills-component"
               role="tabpanel"
             >
               <Nav
-                className=" nav-fill flex-column flex-sm-row"
+                className="nav-fill flex-column flex-sm-row"
                 id="tabs-text"
                 pills
                 role="tablist"
@@ -74,7 +74,7 @@ class Navs extends React.Component {
                   <NavLink
                     aria-controls="tabs-text-1"
                     aria-selected={true}
-                    className=" mb-sm-3 mb-md-0 active"
+                    className="mb-sm-3 mb-md-0 active"
                     data-toggle="tab"
                     href="#pablo"
                     id="tabs-text-1-tab"
@@ -88,7 +88,7 @@ class Navs extends React.Component {
                   <NavLink
                     aria-controls="tabs-text-2"
                     aria-selected={false}
-                    className=" mb-sm-3 mb-md-0"
+                    className="mb-sm-3 mb-md-0"
                     data-toggle="tab"
                     href="#pablo"
                     id="tabs-text-2-tab"
@@ -102,7 +102,7 @@ class Navs extends React.Component {
                   <NavLink
                     aria-controls="tabs-text-3"
                     aria-selected={false}
-                    className=" mb-sm-3 mb-md-0"
+                    className="mb-sm-3 mb-md-0"
                     data-toggle="tab"
                     href="#pablo"
                     id="tabs-text-3-tab"
@@ -116,16 +116,16 @@ class Navs extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="nav-pills-html-tab"
-              className=" fade"
+              className="fade"
               id="nav-pills-html"
               role="tabpanel"
             />
           </TabContent>
         </div>
         <h2 id="circled-nav-pills">Circled nav pills</h2>
-        <div className=" ct-example">
+        <div className="ct-example">
           <Nav
-            className=" nav-tabs-code"
+            className="nav-tabs-code"
             id="nav-pills-circle-tab"
             role="tablist"
           >
@@ -133,7 +133,7 @@ class Navs extends React.Component {
               <NavLink
                 aria-controls="nav-pills-circle-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="nav-pills-circle-component-tab"
@@ -160,12 +160,12 @@ class Navs extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="nav-pills-circle-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="nav-pills-circle-component"
               role="tabpanel"
             >
               <Nav
-                className=" nav-pills-circle"
+                className="nav-pills-circle"
                 id="tabs_2"
                 pills
                 role="tablist"
@@ -174,15 +174,15 @@ class Navs extends React.Component {
                   <NavLink
                     aria-controls="home"
                     aria-selected={true}
-                    className=" rounded-circle active"
+                    className="rounded-circle active"
                     data-toggle="tab"
                     href="#pablo"
                     id="home-tab"
                     onClick={e => e.preventDefault()}
                     role="tab"
                   >
-                    <span className=" nav-link-icon d-block">
-                      <i className=" ni ni-atom" />
+                    <span className="nav-link-icon d-block">
+                      <i className="ni ni-atom" />
                     </span>
                   </NavLink>
                 </NavItem>
@@ -196,8 +196,8 @@ class Navs extends React.Component {
                     onClick={e => e.preventDefault()}
                     role="tab"
                   >
-                    <span className=" nav-link-icon d-block">
-                      <i className=" ni ni-chat-round" />
+                    <span className="nav-link-icon d-block">
+                      <i className="ni ni-chat-round" />
                     </span>
                   </NavLink>
                 </NavItem>
@@ -211,8 +211,8 @@ class Navs extends React.Component {
                     onClick={e => e.preventDefault()}
                     role="tab"
                   >
-                    <span className=" nav-link-icon d-block">
-                      <i className=" ni ni-cloud-download-95" />
+                    <span className="nav-link-icon d-block">
+                      <i className="ni ni-cloud-download-95" />
                     </span>
                   </NavLink>
                 </NavItem>
@@ -220,16 +220,16 @@ class Navs extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="nav-pills-circle-html-tab"
-              className=" fade"
+              className="fade"
               id="nav-pills-circle-html"
               role="tabpanel"
             />
           </TabContent>
         </div>
         <h2 id="tabs">Tabs</h2>
-        <div className=" ct-example">
+        <div className="ct-example">
           <Nav
-            className=" nav-tabs-code"
+            className="nav-tabs-code"
             id="nav-pills-tabs-tab"
             role="tablist"
           >
@@ -237,7 +237,7 @@ class Navs extends React.Component {
               <NavLink
                 aria-controls="nav-pills-tabs-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="nav-pills-tabs-component-tab"
@@ -264,13 +264,13 @@ class Navs extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="nav-pills-tabs-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="nav-pills-tabs-component"
               role="tabpanel"
             >
-              <div className=" nav-wrapper">
+              <div className="nav-wrapper">
                 <Nav
-                  className=" nav-fill flex-column flex-md-row"
+                  className="nav-fill flex-column flex-md-row"
                   id="tabs-icons-text"
                   pills
                   role="tablist"
@@ -279,14 +279,14 @@ class Navs extends React.Component {
                     <NavLink
                       aria-controls="tabs-icons-text-1"
                       aria-selected={true}
-                      className=" mb-sm-3 mb-md-0 active"
+                      className="mb-sm-3 mb-md-0 active"
                       data-toggle="tab"
                       href="#pablo"
                       id="tabs-icons-text-1-tab"
                       onClick={e => e.preventDefault()}
                       role="tab"
                     >
-                      <i className=" ni ni-cloud-upload-96 mr-2" />
+                      <i className="ni ni-cloud-upload-96 mr-2" />
                       Home
                     </NavLink>
                   </NavItem>
@@ -294,14 +294,14 @@ class Navs extends React.Component {
                     <NavLink
                       aria-controls="tabs-icons-text-2"
                       aria-selected={false}
-                      className=" mb-sm-3 mb-md-0"
+                      className="mb-sm-3 mb-md-0"
                       data-toggle="tab"
                       href="#pablo"
                       id="tabs-icons-text-2-tab"
                       onClick={e => e.preventDefault()}
                       role="tab"
                     >
-                      <i className=" ni ni-bell-55 mr-2" />
+                      <i className="ni ni-bell-55 mr-2" />
                       Profile
                     </NavLink>
                   </NavItem>
@@ -309,36 +309,36 @@ class Navs extends React.Component {
                     <NavLink
                       aria-controls="tabs-icons-text-3"
                       aria-selected={false}
-                      className=" mb-sm-3 mb-md-0"
+                      className="mb-sm-3 mb-md-0"
                       data-toggle="tab"
                       href="#pablo"
                       id="tabs-icons-text-3-tab"
                       onClick={e => e.preventDefault()}
                       role="tab"
                     >
-                      <i className=" ni ni-calendar-grid-58 mr-2" />
+                      <i className="ni ni-calendar-grid-58 mr-2" />
                       Messages
                     </NavLink>
                   </NavItem>
                 </Nav>
               </div>
-              <Card className=" shadow">
+              <Card className="shadow">
                 <CardBody>
                   <TabContent id="myTabContent">
                     <TabPane
                       aria-labelledby="tabs-icons-text-1-tab"
-                      className=" fade show active"
+                      className="fade show active"
                       id="tabs-icons-text-1"
                       role="tabpanel"
                     >
-                      <p className=" description">
+                      <p className="description">
                         Raw denim you probably haven't heard of them jean shorts
                         Austin. Nesciunt tofu stumptown aliqua, retro synth
                         master cleanse. Mustache cliche tempor, williamsburg
                         carles vegan helvetica. Reprehenderit butcher retro
                         keffiyeh dreamcatcher synth.
                       </p>
-                      <p className=" description">
+                      <p className="description">
                         Raw denim you probably haven't heard of them jean shorts
                         Austin. Nesciunt tofu stumptown aliqua, retro synth
                         master cleanse.
@@ -346,11 +346,11 @@ class Navs extends React.Component {
                     </TabPane>
                     <TabPane
                       aria-labelledby="tabs-icons-text-2-tab"
-                      className=" fade"
+                      className="fade"
                       id="tabs-icons-text-2"
                       role="tabpanel"
                     >
-                      <p className=" description">
+                      <p className="description">
                         Cosby sweater eu banh mi, qui irure terry richardson ex
                         squid. Aliquip placeat salvia cillum iphone. Seitan
                         aliquip quis cardigan american apparel, butcher
@@ -359,11 +359,11 @@ class Navs extends React.Component {
                     </TabPane>
                     <TabPane
                       aria-labelledby="tabs-icons-text-3-tab"
-                      className=" fade"
+                      className="fade"
                       id="tabs-icons-text-3"
                       role="tabpanel"
                     >
-                      <p className=" description">
+                      <p className="description">
                         Raw denim you probably haven't heard of them jean shorts
                         Austin. Nesciunt tofu stumptown aliqua, retro synth
                         master cleanse. Mustache cliche tempor, williamsburg
@@ -377,7 +377,7 @@ class Navs extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="nav-pills-tabs-html-tab"
-              className=" fade"
+              className="fade"
               id="nav-pills-tabs-html"
               role="tabpanel"
             />

@@ -4,13 +4,13 @@ class Headroom extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Headroom
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Give your pages some headroom. Hide your header until you need it.
         </p>
         <hr />
@@ -21,7 +21,7 @@ class Headroom extends React.Component {
         </p>
         <h3 id="initialization">Initialization</h3>
         <p>
-          Add the <code className=" highlighter-rouge">.headroom</code>
+          Add the <code className="highlighter-rouge">.headroom</code>
           class on the main navbar in order to make it sticky and show it on
           scroll.
         </p>

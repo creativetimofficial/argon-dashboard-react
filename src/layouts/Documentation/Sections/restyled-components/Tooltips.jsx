@@ -15,26 +15,26 @@ class Tooltips extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Tooltips
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Documentation and examples for Bootstrap’s powerful, responsive
           navigation header, the navbar. Includes support for branding,
           navigation, and more, including support for our collapse plugin.
         </p>
         <hr />
         <h2 id="example">Example</h2>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="tooltips-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="tooltips-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="tooltips-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="tooltips-component-tab"
@@ -61,12 +61,12 @@ class Tooltips extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="tooltips-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="tooltips-component"
               role="tabpanel"
             >
               <Button
-                className=" btn-white"
+                className="btn-white"
                 color="default"
                 data-placement="top"
                 id="tooltip611234743"
@@ -83,7 +83,7 @@ class Tooltips extends React.Component {
                 Tooltip on top
               </UncontrolledTooltip>
               <Button
-                className=" btn-white"
+                className="btn-white"
                 color="default"
                 data-placement="right"
                 id="tooltip159654437"
@@ -100,7 +100,7 @@ class Tooltips extends React.Component {
                 Tooltip on right
               </UncontrolledTooltip>
               <Button
-                className=" btn-white"
+                className="btn-white"
                 color="default"
                 data-placement="bottom"
                 id="tooltip860969338"
@@ -117,7 +117,7 @@ class Tooltips extends React.Component {
                 Tooltip on bottom
               </UncontrolledTooltip>
               <Button
-                className=" btn-white"
+                className="btn-white"
                 color="default"
                 data-placement="left"
                 id="tooltip297043631"
@@ -136,7 +136,7 @@ class Tooltips extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="tooltips-html-tab"
-              className=" fade"
+              className="fade"
               id="tooltips-html"
               role="tabpanel"
             />

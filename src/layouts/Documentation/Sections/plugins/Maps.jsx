@@ -7,25 +7,25 @@ class Maps extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Maps
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Our map component uses the Google Maps API and it comes with a custom
           interface that matches the theme’s colors
         </p>
         <hr />
         <h2 id="example">Example</h2>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="slider-single-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="slider-single-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="slider-single-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="slider-single-component-tab"
@@ -52,12 +52,12 @@ class Maps extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="slider-single-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="slider-single-component"
               role="tabpanel"
             >
               <div
-                className=" map-canvas"
+                className="map-canvas"
                 data-lat="40.748817"
                 data-lng="-73.985428"
                 id="map-canvas"
@@ -66,7 +66,7 @@ class Maps extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="slider-single-html-tab"
-              className=" fade"
+              className="fade"
               id="slider-single-html"
               role="tabpanel"
             />
@@ -89,8 +89,8 @@ class Maps extends React.Component {
         <p>
           Simply copy one of the code examples demonstrated above and include it
           in your page. Afterwards, you can modify the lat and long in the{" "}
-          <code className=" highlighter-rouge">data-lat</code>
-          and <code className=" highlighter-rouge">data-lng</code>
+          <code className="highlighter-rouge">data-lat</code>
+          and <code className="highlighter-rouge">data-lng</code>
           attributes from the
         </p>
       </>

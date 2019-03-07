@@ -15,13 +15,13 @@ class Badges extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Badges
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Documentation and examples for badges, our small count and labeling
           component.
         </p>
@@ -30,13 +30,13 @@ class Badges extends React.Component {
         <p>
           Badges can be used as part of links or buttons to provide a counter.
         </p>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="badge-button-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="badge-button-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="badge-button-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="badge-button-component-tab"
@@ -63,18 +63,18 @@ class Badges extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="badge-button-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="badge-button-component"
               role="tabpanel"
             >
               <Button color="primary" type="button">
                 <span>Notifications</span>
-                <Badge className=" badge-white">4</Badge>
+                <Badge className="badge-white">4</Badge>
               </Button>
             </TabPane>
             <TabPane
               aria-labelledby="badge-button-html-tab"
-              className=" fade"
+              className="fade"
               id="badge-button-html"
               role="tabpanel"
             />
@@ -85,13 +85,13 @@ class Badges extends React.Component {
           Add any of the below mentioned modifier classes to change the
           appearance of a badge.
         </p>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="badges-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="badges-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="badges-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="badges-component-tab"
@@ -118,11 +118,11 @@ class Badges extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="badges-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="badges-component"
               role="tabpanel"
             >
-              <Badge className=" badge-default">Default</Badge>
+              <Badge className="badge-default">Default</Badge>
               <Badge color="primary">Primary</Badge>
               <Badge color="secondary">Secondary</Badge>
               <Badge color="info">Info</Badge>
@@ -132,7 +132,7 @@ class Badges extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="badges-html-tab"
-              className=" fade"
+              className="fade"
               id="badges-html"
               role="tabpanel"
             />
@@ -140,20 +140,20 @@ class Badges extends React.Component {
         </div>
         <h2 id="pill-badges">Pill badges</h2>
         <p>
-          Use the <code className=" highlighter-rouge">.badge-pill</code>
+          Use the <code className="highlighter-rouge">.badge-pill</code>
           modifier class to make badges more rounded (with a larger{" "}
-          <code className=" highlighter-rouge">border-radius</code>
+          <code className="highlighter-rouge">border-radius</code>
           and additional horizontal{" "}
-          <code className=" highlighter-rouge">padding</code>
+          <code className="highlighter-rouge">padding</code>
           ). Useful if you miss the badges from v3.
         </p>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="badge-pills-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="badge-pills-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="badge-pills-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="badge-pills-component-tab"
@@ -180,11 +180,11 @@ class Badges extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="badge-pills-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="badge-pills-component"
               role="tabpanel"
             >
-              <Badge className=" badge-default" pill>
+              <Badge className="badge-default" pill>
                 Default
               </Badge>
               <Badge color="primary" pill>
@@ -208,7 +208,7 @@ class Badges extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="badge-pills-html-tab"
-              className=" fade"
+              className="fade"
               id="badge-pills-html"
               role="tabpanel"
             />
@@ -217,18 +217,18 @@ class Badges extends React.Component {
         <h2 id="links">Links</h2>
         <p>
           Using the contextual{" "}
-          <code className=" highlighter-rouge">.badge-*</code>
-          classes on an <code className=" highlighter-rouge">{`<a>`}</code>
+          <code className="highlighter-rouge">.badge-*</code>
+          classes on an <code className="highlighter-rouge">{`<a>`}</code>
           element quickly provide <em>actionable</em>
           badges with hover and focus states.
         </p>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="badge-links-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="badge-links-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="badge-links-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="badge-links-component-tab"
@@ -255,12 +255,12 @@ class Badges extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="badge-links-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="badge-links-component"
               role="tabpanel"
             >
               <Badge
-                className=" badge-default"
+                className="badge-default"
                 href="#pablo"
                 onClick={e => e.preventDefault()}
               >
@@ -311,7 +311,7 @@ class Badges extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="badge-links-html-tab"
-              className=" fade"
+              className="fade"
               id="badge-links-html"
               role="tabpanel"
             />

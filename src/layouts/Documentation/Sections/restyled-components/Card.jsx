@@ -21,25 +21,25 @@ class Card extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Card
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           A card provides a flexible and extensible content container with
           multiple variants and options.
         </p>
         <hr />
         <h3 id="examples">Examples</h3>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="table-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="table-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="table-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="table-component-tab"
@@ -66,7 +66,7 @@ class Card extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="table-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="table-component"
               role="tabpanel"
             >
@@ -94,20 +94,20 @@ class Card extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="table-html-tab"
-              className=" fade"
+              className="fade"
               id="table-html"
               role="tabpanel"
             />
           </TabContent>
         </div>
         <h3 id="stats-card">Stats card</h3>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="card-stats-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="card-stats-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="card-stats-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="card-stats-component-tab"
@@ -134,34 +134,34 @@ class Card extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="card-stats-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="card-stats-component"
               role="tabpanel"
             >
               <div style={{ width: "18rem" }}>
-                <Card className=" card-stats mb-4 mb-lg-0">
+                <Card className="card-stats mb-4 mb-lg-0">
                   <CardBody>
                     <Row>
-                      <div className=" col">
-                        <CardTitle className=" text-uppercase text-muted mb-0">
+                      <div className="col">
+                        <CardTitle className="text-uppercase text-muted mb-0">
                           Total traffic
                         </CardTitle>
-                        <span className=" h2 font-weight-bold mb-0">
+                        <span className="h2 font-weight-bold mb-0">
                           350,897
                         </span>
                       </div>
-                      <Col className=" col-auto">
-                        <div className=" icon icon-shape bg-danger text-white rounded-circle shadow">
-                          <i className=" fas fa-chart-bar" />
+                      <Col className="col-auto">
+                        <div className="icon icon-shape bg-danger text-white rounded-circle shadow">
+                          <i className="fas fa-chart-bar" />
                         </div>
                       </Col>
                     </Row>
-                    <p className=" mt-3 mb-0 text-muted text-sm">
-                      <span className=" text-success mr-2">
-                        <i className=" fa fa-arrow-up" />
+                    <p className="mt-3 mb-0 text-muted text-sm">
+                      <span className="text-success mr-2">
+                        <i className="fa fa-arrow-up" />
                         3.48%
                       </span>
-                      <span className=" text-nowrap">Since last month</span>
+                      <span className="text-nowrap">Since last month</span>
                     </p>
                   </CardBody>
                 </Card>
@@ -169,7 +169,7 @@ class Card extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="card-stats-html-tab"
-              className=" fade"
+              className="fade"
               id="card-stats-html"
               role="tabpanel"
             />

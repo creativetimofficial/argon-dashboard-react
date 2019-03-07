@@ -22,26 +22,26 @@ class Navbars extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Navbar
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Documentation and examples for Bootstrap’s powerful, responsive
           navigation header, the navbar. Includes support for branding,
           navigation, and more, including support for our collapse plugin.
         </p>
         <hr />
         <h2 id="example">Example</h2>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="navbar-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="navbar-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="navbar-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="navbar-component-tab"
@@ -68,12 +68,12 @@ class Navbars extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="navbar-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="navbar-component"
               role="tabpanel"
             >
               <Navbar
-                className=" navbar-horizontal navbar-dark bg-default"
+                className="navbar-horizontal navbar-dark bg-default"
                 expand="lg"
               >
                 <Container>
@@ -84,22 +84,22 @@ class Navbars extends React.Component {
                     aria-controls="navbar-default"
                     aria-expanded={false}
                     aria-label="Toggle navigation"
-                    className=" navbar-toggler"
+                    className="navbar-toggler"
                     data-target="#navbar-default"
                     data-toggle="collapse"
                     id="navbar-default"
                     type="button"
                   >
-                    <span className=" navbar-toggler-icon" />
+                    <span className="navbar-toggler-icon" />
                   </button>
                   <UncontrolledCollapse
                     id="navbar-default"
                     navbar
                     toggler="#navbar-default"
                   >
-                    <div className=" navbar-collapse-header">
+                    <div className="navbar-collapse-header">
                       <Row>
-                        <Col className=" collapse-brand" xs="6">
+                        <Col className="collapse-brand" xs="6">
                           <a href="../../index.html">
                             <img
                               alt="..."
@@ -107,12 +107,12 @@ class Navbars extends React.Component {
                             />
                           </a>
                         </Col>
-                        <Col className=" collapse-close" xs="6">
+                        <Col className="collapse-close" xs="6">
                           <button
                             aria-controls="navbar-default"
                             aria-expanded={false}
                             aria-label="Toggle navigation"
-                            className=" navbar-toggler"
+                            className="navbar-toggler"
                             data-target="#navbar-default"
                             data-toggle="collapse"
                             id="navbar-default"
@@ -124,27 +124,27 @@ class Navbars extends React.Component {
                         </Col>
                       </Row>
                     </div>
-                    <Nav className=" ml-lg-auto" navbar>
+                    <Nav className="ml-lg-auto" navbar>
                       <NavItem>
                         <NavLink
-                          className=" nav-link-icon"
+                          className="nav-link-icon"
                           href="#pablo"
                           onClick={e => e.preventDefault()}
                         >
-                          <i className=" ni ni-favourite-28" />
-                          <span className=" nav-link-inner--text d-lg-none">
+                          <i className="ni ni-favourite-28" />
+                          <span className="nav-link-inner--text d-lg-none">
                             Discover
                           </span>
                         </NavLink>
                       </NavItem>
                       <NavItem>
                         <NavLink
-                          className=" nav-link-icon"
+                          className="nav-link-icon"
                           href="#pablo"
                           onClick={e => e.preventDefault()}
                         >
-                          <i className=" ni ni-notification-70" />
-                          <span className=" nav-link-inner--text d-lg-none">
+                          <i className="ni ni-notification-70" />
+                          <span className="nav-link-inner--text d-lg-none">
                             Profile
                           </span>
                         </NavLink>
@@ -153,15 +153,15 @@ class Navbars extends React.Component {
                         <NavLink
                           aria-expanded={false}
                           aria-haspopup={true}
-                          className=" nav-link-icon"
+                          className="nav-link-icon"
                           data-toggle="dropdown"
                           href="#pablo"
                           id="navbar-default_dropdown_1"
                           onClick={e => e.preventDefault()}
                           role="button"
                         >
-                          <i className=" ni ni-settings-gear-65" />
-                          <span className=" nav-link-inner--text d-lg-none">
+                          <i className="ni ni-settings-gear-65" />
+                          <span className="nav-link-inner--text d-lg-none">
                             Settings
                           </span>
                         </NavLink>
@@ -197,7 +197,7 @@ class Navbars extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="navbar-html-tab"
-              className=" fade"
+              className="fade"
               id="navbar-html"
               role="tabpanel"
             />
@@ -206,7 +206,7 @@ class Navbars extends React.Component {
         <h2 id="variations">Variations</h2>
         {/* Navbar primary */}
         <Navbar
-          className=" navbar-horizontal navbar-dark bg-primary mt-4"
+          className="navbar-horizontal navbar-dark bg-primary mt-4"
           expand="lg"
         >
           <Container>
@@ -217,22 +217,22 @@ class Navbars extends React.Component {
               aria-controls="navbar-primary"
               aria-expanded={false}
               aria-label="Toggle navigation"
-              className=" navbar-toggler"
+              className="navbar-toggler"
               data-target="#navbar-primary"
               data-toggle="collapse"
               id="navbar-primary"
               type="button"
             >
-              <span className=" navbar-toggler-icon" />
+              <span className="navbar-toggler-icon" />
             </button>
             <UncontrolledCollapse
               id="navbar-primary"
               navbar
               toggler="#navbar-primary"
             >
-              <div className=" navbar-collapse-header">
+              <div className="navbar-collapse-header">
                 <Row>
-                  <Col className=" collapse-brand" xs="6">
+                  <Col className="collapse-brand" xs="6">
                     <a href="../../index.html">
                       <img
                         alt="..."
@@ -240,12 +240,12 @@ class Navbars extends React.Component {
                       />
                     </a>
                   </Col>
-                  <Col className=" collapse-close" xs="6">
+                  <Col className="collapse-close" xs="6">
                     <button
                       aria-controls="navbar-primary"
                       aria-expanded={false}
                       aria-label="Toggle navigation"
-                      className=" navbar-toggler"
+                      className="navbar-toggler"
                       data-target="#navbar-primary"
                       data-toggle="collapse"
                       id="navbar-primary"
@@ -257,10 +257,10 @@ class Navbars extends React.Component {
                   </Col>
                 </Row>
               </div>
-              <Nav className=" ml-lg-auto" navbar>
+              <Nav className="ml-lg-auto" navbar>
                 <NavItem>
                   <NavLink href="#pablo" onClick={e => e.preventDefault()}>
-                    Discover <span className=" sr-only">(current)</span>
+                    Discover <span className="sr-only">(current)</span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -311,7 +311,7 @@ class Navbars extends React.Component {
         </Navbar>
         {/* Navbar success */}
         <Navbar
-          className=" navbar-horizontal navbar-dark bg-success mt-4"
+          className="navbar-horizontal navbar-dark bg-success mt-4"
           expand="lg"
         >
           <Container>
@@ -322,22 +322,22 @@ class Navbars extends React.Component {
               aria-controls="navbar-success"
               aria-expanded={false}
               aria-label="Toggle navigation"
-              className=" navbar-toggler"
+              className="navbar-toggler"
               data-target="#navbar-success"
               data-toggle="collapse"
               id="navbar-success"
               type="button"
             >
-              <span className=" navbar-toggler-icon" />
+              <span className="navbar-toggler-icon" />
             </button>
             <UncontrolledCollapse
               id="navbar-success"
               navbar
               toggler="#navbar-success"
             >
-              <div className=" navbar-collapse-header">
+              <div className="navbar-collapse-header">
                 <Row>
-                  <Col className=" collapse-brand" xs="6">
+                  <Col className="collapse-brand" xs="6">
                     <a href="../../index.html">
                       <img
                         alt="..."
@@ -345,12 +345,12 @@ class Navbars extends React.Component {
                       />
                     </a>
                   </Col>
-                  <Col className=" collapse-close" xs="6">
+                  <Col className="collapse-close" xs="6">
                     <button
                       aria-controls="navbar-success"
                       aria-expanded={false}
                       aria-label="Toggle navigation"
-                      className=" navbar-toggler"
+                      className="navbar-toggler"
                       data-target="#navbar-success"
                       data-toggle="collapse"
                       id="navbar-success"
@@ -362,27 +362,27 @@ class Navbars extends React.Component {
                   </Col>
                 </Row>
               </div>
-              <Nav className=" ml-lg-auto" navbar>
+              <Nav className="ml-lg-auto" navbar>
                 <NavItem>
                   <NavLink
-                    className=" nav-link-icon"
+                    className="nav-link-icon"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                   >
-                    <i className=" ni ni-favourite-28" />
-                    <span className=" nav-link-inner--text d-lg-none">
+                    <i className="ni ni-favourite-28" />
+                    <span className="nav-link-inner--text d-lg-none">
                       Favorites
                     </span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className=" nav-link-icon"
+                    className="nav-link-icon"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                   >
-                    <i className=" ni ni-planet" />
-                    <span className=" nav-link-inner--text d-lg-none">
+                    <i className="ni ni-planet" />
+                    <span className="nav-link-inner--text d-lg-none">
                       Another action
                     </span>
                   </NavLink>
@@ -391,15 +391,15 @@ class Navbars extends React.Component {
                   <NavLink
                     aria-expanded={false}
                     aria-haspopup={true}
-                    className=" nav-link-icon"
+                    className="nav-link-icon"
                     data-toggle="dropdown"
                     href="#pablo"
                     id="navbar-success_dropdown_1"
                     onClick={e => e.preventDefault()}
                     role="button"
                   >
-                    <i className=" ni ni-settings-gear-65" />
-                    <span className=" nav-link-inner--text d-lg-none">
+                    <i className="ni ni-settings-gear-65" />
+                    <span className="nav-link-inner--text d-lg-none">
                       Settings
                     </span>
                   </NavLink>
@@ -434,7 +434,7 @@ class Navbars extends React.Component {
         </Navbar>
         {/* Navbar danger */}
         <Navbar
-          className=" navbar-horizontal navbar-dark bg-danger mt-4"
+          className="navbar-horizontal navbar-dark bg-danger mt-4"
           expand="lg"
         >
           <Container>
@@ -445,22 +445,22 @@ class Navbars extends React.Component {
               aria-controls="navbar-danger"
               aria-expanded={false}
               aria-label="Toggle navigation"
-              className=" navbar-toggler"
+              className="navbar-toggler"
               data-target="#navbar-danger"
               data-toggle="collapse"
               id="navbar-danger"
               type="button"
             >
-              <span className=" navbar-toggler-icon" />
+              <span className="navbar-toggler-icon" />
             </button>
             <UncontrolledCollapse
               id="navbar-danger"
               navbar
               toggler="#navbar-danger"
             >
-              <div className=" navbar-collapse-header">
+              <div className="navbar-collapse-header">
                 <Row>
-                  <Col className=" collapse-brand" xs="6">
+                  <Col className="collapse-brand" xs="6">
                     <a href="../../index.html">
                       <img
                         alt="..."
@@ -468,12 +468,12 @@ class Navbars extends React.Component {
                       />
                     </a>
                   </Col>
-                  <Col className=" collapse-close" xs="6">
+                  <Col className="collapse-close" xs="6">
                     <button
                       aria-controls="navbar-danger"
                       aria-expanded={false}
                       aria-label="Toggle navigation"
-                      className=" navbar-toggler"
+                      className="navbar-toggler"
                       data-target="#navbar-danger"
                       data-toggle="collapse"
                       id="navbar-danger"
@@ -485,51 +485,51 @@ class Navbars extends React.Component {
                   </Col>
                 </Row>
               </div>
-              <Nav className=" ml-auto" navbar>
+              <Nav className="ml-auto" navbar>
                 <NavItem>
                   <NavLink
-                    className=" nav-link-icon"
+                    className="nav-link-icon"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                   >
-                    <i className=" fab fa-facebook-square" />
-                    <span className=" nav-link-inner--text d-lg-none">
+                    <i className="fab fa-facebook-square" />
+                    <span className="nav-link-inner--text d-lg-none">
                       Facebook
                     </span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className=" nav-link-icon"
+                    className="nav-link-icon"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                   >
-                    <i className=" fab fa-twitter" />
-                    <span className=" nav-link-inner--text d-lg-none">
+                    <i className="fab fa-twitter" />
+                    <span className="nav-link-inner--text d-lg-none">
                       Twitter
                     </span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className=" nav-link-icon"
+                    className="nav-link-icon"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                   >
-                    <i className=" fab fa-google-plus" />
-                    <span className=" nav-link-inner--text d-lg-none">
+                    <i className="fab fa-google-plus" />
+                    <span className="nav-link-inner--text d-lg-none">
                       Google +
                     </span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className=" nav-link-icon"
+                    className="nav-link-icon"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                   >
-                    <i className=" fab fa-instagram" />
-                    <span className=" nav-link-inner--text d-lg-none">
+                    <i className="fab fa-instagram" />
+                    <span className="nav-link-inner--text d-lg-none">
                       Instagram
                     </span>
                   </NavLink>
@@ -540,7 +540,7 @@ class Navbars extends React.Component {
         </Navbar>
         {/* Navbar warning */}
         <Navbar
-          className=" navbar-horizontal navbar-dark bg-warning mt-4"
+          className="navbar-horizontal navbar-dark bg-warning mt-4"
           expand="lg"
         >
           <Container>
@@ -551,22 +551,22 @@ class Navbars extends React.Component {
               aria-controls="navbar-warning"
               aria-expanded={false}
               aria-label="Toggle navigation"
-              className=" navbar-toggler"
+              className="navbar-toggler"
               data-target="#navbar-warning"
               data-toggle="collapse"
               id="navbar-warning"
               type="button"
             >
-              <span className=" navbar-toggler-icon" />
+              <span className="navbar-toggler-icon" />
             </button>
             <UncontrolledCollapse
               id="navbar-warning"
               navbar
               toggler="#navbar-warning"
             >
-              <div className=" navbar-collapse-header">
+              <div className="navbar-collapse-header">
                 <Row>
-                  <Col className=" collapse-brand" xs="6">
+                  <Col className="collapse-brand" xs="6">
                     <a href="../../index.html">
                       <img
                         alt="..."
@@ -574,12 +574,12 @@ class Navbars extends React.Component {
                       />
                     </a>
                   </Col>
-                  <Col className=" collapse-close" xs="6">
+                  <Col className="collapse-close" xs="6">
                     <button
                       aria-controls="navbar-warning"
                       aria-expanded={false}
                       aria-label="Toggle navigation"
-                      className=" navbar-toggler"
+                      className="navbar-toggler"
                       data-target="#navbar-warning"
                       data-toggle="collapse"
                       id="navbar-warning"
@@ -591,39 +591,39 @@ class Navbars extends React.Component {
                   </Col>
                 </Row>
               </div>
-              <Nav className=" align-items-lg-center ml-lg-auto" navbar>
+              <Nav className="align-items-lg-center ml-lg-auto" navbar>
                 <NavItem>
                   <NavLink
-                    className=" nav-link-icon"
+                    className="nav-link-icon"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                   >
-                    <i className=" fab fa-facebook-square" />
-                    <span className=" nav-link-inner--text d-lg-none">
+                    <i className="fab fa-facebook-square" />
+                    <span className="nav-link-inner--text d-lg-none">
                       Share
                     </span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className=" nav-link-icon"
+                    className="nav-link-icon"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                   >
-                    <i className=" fab fa-twitter" />
-                    <span className=" nav-link-inner--text d-lg-none">
+                    <i className="fab fa-twitter" />
+                    <span className="nav-link-inner--text d-lg-none">
                       Tweet
                     </span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className=" nav-link-icon"
+                    className="nav-link-icon"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                   >
-                    <i className=" fab fa-pinterest" />
-                    <span className=" nav-link-inner--text d-lg-none">Pin</span>
+                    <i className="fab fa-pinterest" />
+                    <span className="nav-link-inner--text d-lg-none">Pin</span>
                   </NavLink>
                 </NavItem>
               </Nav>
@@ -632,7 +632,7 @@ class Navbars extends React.Component {
         </Navbar>
         {/* Navbar info */}
         <Navbar
-          className=" navbar-horizontal navbar-dark bg-info mt-4"
+          className="navbar-horizontal navbar-dark bg-info mt-4"
           expand="lg"
         >
           <Container>
@@ -643,22 +643,22 @@ class Navbars extends React.Component {
               aria-controls="navbar-info"
               aria-expanded={false}
               aria-label="Toggle navigation"
-              className=" navbar-toggler"
+              className="navbar-toggler"
               data-target="#navbar-info"
               data-toggle="collapse"
               id="navbar-info"
               type="button"
             >
-              <span className=" navbar-toggler-icon" />
+              <span className="navbar-toggler-icon" />
             </button>
             <UncontrolledCollapse
               id="navbar-info"
               navbar
               toggler="#navbar-info"
             >
-              <div className=" navbar-collapse-header">
+              <div className="navbar-collapse-header">
                 <Row>
-                  <Col className=" collapse-brand" xs="6">
+                  <Col className="collapse-brand" xs="6">
                     <a href="../../index.html">
                       <img
                         alt="..."
@@ -666,12 +666,12 @@ class Navbars extends React.Component {
                       />
                     </a>
                   </Col>
-                  <Col className=" collapse-close" xs="6">
+                  <Col className="collapse-close" xs="6">
                     <button
                       aria-controls="navbar-info"
                       aria-expanded={false}
                       aria-label="Toggle navigation"
-                      className=" navbar-toggler"
+                      className="navbar-toggler"
                       data-target="#navbar-info"
                       data-toggle="collapse"
                       id="navbar-info"
@@ -683,35 +683,35 @@ class Navbars extends React.Component {
                   </Col>
                 </Row>
               </div>
-              <Nav className=" ml-auto" navbar>
+              <Nav className="ml-auto" navbar>
                 <NavItem>
                   <NavLink
-                    className=" nav-link-icon"
+                    className="nav-link-icon"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                   >
-                    <i className=" fab fa-facebook-square" />
-                    <span className=" nav-link-inner--text">Facebook</span>
+                    <i className="fab fa-facebook-square" />
+                    <span className="nav-link-inner--text">Facebook</span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className=" nav-link-icon"
+                    className="nav-link-icon"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                   >
-                    <i className=" fab fa-twitter" />
-                    <span className=" nav-link-inner--text">Twitter</span>
+                    <i className="fab fa-twitter" />
+                    <span className="nav-link-inner--text">Twitter</span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className=" nav-link-icon"
+                    className="nav-link-icon"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                   >
-                    <i className=" fab fa-instagram" />
-                    <span className=" nav-link-inner--text">Instagram</span>
+                    <i className="fab fa-instagram" />
+                    <span className="nav-link-inner--text">Instagram</span>
                   </NavLink>
                 </NavItem>
               </Nav>

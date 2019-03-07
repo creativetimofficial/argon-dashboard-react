@@ -26,25 +26,25 @@ class Modals extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Modal
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Use Bootstrap’s JavaScript modal plugin to add dialogs to your site
           for lightboxes, user notifications, or completely custom content.
         </p>
         <hr />
         <h2 id="example">Example</h2>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="modal-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="modal-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="modal-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="modal-component-tab"
@@ -71,7 +71,7 @@ class Modals extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="modal-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="modal-component"
               role="tabpanel"
             >
@@ -86,21 +86,21 @@ class Modals extends React.Component {
               </Button>
               {/* Modal */}
               <Modal>
-                <div className=" modal-header">
-                  <h5 className=" modal-title" id="exampleModalLabel">
+                <div className="modal-header">
+                  <h5 className="modal-title" id="exampleModalLabel">
                     Modal title
                   </h5>
                   <button
                     aria-label="Close"
-                    className=" close"
+                    className="close"
                     data-dismiss="modal"
                     type="button"
                   >
                     <span aria-hidden={true}>×</span>
                   </button>
                 </div>
-                <div className=" modal-body">...</div>
-                <div className=" modal-footer">
+                <div className="modal-body">...</div>
+                <div className="modal-footer">
                   <Button color="secondary" data-dismiss="modal" type="button">
                     Close
                   </Button>
@@ -112,20 +112,20 @@ class Modals extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="modal-html-tab"
-              className=" fade"
+              className="fade"
               id="modal-html"
               role="tabpanel"
             />
           </TabContent>
         </div>
         <h2 id="variations">Variations</h2>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="modal-colors-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="modal-colors-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="modal-colors-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="modal-colors-component-tab"
@@ -152,7 +152,7 @@ class Modals extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="modal-colors-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="modal-colors-component"
               role="tabpanel"
             >
@@ -160,7 +160,7 @@ class Modals extends React.Component {
                 <Col md="4">
                   <Button
                     block
-                    className=" mb-3"
+                    className="mb-3"
                     color="primary"
                     data-target="#modal-default"
                     data-toggle="modal"
@@ -169,20 +169,20 @@ class Modals extends React.Component {
                     Default
                   </Button>
                   <Modal>
-                    <div className=" modal-header">
-                      <h6 className=" modal-title" id="modal-title-default">
+                    <div className="modal-header">
+                      <h6 className="modal-title" id="modal-title-default">
                         Type your modal title
                       </h6>
                       <button
                         aria-label="Close"
-                        className=" close"
+                        className="close"
                         data-dismiss="modal"
                         type="button"
                       >
                         <span aria-hidden={true}>×</span>
                       </button>
                     </div>
-                    <div className=" modal-body">
+                    <div className="modal-body">
                       <p>
                         Far far away, behind the word mountains, far from the
                         countries Vokalia and Consonantia, there live the blind
@@ -196,12 +196,12 @@ class Modals extends React.Component {
                         sentences fly into your mouth.
                       </p>
                     </div>
-                    <div className=" modal-footer">
+                    <div className="modal-footer">
                       <Button color="primary" type="button">
                         Save changes
                       </Button>
                       <Button
-                        className=" ml-auto"
+                        className="ml-auto"
                         color="link"
                         data-dismiss="modal"
                         type="button"
@@ -214,7 +214,7 @@ class Modals extends React.Component {
                 <Col md="4">
                   <Button
                     block
-                    className=" mb-3"
+                    className="mb-3"
                     color="warning"
                     data-target="#modal-notification"
                     data-toggle="modal"
@@ -223,42 +223,42 @@ class Modals extends React.Component {
                     Notification
                   </Button>
                   <Modal contentClassName="bg-gradient-danger">
-                    <div className=" modal-header">
+                    <div className="modal-header">
                       <h6
-                        className=" modal-title"
+                        className="modal-title"
                         id="modal-title-notification"
                       >
                         Your attention is required
                       </h6>
                       <button
                         aria-label="Close"
-                        className=" close"
+                        className="close"
                         data-dismiss="modal"
                         type="button"
                       >
                         <span aria-hidden={true}>×</span>
                       </button>
                     </div>
-                    <div className=" modal-body">
-                      <div className=" py-3 text-center">
-                        <i className=" ni ni-bell-55 ni-3x" />
-                        <h4 className=" heading mt-4">You should read this!</h4>
+                    <div className="modal-body">
+                      <div className="py-3 text-center">
+                        <i className="ni ni-bell-55 ni-3x" />
+                        <h4 className="heading mt-4">You should read this!</h4>
                         <p>
                           A small river named Duden flows by their place and
                           supplies it with the necessary regelialia.
                         </p>
                       </div>
                     </div>
-                    <div className=" modal-footer">
+                    <div className="modal-footer">
                       <Button
-                        className=" btn-white"
+                        className="btn-white"
                         color="default"
                         type="button"
                       >
                         Ok, Got it
                       </Button>
                       <Button
-                        className=" text-white ml-auto"
+                        className="text-white ml-auto"
                         color="link"
                         data-dismiss="modal"
                         type="button"
@@ -279,84 +279,84 @@ class Modals extends React.Component {
                     Form
                   </Button>
                   <Modal>
-                    <div className=" modal-body p-0">
-                      <Card className=" bg-secondary shadow border-0">
-                        <CardHeader className=" bg-transparent pb-5">
-                          <div className=" text-muted text-center mt-2 mb-3">
+                    <div className="modal-body p-0">
+                      <Card className="bg-secondary shadow border-0">
+                        <CardHeader className="bg-transparent pb-5">
+                          <div className="text-muted text-center mt-2 mb-3">
                             <small>Sign in with</small>
                           </div>
-                          <div className=" btn-wrapper text-center">
+                          <div className="btn-wrapper text-center">
                             <Button
-                              className=" btn-neutral btn-icon"
+                              className="btn-neutral btn-icon"
                               color="default"
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <span className=" btn-inner--icon">
+                              <span className="btn-inner--icon">
                                 <img
                                   alt="..."
                                   src={require("assets/img/icons/common/github.svg")}
                                 />
                               </span>
-                              <span className=" btn-inner--text">Github</span>
+                              <span className="btn-inner--text">Github</span>
                             </Button>
                             <Button
-                              className=" btn-neutral btn-icon"
+                              className="btn-neutral btn-icon"
                               color="default"
                               href="#pablo"
                               onClick={e => e.preventDefault()}
                             >
-                              <span className=" btn-inner--icon">
+                              <span className="btn-inner--icon">
                                 <img
                                   alt="..."
                                   src={require("assets/img/icons/common/google.svg")}
                                 />
                               </span>
-                              <span className=" btn-inner--text">Google</span>
+                              <span className="btn-inner--text">Google</span>
                             </Button>
                           </div>
                         </CardHeader>
-                        <CardBody className=" px-lg-5 py-lg-5">
-                          <div className=" text-center text-muted mb-4">
+                        <CardBody className="px-lg-5 py-lg-5">
+                          <div className="text-center text-muted mb-4">
                             <small>Or sign in with credentials</small>
                           </div>
                           <Form role="form">
-                            <FormGroup className=" mb-3">
-                              <InputGroup className=" input-group-alternative">
+                            <FormGroup className="mb-3">
+                              <InputGroup className="input-group-alternative">
                                 <InputGroupAddon addonType="prepend">
                                   <InputGroupText>
-                                    <i className=" ni ni-email-83" />
+                                    <i className="ni ni-email-83" />
                                   </InputGroupText>
                                 </InputGroupAddon>
                                 <Input placeholder="Email" type="email" />
                               </InputGroup>
                             </FormGroup>
                             <FormGroup>
-                              <InputGroup className=" input-group-alternative">
+                              <InputGroup className="input-group-alternative">
                                 <InputGroupAddon addonType="prepend">
                                   <InputGroupText>
-                                    <i className=" ni ni-lock-circle-open" />
+                                    <i className="ni ni-lock-circle-open" />
                                   </InputGroupText>
                                 </InputGroupAddon>
                                 <Input placeholder="Password" type="password" />
                               </InputGroup>
                             </FormGroup>
-                            <div className=" custom-control custom-control-alternative custom-checkbox">
+                            <div className="custom-control custom-control-alternative custom-checkbox">
                               <input
-                                className=" custom-control-input"
+                                className="custom-control-input"
                                 id=" customCheckLogin"
                                 type="checkbox"
                               />
                               <label
-                                className=" custom-control-label"
+                                className="custom-control-label"
                                 htmlFor=" customCheckLogin"
                               >
-                                <span className=" text-muted">Remember me</span>
+                                <span className="text-muted">Remember me</span>
                               </label>
                             </div>
-                            <div className=" text-center">
+                            <div className="text-center">
                               <Button
-                                className=" my-4"
+                                className="my-4"
                                 color="primary"
                                 type="button"
                               >
@@ -373,7 +373,7 @@ class Modals extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="modal-colors-html-tab"
-              className=" fade"
+              className="fade"
               id="modal-colors-html"
               role="tabpanel"
             />

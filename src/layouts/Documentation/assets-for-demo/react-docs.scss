@@ -1,31 +1,35 @@
-body.ct-docs{
+body.docs{
   background: white;
   .ct-example .navbar {
     z-index: 2;
   }
 }
-.ct-docs .ct-example .btn + .btn{
+.docs .ct-example .btn + .btn{
   margin-left: 5px;
 }
 
-.ct-docs .ct-example .btn-group .btn + .btn{
+.docs .ct-example .btn-group .btn + .btn{
   margin: 4px 0;
 }
 
-.ct-docs .ct-example .btn-group + .btn-group{
+.docs .ct-example .btn-group + .btn-group{
   margin-left: 5px;
 }
 
-.ct-docs .ct-sidebar,.ct-docs .ct-navbar{
+.docs .ct-sidebar,.docs .ct-navbar{
   position: sticky;
 }
 
-.ct-docs .ct-navbar .navbar-brand{
+.docs .ct-navbar .navbar-brand{
   position: unset;
 }
-.ct-docs .ct-example.ct-color-schemes .navbar-toggler{
+.docs .ct-example.ct-color-schemes .navbar-toggler{
   pointer-events: none;
 }
-.ct-docs .ct-navbar{
-  padding: 1rem 1rem;
+.docs .ct-navbar{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.ct-react-docs .text-white i{
+  color: #fff!important;
 }

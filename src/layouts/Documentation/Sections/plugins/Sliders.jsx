@@ -15,13 +15,13 @@ class Sliders extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Datepicker
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Our customized noUiSlider is a lightweight JavaScript range slider
           library. It offers a wide selection of options and settings, and is
           compatible with a ton of (touch) devices, including those running iOS,
@@ -29,13 +29,13 @@ class Sliders extends React.Component {
         </p>
         <hr />
         <h2 id="slider">Slider</h2>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="slider-single-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="slider-single-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="slider-single-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="slider-single-component-tab"
@@ -62,21 +62,21 @@ class Sliders extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="slider-single-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="slider-single-component"
               role="tabpanel"
             >
-              <div className=" input-slider-container">
+              <div className="input-slider-container">
                 <div
-                  className=" input-slider"
+                  className="input-slider"
                   data-range-value-max="500"
                   data-range-value-min="100"
                   id="input-slider"
                 />
-                <Row className=" mt-3 d-none">
+                <Row className="mt-3 d-none">
                   <Col xs="6">
                     <span
-                      className=" range-slider-value"
+                      className="range-slider-value"
                       data-range-value-low="100"
                       id="input-slider-value"
                     />
@@ -86,20 +86,20 @@ class Sliders extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="slider-single-html-tab"
-              className=" fade"
+              className="fade"
               id="slider-single-html"
               role="tabpanel"
             />
           </TabContent>
         </div>
         <h2 id="range-slider">Range slider</h2>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="slider-range-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="slider-range-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="slider-range-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="slider-range-component-tab"
@@ -126,7 +126,7 @@ class Sliders extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="slider-range-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="slider-range-component"
               role="tabpanel"
             >
@@ -136,17 +136,17 @@ class Sliders extends React.Component {
                   data-range-value-min="100"
                   id="input-slider-range"
                 />
-                <Row className=" d-none">
+                <Row className="d-none">
                   <Col xs="6">
                     <span
-                      className=" range-slider-value value-low"
+                      className="range-slider-value value-low"
                       data-range-value-low="200"
                       id="input-slider-range-value-low"
                     />
                   </Col>
-                  <Col className=" text-right" xs="6">
+                  <Col className="text-right" xs="6">
                     <span
-                      className=" range-slider-value value-high"
+                      className="range-slider-value value-high"
                       data-range-value-high="400"
                       id="input-slider-range-value-high"
                     />
@@ -156,7 +156,7 @@ class Sliders extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="slider-range-html-tab"
-              className=" fade"
+              className="fade"
               id="slider-range-html"
               role="tabpanel"
             />

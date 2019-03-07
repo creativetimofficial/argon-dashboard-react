@@ -4,13 +4,13 @@ class BuildTools extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Build tools
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Learn how to use Bootstrap’s included npm scripts to build our
           documentation, compile source code, run tests, and more.
         </p>
@@ -37,9 +37,9 @@ class BuildTools extends React.Component {
           </li>
           <li>
             Navigate to the root{" "}
-            <code className=" highlighter-rouge">/argon</code>
+            <code className="highlighter-rouge">/argon</code>
             directory and run{" "}
-            <code className=" highlighter-rouge">npm install</code>
+            <code className="highlighter-rouge">npm install</code>
             to install our local dependencies.
           </li>
         </ol>
@@ -58,10 +58,10 @@ class BuildTools extends React.Component {
           <tbody>
             <tr>
               <td>
-                <code className=" highlighter-rouge">gulp</code>
+                <code className="highlighter-rouge">gulp</code>
               </td>
               <td>
-                <code className=" highlighter-rouge">gulp</code>
+                <code className="highlighter-rouge">gulp</code>
                 starts a Browsersync instance on port 3000 served from dist,
                 defaults to index.html with the modifications made in SASS or
                 HTML.
@@ -69,11 +69,11 @@ class BuildTools extends React.Component {
             </tr>
             <tr>
               <td>
-                <code className=" highlighter-rouge">gulp build</code>
+                <code className="highlighter-rouge">gulp build</code>
               </td>
               <td>
-                <code className=" highlighter-rouge">gulp build</code>
-                creates the <code className=" highlighter-rouge">/dist</code>
+                <code className="highlighter-rouge">gulp build</code>
+                creates the <code className="highlighter-rouge">/dist</code>
                 directory with compiled files.
               </td>
             </tr>
@@ -92,7 +92,7 @@ class BuildTools extends React.Component {
         <p>
           Should you encounter problems with installing dependencies, uninstall
           all previous dependency versions (global and local). Then, rerun{" "}
-          <code className=" highlighter-rouge">npm install</code>.
+          <code className="highlighter-rouge">npm install</code>.
         </p>
       </>
     );

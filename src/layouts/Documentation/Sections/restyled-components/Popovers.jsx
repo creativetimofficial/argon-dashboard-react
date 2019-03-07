@@ -15,26 +15,26 @@ class Popovers extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Navbar
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Documentation and examples for Bootstrap’s powerful, responsive
           navigation header, the navbar. Includes support for branding,
           navigation, and more, including support for our collapse plugin.
         </p>
         <hr />
         <h2 id="example">Example</h2>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="popovers-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="popovers-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="popovers-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="popovers-component-tab"
@@ -61,7 +61,7 @@ class Popovers extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="popovers-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="popovers-component"
               role="tabpanel"
             >
@@ -128,16 +128,16 @@ class Popovers extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="popovers-html-tab"
-              className=" fade"
+              className="fade"
               id="popovers-html"
               role="tabpanel"
             />
           </TabContent>
         </div>
         <h2 id="variations">Variations</h2>
-        <div className=" ct-example">
+        <div className="ct-example">
           <Nav
-            className=" nav-tabs-code"
+            className="nav-tabs-code"
             id="popover-colors-tab"
             role="tablist"
           >
@@ -145,7 +145,7 @@ class Popovers extends React.Component {
               <NavLink
                 aria-controls="popover-colors-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="popover-colors-component-tab"
@@ -172,7 +172,7 @@ class Popovers extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="popover-colors-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="popover-colors-component"
               role="tabpanel"
             >
@@ -291,7 +291,7 @@ class Popovers extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="popover-colors-html-tab"
-              className=" fade"
+              className="fade"
               id="popover-colors-html"
               role="tabpanel"
             />

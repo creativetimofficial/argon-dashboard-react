@@ -4,13 +4,13 @@ class QuickStart extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Quick start
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           To start using this design system you will need to import some files
           in your current project or start from scratch using our template
           (scroll down in this page to view it).
@@ -19,8 +19,8 @@ class QuickStart extends React.Component {
         <h2 id="css">CSS</h2>
         <p>
           Copy-paste the stylesheet{" "}
-          <code className=" highlighter-rouge">{`<link>`}</code>
-          into your <code className=" highlighter-rouge">{`<head>`}</code>
+          <code className="highlighter-rouge">{`<link>`}</code>
+          into your <code className="highlighter-rouge">{`<head>`}</code>
           before all other stylesheets to load our CSS.
         </p>
         <h2 id="js">JS</h2>
@@ -29,9 +29,9 @@ class QuickStart extends React.Component {
           Specifically, they require <a href="https://jquery.com">jQuery</a>,{" "}
           <a href="https://popper.js.org/">Popper.js</a>, and our own JavaScript
           plugins. Place the following{" "}
-          <code className=" highlighter-rouge">{`<script>`}</code>s near the end
+          <code className="highlighter-rouge">{`<script>`}</code>s near the end
           of your pages, right before the closing{" "}
-          <code className=" highlighter-rouge">{`</body>`}</code>
+          <code className="highlighter-rouge">{`</body>`}</code>
           tag, to enable them. jQuery must come first, then Popper.js, and then
           our JavaScript plugins.
         </p>
@@ -76,7 +76,7 @@ class QuickStart extends React.Component {
           necessary using CSS media queries. To ensure proper rendering and
           touch zooming for all devices,{" "}
           <strong>add the responsive viewport meta tag</strong>
-          to your <code className=" highlighter-rouge">{`<head>`}</code>.
+          to your <code className="highlighter-rouge">{`<head>`}</code>.
         </p>
         <p>
           You can see an example of this in action in the{" "}

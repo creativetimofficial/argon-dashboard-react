@@ -14,26 +14,26 @@ class Progresses extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Progress
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Documentation and examples for Bootstrap’s powerful, responsive
           navigation header, the navbar. Includes support for branding,
           navigation, and more, including support for our collapse plugin.
         </p>
         <hr />
         <h2 id="example">Example</h2>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="progress-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="progress-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="progress-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="progress-component-tab"
@@ -60,82 +60,82 @@ class Progresses extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="progress-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="progress-component"
               role="tabpanel"
             >
-              <div className=" progress-wrapper">
-                <div className=" progress-info">
-                  <div className=" progress-label">
+              <div className="progress-wrapper">
+                <div className="progress-info">
+                  <div className="progress-label">
                     <span>Task completed</span>
                   </div>
-                  <div className=" progress-percentage">
+                  <div className="progress-percentage">
                     <span>60%</span>
                   </div>
                 </div>
                 <Progress max="100" value="60" />
               </div>
-              <div className=" progress-wrapper">
-                <div className=" progress-info">
-                  <div className=" progress-label">
+              <div className="progress-wrapper">
+                <div className="progress-info">
+                  <div className="progress-label">
                     <span>Task completed</span>
                   </div>
-                  <div className=" progress-percentage">
+                  <div className="progress-percentage">
                     <span>60%</span>
                   </div>
                 </div>
                 <Progress max="100" value="60" />
               </div>
-              <div className=" progress-wrapper">
-                <div className=" progress-info">
-                  <div className=" progress-label">
+              <div className="progress-wrapper">
+                <div className="progress-info">
+                  <div className="progress-label">
                     <span>Task completed</span>
                   </div>
-                  <div className=" progress-percentage">
+                  <div className="progress-percentage">
                     <span>60%</span>
                   </div>
                 </div>
                 <Progress max="100" value="60" />
               </div>
-              <div className=" progress-wrapper">
-                <div className=" progress-info">
-                  <div className=" progress-label">
+              <div className="progress-wrapper">
+                <div className="progress-info">
+                  <div className="progress-label">
                     <span>Task completed</span>
                   </div>
-                  <div className=" progress-percentage">
+                  <div className="progress-percentage">
                     <span>60%</span>
                   </div>
                 </div>
                 <Progress max="100" value="60" />
               </div>
-              <div className=" progress-wrapper">
-                <div className=" progress-info">
-                  <div className=" progress-label">
+              <div className="progress-wrapper">
+                <div className="progress-info">
+                  <div className="progress-label">
                     <span>Task completed</span>
                   </div>
-                  <div className=" progress-percentage">
+                  <div className="progress-percentage">
                     <span>60%</span>
                   </div>
                 </div>
                 <Progress max="100" value="60" />
               </div>
-              <div className=" progress-wrapper">
-                <div className=" progress-info">
-                  <div className=" progress-label">
+              <div className="progress-wrapper">
+                <div className="progress-info">
+                  <div className="progress-label">
                     <span>Task completed</span>
                   </div>
-                  <div className=" progress-percentage">
+                  <div className="progress-percentage">
                     <span>60%</span>
                   </div>
                 </div>
                 <Progress max="100" value="60" />
               </div>
-              <div className=" progress-wrapper">
-                <div className=" progress-info">
-                  <div className=" progress-label">
+              <div className="progress-wrapper">
+                <div className="progress-info">
+                  <div className="progress-label">
                     <span>Task completed</span>
                   </div>
-                  <div className=" progress-percentage">
+                  <div className="progress-percentage">
                     <span>60%</span>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ class Progresses extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="progress-html-tab"
-              className=" fade"
+              className="fade"
               id="progress-html"
               role="tabpanel"
             />

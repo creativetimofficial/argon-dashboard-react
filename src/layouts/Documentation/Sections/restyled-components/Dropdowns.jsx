@@ -18,25 +18,25 @@ class Dropdowns extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Dropdowns
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Toggle contextual overlays for displaying lists of links and more with
           the Bootstrap dropdown plugin.
         </p>
         <hr />
         <h2 id="examples">Examples</h2>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="dropdown-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="dropdown-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="dropdown-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="dropdown-component-tab"
@@ -63,7 +63,7 @@ class Dropdowns extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="dropdown-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="dropdown-component"
               role="tabpanel"
             >
@@ -148,7 +148,7 @@ class Dropdowns extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="dropdown-html-tab"
-              className=" fade"
+              className="fade"
               id="dropdown-html"
               role="tabpanel"
             />
@@ -156,9 +156,9 @@ class Dropdowns extends React.Component {
         </div>
         <h2 id="colors">Colors</h2>
         <p>The best part is you can do this with any button variant, too:</p>
-        <div className=" ct-example">
+        <div className="ct-example">
           <Nav
-            className=" nav-tabs-code"
+            className="nav-tabs-code"
             id="dropdown-colors-tab"
             role="tablist"
           >
@@ -166,7 +166,7 @@ class Dropdowns extends React.Component {
               <NavLink
                 aria-controls="dropdown-colors-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="dropdown-colors-component-tab"
@@ -193,7 +193,7 @@ class Dropdowns extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="dropdown-colors-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="dropdown-colors-component"
               role="tabpanel"
             >
@@ -368,7 +368,7 @@ class Dropdowns extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="dropdown-colors-html-tab"
-              className=" fade"
+              className="fade"
               id="dropdown-colors-html"
               role="tabpanel"
             />

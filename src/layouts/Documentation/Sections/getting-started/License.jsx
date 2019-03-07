@@ -4,13 +4,13 @@ class License extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             License
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Get started with Bootstrap, the world’s most popular framework for
           building responsive, mobile-first sites, with BootstrapCDN and a
           template starter page.

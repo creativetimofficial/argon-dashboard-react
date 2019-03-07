@@ -109,20 +109,20 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23ffffff' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3E%3C/svg%3E")
 }
 
-.ct-docs .navbar-absolute-logo {
+.docs .navbar-absolute-logo {
     padding-left: 0
 }
 
-.ct-docs .ct-navbar .navbar-nav-scroll {
+.docs .ct-navbar .navbar-nav-scroll {
     overflow: visible;
     margin-top: 0
 }
 
 @media screen and (max-width:991px) {
-    .ct-docs .navbar .navbar-nav .nav-item:not(:last-child) {
+    .docs .navbar .navbar-nav .nav-item:not(:last-child) {
         margin-bottom: 0
     }
-    .ct-docs .navbar .navbar-nav .nav-item:first-child {
+    .docs .navbar .navbar-nav .nav-item:first-child {
         margin-top: 0
     }
 }

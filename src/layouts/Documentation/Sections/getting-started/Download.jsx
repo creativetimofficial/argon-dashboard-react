@@ -4,13 +4,13 @@ class Download extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Download
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Download Argon to get the compiled CSS and JavaScript, source code, or
           include it with your favorite package managers.
         </p>
@@ -33,7 +33,7 @@ class Download extends React.Component {
           <li>
             <p>
               Install with Npm:{" "}
-              <code className=" highlighter-rouge">
+              <code className="highlighter-rouge">
                 npm i @creative-tim-official/argon-dashboard-free
               </code>
             </p>
@@ -41,7 +41,7 @@ class Download extends React.Component {
           <li>
             <p>
               Install with Yarn:{" "}
-              <code className=" highlighter-rouge">
+              <code className="highlighter-rouge">
                 yarn add @creative-tim-official/argon-dashboard-free
               </code>
             </p>
@@ -49,7 +49,7 @@ class Download extends React.Component {
           <li>
             <p>
               Install with Composer:{" "}
-              <code className=" highlighter-rouge">
+              <code className="highlighter-rouge">
                 composer create-project creativetimofficial/argon-dashboard-free
               </code>
             </p>
@@ -57,7 +57,7 @@ class Download extends React.Component {
           <li>
             <p>
               Clone from Github:{" "}
-              <code className=" highlighter-rouge">
+              <code className="highlighter-rouge">
                 git clone
                 https://github.com/creativetimofficial/argon-dashboard.git
               </code>

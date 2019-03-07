@@ -16,13 +16,13 @@ class Typography extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Typography
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Documentation and examples for Bootstrap typography, including global
           settings, headings, body text, lists, and more.
         </p>
@@ -30,8 +30,8 @@ class Typography extends React.Component {
         <h2 id="headings">Headings</h2>
         <p>
           All HTML headings,{" "}
-          <code className=" highlighter-rouge">{`<h1>`}</code>
-          through <code className=" highlighter-rouge">{`<h6>`}</code>, are
+          <code className="highlighter-rouge">{`<h1>`}</code>
+          through <code className="highlighter-rouge">{`<h6>`}</code>, are
           available.
         </p>
         <table>
@@ -45,90 +45,90 @@ class Typography extends React.Component {
             <tr>
               <td>
                 <p>
-                  <code className=" highlighter-rouge">
+                  <code className="highlighter-rouge">
                     <h1 />
                   </code>
                 </p>
               </td>
               <td>
-                <span className=" h1">h1. Bootstrap heading</span>
+                <span className="h1">h1. Bootstrap heading</span>
               </td>
             </tr>
             <tr>
               <td>
                 <p>
-                  <code className=" highlighter-rouge">
+                  <code className="highlighter-rouge">
                     <h2 />
                   </code>
                 </p>
               </td>
               <td>
-                <span className=" h2">h2. Bootstrap heading</span>
+                <span className="h2">h2. Bootstrap heading</span>
               </td>
             </tr>
             <tr>
               <td>
                 <p>
-                  <code className=" highlighter-rouge">
+                  <code className="highlighter-rouge">
                     <h3 />
                   </code>
                 </p>
               </td>
               <td>
-                <span className=" h3">h3. Bootstrap heading</span>
+                <span className="h3">h3. Bootstrap heading</span>
               </td>
             </tr>
             <tr>
               <td>
                 <p>
-                  <code className=" highlighter-rouge">
+                  <code className="highlighter-rouge">
                     <h4 />
                   </code>
                 </p>
               </td>
               <td>
-                <span className=" h4">h4. Bootstrap heading</span>
+                <span className="h4">h4. Bootstrap heading</span>
               </td>
             </tr>
             <tr>
               <td>
                 <p>
-                  <code className=" highlighter-rouge">
+                  <code className="highlighter-rouge">
                     <h5 />
                   </code>
                 </p>
               </td>
               <td>
-                <span className=" h5">h5. Bootstrap heading</span>
+                <span className="h5">h5. Bootstrap heading</span>
               </td>
             </tr>
             <tr>
               <td>
                 <p>
-                  <code className=" highlighter-rouge">
+                  <code className="highlighter-rouge">
                     <h6 />
                   </code>
                 </p>
               </td>
               <td>
-                <span className=" h6">h6. Bootstrap heading</span>
+                <span className="h6">h6. Bootstrap heading</span>
               </td>
             </tr>
           </tbody>
         </table>
         <p>
-          <code className=" highlighter-rouge">.h1</code>
-          through <code className=" highlighter-rouge">.h6</code>
+          <code className="highlighter-rouge">.h1</code>
+          through <code className="highlighter-rouge">.h6</code>
           classes are also available, for when you want to match the font
           styling of a heading but cannot use the associated HTML element.
         </p>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="-component-tab"
@@ -155,19 +155,19 @@ class Typography extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               role="tabpanel"
             >
-              <p className=" h1">h1. Bootstrap heading</p>
-              <p className=" h2">h2. Bootstrap heading</p>
-              <p className=" h3">h3. Bootstrap heading</p>
-              <p className=" h4">h4. Bootstrap heading</p>
-              <p className=" h5">h5. Bootstrap heading</p>
-              <p className=" h6">h6. Bootstrap heading</p>
+              <p className="h1">h1. Bootstrap heading</p>
+              <p className="h2">h2. Bootstrap heading</p>
+              <p className="h3">h3. Bootstrap heading</p>
+              <p className="h4">h4. Bootstrap heading</p>
+              <p className="h5">h5. Bootstrap heading</p>
+              <p className="h6">h6. Bootstrap heading</p>
             </TabPane>
             <TabPane
               aria-labelledby="-html-tab"
-              className=" fade"
+              className="fade"
               role="tabpanel"
             />
           </TabContent>
@@ -177,10 +177,10 @@ class Typography extends React.Component {
           Use the included utility classes to recreate the small secondary
           heading text from Bootstrap 3.
         </p>
-        <div className=" bd-example">
-          <span className=" h3">
+        <div className="bd-example">
+          <span className="h3">
             Fancy display heading{" "}
-            <small className=" text-muted">With faded secondary text</small>
+            <small className="text-muted">With faded secondary text</small>
           </span>
         </div>
         <h2 id="display-headings">Display headings</h2>
@@ -190,27 +190,27 @@ class Typography extends React.Component {
           using a <strong>display heading</strong>
           —a larger, slightly more opinionated heading style.
         </p>
-        <div className=" bd-example bd-example-type">
+        <div className="bd-example bd-example-type">
           <Table>
             <tbody>
               <tr>
                 <td>
-                  <span className=" display-1">Display 1</span>
+                  <span className="display-1">Display 1</span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <span className=" display-2">Display 2</span>
+                  <span className="display-2">Display 2</span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <span className=" display-3">Display 3</span>
+                  <span className="display-3">Display 3</span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <span className=" display-4">Display 4</span>
+                  <span className="display-4">Display 4</span>
                 </td>
               </tr>
             </tbody>
@@ -219,15 +219,15 @@ class Typography extends React.Component {
         <h2 id="lead">Lead</h2>
         <p>
           Make a paragraph stand out by adding{" "}
-          <code className=" highlighter-rouge">.lead</code>.
+          <code className="highlighter-rouge">.lead</code>.
         </p>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="-component-tab"
@@ -254,30 +254,30 @@ class Typography extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               role="tabpanel"
             >
-              <p className=" lead">
+              <p className="lead">
                 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
                 auctor. Duis mollis, est non commodo luctus.
               </p>
             </TabPane>
             <TabPane
               aria-labelledby="-html-tab"
-              className=" fade"
+              className="fade"
               role="tabpanel"
             />
           </TabContent>
         </div>
         <h2 id="inline-text-elements">Inline text elements</h2>
         <p>Styling for common inline HTML5 elements.</p>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="-component-tab"
@@ -304,7 +304,7 @@ class Typography extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               role="tabpanel"
             >
               <p>
@@ -345,27 +345,27 @@ class Typography extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="-html-tab"
-              className=" fade"
+              className="fade"
               role="tabpanel"
             />
           </TabContent>
         </div>
         <p>
-          <code className=" highlighter-rouge">.mark</code>
-          and <code className=" highlighter-rouge">.small</code>
+          <code className="highlighter-rouge">.mark</code>
+          and <code className="highlighter-rouge">.small</code>
           classes are also available to apply the same styles as{" "}
-          <code className=" highlighter-rouge">{`<mark>`}</code>
-          and <code className=" highlighter-rouge">{`<small>`}</code>
+          <code className="highlighter-rouge">{`<mark>`}</code>
+          and <code className="highlighter-rouge">{`<small>`}</code>
           while avoiding any unwanted semantic implications that the tags would
           bring.
         </p>
         <p>
           While not shown above, feel free to use{" "}
-          <code className=" highlighter-rouge">{`<b>`}</code>
-          and <code className=" highlighter-rouge">{`<i>`}</code>
-          in HTML5. <code className=" highlighter-rouge">{`<b>`}</code>
+          <code className="highlighter-rouge">{`<b>`}</code>
+          and <code className="highlighter-rouge">{`<i>`}</code>
+          in HTML5. <code className="highlighter-rouge">{`<b>`}</code>
           is meant to highlight words or phrases without conveying additional
-          importance while <code className=" highlighter-rouge">{`<i>`}</code>
+          importance while <code className="highlighter-rouge">{`<i>`}</code>
           is mostly for voice, technical terms, etc.
         </p>
         <h2 id="text-utilities">Text utilities</h2>
@@ -378,23 +378,23 @@ class Typography extends React.Component {
         <h2 id="abbreviations">Abbreviations</h2>
         <p>
           Stylized implementation of HTML’s{" "}
-          <code className=" highlighter-rouge">{`<abbr>`}</code>
+          <code className="highlighter-rouge">{`<abbr>`}</code>
           element for abbreviations and acronyms to show the expanded version on
           hover. Abbreviations have a default underline and gain a help cursor
           to provide additional context on hover and to users of assistive
           technologies.
         </p>
         <p>
-          Add <code className=" highlighter-rouge">.initialism</code>
+          Add <code className="highlighter-rouge">.initialism</code>
           to an abbreviation for a slightly smaller font-size.
         </p>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="-component-tab"
@@ -421,21 +421,21 @@ class Typography extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               role="tabpanel"
             >
               <p>
                 <abbr title="attribute">attr</abbr>
               </p>
               <p>
-                <abbr className=" initialism" title="HyperText Markup Language">
+                <abbr className="initialism" title="HyperText Markup Language">
                   HTML
                 </abbr>
               </p>
             </TabPane>
             <TabPane
               aria-labelledby="-html-tab"
-              className=" fade"
+              className="fade"
               role="tabpanel"
             />
           </TabContent>
@@ -444,19 +444,19 @@ class Typography extends React.Component {
         <p>
           For quoting blocks of content from another source within your
           document. Wrap{" "}
-          <code className=" highlighter-rouge">
+          <code className="highlighter-rouge">
             {`<blockquote className="blockquote">`}
           </code>
           around any <abbr title="HyperText Markup Language">HTML</abbr>
           as the quote.
         </p>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="-component-tab"
@@ -483,11 +483,11 @@ class Typography extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               role="tabpanel"
             >
-              <blockquote className=" blockquote">
-                <p className=" mb-0">
+              <blockquote className="blockquote">
+                <p className="mb-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer posuere erat a ante.
                 </p>
@@ -495,7 +495,7 @@ class Typography extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="-html-tab"
-              className=" fade"
+              className="fade"
               role="tabpanel"
             />
           </TabContent>
@@ -503,19 +503,19 @@ class Typography extends React.Component {
         <h3 id="naming-a-source">Naming a source</h3>
         <p>
           Add a{" "}
-          <code className=" highlighter-rouge">
+          <code className="highlighter-rouge">
             {`<footer className="blockquote-footer">`}
           </code>
           for identifying the source. Wrap the name of the source work in{" "}
-          <code className=" highlighter-rouge">{`<cite>`}</code>.
+          <code className="highlighter-rouge">{`<cite>`}</code>.
         </p>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="-component-tab"
@@ -542,15 +542,15 @@ class Typography extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               role="tabpanel"
             >
-              <blockquote className=" blockquote">
-                <p className=" mb-0">
+              <blockquote className="blockquote">
+                <p className="mb-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer posuere erat a ante.
                 </p>
-                <footer className=" blockquote-footer">
+                <footer className="blockquote-footer">
                   Someone famous in{" "}
                   <cite title="Source Title">Source Title</cite>
                 </footer>
@@ -558,7 +558,7 @@ class Typography extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="-html-tab"
-              className=" fade"
+              className="fade"
               role="tabpanel"
             />
           </TabContent>
@@ -568,13 +568,13 @@ class Typography extends React.Component {
           Use text utilities as needed to change the alignment of your
           blockquote.
         </p>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="-component-tab"
@@ -601,15 +601,15 @@ class Typography extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               role="tabpanel"
             >
-              <blockquote className=" blockquote text-center">
-                <p className=" mb-0">
+              <blockquote className="blockquote text-center">
+                <p className="mb-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer posuere erat a ante.
                 </p>
-                <footer className=" blockquote-footer">
+                <footer className="blockquote-footer">
                   Someone famous in{" "}
                   <cite title="Source Title">Source Title</cite>
                 </footer>
@@ -617,18 +617,18 @@ class Typography extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="-html-tab"
-              className=" fade"
+              className="fade"
               role="tabpanel"
             />
           </TabContent>
         </div>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="-component-tab"
@@ -655,15 +655,15 @@ class Typography extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               role="tabpanel"
             >
-              <blockquote className=" blockquote text-right">
-                <p className=" mb-0">
+              <blockquote className="blockquote text-right">
+                <p className="mb-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer posuere erat a ante.
                 </p>
-                <footer className=" blockquote-footer">
+                <footer className="blockquote-footer">
                   Someone famous in{" "}
                   <cite title="Source Title">Source Title</cite>
                 </footer>
@@ -671,7 +671,7 @@ class Typography extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="-html-tab"
-              className=" fade"
+              className="fade"
               role="tabpanel"
             />
           </TabContent>
@@ -680,18 +680,18 @@ class Typography extends React.Component {
         <h3 id="unstyled">Unstyled</h3>
         <p>
           Remove the default{" "}
-          <code className=" highlighter-rouge">list-style</code>
+          <code className="highlighter-rouge">list-style</code>
           and left margin on list items (immediate children only).{" "}
           <strong>This only applies to immediate children list items</strong>,
           meaning you will need to add the class for any nested lists as well.
         </p>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="-component-tab"
@@ -718,10 +718,10 @@ class Typography extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               role="tabpanel"
             >
-              <ul className=" list-unstyled">
+              <ul className="list-unstyled">
                 <li>Lorem ipsum dolor sit amet</li>
                 <li>Consectetur adipiscing elit</li>
                 <li>Integer molestie lorem at massa</li>
@@ -742,7 +742,7 @@ class Typography extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="-html-tab"
-              className=" fade"
+              className="fade"
               role="tabpanel"
             />
           </TabContent>
@@ -750,18 +750,18 @@ class Typography extends React.Component {
         <h3 id="inline">Inline</h3>
         <p>
           Remove a list’s bullets and apply some light{" "}
-          <code className=" highlighter-rouge">margin</code>
+          <code className="highlighter-rouge">margin</code>
           with a combination of two classes,{" "}
-          <code className=" highlighter-rouge">.list-inline</code>
-          and <code className=" highlighter-rouge">.list-inline-item</code>.
+          <code className="highlighter-rouge">.list-inline</code>
+          and <code className="highlighter-rouge">.list-inline-item</code>.
         </p>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="-component-tab"
@@ -788,18 +788,18 @@ class Typography extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               role="tabpanel"
             >
-              <ul className=" list-inline">
-                <li className=" list-inline-item">Lorem ipsum</li>
-                <li className=" list-inline-item">Phasellus iaculis</li>
-                <li className=" list-inline-item">Nulla volutpat</li>
+              <ul className="list-inline">
+                <li className="list-inline-item">Lorem ipsum</li>
+                <li className="list-inline-item">Phasellus iaculis</li>
+                <li className="list-inline-item">Nulla volutpat</li>
               </ul>
             </TabPane>
             <TabPane
               aria-labelledby="-html-tab"
-              className=" fade"
+              className="fade"
               role="tabpanel"
             />
           </TabContent>
@@ -809,16 +809,16 @@ class Typography extends React.Component {
           Align terms and descriptions horizontally by using our grid system’s
           predefined classes (or semantic mixins). For longer terms, you can
           optionally add a{" "}
-          <code className=" highlighter-rouge">.text-truncate</code>
+          <code className="highlighter-rouge">.text-truncate</code>
           class to truncate the text with an ellipsis.
         </p>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="-component-tab"
@@ -845,7 +845,7 @@ class Typography extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               role="tabpanel"
             >
               <Row>
@@ -865,7 +865,7 @@ class Typography extends React.Component {
                 <Col sm="9">
                   Etiam porta sem malesuada magna mollis euismod.
                 </Col>
-                <Col className=" text-truncate" sm="3">
+                <Col className="text-truncate" sm="3">
                   Truncated term is truncated
                 </Col>
                 <Col sm="9">
@@ -886,7 +886,7 @@ class Typography extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="-html-tab"
-              className=" fade"
+              className="fade"
               role="tabpanel"
             />
           </TabContent>
@@ -895,13 +895,13 @@ class Typography extends React.Component {
         <p>
           <em>Responsive typography</em>
           refers to scaling text and components by simply adjusting the root
-          element’s <code className=" highlighter-rouge">font-size</code>
+          element’s <code className="highlighter-rouge">font-size</code>
           within a series of media queries. Bootstrap doesn’t do this for you,
           but it’s fairly easy to add if you need it.
         </p>
         <p>
           Here’s an example of it in practice. Choose whatever{" "}
-          <code className=" highlighter-rouge">font-size</code>s and media
+          <code className="highlighter-rouge">font-size</code>s and media
           queries you wish.
         </p>
       </>

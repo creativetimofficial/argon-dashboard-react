@@ -16,25 +16,25 @@ class Paginations extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Pagination
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Documentation and examples for showing pagination to indicate a series
           of related content exists across multiple pages.
         </p>
         <hr />
         <h2 id="examples">Examples</h2>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="pagination-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="pagination-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="pagination-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="pagination-component-tab"
@@ -61,7 +61,7 @@ class Paginations extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="pagination-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="pagination-component"
               role="tabpanel"
             >
@@ -73,8 +73,8 @@ class Paginations extends React.Component {
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
-                      <i className=" fa fa-angle-left" />
-                      <span className=" sr-only">Previous</span>
+                      <i className="fa fa-angle-left" />
+                      <span className="sr-only">Previous</span>
                     </PaginationLink>
                   </PaginationItem>
                   <PaginationItem>
@@ -107,8 +107,8 @@ class Paginations extends React.Component {
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
-                      <i className=" fa fa-angle-right" />
-                      <span className=" sr-only">Next</span>
+                      <i className="fa fa-angle-right" />
+                      <span className="sr-only">Next</span>
                     </PaginationLink>
                   </PaginationItem>
                 </Pagination>
@@ -116,16 +116,16 @@ class Paginations extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="pagination-html-tab"
-              className=" fade"
+              className="fade"
               id="pagination-html"
               role="tabpanel"
             />
           </TabContent>
         </div>
         <h2 id="disabled-and-active-states">Disabled and active states</h2>
-        <div className=" ct-example">
+        <div className="ct-example">
           <Nav
-            className=" nav-tabs-code"
+            className="nav-tabs-code"
             id="pagination-states-tab"
             role="tablist"
           >
@@ -133,7 +133,7 @@ class Paginations extends React.Component {
               <NavLink
                 aria-controls="pagination-states-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="pagination-states-component-tab"
@@ -160,20 +160,20 @@ class Paginations extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="pagination-states-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="pagination-states-component"
               role="tabpanel"
             >
               <nav aria-label="...">
                 <Pagination>
-                  <PaginationItem className=" disabled">
+                  <PaginationItem className="disabled">
                     <PaginationLink
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                       tabindex="-1"
                     >
-                      <i className=" fa fa-angle-left" />
-                      <span className=" sr-only">Previous</span>
+                      <i className="fa fa-angle-left" />
+                      <span className="sr-only">Previous</span>
                     </PaginationLink>
                   </PaginationItem>
                   <PaginationItem>
@@ -184,12 +184,12 @@ class Paginations extends React.Component {
                       1
                     </PaginationLink>
                   </PaginationItem>
-                  <PaginationItem className=" active">
+                  <PaginationItem className="active">
                     <PaginationLink
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
-                      2 <span className=" sr-only">(current)</span>
+                      2 <span className="sr-only">(current)</span>
                     </PaginationLink>
                   </PaginationItem>
                   <PaginationItem>
@@ -205,8 +205,8 @@ class Paginations extends React.Component {
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
-                      <i className=" fa fa-angle-right" />
-                      <span className=" sr-only">Next</span>
+                      <i className="fa fa-angle-right" />
+                      <span className="sr-only">Next</span>
                     </PaginationLink>
                   </PaginationItem>
                 </Pagination>
@@ -214,7 +214,7 @@ class Paginations extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="pagination-states-html-tab"
-              className=" fade"
+              className="fade"
               id="pagination-states-html"
               role="tabpanel"
             />
@@ -223,17 +223,17 @@ class Paginations extends React.Component {
         <h2 id="sizing">Sizing</h2>
         <p>
           Fancy larger or smaller pagination? Add{" "}
-          <code className=" highlighter-rouge">.pagination-lg</code>
-          or <code className=" highlighter-rouge">.pagination-sm</code>
+          <code className="highlighter-rouge">.pagination-lg</code>
+          or <code className="highlighter-rouge">.pagination-sm</code>
           for additional sizes.
         </p>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="pagination-lg-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="pagination-lg-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="pagination-lg-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="pagination-lg-component-tab"
@@ -260,16 +260,16 @@ class Paginations extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="pagination-lg-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="pagination-lg-component"
               role="tabpanel"
             >
               <nav aria-label="...">
                 <Pagination
                   className="pagination pagination-lg"
-                  listClassName=" pagination-lg"
+                  listclassName="pagination-lg"
                 >
-                  <PaginationItem className=" disabled">
+                  <PaginationItem className="disabled">
                     <PaginationLink
                       href="#pablo"
                       onClick={e => e.preventDefault()}
@@ -286,7 +286,7 @@ class Paginations extends React.Component {
                       2
                     </PaginationLink>
                   </PaginationItem>
-                  <PaginationItem className=" active">
+                  <PaginationItem className="active">
                     <PaginationLink
                       href="#pablo"
                       onClick={e => e.preventDefault()}
@@ -299,19 +299,19 @@ class Paginations extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="pagination-lg-html-tab"
-              className=" fade"
+              className="fade"
               id="pagination-lg-html"
               role="tabpanel"
             />
           </TabContent>
         </div>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="pagination-sm-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="pagination-sm-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="pagination-sm-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="pagination-sm-component-tab"
@@ -338,16 +338,16 @@ class Paginations extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="pagination-sm-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="pagination-sm-component"
               role="tabpanel"
             >
               <nav aria-label="...">
                 <Pagination
                   className="pagination pagination-sm"
-                  listClassName=" pagination-sm"
+                  listclassName="pagination-sm"
                 >
-                  <PaginationItem className=" disabled">
+                  <PaginationItem className="disabled">
                     <PaginationLink
                       href="#pablo"
                       onClick={e => e.preventDefault()}
@@ -364,7 +364,7 @@ class Paginations extends React.Component {
                       2
                     </PaginationLink>
                   </PaginationItem>
-                  <PaginationItem className=" active">
+                  <PaginationItem className="active">
                     <PaginationLink
                       href="#pablo"
                       onClick={e => e.preventDefault()}
@@ -377,7 +377,7 @@ class Paginations extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="pagination-sm-html-tab"
-              className=" fade"
+              className="fade"
               id="pagination-sm-html"
               role="tabpanel"
             />
@@ -388,9 +388,9 @@ class Paginations extends React.Component {
           Change the alignment of pagination components with{" "}
           <a href="argon-dashboard/docs//utilities/flex/">flexbox utilities</a>.
         </p>
-        <div className=" ct-example">
+        <div className="ct-example">
           <Nav
-            className=" nav-tabs-code"
+            className="nav-tabs-code"
             id="pagination-center-tab"
             role="tablist"
           >
@@ -398,7 +398,7 @@ class Paginations extends React.Component {
               <NavLink
                 aria-controls="pagination-center-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="pagination-center-component-tab"
@@ -425,23 +425,23 @@ class Paginations extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="pagination-center-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="pagination-center-component"
               role="tabpanel"
             >
               <nav aria-label="Page navigation example">
                 <Pagination
                   className="pagination justify-content-center"
-                  listClassName=" justify-content-center"
+                  listclassName="justify-content-center"
                 >
-                  <PaginationItem className=" disabled">
+                  <PaginationItem className="disabled">
                     <PaginationLink
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                       tabindex="-1"
                     >
-                      <i className=" fa fa-angle-left" />
-                      <span className=" sr-only">Previous</span>
+                      <i className="fa fa-angle-left" />
+                      <span className="sr-only">Previous</span>
                     </PaginationLink>
                   </PaginationItem>
                   <PaginationItem>
@@ -452,7 +452,7 @@ class Paginations extends React.Component {
                       1
                     </PaginationLink>
                   </PaginationItem>
-                  <PaginationItem className=" active">
+                  <PaginationItem className="active">
                     <PaginationLink
                       href="#pablo"
                       onClick={e => e.preventDefault()}
@@ -473,8 +473,8 @@ class Paginations extends React.Component {
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
-                      <i className=" fa fa-angle-right" />
-                      <span className=" sr-only">Next</span>
+                      <i className="fa fa-angle-right" />
+                      <span className="sr-only">Next</span>
                     </PaginationLink>
                   </PaginationItem>
                 </Pagination>
@@ -482,15 +482,15 @@ class Paginations extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="pagination-center-html-tab"
-              className=" fade"
+              className="fade"
               id="pagination-center-html"
               role="tabpanel"
             />
           </TabContent>
         </div>
-        <div className=" ct-example">
+        <div className="ct-example">
           <Nav
-            className=" nav-tabs-code"
+            className="nav-tabs-code"
             id="pagination-right-tab"
             role="tablist"
           >
@@ -498,7 +498,7 @@ class Paginations extends React.Component {
               <NavLink
                 aria-controls="pagination-right-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="pagination-right-component-tab"
@@ -525,23 +525,23 @@ class Paginations extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="pagination-right-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="pagination-right-component"
               role="tabpanel"
             >
               <nav aria-label="Page navigation example">
                 <Pagination
                   className="pagination justify-content-end"
-                  listClassName=" justify-content-end"
+                  listclassName="justify-content-end"
                 >
-                  <PaginationItem className=" disabled">
+                  <PaginationItem className="disabled">
                     <PaginationLink
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                       tabindex="-1"
                     >
-                      <i className=" fa fa-angle-left" />
-                      <span className=" sr-only">Previous</span>
+                      <i className="fa fa-angle-left" />
+                      <span className="sr-only">Previous</span>
                     </PaginationLink>
                   </PaginationItem>
                   <PaginationItem>
@@ -552,7 +552,7 @@ class Paginations extends React.Component {
                       1
                     </PaginationLink>
                   </PaginationItem>
-                  <PaginationItem className=" active">
+                  <PaginationItem className="active">
                     <PaginationLink
                       href="#pablo"
                       onClick={e => e.preventDefault()}
@@ -573,8 +573,8 @@ class Paginations extends React.Component {
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
-                      <i className=" fa fa-angle-right" />
-                      <span className=" sr-only">Next</span>
+                      <i className="fa fa-angle-right" />
+                      <span className="sr-only">Next</span>
                     </PaginationLink>
                   </PaginationItem>
                 </Pagination>
@@ -582,7 +582,7 @@ class Paginations extends React.Component {
             </TabPane>
             <TabPane
               aria-labelledby="pagination-right-html-tab"
-              className=" fade"
+              className="fade"
               id="pagination-right-html"
               role="tabpanel"
             />

@@ -15,24 +15,24 @@ class Charts extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Charts
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Simple yet flexible Javascript charting for designers &amp; developers
         </p>
         <hr />
         <h2 id="example">Example</h2>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="chart-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="chart-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="chart-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="chart-component-tab"
@@ -59,35 +59,35 @@ class Charts extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="chart-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="chart-component"
               role="tabpanel"
             >
               <Card>
                 <CardBody>
-                  <div className=" chart">
+                  <div className="chart">
                     {/* Chart wrapper */}
-                    <canvas className=" chart-canvas" id="chart-orders" />
+                    <canvas className="chart-canvas" id="chart-orders" />
                   </div>
                 </CardBody>
               </Card>
             </TabPane>
             <TabPane
               aria-labelledby="chart-html-tab"
-              className=" fade"
+              className="fade"
               id="chart-html"
               role="tabpanel"
             />
           </TabContent>
         </div>
         <h2 id="dark-card-with-chart">Dark card with chart</h2>
-        <div className=" ct-example">
-          <Nav className=" nav-tabs-code" id="chart-tab" role="tablist">
+        <div className="ct-example">
+          <Nav className="nav-tabs-code" id="chart-tab" role="tablist">
             <NavItem>
               <NavLink
                 aria-controls="chart-component"
                 aria-selected={true}
-                className=" active"
+                className="active"
                 data-toggle="tab"
                 href="#pablo"
                 id="chart-component-tab"
@@ -114,22 +114,22 @@ class Charts extends React.Component {
           <TabContent>
             <TabPane
               aria-labelledby="chart-component-tab"
-              className=" tab-example-result fade show active"
+              className="tab-example-result fade show active"
               id="chart-component"
               role="tabpanel"
             >
-              <Card className=" bg-default">
+              <Card className="bg-default">
                 <CardBody>
-                  <div className=" chart">
+                  <div className="chart">
                     {/* Chart wrapper */}
-                    <canvas className=" chart-canvas" id="chart-sales" />
+                    <canvas className="chart-canvas" id="chart-sales" />
                   </div>
                 </CardBody>
               </Card>
             </TabPane>
             <TabPane
               aria-labelledby="chart-html-tab"
-              className=" fade"
+              className="fade"
               id="chart-html"
               role="tabpanel"
             />

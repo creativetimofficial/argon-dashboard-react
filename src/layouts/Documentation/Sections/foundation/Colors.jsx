@@ -7,13 +7,13 @@ class Colors extends React.Component {
   render() {
     return (
       <>
-        <div className=" ct-page-title">
-          <h1 className=" ct-title" id="content">
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
             Icons
           </h1>
-          <div className=" avatar-group mt-3" />
+          <div className="avatar-group mt-3" />
         </div>
-        <p className=" ct-lead">
+        <p className="ct-lead">
           Get started with Bootstrap, the world’s most popular framework for
           building responsive, mobile-first sites, with BootstrapCDN and a
           template starter page.
@@ -26,252 +26,252 @@ class Colors extends React.Component {
         </p>
         <Row>
           <Col lg="4" md="6">
-            <div className=" color-swatch">
-              <div className=" color-swatch-header bg-default">
-                <div className=" pass-fail">
-                  <div className=" pass-fail-item-wrap">
-                    <div className=" pass-fail-item-group">
-                      <div className=" pass-fail-item">
-                        <div className=" example">A</div>
-                        <div className=" lozenge">Fail</div>
+            <div className="color-swatch">
+              <div className="color-swatch-header bg-default">
+                <div className="pass-fail">
+                  <div className="pass-fail-item-wrap">
+                    <div className="pass-fail-item-group">
+                      <div className="pass-fail-item">
+                        <div className="example">A</div>
+                        <div className="lozenge">Fail</div>
                       </div>
                     </div>
-                    <div className=" pass-fail-item-group">
-                      <div className=" pass-fail-item white small">
-                        <div className=" example">A</div>
-                        <div className=" lozenge">Pass</div>
+                    <div className="pass-fail-item-group">
+                      <div className="pass-fail-item white small">
+                        <div className="example">A</div>
+                        <div className="lozenge">Pass</div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className=" color-swatch-body">
-                <div className=" prop-item-wrap">
-                  <div className=" prop-item">
+              <div className="color-swatch-body">
+                <div className="prop-item-wrap">
+                  <div className="prop-item">
                     <Label>Name</Label>
-                    <div className=" value">Default</div>
+                    <div className="value">Default</div>
                   </div>
                 </div>
-                <div className=" prop-item-wrap">
-                  <div className=" prop-item">
+                <div className="prop-item-wrap">
+                  <div className="prop-item">
                     <Label>Hex</Label>
-                    <div className=" value">#172b4d</div>
+                    <div className="value">#172b4d</div>
                   </div>
                 </div>
               </div>
             </div>
           </Col>
           <Col lg="4" md="6">
-            <div className=" color-swatch">
-              <div className=" color-swatch-header bg-primary">
-                <div className=" pass-fail">
-                  <div className=" pass-fail-item-wrap">
-                    <div className=" pass-fail-item-group">
-                      <div className=" pass-fail-item">
-                        <div className=" example">A</div>
-                        <div className=" lozenge">Fail</div>
+            <div className="color-swatch">
+              <div className="color-swatch-header bg-primary">
+                <div className="pass-fail">
+                  <div className="pass-fail-item-wrap">
+                    <div className="pass-fail-item-group">
+                      <div className="pass-fail-item">
+                        <div className="example">A</div>
+                        <div className="lozenge">Fail</div>
                       </div>
                     </div>
-                    <div className=" pass-fail-item-group">
-                      <div className=" pass-fail-item white small">
-                        <div className=" example">A</div>
-                        <div className=" lozenge">Pass</div>
+                    <div className="pass-fail-item-group">
+                      <div className="pass-fail-item white small">
+                        <div className="example">A</div>
+                        <div className="lozenge">Pass</div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className=" color-swatch-body">
-                <div className=" prop-item-wrap">
-                  <div className=" prop-item">
+              <div className="color-swatch-body">
+                <div className="prop-item-wrap">
+                  <div className="prop-item">
                     <Label>Name</Label>
-                    <div className=" value">Primary</div>
+                    <div className="value">Primary</div>
                   </div>
                 </div>
-                <div className=" prop-item-wrap">
-                  <div className=" prop-item">
+                <div className="prop-item-wrap">
+                  <div className="prop-item">
                     <Label>Hex</Label>
-                    <div className=" value">#5e72e4</div>
+                    <div className="value">#5e72e4</div>
                   </div>
                 </div>
               </div>
             </div>
           </Col>
           <Col lg="4" md="6">
-            <div className=" color-swatch">
-              <div className=" color-swatch-header bg-secondary">
-                <div className=" pass-fail">
-                  <div className=" pass-fail-item-wrap">
-                    <div className=" pass-fail-item-group">
-                      <div className=" pass-fail-item">
-                        <div className=" example">A</div>
-                        <div className=" lozenge">Fail</div>
+            <div className="color-swatch">
+              <div className="color-swatch-header bg-secondary">
+                <div className="pass-fail">
+                  <div className="pass-fail-item-wrap">
+                    <div className="pass-fail-item-group">
+                      <div className="pass-fail-item">
+                        <div className="example">A</div>
+                        <div className="lozenge">Fail</div>
                       </div>
                     </div>
-                    <div className=" pass-fail-item-group">
-                      <div className=" pass-fail-item white small">
-                        <div className=" example">A</div>
-                        <div className=" lozenge">Pass</div>
+                    <div className="pass-fail-item-group">
+                      <div className="pass-fail-item white small">
+                        <div className="example">A</div>
+                        <div className="lozenge">Pass</div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className=" color-swatch-body">
-                <div className=" prop-item-wrap">
-                  <div className=" prop-item">
+              <div className="color-swatch-body">
+                <div className="prop-item-wrap">
+                  <div className="prop-item">
                     <Label>Name</Label>
-                    <div className=" value">Secondary</div>
+                    <div className="value">Secondary</div>
                   </div>
                 </div>
-                <div className=" prop-item-wrap">
-                  <div className=" prop-item">
+                <div className="prop-item-wrap">
+                  <div className="prop-item">
                     <Label>Hex</Label>
-                    <div className=" value">#f4f5f7</div>
+                    <div className="value">#f4f5f7</div>
                   </div>
                 </div>
               </div>
             </div>
           </Col>
           <Col lg="4" md="6">
-            <div className=" color-swatch">
-              <div className=" color-swatch-header bg-info">
-                <div className=" pass-fail">
-                  <div className=" pass-fail-item-wrap">
-                    <div className=" pass-fail-item-group">
-                      <div className=" pass-fail-item">
-                        <div className=" example">A</div>
-                        <div className=" lozenge">Fail</div>
+            <div className="color-swatch">
+              <div className="color-swatch-header bg-info">
+                <div className="pass-fail">
+                  <div className="pass-fail-item-wrap">
+                    <div className="pass-fail-item-group">
+                      <div className="pass-fail-item">
+                        <div className="example">A</div>
+                        <div className="lozenge">Fail</div>
                       </div>
                     </div>
-                    <div className=" pass-fail-item-group">
-                      <div className=" pass-fail-item white small">
-                        <div className=" example">A</div>
-                        <div className=" lozenge">Pass</div>
+                    <div className="pass-fail-item-group">
+                      <div className="pass-fail-item white small">
+                        <div className="example">A</div>
+                        <div className="lozenge">Pass</div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className=" color-swatch-body">
-                <div className=" prop-item-wrap">
-                  <div className=" prop-item">
+              <div className="color-swatch-body">
+                <div className="prop-item-wrap">
+                  <div className="prop-item">
                     <Label>Name</Label>
-                    <div className=" value">Info</div>
+                    <div className="value">Info</div>
                   </div>
                 </div>
-                <div className=" prop-item-wrap">
-                  <div className=" prop-item">
+                <div className="prop-item-wrap">
+                  <div className="prop-item">
                     <Label>Hex</Label>
-                    <div className=" value">#11cdef</div>
+                    <div className="value">#11cdef</div>
                   </div>
                 </div>
               </div>
             </div>
           </Col>
           <Col lg="4" md="6">
-            <div className=" color-swatch">
-              <div className=" color-swatch-header bg-success">
-                <div className=" pass-fail">
-                  <div className=" pass-fail-item-wrap">
-                    <div className=" pass-fail-item-group">
-                      <div className=" pass-fail-item">
-                        <div className=" example">A</div>
-                        <div className=" lozenge">Fail</div>
+            <div className="color-swatch">
+              <div className="color-swatch-header bg-success">
+                <div className="pass-fail">
+                  <div className="pass-fail-item-wrap">
+                    <div className="pass-fail-item-group">
+                      <div className="pass-fail-item">
+                        <div className="example">A</div>
+                        <div className="lozenge">Fail</div>
                       </div>
                     </div>
-                    <div className=" pass-fail-item-group">
-                      <div className=" pass-fail-item white small">
-                        <div className=" example">A</div>
-                        <div className=" lozenge">Pass</div>
+                    <div className="pass-fail-item-group">
+                      <div className="pass-fail-item white small">
+                        <div className="example">A</div>
+                        <div className="lozenge">Pass</div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className=" color-swatch-body">
-                <div className=" prop-item-wrap">
-                  <div className=" prop-item">
+              <div className="color-swatch-body">
+                <div className="prop-item-wrap">
+                  <div className="prop-item">
                     <Label>Name</Label>
-                    <div className=" value">Success</div>
+                    <div className="value">Success</div>
                   </div>
                 </div>
-                <div className=" prop-item-wrap">
-                  <div className=" prop-item">
+                <div className="prop-item-wrap">
+                  <div className="prop-item">
                     <Label>Hex</Label>
-                    <div className=" value">#2dce89</div>
+                    <div className="value">#2dce89</div>
                   </div>
                 </div>
               </div>
             </div>
           </Col>
           <Col lg="4" md="6">
-            <div className=" color-swatch">
-              <div className=" color-swatch-header bg-danger">
-                <div className=" pass-fail">
-                  <div className=" pass-fail-item-wrap">
-                    <div className=" pass-fail-item-group">
-                      <div className=" pass-fail-item">
-                        <div className=" example">A</div>
-                        <div className=" lozenge">Fail</div>
+            <div className="color-swatch">
+              <div className="color-swatch-header bg-danger">
+                <div className="pass-fail">
+                  <div className="pass-fail-item-wrap">
+                    <div className="pass-fail-item-group">
+                      <div className="pass-fail-item">
+                        <div className="example">A</div>
+                        <div className="lozenge">Fail</div>
                       </div>
                     </div>
-                    <div className=" pass-fail-item-group">
-                      <div className=" pass-fail-item white small">
-                        <div className=" example">A</div>
-                        <div className=" lozenge">Pass</div>
+                    <div className="pass-fail-item-group">
+                      <div className="pass-fail-item white small">
+                        <div className="example">A</div>
+                        <div className="lozenge">Pass</div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className=" color-swatch-body">
-                <div className=" prop-item-wrap">
-                  <div className=" prop-item">
+              <div className="color-swatch-body">
+                <div className="prop-item-wrap">
+                  <div className="prop-item">
                     <Label>Name</Label>
-                    <div className=" value">Danger</div>
+                    <div className="value">Danger</div>
                   </div>
                 </div>
-                <div className=" prop-item-wrap">
-                  <div className=" prop-item">
+                <div className="prop-item-wrap">
+                  <div className="prop-item">
                     <Label>Hex</Label>
-                    <div className=" value">#f5365c</div>
+                    <div className="value">#f5365c</div>
                   </div>
                 </div>
               </div>
             </div>
           </Col>
           <Col lg="4" md="6">
-            <div className=" color-swatch">
-              <div className=" color-swatch-header bg-warning">
-                <div className=" pass-fail">
-                  <div className=" pass-fail-item-wrap">
-                    <div className=" pass-fail-item-group">
-                      <div className=" pass-fail-item">
-                        <div className=" example">A</div>
-                        <div className=" lozenge">Fail</div>
+            <div className="color-swatch">
+              <div className="color-swatch-header bg-warning">
+                <div className="pass-fail">
+                  <div className="pass-fail-item-wrap">
+                    <div className="pass-fail-item-group">
+                      <div className="pass-fail-item">
+                        <div className="example">A</div>
+                        <div className="lozenge">Fail</div>
                       </div>
                     </div>
-                    <div className=" pass-fail-item-group">
-                      <div className=" pass-fail-item white small">
-                        <div className=" example">A</div>
-                        <div className=" lozenge">Pass</div>
+                    <div className="pass-fail-item-group">
+                      <div className="pass-fail-item white small">
+                        <div className="example">A</div>
+                        <div className="lozenge">Pass</div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className=" color-swatch-body">
-                <div className=" prop-item-wrap">
-                  <div className=" prop-item">
+              <div className="color-swatch-body">
+                <div className="prop-item-wrap">
+                  <div className="prop-item">
                     <Label>Name</Label>
-                    <div className=" value">Warning</div>
+                    <div className="value">Warning</div>
                   </div>
                 </div>
-                <div className=" prop-item-wrap">
-                  <div className=" prop-item">
+                <div className="prop-item-wrap">
+                  <div className="prop-item">
                     <Label>Hex</Label>
-                    <div className=" value">#fb6340</div>
+                    <div className="value">#fb6340</div>
                   </div>
                 </div>
               </div>
@@ -284,7 +284,7 @@ class Colors extends React.Component {
           layout without losing warmth and cleanliness, and are therefore often
           used as a background color for web components.
         </p>
-        <Table className=" table-colors">
+        <Table className="table-colors">
           <tbody />
         </Table>
       </>
