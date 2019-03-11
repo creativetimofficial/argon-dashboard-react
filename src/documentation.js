@@ -22,13 +22,13 @@ import Sidebar from "layouts/Documentation/Sections/core-components/Sidebar.jsx"
 import Alerts from "layouts/Documentation/Sections/restyled-components/Alerts.jsx";
 import Badge from "layouts/Documentation/Sections/restyled-components/Badge.jsx";
 import Buttons from "layouts/Documentation/Sections/restyled-components/Buttons.jsx";
-import Carousel from "layouts/Documentation/Sections/restyled-components/Carousel.jsx";
-import Dropdowns from "layouts/Documentation/Sections/restyled-components/Dropdowns.jsx";
+import Cards from "layouts/Documentation/Sections/restyled-components/Cards.jsx";
 import Forms from "layouts/Documentation/Sections/restyled-components/Forms.jsx";
 import Modals from "layouts/Documentation/Sections/restyled-components/Modals.jsx";
 import Navs from "layouts/Documentation/Sections/restyled-components/Navs.jsx";
 import Navbar from "layouts/Documentation/Sections/restyled-components/Navbar.jsx";
 import Pagination from "layouts/Documentation/Sections/restyled-components/Pagination.jsx";
+import Popovers from "layouts/Documentation/Sections/restyled-components/Popovers.jsx";
 import Progress from "layouts/Documentation/Sections/restyled-components/Progress.jsx";
 import Tables from "layouts/Documentation/Sections/restyled-components/Tables.jsx";
 import Tooltips from "layouts/Documentation/Sections/restyled-components/Tooltips.jsx";
@@ -158,14 +158,9 @@ var docsRoutes = [
         name: "Buttons"
       },
       {
-        path: "/documentation/carousel",
-        component: Carousel,
-        name: "Carousel"
-      },
-      {
-        path: "/documentation/dropdowns",
-        component: Dropdowns,
-        name: "Dropdowns"
+        path: "/documentation/cards",
+        component: Cards,
+        name: "Cards"
       },
       {
         path: "/documentation/forms",
@@ -191,6 +186,11 @@ var docsRoutes = [
         path: "/documentation/pagination",
         component: Pagination,
         name: "Pagination"
+      },
+      {
+        path: "/documentation/popovers",
+        component: Popovers,
+        name: "Popovers"
       },
       {
         path: "/documentation/progress",
