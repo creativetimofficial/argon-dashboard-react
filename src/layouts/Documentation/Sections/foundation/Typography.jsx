@@ -1,5 +1,6 @@
 import React from "react";
-
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // reactstrap components
 import {
   NavItem,
@@ -11,6 +12,36 @@ import {
   Row,
   Col
 } from "reactstrap";
+
+const codeHeadings = `<h1>h1. Bootstrap heading</h1>
+<h2>h2. Bootstrap heading</h2>
+<h3>h3. Bootstrap heading</h3>
+<h4>h4. Bootstrap heading</h4>
+<h5>h5. Bootstrap heading</h5>
+<h6>h6. Bootstrap heading</h6>`;
+
+const codeClases = `<p className="h1">h1. Bootstrap heading</p>
+<p className="h2">h2. Bootstrap heading</p>
+<p className="h3">h3. Bootstrap heading</p>
+<p className="h4">h4. Bootstrap heading</p>
+<p className="h5">h5. Bootstrap heading</p>
+<p className="h6">h6. Bootstrap heading</p>`;
+
+const codeCustomizingHeadings = `<span className="h3">
+  Fancy display heading{" "}
+  <small className="text-muted">With faded secondary text</small>
+</span>`;
+
+const codeDisplayHeadings = `<h1 className="display-1">Display 1</h1>
+<h1 className="display-2">Display 2</h1>
+<h1 className="display-3">Display 3</h1>
+<h1 className="display-4">Display 4</h1>`;
+
+const codeLead = `<p className="lead">
+  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+  auctor. Duis mollis, est non commodo luctus.
+</p>`;
+
 
 class Typography extends React.Component {
   render() {
@@ -45,7 +76,7 @@ class Typography extends React.Component {
               <td>
                 <p>
                   <code className="highlighter-rouge">
-                    <h1 />
+                    {`<h1 />`}
                   </code>
                 </p>
               </td>
@@ -57,7 +88,7 @@ class Typography extends React.Component {
               <td>
                 <p>
                   <code className="highlighter-rouge">
-                    <h2 />
+                    {`<h2 />`}
                   </code>
                 </p>
               </td>
@@ -69,7 +100,7 @@ class Typography extends React.Component {
               <td>
                 <p>
                   <code className="highlighter-rouge">
-                    <h3 />
+                    {`<h3 />`}
                   </code>
                 </p>
               </td>
@@ -81,7 +112,7 @@ class Typography extends React.Component {
               <td>
                 <p>
                   <code className="highlighter-rouge">
-                    <h4 />
+                    {`<h4 />`}
                   </code>
                 </p>
               </td>
@@ -93,7 +124,7 @@ class Typography extends React.Component {
               <td>
                 <p>
                   <code className="highlighter-rouge">
-                    <h5 />
+                    {`<h5 />`}
                   </code>
                 </p>
               </td>
@@ -105,7 +136,7 @@ class Typography extends React.Component {
               <td>
                 <p>
                   <code className="highlighter-rouge">
-                    <h6 />
+                    {`<h6 />`}
                   </code>
                 </p>
               </td>
@@ -115,6 +146,9 @@ class Typography extends React.Component {
             </tr>
           </tbody>
         </table>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeHeadings}
+        </SyntaxHighlighter>
         <p>
           <code className="highlighter-rouge">.h1</code>
           through <code className="highlighter-rouge">.h6</code>
@@ -122,55 +156,16 @@ class Typography extends React.Component {
           styling of a heading but cannot use the associated HTML element.
         </p>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="-component-tab"
-              className="tab-example-result fade show active"
-              role="tabpanel"
-            >
-              <p className="h1">h1. Bootstrap heading</p>
-              <p className="h2">h2. Bootstrap heading</p>
-              <p className="h3">h3. Bootstrap heading</p>
-              <p className="h4">h4. Bootstrap heading</p>
-              <p className="h5">h5. Bootstrap heading</p>
-              <p className="h6">h6. Bootstrap heading</p>
-            </TabPane>
-            <TabPane
-              aria-labelledby="-html-tab"
-              className="fade"
-              role="tabpanel"
-            />
-          </TabContent>
+          <p className="h1">h1. Bootstrap heading</p>
+          <p className="h2">h2. Bootstrap heading</p>
+          <p className="h3">h3. Bootstrap heading</p>
+          <p className="h4">h4. Bootstrap heading</p>
+          <p className="h5">h5. Bootstrap heading</p>
+          <p className="h6">h6. Bootstrap heading</p>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeClases}
+        </SyntaxHighlighter>
         <h3 id="customizing-headings">Customizing headings</h3>
         <p>
           Use the included utility classes to recreate the small secondary
@@ -182,6 +177,9 @@ class Typography extends React.Component {
             <small className="text-muted">With faded secondary text</small>
           </span>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeCustomizingHeadings}
+        </SyntaxHighlighter>
         <h2 id="display-headings">Display headings</h2>
         <p>
           Traditional heading elements are designed to work best in the meat of
@@ -215,139 +213,61 @@ class Typography extends React.Component {
             </tbody>
           </Table>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeDisplayHeadings}
+        </SyntaxHighlighter>
         <h2 id="lead">Lead</h2>
         <p>
           Make a paragraph stand out by adding{" "}
           <code className="highlighter-rouge">.lead</code>.
         </p>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="-component-tab"
-              className="tab-example-result fade show active"
-              role="tabpanel"
-            >
-              <p className="lead">
-                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                auctor. Duis mollis, est non commodo luctus.
-              </p>
-            </TabPane>
-            <TabPane
-              aria-labelledby="-html-tab"
-              className="fade"
-              role="tabpanel"
-            />
-          </TabContent>
+          <p className="lead">
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor. Duis mollis, est non commodo luctus.
+          </p>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeLead}
+        </SyntaxHighlighter>
         <h2 id="inline-text-elements">Inline text elements</h2>
         <p>Styling for common inline HTML5 elements.</p>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="-component-tab"
-              className="tab-example-result fade show active"
-              role="tabpanel"
-            >
-              <p>
-                You can use the mark tag to <mark>highlight</mark>
-                text.
-              </p>
-              <p>
-                <del>
-                  This line of text is meant to be treated as deleted text.
-                </del>
-              </p>
-              <p>
-                <s>
-                  This line of text is meant to be treated as no longer
-                  accurate.
-                </s>
-              </p>
-              <p>
-                <ins>
-                  This line of text is meant to be treated as an addition to the
-                  document.
-                </ins>
-              </p>
-              <p>
-                <u>This line of text will render as underlined</u>
-              </p>
-              <p>
-                <small>
-                  This line of text is meant to be treated as fine print.
-                </small>
-              </p>
-              <p>
-                <strong>This line rendered as bold text.</strong>
-              </p>
-              <p>
-                <em>This line rendered as italicized text.</em>
-              </p>
-            </TabPane>
-            <TabPane
-              aria-labelledby="-html-tab"
-              className="fade"
-              role="tabpanel"
-            />
-          </TabContent>
+          <p>
+            You can use the mark tag to <mark>highlight</mark>
+            text.
+          </p>
+          <p>
+            <del>
+              This line of text is meant to be treated as deleted text.
+            </del>
+          </p>
+          <p>
+            <s>
+              This line of text is meant to be treated as no longer
+              accurate.
+            </s>
+          </p>
+          <p>
+            <ins>
+              This line of text is meant to be treated as an addition to the
+              document.
+            </ins>
+          </p>
+          <p>
+            <u>This line of text will render as underlined</u>
+          </p>
+          <p>
+            <small>
+              This line of text is meant to be treated as fine print.
+            </small>
+          </p>
+          <p>
+            <strong>This line rendered as bold text.</strong>
+          </p>
+          <p>
+            <em>This line rendered as italicized text.</em>
+          </p>
         </div>
         <p>
           <code className="highlighter-rouge">.mark</code>
