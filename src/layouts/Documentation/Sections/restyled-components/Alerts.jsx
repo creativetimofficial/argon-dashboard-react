@@ -260,16 +260,17 @@ class Alerts extends React.Component {
           {codeDismissing}
         </SyntaxHighlighter>
         <h3 id="examples">Props</h3>
-          <p>
-            Please refer to{" "}
-            <a
-              href="https://reactstrap.github.io/components/alerts/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              reactstrap alerts documentation
-            </a>.
-          </p>
+        <p>
+          Please refer to{" "}
+          <a
+            href="https://reactstrap.github.io/components/alerts/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            reactstrap alerts documentation
+          </a>
+          .
+        </p>
       </>
     );
   }

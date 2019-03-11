@@ -1422,16 +1422,17 @@ class Tables extends React.Component {
           </Table>
         </div>
         <h3 id="examples">Props</h3>
-          <p>
-            Please refer to{" "}
-            <a
-              href="https://reactstrap.github.io/components/tables/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              reactstrap tables documentation
-            </a>.
-          </p>
+        <p>
+          Please refer to{" "}
+          <a
+            href="https://reactstrap.github.io/components/tables/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            reactstrap tables documentation
+          </a>
+          .
+        </p>
       </>
     );
   }

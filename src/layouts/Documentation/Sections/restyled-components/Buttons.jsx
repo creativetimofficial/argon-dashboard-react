@@ -431,16 +431,17 @@ class Buttons extends React.Component {
           {codeDisabledState}
         </SyntaxHighlighter>
         <h3 id="examples">Props</h3>
-          <p>
-            Please refer to{" "}
-            <a
-              href="https://reactstrap.github.io/components/buttons/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              reactstrap buttons documentation
-            </a>.
-          </p>
+        <p>
+          Please refer to{" "}
+          <a
+            href="https://reactstrap.github.io/components/buttons/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            reactstrap buttons documentation
+          </a>
+          .
+        </p>
       </>
     );
   }

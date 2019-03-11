@@ -101,16 +101,17 @@ class Progresses extends React.Component {
           </div>
         </div>
         <h3 id="examples">Props</h3>
-          <p>
-            Please refer to{" "}
-            <a
-              href="https://reactstrap.github.io/components/progress/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              reactstrap progress documentation
-            </a>.
-          </p>
+        <p>
+          Please refer to{" "}
+          <a
+            href="https://reactstrap.github.io/components/progress/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            reactstrap progress documentation
+          </a>
+          .
+        </p>
       </>
     );
   }

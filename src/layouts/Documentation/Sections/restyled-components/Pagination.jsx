@@ -248,16 +248,17 @@ class Paginations extends React.Component {
           </nav>
         </div>
         <h3 id="examples">Props</h3>
-          <p>
-            Please refer to{" "}
-            <a
-              href="https://reactstrap.github.io/components/pagination/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              reactstrap pagination documentation
-            </a>.
-          </p>
+        <p>
+          Please refer to{" "}
+          <a
+            href="https://reactstrap.github.io/components/pagination/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            reactstrap pagination documentation
+          </a>
+          .
+        </p>
       </>
     );
   }

@@ -183,16 +183,17 @@ class Cards extends React.Component {
           {codeStatsCard}
         </SyntaxHighlighter>
         <h3 id="examples">Props</h3>
-          <p>
-            Please refer to{" "}
-            <a
-              href="https://reactstrap.github.io/components/card/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              reactstrap cards documentation
-            </a>.
-          </p>
+        <p>
+          Please refer to{" "}
+          <a
+            href="https://reactstrap.github.io/components/card/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            reactstrap cards documentation
+          </a>
+          .
+        </p>
       </>
     );
   }
