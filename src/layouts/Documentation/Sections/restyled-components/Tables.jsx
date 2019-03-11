@@ -4,7 +4,6 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // reactstrap components
 import {
   Badge,
-  Button,
   DropdownMenu,
   DropdownItem,
   UncontrolledDropdown,
@@ -19,7 +18,6 @@ const codeExamples = `import React from "react";
 // reactstrap components
 import {
   Badge,
-  Button,
   DropdownMenu,
   DropdownItem,
   UncontrolledDropdown,
@@ -809,7 +807,6 @@ const codeDarkTable = `import React from "react";
 // reactstrap components
 import {
   Badge,
-  Button,
   DropdownMenu,
   DropdownItem,
   UncontrolledDropdown,
