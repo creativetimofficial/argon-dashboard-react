@@ -14,8 +14,8 @@ import {
 } from "reactstrap";
 
 const codeFormControls = `import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+
+
 // reactstrap components
 import {
   FormGroup,
@@ -104,8 +104,8 @@ class Forms extends React.Component {
 export default Forms;`;
 
 const codeAlternative1 = `import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+
+
 // reactstrap components
 import {
   FormGroup,
@@ -205,8 +205,8 @@ export default Forms;
 `;
 
 const codeTextarea = `import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+
+
 // reactstrap components
 import {
   FormGroup,
@@ -240,8 +240,8 @@ export default Forms;
 `;
 
 const codeAlternative2 = `import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+
+
 // reactstrap components
 import {
   FormGroup,
@@ -275,8 +275,8 @@ export default Forms;
 `;
 
 const codeCheckboxes = `import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+
+
 // reactstrap components
 import {
   FormGroup,
@@ -346,8 +346,8 @@ export default Forms;
 `;
 
 const codeAlternative3 = `import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+
+
 // reactstrap components
 import {
   FormGroup,
@@ -417,8 +417,8 @@ export default Forms;
 `;
 
 const codeRadioButtons = `import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+
+
 // reactstrap components
 import {
   FormGroup,
@@ -492,8 +492,8 @@ export default Forms;
 `;
 
 const codeAlternative4 = `import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+
+
 // reactstrap components
 import {
   FormGroup,
@@ -565,8 +565,8 @@ class Forms extends React.Component {
 
 export default Forms;
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+
+
 // reactstrap components
 import {
   FormGroup,
@@ -601,8 +601,8 @@ export default Forms;
 `;
 
 const codeToggleButtons = `import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+
+
 // reactstrap components
 import {
   FormGroup,

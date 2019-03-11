@@ -4,6 +4,294 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // reactstrap components
 import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 
+const codeExamples = `import React from "react";
+// reactstrap components
+import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
+
+class Paginations extends React.Component {
+  render() {
+    return (
+      <>
+        <nav aria-label="Page navigation example">
+          <Pagination>
+            <PaginationItem>
+              <PaginationLink
+                aria-label="Previous"
+                href="#pablo"
+                onClick={e => e.preventDefault()}
+              >
+                <i className="fa fa-angle-left" />
+                <span className="sr-only">Previous</span>
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                1
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                2
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                3
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink
+                aria-label="Next"
+                href="#pablo"
+                onClick={e => e.preventDefault()}
+              >
+                <i className="fa fa-angle-right" />
+                <span className="sr-only">Next</span>
+              </PaginationLink>
+            </PaginationItem>
+          </Pagination>
+        </nav>
+      </>
+    );
+  }
+}
+
+export default Paginations;
+`;
+const codeDisabledAndActiveStates = `import React from "react";
+// reactstrap components
+import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
+
+class Paginations extends React.Component {
+  render() {
+    return (
+      <>
+        <nav aria-label="...">
+          <Pagination>
+            <PaginationItem className="disabled">
+              <PaginationLink
+                href="#pablo"
+                onClick={e => e.preventDefault()}
+                tabindex="-1"
+              >
+                <i className="fa fa-angle-left" />
+                <span className="sr-only">Previous</span>
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                1
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem className="active">
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                2 <span className="sr-only">(current)</span>
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                3
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <i className="fa fa-angle-right" />
+                <span className="sr-only">Next</span>
+              </PaginationLink>
+            </PaginationItem>
+          </Pagination>
+        </nav>
+      </>
+    );
+  }
+}
+
+export default Paginations;`;
+const codeSizing1 = `import React from "react";
+// reactstrap components
+import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
+
+class Paginations extends React.Component {
+  render() {
+    return (
+      <>
+        <nav aria-label="...">
+          <Pagination
+            className="pagination pagination-lg"
+            listclassName="pagination-lg"
+          >
+            <PaginationItem className="disabled">
+              <PaginationLink
+                href="#pablo"
+                onClick={e => e.preventDefault()}
+                tabindex="-1"
+              >
+                1
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                2
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem className="active">
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                3
+              </PaginationLink>
+            </PaginationItem>
+          </Pagination>
+        </nav>
+      </>
+    );
+  }
+}
+
+export default Paginations;`;
+const codeSizing2 = `import React from "react";
+// reactstrap components
+import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
+
+class Paginations extends React.Component {
+  render() {
+    return (
+      <>
+        <nav aria-label="...">
+          <Pagination
+            className="pagination pagination-sm"
+            listclassName="pagination-sm"
+          >
+            <PaginationItem className="disabled">
+              <PaginationLink
+                href="#pablo"
+                onClick={e => e.preventDefault()}
+                tabindex="-1"
+              >
+                1
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                2
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem className="active">
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                3
+              </PaginationLink>
+            </PaginationItem>
+          </Pagination>
+        </nav>
+      </>
+    );
+  }
+}
+
+export default Paginations;`;
+const codeAlignment1 = `import React from "react";
+// reactstrap components
+import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
+
+class Paginations extends React.Component {
+  render() {
+    return (
+      <>
+        <nav aria-label="Page navigation example">
+          <Pagination
+            className="pagination justify-content-center"
+            listclassName="justify-content-center"
+          >
+            <PaginationItem className="disabled">
+              <PaginationLink
+                href="#pablo"
+                onClick={e => e.preventDefault()}
+                tabindex="-1"
+              >
+                <i className="fa fa-angle-left" />
+                <span className="sr-only">Previous</span>
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                1
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem className="active">
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                2
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                3
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <i className="fa fa-angle-right" />
+                <span className="sr-only">Next</span>
+              </PaginationLink>
+            </PaginationItem>
+          </Pagination>
+        </nav>
+      </>
+    );
+  }
+}
+
+export default Paginations;`;
+const codeAlignment2 = `import React from "react";
+// reactstrap components
+import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
+
+class Paginations extends React.Component {
+  render() {
+    return (
+      <>
+        <nav aria-label="Page navigation example">
+          <Pagination
+            className="pagination justify-content-end"
+            listclassName="justify-content-end"
+          >
+            <PaginationItem className="disabled">
+              <PaginationLink
+                href="#pablo"
+                onClick={e => e.preventDefault()}
+                tabindex="-1"
+              >
+                <i className="fa fa-angle-left" />
+                <span className="sr-only">Previous</span>
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                1
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem className="active">
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                2
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                3
+              </PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <i className="fa fa-angle-right" />
+                <span className="sr-only">Next</span>
+              </PaginationLink>
+            </PaginationItem>
+          </Pagination>
+        </nav>
+      </>
+    );
+  }
+}
+
+export default Paginations;`;
+
 class Paginations extends React.Component {
   render() {
     return (
@@ -61,6 +349,9 @@ class Paginations extends React.Component {
             </Pagination>
           </nav>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeExamples}
+        </SyntaxHighlighter>
         <h2 id="disabled-and-active-states">Disabled and active states</h2>
         <div className="ct-example">
           <nav aria-label="...">
@@ -99,6 +390,9 @@ class Paginations extends React.Component {
             </Pagination>
           </nav>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeDisabledAndActiveStates}
+        </SyntaxHighlighter>
         <h2 id="sizing">Sizing</h2>
         <p>
           Fancy larger or smaller pagination? Add{" "}
@@ -134,6 +428,9 @@ class Paginations extends React.Component {
             </Pagination>
           </nav>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeSizing1}
+        </SyntaxHighlighter>
         <div className="ct-example">
           <nav aria-label="...">
             <Pagination
@@ -162,6 +459,9 @@ class Paginations extends React.Component {
             </Pagination>
           </nav>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeSizing2}
+        </SyntaxHighlighter>
         <h2 id="alignment">Alignment</h2>
         <p>
           Change the alignment of pagination components with{" "}
@@ -207,6 +507,9 @@ class Paginations extends React.Component {
             </Pagination>
           </nav>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeAlignment1}
+        </SyntaxHighlighter>
         <div className="ct-example">
           <nav aria-label="Page navigation example">
             <Pagination
@@ -247,6 +550,9 @@ class Paginations extends React.Component {
             </Pagination>
           </nav>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeAlignment2}
+        </SyntaxHighlighter>
         <h3 id="examples">Props</h3>
         <p>
           Please refer to{" "}
