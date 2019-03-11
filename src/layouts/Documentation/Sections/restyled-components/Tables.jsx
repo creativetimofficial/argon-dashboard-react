@@ -1641,9 +1641,7 @@ class Tables extends React.Component {
                       />
                     </a>
                     <Media>
-                      <span className="mb-0 text-sm">
-                        Argon Design System
-                      </span>
+                      <span className="mb-0 text-sm">Argon Design System</span>
                     </Media>
                   </Media>
                 </th>
@@ -1668,10 +1666,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-1-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip742438047"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip742438047">
                       Ryan Tompson
                     </UncontrolledTooltip>
                     <a
@@ -1686,10 +1681,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-2-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip941738690"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip941738690">
                       Romina Hadid
                     </UncontrolledTooltip>
                     <a
@@ -1704,10 +1696,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-3-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip804044742"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip804044742">
                       Alexander Smith
                     </UncontrolledTooltip>
                     <a
@@ -1722,10 +1711,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-4-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip996637554"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip996637554">
                       Jessica Doe
                     </UncontrolledTooltip>
                   </div>
@@ -1734,11 +1720,7 @@ class Tables extends React.Component {
                   <div className="d-flex align-items-center">
                     <span className="mr-2">60%</span>
                     <div>
-                      <Progress
-                        max="100"
-                        value="60"
-                        barClassName="bg-danger"
-                      />
+                      <Progress max="100" value="60" barClassName="bg-danger" />
                     </div>
                   </div>
                 </td>
@@ -1818,10 +1800,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-1-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip746418347"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip746418347">
                       Ryan Tompson
                     </UncontrolledTooltip>
                     <a
@@ -1836,10 +1815,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-2-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip102182364"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip102182364">
                       Romina Hadid
                     </UncontrolledTooltip>
                     <a
@@ -1854,10 +1830,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-3-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip406489510"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip406489510">
                       Alexander Smith
                     </UncontrolledTooltip>
                     <a
@@ -1872,10 +1845,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-4-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip476840018"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip476840018">
                       Jessica Doe
                     </UncontrolledTooltip>
                   </div>
@@ -1941,9 +1911,7 @@ class Tables extends React.Component {
                       />
                     </a>
                     <Media>
-                      <span className="mb-0 text-sm">
-                        Black Dashboard
-                      </span>
+                      <span className="mb-0 text-sm">Black Dashboard</span>
                     </Media>
                   </Media>
                 </th>
@@ -1968,10 +1936,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-1-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip753056318"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip753056318">
                       Ryan Tompson
                     </UncontrolledTooltip>
                     <a
@@ -1986,10 +1951,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-2-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip441753266"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip441753266">
                       Romina Hadid
                     </UncontrolledTooltip>
                     <a
@@ -2004,10 +1966,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-3-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip188462246"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip188462246">
                       Alexander Smith
                     </UncontrolledTooltip>
                     <a
@@ -2022,10 +1981,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-4-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip621168444"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip621168444">
                       Jessica Doe
                     </UncontrolledTooltip>
                   </div>
@@ -2034,11 +1990,7 @@ class Tables extends React.Component {
                   <div className="d-flex align-items-center">
                     <span className="mr-2">72%</span>
                     <div>
-                      <Progress
-                        max="100"
-                        value="72"
-                        barClassName="bg-danger"
-                      />
+                      <Progress max="100" value="72" barClassName="bg-danger" />
                     </div>
                   </div>
                 </td>
@@ -2118,10 +2070,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-1-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip875258217"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip875258217">
                       Ryan Tompson
                     </UncontrolledTooltip>
                     <a
@@ -2136,10 +2085,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-2-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip834416663"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip834416663">
                       Romina Hadid
                     </UncontrolledTooltip>
                     <a
@@ -2154,10 +2100,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-3-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip372449339"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip372449339">
                       Alexander Smith
                     </UncontrolledTooltip>
                     <a
@@ -2172,10 +2115,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-4-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip108714769"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip108714769">
                       Jessica Doe
                     </UncontrolledTooltip>
                   </div>
@@ -2184,11 +2124,7 @@ class Tables extends React.Component {
                   <div className="d-flex align-items-center">
                     <span className="mr-2">90%</span>
                     <div>
-                      <Progress
-                        max="100"
-                        value="90"
-                        barClassName="bg-info"
-                      />
+                      <Progress max="100" value="90" barClassName="bg-info" />
                     </div>
                   </div>
                 </td>
@@ -2241,9 +2177,7 @@ class Tables extends React.Component {
                       />
                     </a>
                     <Media>
-                      <span className="mb-0 text-sm">
-                        Vue Paper UI Kit PRO
-                      </span>
+                      <span className="mb-0 text-sm">Vue Paper UI Kit PRO</span>
                     </Media>
                   </Media>
                 </th>
@@ -2268,10 +2202,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-1-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip664029969"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip664029969">
                       Ryan Tompson
                     </UncontrolledTooltip>
                     <a
@@ -2286,10 +2217,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-2-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip806693074"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip806693074">
                       Romina Hadid
                     </UncontrolledTooltip>
                     <a
@@ -2304,10 +2232,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-3-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip844096937"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip844096937">
                       Alexander Smith
                     </UncontrolledTooltip>
                     <a
@@ -2322,10 +2247,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-4-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip757459971"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip757459971">
                       Jessica Doe
                     </UncontrolledTooltip>
                   </div>
@@ -2385,10 +2307,7 @@ class Tables extends React.Component {
         </SyntaxHighlighter>
         <h3 id="dark-table">Dark table</h3>
         <div className="ct-example">
-          <Table
-            className="align-items-center table-dark"
-            responsive
-          >
+          <Table className="align-items-center table-dark" responsive>
             <thead className="thead-dark">
               <tr>
                 <th scope="col">Project</th>
@@ -2414,9 +2333,7 @@ class Tables extends React.Component {
                       />
                     </a>
                     <Media>
-                      <span className="mb-0 text-sm">
-                        Argon Design System
-                      </span>
+                      <span className="mb-0 text-sm">Argon Design System</span>
                     </Media>
                   </Media>
                 </th>
@@ -2441,10 +2358,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-1-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip731399078"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip731399078">
                       Ryan Tompson
                     </UncontrolledTooltip>
                     <a
@@ -2459,10 +2373,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-2-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip491083084"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip491083084">
                       Romina Hadid
                     </UncontrolledTooltip>
                     <a
@@ -2477,10 +2388,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-3-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip528540780"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip528540780">
                       Alexander Smith
                     </UncontrolledTooltip>
                     <a
@@ -2495,10 +2403,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-4-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip237898869"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip237898869">
                       Jessica Doe
                     </UncontrolledTooltip>
                   </div>
@@ -2591,10 +2496,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-1-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip188614932"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip188614932">
                       Ryan Tompson
                     </UncontrolledTooltip>
                     <a
@@ -2609,10 +2511,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-2-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip66535734"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip66535734">
                       Romina Hadid
                     </UncontrolledTooltip>
                     <a
@@ -2627,10 +2526,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-3-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip427561578"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip427561578">
                       Alexander Smith
                     </UncontrolledTooltip>
                     <a
@@ -2645,10 +2541,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-4-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip904098289"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip904098289">
                       Jessica Doe
                     </UncontrolledTooltip>
                   </div>
@@ -2714,9 +2607,7 @@ class Tables extends React.Component {
                       />
                     </a>
                     <Media>
-                      <span className="mb-0 text-sm">
-                        Black Dashboard
-                      </span>
+                      <span className="mb-0 text-sm">Black Dashboard</span>
                     </Media>
                   </Media>
                 </th>
@@ -2741,10 +2632,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-1-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip707904950"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip707904950">
                       Ryan Tompson
                     </UncontrolledTooltip>
                     <a
@@ -2759,10 +2647,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-2-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip353988222"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip353988222">
                       Romina Hadid
                     </UncontrolledTooltip>
                     <a
@@ -2777,10 +2662,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-3-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip467171202"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip467171202">
                       Alexander Smith
                     </UncontrolledTooltip>
                     <a
@@ -2795,10 +2677,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-4-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip362118155"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip362118155">
                       Jessica Doe
                     </UncontrolledTooltip>
                   </div>
@@ -2807,11 +2686,7 @@ class Tables extends React.Component {
                   <div className="d-flex align-items-center">
                     <span className="mr-2">72%</span>
                     <div>
-                      <Progress
-                        max="100"
-                        value="72"
-                        barClassName="bg-danger"
-                      />
+                      <Progress max="100" value="72" barClassName="bg-danger" />
                     </div>
                   </div>
                 </td>
@@ -2891,10 +2766,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-1-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip226319315"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip226319315">
                       Ryan Tompson
                     </UncontrolledTooltip>
                     <a
@@ -2909,10 +2781,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-2-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip711961370"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip711961370">
                       Romina Hadid
                     </UncontrolledTooltip>
                     <a
@@ -2927,10 +2796,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-3-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip216246707"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip216246707">
                       Alexander Smith
                     </UncontrolledTooltip>
                     <a
@@ -2945,10 +2811,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-4-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip638048561"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip638048561">
                       Jessica Doe
                     </UncontrolledTooltip>
                   </div>
@@ -2957,11 +2820,7 @@ class Tables extends React.Component {
                   <div className="d-flex align-items-center">
                     <span className="mr-2">90%</span>
                     <div>
-                      <Progress
-                        max="100"
-                        value="90"
-                        barClassName="bg-info"
-                      />
+                      <Progress max="100" value="90" barClassName="bg-info" />
                     </div>
                   </div>
                 </td>
@@ -3014,9 +2873,7 @@ class Tables extends React.Component {
                       />
                     </a>
                     <Media>
-                      <span className="mb-0 text-sm">
-                        Vue Paper UI Kit PRO
-                      </span>
+                      <span className="mb-0 text-sm">Vue Paper UI Kit PRO</span>
                     </Media>
                   </Media>
                 </th>
@@ -3041,10 +2898,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-1-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip781594051"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip781594051">
                       Ryan Tompson
                     </UncontrolledTooltip>
                     <a
@@ -3059,10 +2913,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-2-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip840372212"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip840372212">
                       Romina Hadid
                     </UncontrolledTooltip>
                     <a
@@ -3077,10 +2928,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-3-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip497647175"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip497647175">
                       Alexander Smith
                     </UncontrolledTooltip>
                     <a
@@ -3095,10 +2943,7 @@ class Tables extends React.Component {
                         src={require("assets/img/theme/team-4-800x800.jpg")}
                       />
                     </a>
-                    <UncontrolledTooltip
-                      delay={0}
-                      target="tooltip951447946"
-                    >
+                    <UncontrolledTooltip delay={0} target="tooltip951447946">
                       Jessica Doe
                     </UncontrolledTooltip>
                   </div>
