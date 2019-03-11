@@ -447,6 +447,17 @@ class Forms extends React.Component {
             </Row>
           </div>
         </div>
+        <h3 id="examples">Props</h3>
+          <p>
+            Please refer to{" "}
+            <a
+              href="https://reactstrap.github.io/components/form/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              reactstrap forms documentation
+            </a>.
+          </p>
       </>
     );
   }

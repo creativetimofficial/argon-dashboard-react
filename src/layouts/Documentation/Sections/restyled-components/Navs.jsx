@@ -238,6 +238,17 @@ class Navs extends React.Component {
             </CardBody>
           </Card>
         </div>
+        <h3 id="examples">Props</h3>
+          <p>
+            Please refer to{" "}
+            <a
+              href="https://reactstrap.github.io/components/navs/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              reactstrap navs documentation
+            </a>.
+          </p>
       </>
     );
   }

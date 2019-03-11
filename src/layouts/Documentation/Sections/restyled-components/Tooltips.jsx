@@ -91,6 +91,17 @@ class Tooltips extends React.Component {
             Tooltip on left
           </UncontrolledTooltip>
         </div>
+        <h3 id="examples">Props</h3>
+          <p>
+            Please refer to{" "}
+            <a
+              href="https://reactstrap.github.io/components/tooltips/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              reactstrap tooltips documentation
+            </a>.
+          </p>
       </>
     );
   }

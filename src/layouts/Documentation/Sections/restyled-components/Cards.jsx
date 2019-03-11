@@ -190,7 +190,7 @@ class Cards extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              reactstrap alerts documentation
+              reactstrap cards documentation
             </a>.
           </p>
       </>

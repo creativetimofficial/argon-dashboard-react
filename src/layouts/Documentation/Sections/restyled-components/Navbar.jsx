@@ -673,6 +673,17 @@ class Navbars extends React.Component {
             </UncontrolledCollapse>
           </Container>
         </Navbar>
+        <h3 id="examples">Props</h3>
+          <p>
+            Please refer to{" "}
+            <a
+              href="https://reactstrap.github.io/components/navbar/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              reactstrap navbars documentation
+            </a>.
+          </p>
       </>
     );
   }

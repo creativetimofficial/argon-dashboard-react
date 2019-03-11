@@ -198,6 +198,17 @@ class Popovers extends React.Component {
             </PopoverBody>
           </UncontrolledPopover>
         </div>
+        <h3 id="examples">Props</h3>
+          <p>
+            Please refer to{" "}
+            <a
+              href="https://reactstrap.github.io/components/popovers/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              reactstrap popovers documentation
+            </a>.
+          </p>
       </>
     );
   }
