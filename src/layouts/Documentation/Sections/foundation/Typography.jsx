@@ -308,56 +308,14 @@ class Typography extends React.Component {
           to an abbreviation for a slightly smaller font-size.
         </p>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="-component-tab"
-              className="tab-example-result fade show active"
-              role="tabpanel"
-            >
-              <p>
-                <abbr title="attribute">attr</abbr>
-              </p>
-              <p>
-                <abbr className="initialism" title="HyperText Markup Language">
-                  HTML
-                </abbr>
-              </p>
-            </TabPane>
-            <TabPane
-              aria-labelledby="-html-tab"
-              className="fade"
-              role="tabpanel"
-            />
-          </TabContent>
+          <p>
+            <abbr title="attribute">attr</abbr>
+          </p>
+          <p>
+            <abbr className="initialism" title="HyperText Markup Language">
+              HTML
+            </abbr>
+          </p>
         </div>
         <h2 id="blockquotes">Blockquotes</h2>
         <p>
@@ -370,54 +328,12 @@ class Typography extends React.Component {
           as the quote.
         </p>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="-component-tab"
-              className="tab-example-result fade show active"
-              role="tabpanel"
-            >
-              <blockquote className="blockquote">
-                <p className="mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer posuere erat a ante.
-                </p>
-              </blockquote>
-            </TabPane>
-            <TabPane
-              aria-labelledby="-html-tab"
-              className="fade"
-              role="tabpanel"
-            />
-          </TabContent>
+          <blockquote className="blockquote">
+            <p className="mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Integer posuere erat a ante.
+            </p>
+          </blockquote>
         </div>
         <h3 id="naming-a-source">Naming a source</h3>
         <p>
@@ -429,58 +345,16 @@ class Typography extends React.Component {
           <code className="highlighter-rouge">{`<cite>`}</code>.
         </p>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="-component-tab"
-              className="tab-example-result fade show active"
-              role="tabpanel"
-            >
-              <blockquote className="blockquote">
-                <p className="mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer posuere erat a ante.
-                </p>
-                <footer className="blockquote-footer">
-                  Someone famous in{" "}
-                  <cite title="Source Title">Source Title</cite>
-                </footer>
-              </blockquote>
-            </TabPane>
-            <TabPane
-              aria-labelledby="-html-tab"
-              className="fade"
-              role="tabpanel"
-            />
-          </TabContent>
+          <blockquote className="blockquote">
+            <p className="mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Integer posuere erat a ante.
+            </p>
+            <footer className="blockquote-footer">
+              Someone famous in{" "}
+              <cite title="Source Title">Source Title</cite>
+            </footer>
+          </blockquote>
         </div>
         <h3 id="alignment">Alignment</h3>
         <p>
@@ -488,42 +362,7 @@ class Typography extends React.Component {
           blockquote.
         </p>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="-component-tab"
-              className="tab-example-result fade show active"
-              role="tabpanel"
-            >
-              <blockquote className="blockquote text-center">
+          <blockquote className="blockquote text-center">
                 <p className="mb-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer posuere erat a ante.
@@ -533,51 +372,9 @@ class Typography extends React.Component {
                   <cite title="Source Title">Source Title</cite>
                 </footer>
               </blockquote>
-            </TabPane>
-            <TabPane
-              aria-labelledby="-html-tab"
-              className="fade"
-              role="tabpanel"
-            />
-          </TabContent>
         </div>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="-component-tab"
-              className="tab-example-result fade show active"
-              role="tabpanel"
-            >
-              <blockquote className="blockquote text-right">
+          <blockquote className="blockquote text-right">
                 <p className="mb-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer posuere erat a ante.
@@ -587,13 +384,6 @@ class Typography extends React.Component {
                   <cite title="Source Title">Source Title</cite>
                 </footer>
               </blockquote>
-            </TabPane>
-            <TabPane
-              aria-labelledby="-html-tab"
-              className="fade"
-              role="tabpanel"
-            />
-          </TabContent>
         </div>
         <h2 id="lists">Lists</h2>
         <h3 id="unstyled">Unstyled</h3>
@@ -605,42 +395,7 @@ class Typography extends React.Component {
           meaning you will need to add the class for any nested lists as well.
         </p>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="-component-tab"
-              className="tab-example-result fade show active"
-              role="tabpanel"
-            >
-              <ul className="list-unstyled">
+          <ul className="list-unstyled">
                 <li>Lorem ipsum dolor sit amet</li>
                 <li>Consectetur adipiscing elit</li>
                 <li>Integer molestie lorem at massa</li>
@@ -658,13 +413,6 @@ class Typography extends React.Component {
                 <li>Aenean sit amet erat nunc</li>
                 <li>Eget porttitor lorem</li>
               </ul>
-            </TabPane>
-            <TabPane
-              aria-labelledby="-html-tab"
-              className="fade"
-              role="tabpanel"
-            />
-          </TabContent>
         </div>
         <h3 id="inline">Inline</h3>
         <p>
@@ -675,53 +423,11 @@ class Typography extends React.Component {
           and <code className="highlighter-rouge">.list-inline-item</code>.
         </p>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="-component-tab"
-              className="tab-example-result fade show active"
-              role="tabpanel"
-            >
-              <ul className="list-inline">
+          <ul className="list-inline">
                 <li className="list-inline-item">Lorem ipsum</li>
                 <li className="list-inline-item">Phasellus iaculis</li>
                 <li className="list-inline-item">Nulla volutpat</li>
               </ul>
-            </TabPane>
-            <TabPane
-              aria-labelledby="-html-tab"
-              className="fade"
-              role="tabpanel"
-            />
-          </TabContent>
         </div>
         <h3 id="description-list-alignment">Description list alignment</h3>
         <p>
@@ -732,42 +438,7 @@ class Typography extends React.Component {
           class to truncate the text with an ellipsis.
         </p>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="-component-tab"
-              className="tab-example-result fade show active"
-              role="tabpanel"
-            >
-              <Row>
+          <Row>
                 <Col sm="3">Description lists</Col>
                 <Col sm="9">
                   A description list is perfect for defining terms.
@@ -802,13 +473,6 @@ class Typography extends React.Component {
                   </Row>
                 </Col>
               </Row>
-            </TabPane>
-            <TabPane
-              aria-labelledby="-html-tab"
-              className="fade"
-              role="tabpanel"
-            />
-          </TabContent>
         </div>
         <h2 id="responsive-typography">Responsive typography</h2>
         <p>
