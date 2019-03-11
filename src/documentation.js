@@ -16,7 +16,8 @@ import Icons from "layouts/Documentation/Sections/foundation/Icons.jsx";
 // Core components
 import Footer from "layouts/Documentation/Sections/core-components/Footer.jsx";
 import Navbars from "layouts/Documentation/Sections/core-components/Navbars.jsx";
-import PageHeader from "layouts/Documentation/Sections/core-components/PageHeader.jsx";
+import Headers from "layouts/Documentation/Sections/core-components/Headers.jsx";
+import Sidebar from "layouts/Documentation/Sections/core-components/Sidebar.jsx";
 // Reasctrap components
 import Alerts from "layouts/Documentation/Sections/restyled-components/Alerts.jsx";
 import Badge from "layouts/Documentation/Sections/restyled-components/Badge.jsx";
@@ -125,8 +126,13 @@ var docsRoutes = [
       },
       {
         path: "/documentation/page-header",
-        component: PageHeader,
-        name: "PageHeader"
+        component: Headers,
+        name: "Headers"
+      },
+      {
+        path: "/documentation/sidebar",
+        component: Sidebar,
+        name: "Sidebar"
       }
     ]
   },

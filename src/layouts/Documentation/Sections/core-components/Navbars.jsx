@@ -4,49 +4,46 @@ class Navbar extends React.Component {
   render() {
     return (
       <>
-        <h1 className="ct-title" id="content">
-          Demo navbars
-        </h1>
-        <p>
-          In our template product, we have two demo navbars that can be found
-          inside{" "}
-          <code className="highlighter-rouge">
-            src/components/Navbars/IndexNavbar.jsx
-          </code>{" "}
-          and{" "}
-          <code className="highlighter-rouge">
-            src/components/Navbars/ExamplesNavbar.jsx
-          </code>
-          .
-        </p>
+        <div className="ct-page-title">
+          <h1 className="ct-title" id="content">
+            Demo navbars
+          </h1>
+          <div className="avatar-group mt-3" />
+        </div>
+        <p class="ct-lead">In our template product, we have two demo navbars that can be found
+        inside{" "}
+        <code className="highlighter-rouge">
+          src/components/Navbars/AdminNavbar.jsx
+        </code>{" "}
+        and{" "}
+        <code className="highlighter-rouge">
+          src/components/Navbars/AuthNavbar.jsx
+        </code>
+        .</p>
         <h2 id="content">
           <code className="highlighter-rouge">
-            src/components/Navbars/IndexNavbar.jsx
+            src/components/Navbars/AdminNavbar.jsx
           </code>
         </h2>
         <p>
           It is used to create the navbar / header that appears on the{" "}
-          <code className="highlighter-rouge">src/views/Index.jsx</code>.
+          <code className="highlighter-rouge">src/layouts/Admin.jsx</code>.
         </p>
         <p>
-          It is diveded in two parts, the left one, that is used for the product
-          name, and the right part with some social links and some links for
-          navigating through the product.
+          It is diveded in two parts, the left one, that is used for the page name, and the right part with a search and a user.
         </p>
         <h2 id="content">
           <code className="highlighter-rouge">
-            src/components/Navbars/ExamplesNavbar.jsx
+            src/components/Navbars/AuthNavbar.jsx
           </code>
         </h2>
         <p>
-          It is used to create the navbar / header that appears on all the pages
-          found inside{" "}
-          <code className="highlighter-rouge">src/views/examples/*</code>.
+          It is used to create the navbar / header that appears on the{" "}
+          <code className="highlighter-rouge">src/layouts/Auth.jsx</code>.
         </p>
         <p>
           It is diveded in two parts, the left one, that is used for the product
-          name, and the right part with some social links and some links for
-          navigating through the product.
+          logo, and the right part with some links to navigate inside the app.
         </p>
       </>
     );
