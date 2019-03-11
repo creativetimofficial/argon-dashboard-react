@@ -1,4 +1,6 @@
 import React from "react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // plugin that creates slider
 import Slider from "nouislider";
 // reactstrap components
@@ -97,10 +99,16 @@ class Sliders extends React.Component {
         <div className="ct-example">
           <div className="slider" ref="slider1" />
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeSlider}
+        </SyntaxHighlighter>
         <h2 id="range-slider">Range slider</h2>
         <div className="ct-example">
           <div className="slider" ref="slider2" />
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeRangeSlider}
+        </SyntaxHighlighter>
         <h3 id="initialization">Props</h3>
         <p>
           Please refer to{" "}
