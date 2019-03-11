@@ -3,12 +3,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // reactstrap components
 import {
-  NavItem,
-  NavLink,
-  Nav,
   Table,
-  TabContent,
-  TabPane,
   Row,
   Col
 } from "reactstrap";
