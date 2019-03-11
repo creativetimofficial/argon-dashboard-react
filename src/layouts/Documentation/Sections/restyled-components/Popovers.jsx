@@ -1,15 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import {
-  Button,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
-  PopoverBody
-} from "reactstrap";
+import { Button, PopoverBody, UncontrolledPopover } from "reactstrap";
 
 class Popovers extends React.Component {
   render() {

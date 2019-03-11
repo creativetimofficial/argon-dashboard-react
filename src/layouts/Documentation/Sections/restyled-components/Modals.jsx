@@ -13,11 +13,6 @@ import {
   InputGroupText,
   InputGroup,
   Modal,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
   Row,
   Col
 } from "reactstrap";

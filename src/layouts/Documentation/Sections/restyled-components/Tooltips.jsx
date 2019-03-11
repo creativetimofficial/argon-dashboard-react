@@ -1,15 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import {
-  Button,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
-  UncontrolledTooltip
-} from "reactstrap";
+import { Button, UncontrolledTooltip } from "reactstrap";
 
 class Tooltips extends React.Component {
   render() {

@@ -1,15 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import {
-  Badge,
-  Button,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane
-} from "reactstrap";
+import { Badge, Button } from "reactstrap";
 
 class Badges extends React.Component {
   render() {

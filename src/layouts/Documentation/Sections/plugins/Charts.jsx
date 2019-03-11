@@ -1,15 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import {
-  Card,
-  CardBody,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane
-} from "reactstrap";
+import { Card, CardBody } from "reactstrap";
 
 class Charts extends React.Component {
   render() {

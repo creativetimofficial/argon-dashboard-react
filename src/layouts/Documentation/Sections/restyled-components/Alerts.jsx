@@ -1,15 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import {
-  UncontrolledAlert,
-  Alert,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane
-} from "reactstrap";
+import { UncontrolledAlert, Alert } from "reactstrap";
 
 class Alerts extends React.Component {
   render() {

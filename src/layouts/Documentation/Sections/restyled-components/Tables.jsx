@@ -8,13 +8,8 @@ import {
   DropdownItem,
   UncontrolledDropdown,
   Media,
-  NavItem,
-  NavLink,
-  Nav,
   Progress,
   Table,
-  TabContent,
-  TabPane,
   UncontrolledTooltip
 } from "reactstrap";
 

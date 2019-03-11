@@ -8,16 +8,11 @@ import {
   CardImg,
   CardTitle,
   CardText,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
   Row,
   Col
 } from "reactstrap";
 
-class Card extends React.Component {
+class Cards extends React.Component {
   render() {
     return (
       <>
@@ -90,4 +85,4 @@ class Card extends React.Component {
   }
 }
 
-export default Card;
+export default Cards;

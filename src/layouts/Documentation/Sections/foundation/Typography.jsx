@@ -191,7 +191,6 @@ const codeResponsiveTypography = `html {
   }
 }`;
 
-
 class Typography extends React.Component {
   render() {
     return (

@@ -1,16 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import {
-  NavItem,
-  NavLink,
-  Nav,
-  Pagination,
-  PaginationItem,
-  PaginationLink,
-  TabContent,
-  TabPane
-} from "reactstrap";
+import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 
 class Paginations extends React.Component {
   render() {

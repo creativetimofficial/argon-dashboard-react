@@ -18,7 +18,9 @@ class Icons extends React.Component {
           <div className="avatar-group mt-3" />
         </div>
         <p className="ct-lead">
-          Get started with Bootstrap, React, Reactstrap and create-react-app, the world’s most popular frameworks for building responsive, mobile-first sites.
+          Get started with Bootstrap, React, Reactstrap and create-react-app,
+          the world’s most popular frameworks for building responsive,
+          mobile-first sites.
         </p>
         <hr />
         <h2 id="nucleo">Nucleo</h2>
@@ -31,18 +33,17 @@ class Icons extends React.Component {
         <h3 id="usage">Usage</h3>
         <p>
           In order to use this icons on your page you will need to import them
-          inside the{" "}
-          <code className="highlighter-rouge">{`src/index.js`}</code> file of your app:
+          inside the <code className="highlighter-rouge">{`src/index.js`}</code>{" "}
+          file of your app:
         </p>
         <SyntaxHighlighter language="jsx" style={prism}>
           {`import "assets/vendor/nucleo/css/nucleo.css";`}
         </SyntaxHighlighter>
         <h3 id="initialization">Initialization</h3>
         <p>
-          Start placing icons in your app. We recommend
-          using a consistent HTML element, like{" "}
-          <code className="highlighter-rouge">{`<i>`}</code>. Find the right
-          icon and learn how to reference it in your markup.
+          Start placing icons in your app. We recommend using a consistent HTML
+          element, like <code className="highlighter-rouge">{`<i>`}</code>. Find
+          the right icon and learn how to reference it in your markup.
         </p>
         <p>You need to know two bits of information to reference an icon:</p>
         <ol>
@@ -57,9 +58,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"active-40"}
-              onCopy={() =>
-                this.setState({ copiedText: "active-40" })
-              }
+              onCopy={() => this.setState({ copiedText: "active-40" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -85,9 +84,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"air-baloon"}
-              onCopy={() =>
-                this.setState({ copiedText: "air-baloon" })
-              }
+              onCopy={() => this.setState({ copiedText: "air-baloon" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -141,9 +138,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"align-center"}
-              onCopy={() =>
-                this.setState({ copiedText: "align-center" })
-              }
+              onCopy={() => this.setState({ copiedText: "align-center" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -170,9 +165,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"left-2"}
-              onCopy={() =>
-                this.setState({ copiedText: "align-left-2" })
-              }
+              onCopy={() => this.setState({ copiedText: "align-left-2" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -199,9 +192,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"ambulance"}
-              onCopy={() =>
-                this.setState({ copiedText: "ambulance" })
-              }
+              onCopy={() => this.setState({ copiedText: "ambulance" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -247,17 +238,13 @@ class Icons extends React.Component {
               trigger="hover focus"
               target="tooltip3354607"
             >
-              {this.state.copiedText === "app"
-                ? "Copied"
-                : "Copy To Clipbord"}
+              {this.state.copiedText === "app" ? "Copied" : "Copy To Clipbord"}
             </UncontrolledTooltip>
           </Col>
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"archive-2"}
-              onCopy={() =>
-                this.setState({ copiedText: "archive-2" })
-              }
+              onCopy={() => this.setState({ copiedText: "archive-2" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -303,9 +290,7 @@ class Icons extends React.Component {
               trigger="hover focus"
               target="tooltip742747005"
             >
-              {this.state.copiedText === "atom"
-                ? "Copied"
-                : "Copy To Clipbord"}
+              {this.state.copiedText === "atom" ? "Copied" : "Copy To Clipbord"}
             </UncontrolledTooltip>
           </Col>
           <Col lg="3" md="6">
@@ -419,9 +404,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"bold-down"}
-              onCopy={() =>
-                this.setState({ copiedText: "bold-down" })
-              }
+              onCopy={() => this.setState({ copiedText: "bold-down" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -448,9 +431,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"bold-left"}
-              onCopy={() =>
-                this.setState({ copiedText: "bold-left" })
-              }
+              onCopy={() => this.setState({ copiedText: "bold-left" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -477,9 +458,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"bold-right"}
-              onCopy={() =>
-                this.setState({ copiedText: "bold-right" })
-              }
+              onCopy={() => this.setState({ copiedText: "bold-right" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -552,17 +531,13 @@ class Icons extends React.Component {
               trigger="hover focus"
               target="tooltip832362262"
             >
-              {this.state.copiedText === "bold"
-                ? "Copied"
-                : "Copy To Clipbord"}
+              {this.state.copiedText === "bold" ? "Copied" : "Copy To Clipbord"}
             </UncontrolledTooltip>
           </Col>
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"book-bookmark"}
-              onCopy={() =>
-                this.setState({ copiedText: "book-bookmark" })
-              }
+              onCopy={() => this.setState({ copiedText: "book-bookmark" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -643,9 +618,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"briefcase-24"}
-              onCopy={() =>
-                this.setState({ copiedText: "briefcase-24" })
-              }
+              onCopy={() => this.setState({ copiedText: "briefcase-24" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -753,9 +726,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"bus-front-12"}
-              onCopy={() =>
-                this.setState({ copiedText: "bus-front-12" })
-              }
+              onCopy={() => this.setState({ copiedText: "bus-front-12" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -782,9 +753,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"button-pause"}
-              onCopy={() =>
-                this.setState({ copiedText: "button-pause" })
-              }
+              onCopy={() => this.setState({ copiedText: "button-pause" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -811,9 +780,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"button-play"}
-              onCopy={() =>
-                this.setState({ copiedText: "button-play" })
-              }
+              onCopy={() => this.setState({ copiedText: "button-play" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -840,9 +807,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"button-power"}
-              onCopy={() =>
-                this.setState({ copiedText: "button-power" })
-              }
+              onCopy={() => this.setState({ copiedText: "button-power" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -869,9 +834,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"calendar-grid-58"}
-              onCopy={() =>
-                this.setState({ copiedText: "calendar-grid-58" })
-              }
+              onCopy={() => this.setState({ copiedText: "calendar-grid-58" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -898,9 +861,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"camera-compact"}
-              onCopy={() =>
-                this.setState({ copiedText: "camera-compact" })
-              }
+              onCopy={() => this.setState({ copiedText: "camera-compact" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -927,9 +888,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"caps-small"}
-              onCopy={() =>
-                this.setState({ copiedText: "caps-small" })
-              }
+              onCopy={() => this.setState({ copiedText: "caps-small" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -975,17 +934,13 @@ class Icons extends React.Component {
               trigger="hover focus"
               target="tooltip315375170"
             >
-              {this.state.copiedText === "cart"
-                ? "Copied"
-                : "Copy To Clipbord"}
+              {this.state.copiedText === "cart" ? "Copied" : "Copy To Clipbord"}
             </UncontrolledTooltip>
           </Col>
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"chart-bar-32"}
-              onCopy={() =>
-                this.setState({ copiedText: "chart-bar-32" })
-              }
+              onCopy={() => this.setState({ copiedText: "chart-bar-32" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1012,9 +967,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"chart-pie-35"}
-              onCopy={() =>
-                this.setState({ copiedText: "chart-pie-35" })
-              }
+              onCopy={() => this.setState({ copiedText: "chart-pie-35" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1041,9 +994,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"chat-round"}
-              onCopy={() =>
-                this.setState({ copiedText: "chat-round" })
-              }
+              onCopy={() => this.setState({ copiedText: "chat-round" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1070,9 +1021,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"check-bold"}
-              onCopy={() =>
-                this.setState({ copiedText: "check-bold" })
-              }
+              onCopy={() => this.setState({ copiedText: "check-bold" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1099,9 +1048,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"circle-08"}
-              onCopy={() =>
-                this.setState({ copiedText: "circle-08" })
-              }
+              onCopy={() => this.setState({ copiedText: "circle-08" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1128,9 +1075,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"cloud-download-95"}
-              onCopy={() =>
-                this.setState({ copiedText: "cloud-download-95" })
-              }
+              onCopy={() => this.setState({ copiedText: "cloud-download-95" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1157,9 +1102,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"cloud-upload-96"}
-              onCopy={() =>
-                this.setState({ copiedText: "cloud-upload-96" })
-              }
+              onCopy={() => this.setState({ copiedText: "cloud-upload-96" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1186,9 +1129,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"compass-04"}
-              onCopy={() =>
-                this.setState({ copiedText: "compass-04" })
-              }
+              onCopy={() => this.setState({ copiedText: "compass-04" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1215,9 +1156,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"controller"}
-              onCopy={() =>
-                this.setState({ copiedText: "controller" })
-              }
+              onCopy={() => this.setState({ copiedText: "controller" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1244,9 +1183,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"credit-card"}
-              onCopy={() =>
-                this.setState({ copiedText: "credit-card" })
-              }
+              onCopy={() => this.setState({ copiedText: "credit-card" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1273,9 +1210,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"curved-next"}
-              onCopy={() =>
-                this.setState({ copiedText: "curved-next" })
-              }
+              onCopy={() => this.setState({ copiedText: "curved-next" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1302,9 +1237,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"delivery-fast"}
-              onCopy={() =>
-                this.setState({ copiedText: "delivery-fast" })
-              }
+              onCopy={() => this.setState({ copiedText: "delivery-fast" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1412,9 +1345,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"fat-delete"}
-              onCopy={() =>
-                this.setState({ copiedText: "fat-delete" })
-              }
+              onCopy={() => this.setState({ copiedText: "fat-delete" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1441,9 +1372,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"fat-remove"}
-              onCopy={() =>
-                this.setState({ copiedText: "fat-remove" })
-              }
+              onCopy={() => this.setState({ copiedText: "fat-remove" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1470,9 +1399,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"favourite-28"}
-              onCopy={() =>
-                this.setState({ copiedText: "favourite-28" })
-              }
+              onCopy={() => this.setState({ copiedText: "favourite-28" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1499,9 +1426,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"folder-17"}
-              onCopy={() =>
-                this.setState({ copiedText: "folder-17" })
-              }
+              onCopy={() => this.setState({ copiedText: "folder-17" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1528,9 +1453,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"glasses-2"}
-              onCopy={() =>
-                this.setState({ copiedText: "glasses-2" })
-              }
+              onCopy={() => this.setState({ copiedText: "glasses-2" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1584,9 +1507,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"headphones"}
-              onCopy={() =>
-                this.setState({ copiedText: "headphones" })
-              }
+              onCopy={() => this.setState({ copiedText: "headphones" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1667,9 +1588,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"circle-08"}
-              onCopy={() =>
-                this.setState({ copiedText: "circle-08" })
-              }
+              onCopy={() => this.setState({ copiedText: "circle-08" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1777,9 +1696,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"lock-circle-open"}
-              onCopy={() =>
-                this.setState({ copiedText: "lock-circle-open" })
-              }
+              onCopy={() => this.setState({ copiedText: "lock-circle-open" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1833,9 +1750,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"mobile-button"}
-              onCopy={() =>
-                this.setState({ copiedText: "mobile-button" })
-              }
+              onCopy={() => this.setState({ copiedText: "mobile-button" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1862,9 +1777,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"money-coins"}
-              onCopy={() =>
-                this.setState({ copiedText: "money-coins" })
-              }
+              onCopy={() => this.setState({ copiedText: "money-coins" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1918,9 +1831,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"notification-70"}
-              onCopy={() =>
-                this.setState({ copiedText: "notification-70" })
-              }
+              onCopy={() => this.setState({ copiedText: "notification-70" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -1974,9 +1885,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"paper-diploma"}
-              onCopy={() =>
-                this.setState({ copiedText: "paper-diploma" })
-              }
+              onCopy={() => this.setState({ copiedText: "paper-diploma" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -2057,9 +1966,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"ruler-pencil"}
-              onCopy={() =>
-                this.setState({ copiedText: "ruler-pencil" })
-              }
+              onCopy={() => this.setState({ copiedText: "ruler-pencil" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -2086,9 +1993,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"satisfied"}
-              onCopy={() =>
-                this.setState({ copiedText: "satisfied" })
-              }
+              onCopy={() => this.setState({ copiedText: "satisfied" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -2161,17 +2066,13 @@ class Icons extends React.Component {
               trigger="hover focus"
               target="tooltip161268791"
             >
-              {this.state.copiedText === "send"
-                ? "Copied"
-                : "Copy To Clipbord"}
+              {this.state.copiedText === "send" ? "Copied" : "Copy To Clipbord"}
             </UncontrolledTooltip>
           </Col>
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"settings-gear-65"}
-              onCopy={() =>
-                this.setState({ copiedText: "settings-gear-65" })
-              }
+              onCopy={() => this.setState({ copiedText: "settings-gear-65" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -2225,9 +2126,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"single-02"}
-              onCopy={() =>
-                this.setState({ copiedText: "single-02" })
-              }
+              onCopy={() => this.setState({ copiedText: "single-02" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -2254,9 +2153,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"single-copy-04"}
-              onCopy={() =>
-                this.setState({ copiedText: "single-copy-04" })
-              }
+              onCopy={() => this.setState({ copiedText: "single-copy-04" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -2283,9 +2180,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"sound-wave"}
-              onCopy={() =>
-                this.setState({ copiedText: "sound-wave" })
-              }
+              onCopy={() => this.setState({ copiedText: "sound-wave" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -2312,9 +2207,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"spaceship"}
-              onCopy={() =>
-                this.setState({ copiedText: "spaceship" })
-              }
+              onCopy={() => this.setState({ copiedText: "spaceship" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -2341,9 +2234,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"square-pin"}
-              onCopy={() =>
-                this.setState({ copiedText: "square-pin" })
-              }
+              onCopy={() => this.setState({ copiedText: "square-pin" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -2370,9 +2261,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"support-16"}
-              onCopy={() =>
-                this.setState({ copiedText: "support-16" })
-              }
+              onCopy={() => this.setState({ copiedText: "support-16" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -2399,9 +2288,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"tablet-button"}
-              onCopy={() =>
-                this.setState({ copiedText: "tablet-button" })
-              }
+              onCopy={() => this.setState({ copiedText: "tablet-button" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -2447,9 +2334,7 @@ class Icons extends React.Component {
               trigger="hover focus"
               target="tooltip297195808"
             >
-              {this.state.copiedText === "tag"
-                ? "Copied"
-                : "Copy To Clipbord"}
+              {this.state.copiedText === "tag" ? "Copied" : "Copy To Clipbord"}
             </UncontrolledTooltip>
           </Col>
           <Col lg="3" md="6">
@@ -2482,9 +2367,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"time-alarm"}
-              onCopy={() =>
-                this.setState({ copiedText: "time-alarm" })
-              }
+              onCopy={() => this.setState({ copiedText: "time-alarm" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -2557,17 +2440,13 @@ class Icons extends React.Component {
               trigger="hover focus"
               target="tooltip330279137"
             >
-              {this.state.copiedText === "tv-2"
-                ? "Copied"
-                : "Copy To Clipbord"}
+              {this.state.copiedText === "tv-2" ? "Copied" : "Copy To Clipbord"}
             </UncontrolledTooltip>
           </Col>
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"umbrella-13"}
-              onCopy={() =>
-                this.setState({ copiedText: "umbrella-13" })
-              }
+              onCopy={() => this.setState({ copiedText: "umbrella-13" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -2648,9 +2527,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"watch-time"}
-              onCopy={() =>
-                this.setState({ copiedText: "watch-time" })
-              }
+              onCopy={() => this.setState({ copiedText: "watch-time" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -2704,9 +2581,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"zoom-split-in"}
-              onCopy={() =>
-                this.setState({ copiedText: "zoom-split-in" })
-              }
+              onCopy={() => this.setState({ copiedText: "zoom-split-in" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -2733,9 +2608,7 @@ class Icons extends React.Component {
           <Col lg="3" md="6">
             <CopyToClipboard
               text={"collection"}
-              onCopy={() =>
-                this.setState({ copiedText: "collection" })
-              }
+              onCopy={() => this.setState({ copiedText: "collection" })}
             >
               <button
                 className=" btn-icon-clipboard"
@@ -2808,9 +2681,7 @@ class Icons extends React.Component {
               trigger="hover focus"
               target="tooltip531866818"
             >
-              {this.state.copiedText === "shop"
-                ? "Copied"
-                : "Copy To Clipbord"}
+              {this.state.copiedText === "shop" ? "Copied" : "Copy To Clipbord"}
             </UncontrolledTooltip>
           </Col>
           <Col lg="3" md="6">
@@ -2893,7 +2764,8 @@ class Icons extends React.Component {
                 ? "Copied"
                 : "Copy To Clipbord"}
             </UncontrolledTooltip>
-          </Col></Row>
+          </Col>
+        </Row>
         <p>
           Want more icons? Increase your collection by choosing more icon
           examples from Nucleo App website:{" "}
@@ -2912,20 +2784,19 @@ class Icons extends React.Component {
           vector icons made for you to use.
         </p>
         <h3 id="usage-1">Usage</h3>
-          <p>
-            In order to use this icons on your page you will need to import them
-            inside the{" "}
-            <code className="highlighter-rouge">{`src/index.js`}</code> file of your app:
-          </p>
-          <SyntaxHighlighter language="jsx" style={prism}>
-            {`import "assets/vendor/@fortawesome/fontawesome-free/css/all.min.css";`}
-          </SyntaxHighlighter>
+        <p>
+          In order to use this icons on your page you will need to import them
+          inside the <code className="highlighter-rouge">{`src/index.js`}</code>{" "}
+          file of your app:
+        </p>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {`import "assets/vendor/@fortawesome/fontawesome-free/css/all.min.css";`}
+        </SyntaxHighlighter>
         <h3 id="initialization-1">Initialization</h3>
         <p>
-          Start placing icons in your app. We recommend
-          using a consistent HTML element, like{" "}
-          <code className="highlighter-rouge">{`<i>`}</code>. Find the right
-          icon and learn how to reference it in your markup.
+          Start placing icons in your app. We recommend using a consistent HTML
+          element, like <code className="highlighter-rouge">{`<i>`}</code>. Find
+          the right icon and learn how to reference it in your markup.
         </p>
         <p>You need to know two bits of information to reference an icon:</p>
         <ol>

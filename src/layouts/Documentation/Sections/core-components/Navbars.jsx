@@ -10,16 +10,18 @@ class Navbar extends React.Component {
           </h1>
           <div className="avatar-group mt-3" />
         </div>
-        <p class="ct-lead">In our template product, we have two demo navbars that can be found
-        inside{" "}
-        <code className="highlighter-rouge">
-          src/components/Navbars/AdminNavbar.jsx
-        </code>{" "}
-        and{" "}
-        <code className="highlighter-rouge">
-          src/components/Navbars/AuthNavbar.jsx
-        </code>
-        .</p>
+        <p class="ct-lead">
+          In our template product, we have two demo navbars that can be found
+          inside{" "}
+          <code className="highlighter-rouge">
+            src/components/Navbars/AdminNavbar.jsx
+          </code>{" "}
+          and{" "}
+          <code className="highlighter-rouge">
+            src/components/Navbars/AuthNavbar.jsx
+          </code>
+          .
+        </p>
         <h2 id="content">
           <code className="highlighter-rouge">
             src/components/Navbars/AdminNavbar.jsx
@@ -30,7 +32,8 @@ class Navbar extends React.Component {
           <code className="highlighter-rouge">src/layouts/Admin.jsx</code>.
         </p>
         <p>
-          It is diveded in two parts, the left one, that is used for the page name, and the right part with a search and a user.
+          It is diveded in two parts, the left one, that is used for the page
+          name, and the right part with a search and a user.
         </p>
         <h2 id="content">
           <code className="highlighter-rouge">

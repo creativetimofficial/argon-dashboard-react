@@ -1,7 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import { Button, NavItem, NavLink, Nav, TabContent, TabPane } from "reactstrap";
+import { Button } from "reactstrap";
 
 class Buttons extends React.Component {
   render() {

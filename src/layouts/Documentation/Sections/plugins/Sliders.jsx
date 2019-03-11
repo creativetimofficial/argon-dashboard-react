@@ -1,15 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import {
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
-  Row,
-  Col
-} from "reactstrap";
+import { Row, Col } from "reactstrap";
 
 class Sliders extends React.Component {
   render() {

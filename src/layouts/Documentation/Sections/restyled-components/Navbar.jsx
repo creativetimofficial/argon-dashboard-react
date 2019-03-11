@@ -11,8 +11,6 @@ import {
   NavItem,
   NavLink,
   Nav,
-  TabContent,
-  TabPane,
   Container,
   Row,
   Col

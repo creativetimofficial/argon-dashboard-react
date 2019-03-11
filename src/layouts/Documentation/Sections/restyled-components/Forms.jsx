@@ -8,11 +8,6 @@ import {
   InputGroupAddon,
   InputGroupText,
   InputGroup,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
   Row,
   Col
 } from "reactstrap";

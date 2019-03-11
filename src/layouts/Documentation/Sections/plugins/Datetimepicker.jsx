@@ -8,12 +8,7 @@ import {
   Input,
   InputGroupAddon,
   InputGroupText,
-  InputGroup,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane
+  InputGroup
 } from "reactstrap";
 
 class Datepicker extends React.Component {

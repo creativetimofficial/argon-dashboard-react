@@ -1,14 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import {
-  NavItem,
-  NavLink,
-  Nav,
-  Progress,
-  TabContent,
-  TabPane
-} from "reactstrap";
+import { Progress } from "reactstrap";
 
 class Progresses extends React.Component {
   render() {

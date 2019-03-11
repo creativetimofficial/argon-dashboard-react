@@ -6,12 +6,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  UncontrolledDropdown,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane
+  UncontrolledDropdown
 } from "reactstrap";
 
 class Dropdowns extends React.Component {
