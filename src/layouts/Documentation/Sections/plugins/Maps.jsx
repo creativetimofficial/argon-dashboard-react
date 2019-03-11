@@ -1,8 +1,5 @@
 import React from "react";
 
-// reactstrap components
-import { NavItem, NavLink, Nav, TabContent, TabPane } from "reactstrap";
-
 class Maps extends React.Component {
   render() {
     return (

@@ -46,6 +46,7 @@ body.docs{
   border-radius: .25rem;
   background-color: #f5f7f9;
 }
-.navbar-dark .navbar-nav .nav-link .ni {
+.navbar-dark .navbar-nav .nav-link .ni,
+.alert .alert-inner--icon .ni{
   color: rgba(255, 255, 255, 0.95) !important;
 }

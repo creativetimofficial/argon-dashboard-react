@@ -1,7 +1,7 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const codeUsage = `import React from "react";
 ...other code
@@ -69,16 +69,28 @@ class Sidebar extends React.Component {
         </p>
         <hr />
         <h2 id="primary-colors">Short description and usage</h2>
-        <p>This component has some static and some dynamic stuff rendered inside it.</p>
-        <p>The dynamic stuff is rendered via props. The links that appears inside it (minus the ones for the documentation - which are static) are dynamic. Also, the brand logo is dynamic, and can be rendered as an inner link, or an outter link.</p>
-        <p>To see how the links should look like (since they are an object), please refer to our <Link to="/documentation/routing-system">routing system</Link>.</p>
+        <p>
+          This component has some static and some dynamic stuff rendered inside
+          it.
+        </p>
+        <p>
+          The dynamic stuff is rendered via props. The links that appears inside
+          it (minus the ones for the documentation - which are static) are
+          dynamic. Also, the brand logo is dynamic, and can be rendered as an
+          inner link, or an outter link.
+        </p>
+        <p>
+          To see how the links should look like (since they are an object),
+          please refer to our{" "}
+          <Link to="/documentation/routing-system">routing system</Link>.
+        </p>
         <SyntaxHighlighter language="jsx" style={prism}>
           {codeUsage}
         </SyntaxHighlighter>
         <h2 id="primary-colors">Props</h2>
-          <SyntaxHighlighter language="jsx" style={prism}>
-            {codeProps}
-          </SyntaxHighlighter>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeProps}
+        </SyntaxHighlighter>
       </>
     );
   }

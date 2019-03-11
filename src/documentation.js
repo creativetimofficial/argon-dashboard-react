@@ -83,7 +83,7 @@ var docsRoutes = [
         path: "/documentation/routing-system",
         component: RoutingSystem,
         name: "Routing System"
-      },
+      }
     ]
   },
   {
@@ -214,7 +214,11 @@ var docsRoutes = [
     path: "/documentation/charts",
     routes: [
       { path: "/documentation/charts", component: Charts, name: "Charts" },
-      { path: "/documentation/copy-to-clipboard", component: CopyToClipboard, name: "Copy To Clipboard" },
+      {
+        path: "/documentation/copy-to-clipboard",
+        component: CopyToClipboard,
+        name: "Copy To Clipboard"
+      },
       {
         path: "/documentation/date-time-picker",
         component: Datetimepicker,

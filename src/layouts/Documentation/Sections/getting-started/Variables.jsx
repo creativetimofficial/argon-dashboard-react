@@ -18,10 +18,8 @@ class Variables extends React.Component {
           easy to understand and to have less code, we've created some special
           files with variables, variables which we import where we need them.
         </p>
-        <hr/>
-        <p>
-
-        </p>
+        <hr />
+        <p />
         <p>
           You will find all the variables regarding the charts in{" "}
           <code className="highlighter-rouge">src/variables/charts.jsx</code>.

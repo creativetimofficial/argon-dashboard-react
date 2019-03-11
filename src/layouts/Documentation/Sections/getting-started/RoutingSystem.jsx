@@ -19,9 +19,10 @@ class RoutingSystem extends React.Component {
           in two places. On place would have been inside our{" "}
           <Link to="/documentation/sidebar">Sidebar</Link> and the onther one
           would be either the{" "}
-          <code className="highlighter-rouge">src/layouts/Admin.jsx</code> layout or
-          the <code className="highlighter-rouge">src/Admin/Auth.jsx</code>{" "}
-          layout. You will find all our demo routes in{" "}
+          <code className="highlighter-rouge">src/layouts/Admin.jsx</code>{" "}
+          layout or the{" "}
+          <code className="highlighter-rouge">src/Admin/Auth.jsx</code> layout.
+          You will find all our demo routes in{" "}
           <code className="highlighter-rouge">src/routes.js</code>
         </p>
         <hr />
@@ -59,7 +60,8 @@ class RoutingSystem extends React.Component {
             rel="noopener noreferrer"
           >
             react-router-dom
-          </a>.
+          </a>
+          .
           <br />
           If you do not understand them, please take in consideration replacing
           them with normal routes and use the <b>src/routes.js</b> just for
@@ -82,8 +84,9 @@ class RoutingSystem extends React.Component {
                 <code className="highlighter-rouge">name</code> (name of your
                 route - this will appear in the{" "}
                 <code className="highlighter-rouge">Sidebar</code> and{" "}
-                <code className="highlighter-rouge">AdminNavbar</code> components -
-                example <code className="highlighter-rouge">Dashboard</code>)
+                <code className="highlighter-rouge">AdminNavbar</code>{" "}
+                components - example{" "}
+                <code className="highlighter-rouge">Dashboard</code>)
               </li>
               <li>
                 <code className="highlighter-rouge">icon</code> (icon to be
