@@ -1,7 +1,145 @@
 import React from "react";
-
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // reactstrap components
 import { Badge, Button } from "reactstrap";
+
+const codeExample = `import React from "react";
+// reactstrap components
+import { Badge, Button } from "reactstrap";
+
+class Badges extends React.Component {
+  render() {
+    return (
+      <>
+        <Button color="primary" type="button">
+          <span>Notifications</span>
+          <Badge className="badge-white">4</Badge>
+        </Button>
+      </>
+    );
+  }
+}
+
+export default Badges;
+`;
+
+const codeContextualVariations = `import React from "react";
+// reactstrap components
+import { Badge } from "reactstrap";
+
+class Badges extends React.Component {
+  render() {
+    return (
+      <>
+        <Badge className="badge-default">Default</Badge>
+        <Badge color="primary">Primary</Badge>
+        <Badge color="secondary">Secondary</Badge>
+        <Badge color="info">Info</Badge>
+        <Badge color="success">Success</Badge>
+        <Badge color="danger">Danger</Badge>
+        <Badge color="warning">Warning</Badge>
+      </>
+    );
+  }
+}
+
+export default Badges;
+`;
+
+const codePillBadges = `import React from "react";
+// reactstrap components
+import { Badge } from "reactstrap";
+
+class Badges extends React.Component {
+  render() {
+    return (
+      <>
+        <Badge className="badge-default" pill>
+          Default
+        </Badge>
+        <Badge color="primary" pill>
+          Primary
+        </Badge>
+        <Badge color="secondary" pill>
+          Secondary
+        </Badge>
+        <Badge color="info" pill>
+          Info
+        </Badge>
+        <Badge color="success" pill>
+          Success
+        </Badge>
+        <Badge color="danger" pill>
+          Danger
+        </Badge>
+        <Badge color="warning" pill>
+          Warning
+        </Badge>
+      </>
+    );
+  }
+}
+
+export default Badges;
+`;
+
+const codeLinks = `import React from "react";
+// reactstrap components
+import { Badge } from "reactstrap";
+
+class Badges extends React.Component {
+  render() {
+    return (
+      <>
+        <Badge
+          className="badge-default"
+          href="#pablo"
+          onClick={e => e.preventDefault()}
+        >
+          Default
+        </Badge>
+        <Badge
+          color="primary"
+          href="#pablo"
+          onClick={e => e.preventDefault()}
+        >
+          Primary
+        </Badge>
+        <Badge
+          color="secondary"
+          href="#pablo"
+          onClick={e => e.preventDefault()}
+        >
+          Secondary
+        </Badge>
+        <Badge color="info" href="#pablo" onClick={e => e.preventDefault()}>
+          Info
+        </Badge>
+        <Badge
+          color="success"
+          href="#pablo"
+          onClick={e => e.preventDefault()}
+        >
+          Success
+        </Badge>
+        <Badge color="danger" href="#pablo" onClick={e => e.preventDefault()}>
+          Danger
+        </Badge>
+        <Badge
+          color="warning"
+          href="#pablo"
+          onClick={e => e.preventDefault()}
+        >
+          Warning
+        </Badge>
+      </>
+    );
+  }
+}
+
+export default Badges;
+`;
 
 class Badges extends React.Component {
   render() {
@@ -28,6 +166,9 @@ class Badges extends React.Component {
             <Badge className="badge-white">4</Badge>
           </Button>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeExample}
+        </SyntaxHighlighter>
         <h2 id="contextual-variations">Contextual variations</h2>
         <p>
           Add any of the below mentioned modifier classes to change the
@@ -42,6 +183,9 @@ class Badges extends React.Component {
           <Badge color="danger">Danger</Badge>
           <Badge color="warning">Warning</Badge>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeContextualVariations}
+        </SyntaxHighlighter>
         <h2 id="pill-badges">Pill badges</h2>
         <p>
           Use the <code className="highlighter-rouge">.badge-pill</code>
@@ -74,6 +218,9 @@ class Badges extends React.Component {
             Warning
           </Badge>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codePillBadges}
+        </SyntaxHighlighter>
         <h2 id="links">Links</h2>
         <p>
           Using the contextual{" "}
@@ -125,6 +272,9 @@ class Badges extends React.Component {
             Warning
           </Badge>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeLinks}
+        </SyntaxHighlighter>
       </>
     );
   }
