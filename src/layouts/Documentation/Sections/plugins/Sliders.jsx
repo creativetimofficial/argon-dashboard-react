@@ -1,9 +1,30 @@
 import React from "react";
-
+// plugin that creates slider
+import Slider from "nouislider";
 // reactstrap components
 import { Row, Col } from "reactstrap";
 
+const codeSlider = ``;
+
+const codeRangeSlider = ``;
+
 class Sliders extends React.Component {
+  componentDidMount() {
+    var slider1 = this.refs.slider1;
+    var slider2 = this.refs.slider2;
+    Slider.create(slider1, {
+      start: [40],
+      connect: [true, false],
+      step: 1,
+      range: { min: 0, max: 100 }
+    });
+    Slider.create(slider2, {
+      start: [20, 60],
+      connect: [false, true, false],
+      step: 1,
+      range: { min: 0, max: 100 }
+    });
+  }
   render() {
     return (
       <>
@@ -22,60 +43,23 @@ class Sliders extends React.Component {
         <hr />
         <h2 id="slider">Slider</h2>
         <div className="ct-example">
-          <div className="input-slider-container">
-            <div
-              className="input-slider"
-              data-range-value-max="500"
-              data-range-value-min="100"
-              id="input-slider"
-            />
-            <Row className="mt-3 d-none">
-              <Col xs="6">
-                <span
-                  className="range-slider-value"
-                  data-range-value-low="100"
-                  id="input-slider-value"
-                />
-              </Col>
-            </Row>
-          </div>
+          <div className="slider" ref="slider1" />
         </div>
         <h2 id="range-slider">Range slider</h2>
         <div className="ct-example">
-          <div>
-            <div
-              data-range-value-max="500"
-              data-range-value-min="100"
-              id="input-slider-range"
-            />
-            <Row className="d-none">
-              <Col xs="6">
-                <span
-                  className="range-slider-value value-low"
-                  data-range-value-low="200"
-                  id="input-slider-range-value-low"
-                />
-              </Col>
-              <Col className="text-right" xs="6">
-                <span
-                  className="range-slider-value value-high"
-                  data-range-value-high="400"
-                  id="input-slider-range-value-high"
-                />
-              </Col>
-            </Row>
-          </div>
+          <div className="slider" ref="slider2" />
         </div>
-        <h2 id="usage">Usage</h2>
+        <h3 id="initialization">Props</h3>
         <p>
-          In order to use this plugin on your page you will need to include the
-          following script in the “Optional JS” area from the page’s footer:
-        </p>
-        <h3 id="initialization">Initialization</h3>
-        <p>
-          Simply copy one of the code examples demonstrated above and include it
-          in your page. Afterwards, you can modify the slider’s values with the
-          ones you need.
+          Please refer to{" "}
+          <a
+            href="https://refreshless.com/nouislider/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            noislider's documentation
+          </a>
+          .
         </p>
       </>
     );
