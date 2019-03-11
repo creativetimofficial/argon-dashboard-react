@@ -275,6 +275,17 @@ class Badges extends React.Component {
         <SyntaxHighlighter language="jsx" style={prism}>
           {codeLinks}
         </SyntaxHighlighter>
+        <h3 id="examples">Props</h3>
+          <p>
+            Please refer to{" "}
+            <a
+              href="https://reactstrap.github.io/components/badge/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              reactstrap badges documentation
+            </a>.
+          </p>
       </>
     );
   }

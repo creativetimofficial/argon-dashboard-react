@@ -4,7 +4,7 @@ body.docs{
     z-index: 2;
   }
 }
-.docs .ct-example .btn + .btn{
+.docs .ct-example .btn:not(.btn-block) + .btn{
   margin-left: 5px;
 }
 
@@ -46,7 +46,10 @@ body.docs{
   border-radius: .25rem;
   background-color: #f5f7f9;
 }
-.navbar-dark .navbar-nav .nav-link .ni,
-.alert .alert-inner--icon .ni{
-  color: rgba(255, 255, 255, 0.95) !important;
+.navbar-dark .navbar-nav .nav-link,
+.alert .alert-inner--icon,
+.btn .btn-inner--icon{
+  .ni{
+    color: rgba(255, 255, 255, 0.95) !important;
+  }
 }
