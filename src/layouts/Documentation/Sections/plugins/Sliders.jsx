@@ -3,14 +3,10 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // plugin that creates slider
 import Slider from "nouislider";
-// reactstrap components
-import { Row, Col } from "reactstrap";
 
 const codeSlider = `import React from "react";
 // plugin that creates slider
 import Slider from "nouislider";
-// reactstrap components
-import { Row, Col } from "reactstrap";
 
 class Sliders extends React.Component {
   componentDidMount() {
@@ -37,8 +33,6 @@ export default Sliders;
 const codeRangeSlider = `import React from "react";
 // plugin that creates slider
 import Slider from "nouislider";
-// reactstrap components
-import { Row, Col } from "reactstrap";
 
 class Sliders extends React.Component {
   componentDidMount() {
