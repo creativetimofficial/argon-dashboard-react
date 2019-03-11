@@ -4,9 +4,61 @@ import Slider from "nouislider";
 // reactstrap components
 import { Row, Col } from "reactstrap";
 
-const codeSlider = ``;
+const codeSlider = `import React from "react";
+// plugin that creates slider
+import Slider from "nouislider";
+// reactstrap components
+import { Row, Col } from "reactstrap";
 
-const codeRangeSlider = ``;
+class Sliders extends React.Component {
+  componentDidMount() {
+    var slider1 = this.refs.slider1;
+    Slider.create(slider1, {
+      start: [40],
+      connect: [true, false],
+      step: 1,
+      range: { min: 0, max: 100 }
+    });
+  }
+  render() {
+    return (
+      <>
+        <div className="slider" ref="slider1" />
+      </>
+    );
+  }
+}
+
+export default Sliders;
+`;
+
+const codeRangeSlider = `import React from "react";
+// plugin that creates slider
+import Slider from "nouislider";
+// reactstrap components
+import { Row, Col } from "reactstrap";
+
+class Sliders extends React.Component {
+  componentDidMount() {
+    var slider2 = this.refs.slider2;
+    Slider.create(slider2, {
+      start: [20, 60],
+      connect: [false, true, false],
+      step: 1,
+      range: { min: 0, max: 100 }
+    });
+  }
+  render() {
+    return (
+      <>
+        <div className="slider" ref="slider2" />
+      </>
+    );
+  }
+}
+
+export default Sliders;
+`;
 
 class Sliders extends React.Component {
   componentDidMount() {
