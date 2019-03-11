@@ -34,7 +34,9 @@ import Tables from "layouts/Documentation/Sections/restyled-components/Tables.js
 import Tooltips from "layouts/Documentation/Sections/restyled-components/Tooltips.jsx";
 // Plugins
 import Charts from "layouts/Documentation/Sections/plugins/Charts.jsx";
+import CopyToClipboard from "layouts/Documentation/Sections/plugins/CopyToClipboard.jsx";
 import Datetimepicker from "layouts/Documentation/Sections/plugins/Datetimepicker.jsx";
+import Maps from "layouts/Documentation/Sections/plugins/Maps.jsx";
 import Sliders from "layouts/Documentation/Sections/plugins/Sliders.jsx";
 
 var docsRoutes = [
@@ -212,11 +214,13 @@ var docsRoutes = [
     path: "/documentation/charts",
     routes: [
       { path: "/documentation/charts", component: Charts, name: "Charts" },
+      { path: "/documentation/copy-to-clipboard", component: CopyToClipboard, name: "Copy To Clipboard" },
       {
         path: "/documentation/date-time-picker",
         component: Datetimepicker,
         name: "DateTimePicker"
       },
+      { path: "/documentation/maps", component: Maps, name: "Maps" },
       { path: "/documentation/sliders", component: Sliders, name: "Sliders" }
     ]
   },
