@@ -11,7 +11,8 @@ class Download extends React.Component {
           <div className="avatar-group mt-3" />
         </div>
         <p className="ct-lead">
-          Download Argon Dashboard React to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers.
+          Download Argon Dashboard React to get the compiled CSS and JavaScript,
+          source code, or include it with your favorite package managers.
         </p>
         <hr />
         <h2 id="download">Download</h2>
@@ -49,7 +50,8 @@ class Download extends React.Component {
             <p>
               Install with Composer:{" "}
               <code className="highlighter-rouge">
-                composer create-project creativetimofficial/argon-dashboard-react
+                composer create-project
+                creativetimofficial/argon-dashboard-react
               </code>
             </p>
           </li>

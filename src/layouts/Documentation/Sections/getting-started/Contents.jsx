@@ -136,8 +136,8 @@ class Contents extends React.Component {
         </SyntaxHighlighter>
         <h2 id="bootstrap-components">Bootstrap / Reactstrap components</h2>
         <p>
-          Here is the list of Bootstrap 4 / Reactstrap components that were restyled in
-          Argon Dashboard React:
+          Here is the list of Bootstrap 4 / Reactstrap components that were
+          restyled in Argon Dashboard React:
         </p>
         <Row className="row-grid mt-5">
           <Col md="3">

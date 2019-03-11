@@ -1,17 +1,203 @@
 import React from "react";
-
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // reactstrap components
-import {
-  NavItem,
-  NavLink,
-  Nav,
-  Table,
-  TabContent,
-  TabPane,
-  Container,
-  Row,
-  Col
-} from "reactstrap";
+import { Table, Container, Row, Col } from "reactstrap";
+
+const codeHowItWorks = `<Container>
+  <Row>
+    <Col className="col-sm">
+      <span>One of three columns</span>
+    </Col>
+    <Col className="col-sm">
+      <span>One of three columns</span>
+    </Col>
+    <Col className="col-sm">
+      <span>One of three columns</span>
+    </Col>
+  </Row>
+</Container>`;
+
+const codeEqualWidth = `<Container>
+  <Row>
+    <Col>
+      <span>1 of 2</span>
+    </Col>
+    <Col>
+      <span>2 of 2</span>
+    </Col>
+  </Row>
+  <Row>
+    <Col>
+      <span>1 of 3</span>
+    </Col>
+    <Col>
+      <span>2 of 3</span>
+    </Col>
+    <Col>
+      <span>3 of 3</span>
+    </Col>
+  </Row>
+</Container>
+      `;
+
+const codeEqualWidth1 = `<Container>
+  <Row>
+    <Col>
+      <span>Column</span>
+    </Col>
+    <Col>
+      <span>Column</span>
+    </Col>
+    <div className="w-100" />
+    <Col>
+      <span>Column</span>
+    </Col>
+    <Col>
+      <span>Column</span>
+    </Col>
+  </Row>
+</Container>`;
+
+const codeSettingOneColumnWidth = `<Container>
+  <Row>
+    <Col>
+      <span>1 of 3</span>
+    </Col>
+    <Col xs="6">
+      <span>2 of 3 (wider)</span>
+    </Col>
+    <Col>
+      <span>3 of 3</span>
+    </Col>
+  </Row>
+  <Row>
+    <Col>
+      <span>1 of 3</span>
+    </Col>
+    <Col xs="5">
+      <span>2 of 3 (wider)</span>
+    </Col>
+    <Col>
+      <span>3 of 3</span>
+    </Col>
+  </Row>
+</Container>`;
+
+const codeSettingOneColumnWidthAuto = `<Container>
+  <Row className="justify-content-md-center">
+    <Col lg="2">
+      <span>1 of 3</span>
+    </Col>
+    <Col lg={{size: "auto"}}>
+      <span>Variable width content</span>
+    </Col>
+    <Col lg="2">
+      <span>3 of 3</span>
+    </Col>
+  </Row>
+  <Row>
+    <Col>
+      <span>1 of 3</span>
+    </Col>
+    <Col lg={{size: "auto"}}>
+      <span>Variable width content</span>
+    </Col>
+    <Col lg="2">
+      <span>3 of 3</span>
+    </Col>
+  </Row>
+</Container>`;
+
+const codeEqualWidthMultiRow = `<Row>
+  <Col>
+    <span>col</span>
+  </Col>
+  <Col>
+    <span>col</span>
+  </Col>
+  <div className="w-100" />
+  <Col>
+    <span>col</span>
+  </Col>
+  <Col>
+    <span>col</span>
+  </Col>
+</Row>`;
+
+const codeAllBreakpoints = `<Row>
+  <Col>
+    <span>col</span>
+  </Col>
+  <Col>
+    <span>col</span>
+  </Col>
+  <Col>
+    <span>col</span>
+  </Col>
+  <Col>
+    <span>col</span>
+  </Col>
+</Row>
+<Row>
+  <Col xs="8">
+    <span>col-8</span>
+  </Col>
+  <Col xs="4">
+    <span>col-4</span>
+  </Col>
+</Row>`;
+
+const codeStackedToHorizontal = `<Row>
+  <Col sm="8">
+    <span>col-sm-8</span>
+  </Col>
+  <Col sm="4">
+    <span>col-sm-4</span>
+  </Col>
+</Row>
+<Row>
+  <Col sm>
+    <span>col-sm</span>
+  </Col>
+  <Col sm>
+    <span>col-sm</span>
+  </Col>
+  <Col sm>
+    <span>col-sm</span>
+  </Col>
+</Row>`;
+
+const codeMixAndMatch = `{/* Stack the columns on mobile by making one full-width and the other half-width */}
+<Row>
+  <Col md="8" xs="12">
+    <span>.col-12 .col-md-8</span>
+  </Col>
+  <Col md="4" xs="6">
+    <span>.col-6 .col-md-4</span>
+  </Col>
+</Row>
+{/* Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop */}
+<Row>
+  <Col md="4" xs="6">
+    <span>.col-6 .col-md-4</span>
+  </Col>
+  <Col md="4" xs="6">
+    <span>.col-6 .col-md-4</span>
+  </Col>
+  <Col md="4" xs="6">
+    <span>.col-6 .col-md-4</span>
+  </Col>
+</Row>
+{/* Columns are always 50% wide, on mobile and desktop */}
+<Row>
+  <Col xs="6">
+    <span>.col-6</span>
+  </Col>
+  <Col xs="6">
+    <span>.col-6</span>
+  </Col>
+</Row>`;
 
 class Grid extends React.Component {
   render() {
@@ -49,70 +235,29 @@ class Grid extends React.Component {
         </p>
         <div className="ct-example-row">
           <div className="ct-example">
-            <Nav className="nav-tabs-code" id="grid-tab" role="tablist">
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-component"
-                  aria-selected={true}
-                  className="active"
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-component-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  Result
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-html"
-                  aria-selected={false}
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-html-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  HTML
-                </NavLink>
-              </NavItem>
-            </Nav>
-            <TabContent>
-              <TabPane
-                aria-labelledby="grid-component-tab"
-                className="tab-example-result fade show active"
-                id="grid-component"
-                role="tabpanel"
-              >
-                <Container>
-                  <Row>
-                    <Col className="col-sm">
-                      <span>One of three columns</span>
-                    </Col>
-                    <Col className="col-sm">
-                      <span>One of three columns</span>
-                    </Col>
-                    <Col className="col-sm">
-                      <span>One of three columns</span>
-                    </Col>
-                  </Row>
-                </Container>
-              </TabPane>
-              <TabPane
-                aria-labelledby="grid-html-tab"
-                className="fade"
-                id="grid-html"
-                role="tabpanel"
-              />
-            </TabContent>
+            <Container>
+              <Row>
+                <Col className="col-sm">
+                  <span>One of three columns</span>
+                </Col>
+                <Col className="col-sm">
+                  <span>One of three columns</span>
+                </Col>
+                <Col className="col-sm">
+                  <span>One of three columns</span>
+                </Col>
+              </Row>
+            </Container>
           </div>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeHowItWorks}
+        </SyntaxHighlighter>
         <p>
           The above example creates three equal-width columns on small, medium,
           large, and extra large devices using our predefined grid classes.
           Those columns are centered in the page with the parent{" "}
-          <code className="highlighter-rouge">.container</code>.
+          <code className="highlighter-rouge">{`Container`}</code>.
         </p>
         <h2 id="grid-options">Grid options</h2>
         <p>
@@ -174,22 +319,22 @@ class Grid extends React.Component {
             </tr>
             <tr>
               <th className="text-nowrap" scope="row">
-                Class prefix
+                Prop names
               </th>
               <td>
-                <code>.col-</code>
+                <code>{`xs={*}`}</code>
               </td>
               <td>
-                <code>.col-sm-</code>
+                <code>{`sm={*}`}</code>
               </td>
               <td>
-                <code>.col-md-</code>
+                <code>{`md={*}`}</code>
               </td>
               <td>
-                <code>.col-lg-</code>
+                <code>{`lg={*}`}</code>
               </td>
               <td>
-                <code>.col-xl-</code>
+                <code>{`xl={*}`}</code>
               </td>
             </tr>
             <tr>
@@ -234,77 +379,32 @@ class Grid extends React.Component {
         </p>
         <div className="ct-example-row">
           <div className="ct-example">
-            <Nav
-              className="nav-tabs-code"
-              id="grid-equal-width-tab"
-              role="tablist"
-            >
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-equal-width-component"
-                  aria-selected={true}
-                  className="active"
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-equal-width-component-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  Result
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-equal-width-html"
-                  aria-selected={false}
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-equal-width-html-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  HTML
-                </NavLink>
-              </NavItem>
-            </Nav>
-            <TabContent>
-              <TabPane
-                aria-labelledby="grid-equal-width-component-tab"
-                className="tab-example-result fade show active"
-                id="grid-equal-width-component"
-                role="tabpanel"
-              >
-                <Container>
-                  <Row>
-                    <div className="col">
-                      <span>1 of 2</span>
-                    </div>
-                    <div className="col">
-                      <span>2 of 2</span>
-                    </div>
-                  </Row>
-                  <Row>
-                    <div className="col">
-                      <span>1 of 3</span>
-                    </div>
-                    <div className="col">
-                      <span>2 of 3</span>
-                    </div>
-                    <div className="col">
-                      <span>3 of 3</span>
-                    </div>
-                  </Row>
-                </Container>
-              </TabPane>
-              <TabPane
-                aria-labelledby="grid-equal-width-html-tab"
-                className="fade"
-                id="grid-equal-width-html"
-                role="tabpanel"
-              />
-            </TabContent>
+            <Container>
+              <Row>
+                <div className="col">
+                  <span>1 of 2</span>
+                </div>
+                <div className="col">
+                  <span>2 of 2</span>
+                </div>
+              </Row>
+              <Row>
+                <div className="col">
+                  <span>1 of 3</span>
+                </div>
+                <div className="col">
+                  <span>2 of 3</span>
+                </div>
+                <div className="col">
+                  <span>3 of 3</span>
+                </div>
+              </Row>
+            </Container>
           </div>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeEqualWidth}
+        </SyntaxHighlighter>
         <p>
           Equal-width columns can be broken into multiple lines, but there was a{" "}
           <a href="#pablo" onClick={e => e.preventDefault()}>
@@ -318,73 +418,28 @@ class Grid extends React.Component {
         </p>
         <div className="ct-example-row">
           <div className="ct-example">
-            <Nav
-              className="nav-tabs-code"
-              id="grid-equal-width-broken-tab"
-              role="tablist"
-            >
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-equal-width-broken-component"
-                  aria-selected={true}
-                  className="active"
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-equal-width-broken-component-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  Result
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-equal-width-broken-html"
-                  aria-selected={false}
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-equal-width-broken-html-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  HTML
-                </NavLink>
-              </NavItem>
-            </Nav>
-            <TabContent>
-              <TabPane
-                aria-labelledby="grid-equal-width-broken-component-tab"
-                className="tab-example-result fade show active"
-                id="grid-equal-width-broken-component"
-                role="tabpanel"
-              >
-                <Container>
-                  <Row>
-                    <div className="col">
-                      <span>Column</span>
-                    </div>
-                    <div className="col">
-                      <span>Column</span>
-                    </div>
-                    <div className="w-100" />
-                    <div className="col">
-                      <span>Column</span>
-                    </div>
-                    <div className="col">
-                      <span>Column</span>
-                    </div>
-                  </Row>
-                </Container>
-              </TabPane>
-              <TabPane
-                aria-labelledby="grid-equal-width-broken-html-tab"
-                className="fade"
-                id="grid-equal-width-broken-html"
-                role="tabpanel"
-              />
-            </TabContent>
+            <Container>
+              <Row>
+                <div className="col">
+                  <span>Column</span>
+                </div>
+                <div className="col">
+                  <span>Column</span>
+                </div>
+                <div className="w-100" />
+                <div className="col">
+                  <span>Column</span>
+                </div>
+                <div className="col">
+                  <span>Column</span>
+                </div>
+              </Row>
+            </Container>
           </div>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeEqualWidth1}
+        </SyntaxHighlighter>
         <h3 id="setting-one-column-width">Setting one column width</h3>
         <p>
           Auto-layout for flexbox grid columns also means you can set the width
@@ -395,80 +450,35 @@ class Grid extends React.Component {
         </p>
         <div className="ct-example-row">
           <div className="ct-example">
-            <Nav
-              className="nav-tabs-code"
-              id="grid-one-col-width-tab"
-              role="tablist"
-            >
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-one-col-width-component"
-                  aria-selected={true}
-                  className="active"
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-one-col-width-component-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  Result
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-one-col-width-html"
-                  aria-selected={false}
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-one-col-width-html-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  HTML
-                </NavLink>
-              </NavItem>
-            </Nav>
-            <TabContent>
-              <TabPane
-                aria-labelledby="grid-one-col-width-component-tab"
-                className="tab-example-result fade show active"
-                id="grid-one-col-width-component"
-                role="tabpanel"
-              >
-                <Container>
-                  <Row>
-                    <div className="col">
-                      <span>1 of 3</span>
-                    </div>
-                    <Col xs="6">
-                      <span>2 of 3 (wider)</span>
-                    </Col>
-                    <div className="col">
-                      <span>3 of 3</span>
-                    </div>
-                  </Row>
-                  <Row>
-                    <div className="col">
-                      <span>1 of 3</span>
-                    </div>
-                    <Col xs="5">
-                      <span>2 of 3 (wider)</span>
-                    </Col>
-                    <div className="col">
-                      <span>3 of 3</span>
-                    </div>
-                  </Row>
-                </Container>
-              </TabPane>
-              <TabPane
-                aria-labelledby="grid-one-col-width-html-tab"
-                className="fade"
-                id="grid-one-col-width-html"
-                role="tabpanel"
-              />
-            </TabContent>
+            <Container>
+              <Row>
+                <div className="col">
+                  <span>1 of 3</span>
+                </div>
+                <Col xs="6">
+                  <span>2 of 3 (wider)</span>
+                </Col>
+                <div className="col">
+                  <span>3 of 3</span>
+                </div>
+              </Row>
+              <Row>
+                <div className="col">
+                  <span>1 of 3</span>
+                </div>
+                <Col xs="5">
+                  <span>2 of 3 (wider)</span>
+                </Col>
+                <div className="col">
+                  <span>3 of 3</span>
+                </div>
+              </Row>
+            </Container>
           </div>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeSettingOneColumnWidth}
+        </SyntaxHighlighter>
         <h3 id="variable-width-content">Variable width content</h3>
         <p>
           Use{" "}
@@ -477,80 +487,35 @@ class Grid extends React.Component {
         </p>
         <div className="ct-example-row">
           <div className="ct-example">
-            <Nav
-              className="nav-tabs-code"
-              id="grid-variable-width-tab"
-              role="tablist"
-            >
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-variable-width-component"
-                  aria-selected={true}
-                  className="active"
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-variable-width-component-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  Result
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-variable-width-html"
-                  aria-selected={false}
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-variable-width-html-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  HTML
-                </NavLink>
-              </NavItem>
-            </Nav>
-            <TabContent>
-              <TabPane
-                aria-labelledby="grid-variable-width-component-tab"
-                className="tab-example-result fade show active"
-                id="grid-variable-width-component"
-                role="tabpanel"
-              >
-                <Container>
-                  <Row className="justify-content-md-center">
-                    <Col className="col" lg="2">
-                      <span>1 of 3</span>
-                    </Col>
-                    <Col className="col-md-auto">
-                      <span>Variable width content</span>
-                    </Col>
-                    <Col className="col" lg="2">
-                      <span>3 of 3</span>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <div className="col">
-                      <span>1 of 3</span>
-                    </div>
-                    <Col className="col-md-auto">
-                      <span>Variable width content</span>
-                    </Col>
-                    <Col className="col" lg="2">
-                      <span>3 of 3</span>
-                    </Col>
-                  </Row>
-                </Container>
-              </TabPane>
-              <TabPane
-                aria-labelledby="grid-variable-width-html-tab"
-                className="fade"
-                id="grid-variable-width-html"
-                role="tabpanel"
-              />
-            </TabContent>
+            <Container>
+              <Row className="justify-content-md-center">
+                <Col className="col" lg="2">
+                  <span>1 of 3</span>
+                </Col>
+                <Col className="col-md-auto">
+                  <span>Variable width content</span>
+                </Col>
+                <Col className="col" lg="2">
+                  <span>3 of 3</span>
+                </Col>
+              </Row>
+              <Row>
+                <div className="col">
+                  <span>1 of 3</span>
+                </div>
+                <Col className="col-md-auto">
+                  <span>Variable width content</span>
+                </Col>
+                <Col className="col" lg="2">
+                  <span>3 of 3</span>
+                </Col>
+              </Row>
+            </Container>
           </div>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeSettingOneColumnWidthAuto}
+        </SyntaxHighlighter>
         <h3 id="equal-width-multi-row">Equal-width multi-row</h3>
         <p>
           Create equal-width columns that span multiple rows by inserting a{" "}
@@ -566,71 +531,26 @@ class Grid extends React.Component {
         </p>
         <div className="ct-example-row">
           <div className="ct-example">
-            <Nav
-              className="nav-tabs-code"
-              id="grid-equal-multirow-tab"
-              role="tablist"
-            >
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-equal-multirow-component"
-                  aria-selected={true}
-                  className="active"
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-equal-multirow-component-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  Result
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-equal-multirow-html"
-                  aria-selected={false}
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-equal-multirow-html-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  HTML
-                </NavLink>
-              </NavItem>
-            </Nav>
-            <TabContent>
-              <TabPane
-                aria-labelledby="grid-equal-multirow-component-tab"
-                className="tab-example-result fade show active"
-                id="grid-equal-multirow-component"
-                role="tabpanel"
-              >
-                <Row>
-                  <div className="col">
-                    <span>col</span>
-                  </div>
-                  <div className="col">
-                    <span>col</span>
-                  </div>
-                  <div className="w-100" />
-                  <div className="col">
-                    <span>col</span>
-                  </div>
-                  <div className="col">
-                    <span>col</span>
-                  </div>
-                </Row>
-              </TabPane>
-              <TabPane
-                aria-labelledby="grid-equal-multirow-html-tab"
-                className="fade"
-                id="grid-equal-multirow-html"
-                role="tabpanel"
-              />
-            </TabContent>
+            <Row>
+              <div className="col">
+                <span>col</span>
+              </div>
+              <div className="col">
+                <span>col</span>
+              </div>
+              <div className="w-100" />
+              <div className="col">
+                <span>col</span>
+              </div>
+              <div className="col">
+                <span>col</span>
+              </div>
+            </Row>
           </div>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeEqualWidthMultiRow}
+        </SyntaxHighlighter>
         <h2 id="responsive-classes">Responsive classes</h2>
         <p>
           Bootstrap’s grid includes five tiers of predefined classes for
@@ -649,78 +569,33 @@ class Grid extends React.Component {
         </p>
         <div className="ct-example-row">
           <div className="ct-example">
-            <Nav
-              className="nav-tabs-code"
-              id="grid-all-breakpoints-tab"
-              role="tablist"
-            >
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-all-breakpoints-component"
-                  aria-selected={true}
-                  className="active"
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-all-breakpoints-component-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  Result
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-all-breakpoints-html"
-                  aria-selected={false}
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-all-breakpoints-html-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  HTML
-                </NavLink>
-              </NavItem>
-            </Nav>
-            <TabContent>
-              <TabPane
-                aria-labelledby="grid-all-breakpoints-component-tab"
-                className="tab-example-result fade show active"
-                id="grid-all-breakpoints-component"
-                role="tabpanel"
-              >
-                <Row>
-                  <div className="col">
-                    <span>col</span>
-                  </div>
-                  <div className="col">
-                    <span>col</span>
-                  </div>
-                  <div className="col">
-                    <span>col</span>
-                  </div>
-                  <div className="col">
-                    <span>col</span>
-                  </div>
-                </Row>
-                <Row>
-                  <Col xs="8">
-                    <span>col-8</span>
-                  </Col>
-                  <Col xs="4">
-                    <span>col-4</span>
-                  </Col>
-                </Row>
-              </TabPane>
-              <TabPane
-                aria-labelledby="grid-all-breakpoints-html-tab"
-                className="fade"
-                id="grid-all-breakpoints-html"
-                role="tabpanel"
-              />
-            </TabContent>
+            <Row>
+              <div className="col">
+                <span>col</span>
+              </div>
+              <div className="col">
+                <span>col</span>
+              </div>
+              <div className="col">
+                <span>col</span>
+              </div>
+              <div className="col">
+                <span>col</span>
+              </div>
+            </Row>
+            <Row>
+              <Col xs="8">
+                <span>col-8</span>
+              </Col>
+              <Col xs="4">
+                <span>col-4</span>
+              </Col>
+            </Row>
           </div>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeAllBreakpoints}
+        </SyntaxHighlighter>
         <h3 id="stacked-to-horizontal">Stacked to horizontal</h3>
         <p>
           Using a single set of{" "}
@@ -732,75 +607,30 @@ class Grid extends React.Component {
         </p>
         <div className="ct-example-row">
           <div className="ct-example">
-            <Nav
-              className="nav-tabs-code"
-              id="grid-stacked-horizontal-tab"
-              role="tablist"
-            >
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-stacked-horizontal-component"
-                  aria-selected={true}
-                  className="active"
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-stacked-horizontal-component-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  Result
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-stacked-horizontal-html"
-                  aria-selected={false}
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-stacked-horizontal-html-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  HTML
-                </NavLink>
-              </NavItem>
-            </Nav>
-            <TabContent>
-              <TabPane
-                aria-labelledby="grid-stacked-horizontal-component-tab"
-                className="tab-example-result fade show active"
-                id="grid-stacked-horizontal-component"
-                role="tabpanel"
-              >
-                <Row>
-                  <Col sm="8">
-                    <span>col-sm-8</span>
-                  </Col>
-                  <Col sm="4">
-                    <span>col-sm-4</span>
-                  </Col>
-                </Row>
-                <Row>
-                  <Col className="col-sm">
-                    <span>col-sm</span>
-                  </Col>
-                  <Col className="col-sm">
-                    <span>col-sm</span>
-                  </Col>
-                  <Col className="col-sm">
-                    <span>col-sm</span>
-                  </Col>
-                </Row>
-              </TabPane>
-              <TabPane
-                aria-labelledby="grid-stacked-horizontal-html-tab"
-                className="fade"
-                id="grid-stacked-horizontal-html"
-                role="tabpanel"
-              />
-            </TabContent>
+            <Row>
+              <Col sm="8">
+                <span>col-sm-8</span>
+              </Col>
+              <Col sm="4">
+                <span>col-sm-4</span>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="col-sm">
+                <span>col-sm</span>
+              </Col>
+              <Col className="col-sm">
+                <span>col-sm</span>
+              </Col>
+              <Col className="col-sm">
+                <span>col-sm</span>
+              </Col>
+            </Row>
           </div>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeStackedToHorizontal}
+        </SyntaxHighlighter>
         <h3 id="mix-and-match">Mix and match</h3>
         <p>
           Don’t want your columns to simply stack in some grid tiers? Use a
@@ -809,86 +639,41 @@ class Grid extends React.Component {
         </p>
         <div className="ct-example-row">
           <div className="ct-example">
-            <Nav
-              className="nav-tabs-code"
-              id="grid-mix-match-tab"
-              role="tablist"
-            >
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-mix-match-component"
-                  aria-selected={true}
-                  className="active"
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-mix-match-component-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  Result
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  aria-controls="grid-mix-match-html"
-                  aria-selected={false}
-                  data-toggle="tab"
-                  href="#pablo"
-                  id="grid-mix-match-html-tab"
-                  onClick={e => e.preventDefault()}
-                  role="tab"
-                >
-                  HTML
-                </NavLink>
-              </NavItem>
-            </Nav>
-            <TabContent>
-              <TabPane
-                aria-labelledby="grid-mix-match-component-tab"
-                className="tab-example-result fade show active"
-                id="grid-mix-match-component"
-                role="tabpanel"
-              >
-                {/* Stack the columns on mobile by making one full-width and the other half-width */}
-                <Row>
-                  <Col md="8" xs="12">
-                    <span>.col-12 .col-md-8</span>
-                  </Col>
-                  <Col md="4" xs="6">
-                    <span>.col-6 .col-md-4</span>
-                  </Col>
-                </Row>
-                {/* Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop */}
-                <Row>
-                  <Col md="4" xs="6">
-                    <span>.col-6 .col-md-4</span>
-                  </Col>
-                  <Col md="4" xs="6">
-                    <span>.col-6 .col-md-4</span>
-                  </Col>
-                  <Col md="4" xs="6">
-                    <span>.col-6 .col-md-4</span>
-                  </Col>
-                </Row>
-                {/* Columns are always 50% wide, on mobile and desktop */}
-                <Row>
-                  <Col xs="6">
-                    <span>.col-6</span>
-                  </Col>
-                  <Col xs="6">
-                    <span>.col-6</span>
-                  </Col>
-                </Row>
-              </TabPane>
-              <TabPane
-                aria-labelledby="grid-mix-match-html-tab"
-                className="fade"
-                id="grid-mix-match-html"
-                role="tabpanel"
-              />
-            </TabContent>
+            {/* Stack the columns on mobile by making one full-width and the other half-width */}
+            <Row>
+              <Col md="8" xs="12">
+                <span>.col-12 .col-md-8</span>
+              </Col>
+              <Col md="4" xs="6">
+                <span>.col-6 .col-md-4</span>
+              </Col>
+            </Row>
+            {/* Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop */}
+            <Row>
+              <Col md="4" xs="6">
+                <span>.col-6 .col-md-4</span>
+              </Col>
+              <Col md="4" xs="6">
+                <span>.col-6 .col-md-4</span>
+              </Col>
+              <Col md="4" xs="6">
+                <span>.col-6 .col-md-4</span>
+              </Col>
+            </Row>
+            {/* Columns are always 50% wide, on mobile and desktop */}
+            <Row>
+              <Col xs="6">
+                <span>.col-6</span>
+              </Col>
+              <Col xs="6">
+                <span>.col-6</span>
+              </Col>
+            </Row>
           </div>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeMixAndMatch}
+        </SyntaxHighlighter>
       </>
     );
   }

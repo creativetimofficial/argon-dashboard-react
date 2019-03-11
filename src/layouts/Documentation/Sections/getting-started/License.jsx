@@ -11,7 +11,9 @@ class License extends React.Component {
           <div className="avatar-group mt-3" />
         </div>
         <p className="ct-lead">
-          Get started with Bootstrap, React, Reactstrap and create-react-app, the world’s most popular frameworks for building responsive, mobile-first sites.
+          Get started with Bootstrap, React, Reactstrap and create-react-app,
+          the world’s most popular frameworks for building responsive,
+          mobile-first sites.
         </p>
         <hr />
         <p>MIT License</p>
