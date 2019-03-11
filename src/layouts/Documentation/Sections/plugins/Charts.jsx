@@ -27,113 +27,25 @@ class Charts extends React.Component {
         <hr />
         <h2 id="example">Example</h2>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="chart-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="chart-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="chart-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="chart-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="chart-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="chart-component-tab"
-              className="tab-example-result fade show active"
-              id="chart-component"
-              role="tabpanel"
-            >
-              <Card>
-                <CardBody>
-                  <div className="chart">
-                    {/* Chart wrapper */}
-                    <canvas className="chart-canvas" id="chart-orders" />
-                  </div>
-                </CardBody>
-              </Card>
-            </TabPane>
-            <TabPane
-              aria-labelledby="chart-html-tab"
-              className="fade"
-              id="chart-html"
-              role="tabpanel"
-            />
-          </TabContent>
+          <Card>
+            <CardBody>
+              <div className="chart">
+                {/* Chart wrapper */}
+                <canvas className="chart-canvas" id="chart-orders" />
+              </div>
+            </CardBody>
+          </Card>
         </div>
         <h2 id="dark-card-with-chart">Dark card with chart</h2>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="chart-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="chart-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="chart-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="chart-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="chart-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="chart-component-tab"
-              className="tab-example-result fade show active"
-              id="chart-component"
-              role="tabpanel"
-            >
-              <Card className="bg-default">
-                <CardBody>
-                  <div className="chart">
-                    {/* Chart wrapper */}
-                    <canvas className="chart-canvas" id="chart-sales" />
-                  </div>
-                </CardBody>
-              </Card>
-            </TabPane>
-            <TabPane
-              aria-labelledby="chart-html-tab"
-              className="fade"
-              id="chart-html"
-              role="tabpanel"
-            />
-          </TabContent>
+          <Card className="bg-default">
+            <CardBody>
+              <div className="chart">
+                {/* Chart wrapper */}
+                <canvas className="chart-canvas" id="chart-sales" />
+              </div>
+            </CardBody>
+          </Card>
         </div>
         <h2 id="usage">Usage</h2>
         <p>

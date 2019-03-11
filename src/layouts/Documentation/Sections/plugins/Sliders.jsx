@@ -30,137 +30,49 @@ class Sliders extends React.Component {
         <hr />
         <h2 id="slider">Slider</h2>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="slider-single-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="slider-single-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="slider-single-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="slider-single-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="slider-single-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="slider-single-component-tab"
-              className="tab-example-result fade show active"
-              id="slider-single-component"
-              role="tabpanel"
-            >
-              <div className="input-slider-container">
-                <div
-                  className="input-slider"
-                  data-range-value-max="500"
-                  data-range-value-min="100"
-                  id="input-slider"
-                />
-                <Row className="mt-3 d-none">
-                  <Col xs="6">
-                    <span
-                      className="range-slider-value"
-                      data-range-value-low="100"
-                      id="input-slider-value"
-                    />
-                  </Col>
-                </Row>
-              </div>
-            </TabPane>
-            <TabPane
-              aria-labelledby="slider-single-html-tab"
-              className="fade"
-              id="slider-single-html"
-              role="tabpanel"
+          <div className="input-slider-container">
+            <div
+              className="input-slider"
+              data-range-value-max="500"
+              data-range-value-min="100"
+              id="input-slider"
             />
-          </TabContent>
+            <Row className="mt-3 d-none">
+              <Col xs="6">
+                <span
+                  className="range-slider-value"
+                  data-range-value-low="100"
+                  id="input-slider-value"
+                />
+              </Col>
+            </Row>
+          </div>
         </div>
         <h2 id="range-slider">Range slider</h2>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="slider-range-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="slider-range-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="slider-range-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="slider-range-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="slider-range-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="slider-range-component-tab"
-              className="tab-example-result fade show active"
-              id="slider-range-component"
-              role="tabpanel"
-            >
-              <div>
-                <div
-                  data-range-value-max="500"
-                  data-range-value-min="100"
-                  id="input-slider-range"
-                />
-                <Row className="d-none">
-                  <Col xs="6">
-                    <span
-                      className="range-slider-value value-low"
-                      data-range-value-low="200"
-                      id="input-slider-range-value-low"
-                    />
-                  </Col>
-                  <Col className="text-right" xs="6">
-                    <span
-                      className="range-slider-value value-high"
-                      data-range-value-high="400"
-                      id="input-slider-range-value-high"
-                    />
-                  </Col>
-                </Row>
-              </div>
-            </TabPane>
-            <TabPane
-              aria-labelledby="slider-range-html-tab"
-              className="fade"
-              id="slider-range-html"
-              role="tabpanel"
+          <div>
+            <div
+              data-range-value-max="500"
+              data-range-value-min="100"
+              id="input-slider-range"
             />
-          </TabContent>
+            <Row className="d-none">
+              <Col xs="6">
+                <span
+                  className="range-slider-value value-low"
+                  data-range-value-low="200"
+                  id="input-slider-range-value-low"
+                />
+              </Col>
+              <Col className="text-right" xs="6">
+                <span
+                  className="range-slider-value value-high"
+                  data-range-value-high="400"
+                  id="input-slider-range-value-high"
+                />
+              </Col>
+            </Row>
+          </div>
         </div>
         <h2 id="usage">Usage</h2>
         <p>

@@ -20,57 +20,13 @@ class Maps extends React.Component {
         <hr />
         <h2 id="example">Example</h2>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="slider-single-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="slider-single-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="slider-single-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="slider-single-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="slider-single-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="slider-single-component-tab"
-              className="tab-example-result fade show active"
-              id="slider-single-component"
-              role="tabpanel"
-            >
-              <div
-                className="map-canvas"
-                data-lat="40.748817"
-                data-lng="-73.985428"
-                id="map-canvas"
-                style={{ height: "600px" }}
-              />
-            </TabPane>
-            <TabPane
-              aria-labelledby="slider-single-html-tab"
-              className="fade"
-              id="slider-single-html"
-              role="tabpanel"
-            />
-          </TabContent>
+          <div
+            className="map-canvas"
+            data-lat="40.748817"
+            data-lng="-73.985428"
+            id="map-canvas"
+            style={{ height: "600px" }}
+          />
         </div>
         <h2 id="usage">Usage</h2>
         <p>

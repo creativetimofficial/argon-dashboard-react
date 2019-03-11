@@ -2,11 +2,7 @@ import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // reactstrap components
-import {
-  Table,
-  Row,
-  Col
-} from "reactstrap";
+import { Table, Row, Col } from "reactstrap";
 
 const codeHeadings = `<h1>h1. Bootstrap heading</h1>
 <h2>h2. Bootstrap heading</h2>
@@ -36,7 +32,6 @@ const codeLead = `<p className="lead">
   Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
   auctor. Duis mollis, est non commodo luctus.
 </p>`;
-
 
 class Typography extends React.Component {
   render() {
@@ -70,9 +65,7 @@ class Typography extends React.Component {
             <tr>
               <td>
                 <p>
-                  <code className="highlighter-rouge">
-                    {`<h1 />`}
-                  </code>
+                  <code className="highlighter-rouge">{`<h1 />`}</code>
                 </p>
               </td>
               <td>
@@ -82,9 +75,7 @@ class Typography extends React.Component {
             <tr>
               <td>
                 <p>
-                  <code className="highlighter-rouge">
-                    {`<h2 />`}
-                  </code>
+                  <code className="highlighter-rouge">{`<h2 />`}</code>
                 </p>
               </td>
               <td>
@@ -94,9 +85,7 @@ class Typography extends React.Component {
             <tr>
               <td>
                 <p>
-                  <code className="highlighter-rouge">
-                    {`<h3 />`}
-                  </code>
+                  <code className="highlighter-rouge">{`<h3 />`}</code>
                 </p>
               </td>
               <td>
@@ -106,9 +95,7 @@ class Typography extends React.Component {
             <tr>
               <td>
                 <p>
-                  <code className="highlighter-rouge">
-                    {`<h4 />`}
-                  </code>
+                  <code className="highlighter-rouge">{`<h4 />`}</code>
                 </p>
               </td>
               <td>
@@ -118,9 +105,7 @@ class Typography extends React.Component {
             <tr>
               <td>
                 <p>
-                  <code className="highlighter-rouge">
-                    {`<h5 />`}
-                  </code>
+                  <code className="highlighter-rouge">{`<h5 />`}</code>
                 </p>
               </td>
               <td>
@@ -130,9 +115,7 @@ class Typography extends React.Component {
             <tr>
               <td>
                 <p>
-                  <code className="highlighter-rouge">
-                    {`<h6 />`}
-                  </code>
+                  <code className="highlighter-rouge">{`<h6 />`}</code>
                 </p>
               </td>
               <td>
@@ -233,14 +216,11 @@ class Typography extends React.Component {
             text.
           </p>
           <p>
-            <del>
-              This line of text is meant to be treated as deleted text.
-            </del>
+            <del>This line of text is meant to be treated as deleted text.</del>
           </p>
           <p>
             <s>
-              This line of text is meant to be treated as no longer
-              accurate.
+              This line of text is meant to be treated as no longer accurate.
             </s>
           </p>
           <p>
@@ -325,8 +305,8 @@ class Typography extends React.Component {
         <div className="ct-example">
           <blockquote className="blockquote">
             <p className="mb-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Integer posuere erat a ante.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              posuere erat a ante.
             </p>
           </blockquote>
         </div>
@@ -342,12 +322,11 @@ class Typography extends React.Component {
         <div className="ct-example">
           <blockquote className="blockquote">
             <p className="mb-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Integer posuere erat a ante.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              posuere erat a ante.
             </p>
             <footer className="blockquote-footer">
-              Someone famous in{" "}
-              <cite title="Source Title">Source Title</cite>
+              Someone famous in <cite title="Source Title">Source Title</cite>
             </footer>
           </blockquote>
         </div>
@@ -358,27 +337,25 @@ class Typography extends React.Component {
         </p>
         <div className="ct-example">
           <blockquote className="blockquote text-center">
-                <p className="mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer posuere erat a ante.
-                </p>
-                <footer className="blockquote-footer">
-                  Someone famous in{" "}
-                  <cite title="Source Title">Source Title</cite>
-                </footer>
-              </blockquote>
+            <p className="mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              posuere erat a ante.
+            </p>
+            <footer className="blockquote-footer">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </footer>
+          </blockquote>
         </div>
         <div className="ct-example">
           <blockquote className="blockquote text-right">
-                <p className="mb-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer posuere erat a ante.
-                </p>
-                <footer className="blockquote-footer">
-                  Someone famous in{" "}
-                  <cite title="Source Title">Source Title</cite>
-                </footer>
-              </blockquote>
+            <p className="mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              posuere erat a ante.
+            </p>
+            <footer className="blockquote-footer">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </footer>
+          </blockquote>
         </div>
         <h2 id="lists">Lists</h2>
         <h3 id="unstyled">Unstyled</h3>
@@ -391,23 +368,23 @@ class Typography extends React.Component {
         </p>
         <div className="ct-example">
           <ul className="list-unstyled">
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Consectetur adipiscing elit</li>
-                <li>Integer molestie lorem at massa</li>
-                <li>Facilisis in pretium nisl aliquet</li>
-                <li>
-                  Nulla volutpat aliquam velit{" "}
-                  <ul>
-                    <li>Phasellus iaculis neque</li>
-                    <li>Purus sodales ultricies</li>
-                    <li>Vestibulum laoreet porttitor sem</li>
-                    <li>Ac tristique libero volutpat at</li>
-                  </ul>
-                </li>
-                <li>Faucibus porta lacus fringilla vel</li>
-                <li>Aenean sit amet erat nunc</li>
-                <li>Eget porttitor lorem</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Integer molestie lorem at massa</li>
+            <li>Facilisis in pretium nisl aliquet</li>
+            <li>
+              Nulla volutpat aliquam velit{" "}
+              <ul>
+                <li>Phasellus iaculis neque</li>
+                <li>Purus sodales ultricies</li>
+                <li>Vestibulum laoreet porttitor sem</li>
+                <li>Ac tristique libero volutpat at</li>
               </ul>
+            </li>
+            <li>Faucibus porta lacus fringilla vel</li>
+            <li>Aenean sit amet erat nunc</li>
+            <li>Eget porttitor lorem</li>
+          </ul>
         </div>
         <h3 id="inline">Inline</h3>
         <p>
@@ -419,10 +396,10 @@ class Typography extends React.Component {
         </p>
         <div className="ct-example">
           <ul className="list-inline">
-                <li className="list-inline-item">Lorem ipsum</li>
-                <li className="list-inline-item">Phasellus iaculis</li>
-                <li className="list-inline-item">Nulla volutpat</li>
-              </ul>
+            <li className="list-inline-item">Lorem ipsum</li>
+            <li className="list-inline-item">Phasellus iaculis</li>
+            <li className="list-inline-item">Nulla volutpat</li>
+          </ul>
         </div>
         <h3 id="description-list-alignment">Description list alignment</h3>
         <p>
@@ -434,40 +411,36 @@ class Typography extends React.Component {
         </p>
         <div className="ct-example">
           <Row>
-                <Col sm="3">Description lists</Col>
-                <Col sm="9">
-                  A description list is perfect for defining terms.
-                </Col>
-                <Col sm="3">Euismod</Col>
-                <Col sm="9">
-                  <p>
-                    Vestibulum id ligula porta felis euismod semper eget lacinia
-                    odio sem nec elit.
-                  </p>
-                  <p>Donec id elit non mi porta gravida at eget metus.</p>
-                </Col>
-                <Col sm="3">Malesuada porta</Col>
-                <Col sm="9">
-                  Etiam porta sem malesuada magna mollis euismod.
-                </Col>
-                <Col className="text-truncate" sm="3">
-                  Truncated term is truncated
-                </Col>
-                <Col sm="9">
-                  Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                  condimentum nibh, ut fermentum massa justo sit amet risus.
-                </Col>
-                <Col sm="3">Nesting</Col>
-                <Col sm="9">
-                  <Row>
-                    <Col sm="4">Nested definition list</Col>
-                    <Col sm="8">
-                      Aenean posuere, tortor sed cursus feugiat, nunc augue
-                      blandit nunc.
-                    </Col>
-                  </Row>
+            <Col sm="3">Description lists</Col>
+            <Col sm="9">A description list is perfect for defining terms.</Col>
+            <Col sm="3">Euismod</Col>
+            <Col sm="9">
+              <p>
+                Vestibulum id ligula porta felis euismod semper eget lacinia
+                odio sem nec elit.
+              </p>
+              <p>Donec id elit non mi porta gravida at eget metus.</p>
+            </Col>
+            <Col sm="3">Malesuada porta</Col>
+            <Col sm="9">Etiam porta sem malesuada magna mollis euismod.</Col>
+            <Col className="text-truncate" sm="3">
+              Truncated term is truncated
+            </Col>
+            <Col sm="9">
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+              nibh, ut fermentum massa justo sit amet risus.
+            </Col>
+            <Col sm="3">Nesting</Col>
+            <Col sm="9">
+              <Row>
+                <Col sm="4">Nested definition list</Col>
+                <Col sm="8">
+                  Aenean posuere, tortor sed cursus feugiat, nunc augue blandit
+                  nunc.
                 </Col>
               </Row>
+            </Col>
+          </Row>
         </div>
         <h2 id="responsive-typography">Responsive typography</h2>
         <p>

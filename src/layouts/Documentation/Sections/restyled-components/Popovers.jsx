@@ -29,269 +29,181 @@ class Popovers extends React.Component {
         <hr />
         <h2 id="example">Example</h2>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="popovers-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="popovers-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="popovers-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="popovers-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="popovers-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="popovers-component-tab"
-              className="tab-example-result fade show active"
-              id="popovers-component"
-              role="tabpanel"
-            >
-              <Button
-                color="default"
-                data-container="body"
-                data-content="This is a very beautiful popover, show some love."
-                data-placement="top"
-                id="tooltip876279349"
-                type="button"
-              >
-                Popover on top
-              </Button>
-              <UncontrolledPopover placement="top" target="tooltip876279349">
-                <PopoverBody>
-                  This is a very beautiful popover, show some love.
-                </PopoverBody>
-              </UncontrolledPopover>
-              <Button
-                color="default"
-                data-container="body"
-                data-content="This is a very beautiful popover, show some love."
-                data-placement="right"
-                id="tooltip641002859"
-                type="button"
-              >
-                Popover on right
-              </Button>
-              <UncontrolledPopover placement="right" target="tooltip641002859">
-                <PopoverBody>
-                  This is a very beautiful popover, show some love.
-                </PopoverBody>
-              </UncontrolledPopover>
-              <Button
-                color="default"
-                data-container="body"
-                data-content="Vivamussagittis lacus vel augue laoreet rutrum faucibus."
-                data-placement="bottom"
-                id="tooltip765206973"
-                type="button"
-              >
-                Popover on bottom
-              </Button>
-              <UncontrolledPopover placement="bottom" target="tooltip765206973">
-                <PopoverBody>
-                  Vivamussagittis lacus vel augue laoreet rutrum faucibus.
-                </PopoverBody>
-              </UncontrolledPopover>
-              <Button
-                color="default"
-                data-container="body"
-                data-content="This is a very beautiful popover, show some love."
-                data-placement="left"
-                id="tooltip523914989"
-                type="button"
-              >
-                Popover on left
-              </Button>
-              <UncontrolledPopover placement="left" target="tooltip523914989">
-                <PopoverBody>
-                  This is a very beautiful popover, show some love.
-                </PopoverBody>
-              </UncontrolledPopover>
-            </TabPane>
-            <TabPane
-              aria-labelledby="popovers-html-tab"
-              className="fade"
-              id="popovers-html"
-              role="tabpanel"
-            />
-          </TabContent>
+          <Button
+            color="default"
+            data-container="body"
+            data-content="This is a very beautiful popover, show some love."
+            data-placement="top"
+            id="tooltip876279349"
+            type="button"
+          >
+            Popover on top
+          </Button>
+          <UncontrolledPopover placement="top" target="tooltip876279349">
+            <PopoverBody>
+              This is a very beautiful popover, show some love.
+            </PopoverBody>
+          </UncontrolledPopover>
+          <Button
+            color="default"
+            data-container="body"
+            data-content="This is a very beautiful popover, show some love."
+            data-placement="right"
+            id="tooltip641002859"
+            type="button"
+          >
+            Popover on right
+          </Button>
+          <UncontrolledPopover placement="right" target="tooltip641002859">
+            <PopoverBody>
+              This is a very beautiful popover, show some love.
+            </PopoverBody>
+          </UncontrolledPopover>
+          <Button
+            color="default"
+            data-container="body"
+            data-content="Vivamussagittis lacus vel augue laoreet rutrum faucibus."
+            data-placement="bottom"
+            id="tooltip765206973"
+            type="button"
+          >
+            Popover on bottom
+          </Button>
+          <UncontrolledPopover placement="bottom" target="tooltip765206973">
+            <PopoverBody>
+              Vivamussagittis lacus vel augue laoreet rutrum faucibus.
+            </PopoverBody>
+          </UncontrolledPopover>
+          <Button
+            color="default"
+            data-container="body"
+            data-content="This is a very beautiful popover, show some love."
+            data-placement="left"
+            id="tooltip523914989"
+            type="button"
+          >
+            Popover on left
+          </Button>
+          <UncontrolledPopover placement="left" target="tooltip523914989">
+            <PopoverBody>
+              This is a very beautiful popover, show some love.
+            </PopoverBody>
+          </UncontrolledPopover>
         </div>
         <h2 id="variations">Variations</h2>
         <div className="ct-example">
-          <Nav className="nav-tabs-code" id="popover-colors-tab" role="tablist">
-            <NavItem>
-              <NavLink
-                aria-controls="popover-colors-component"
-                aria-selected={true}
-                className="active"
-                data-toggle="tab"
-                href="#pablo"
-                id="popover-colors-component-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                Result
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                aria-controls="popover-colors-html"
-                aria-selected={false}
-                data-toggle="tab"
-                href="#pablo"
-                id="popover-colors-html-tab"
-                onClick={e => e.preventDefault()}
-                role="tab"
-              >
-                HTML
-              </NavLink>
-            </NavItem>
-          </Nav>
-          <TabContent>
-            <TabPane
-              aria-labelledby="popover-colors-component-tab"
-              className="tab-example-result fade show active"
-              id="popover-colors-component"
-              role="tabpanel"
-            >
-              <Button
-                color="default"
-                data-color="default"
-                data-container="body"
-                data-content="This is a very beautiful popover, show some love."
-                data-placement="top"
-                id="tooltip348236073"
-                type="button"
-              >
-                Default popover
-              </Button>
-              <UncontrolledPopover placement="top" target="tooltip348236073">
-                <PopoverBody>
-                  This is a very beautiful popover, show some love.
-                </PopoverBody>
-              </UncontrolledPopover>
-              <Button
-                color="primary"
-                data-color="primary"
-                data-container="body"
-                data-content="This is a very beautiful popover, show some love."
-                data-placement="top"
-                id="tooltip165342254"
-                type="button"
-              >
-                Primary popover
-              </Button>
-              <UncontrolledPopover placement="top" target="tooltip165342254">
-                <PopoverBody>
-                  This is a very beautiful popover, show some love.
-                </PopoverBody>
-              </UncontrolledPopover>
-              <Button
-                color="secondary"
-                data-color="secondary"
-                data-container="body"
-                data-content="This is a very beautiful popover, show some love."
-                data-placement="top"
-                id="tooltip538314748"
-                type="button"
-              >
-                Secondary popover
-              </Button>
-              <UncontrolledPopover placement="top" target="tooltip538314748">
-                <PopoverBody>
-                  This is a very beautiful popover, show some love.
-                </PopoverBody>
-              </UncontrolledPopover>
-              <Button
-                color="info"
-                data-color="info"
-                data-container="body"
-                data-content="This is a very beautiful popover, show some love."
-                data-placement="top"
-                id="tooltip751185789"
-                type="button"
-              >
-                Info popover
-              </Button>
-              <UncontrolledPopover placement="top" target="tooltip751185789">
-                <PopoverBody>
-                  This is a very beautiful popover, show some love.
-                </PopoverBody>
-              </UncontrolledPopover>
-              <Button
-                color="success"
-                data-color="success"
-                data-container="body"
-                data-content="This is a very beautiful popover, show some love."
-                data-placement="top"
-                id="tooltip518437705"
-                type="button"
-              >
-                Success popover
-              </Button>
-              <UncontrolledPopover placement="top" target="tooltip518437705">
-                <PopoverBody>
-                  This is a very beautiful popover, show some love.
-                </PopoverBody>
-              </UncontrolledPopover>
-              <Button
-                color="danger"
-                data-color="danger"
-                data-container="body"
-                data-content="This is a very beautiful popover, show some love."
-                data-placement="top"
-                id="tooltip75038580"
-                type="button"
-              >
-                Danger popover
-              </Button>
-              <UncontrolledPopover placement="top" target="tooltip75038580">
-                <PopoverBody>
-                  This is a very beautiful popover, show some love.
-                </PopoverBody>
-              </UncontrolledPopover>
-              <Button
-                color="warning"
-                data-color="warning"
-                data-container="body"
-                data-content="This is a very beautiful popover, show some love."
-                data-placement="top"
-                id="tooltip783693128"
-                type="button"
-              >
-                Warning popover
-              </Button>
-              <UncontrolledPopover placement="top" target="tooltip783693128">
-                <PopoverBody>
-                  This is a very beautiful popover, show some love.
-                </PopoverBody>
-              </UncontrolledPopover>
-            </TabPane>
-            <TabPane
-              aria-labelledby="popover-colors-html-tab"
-              className="fade"
-              id="popover-colors-html"
-              role="tabpanel"
-            />
-          </TabContent>
+          <Button
+            color="default"
+            data-color="default"
+            data-container="body"
+            data-content="This is a very beautiful popover, show some love."
+            data-placement="top"
+            id="tooltip348236073"
+            type="button"
+          >
+            Default popover
+          </Button>
+          <UncontrolledPopover placement="top" target="tooltip348236073">
+            <PopoverBody>
+              This is a very beautiful popover, show some love.
+            </PopoverBody>
+          </UncontrolledPopover>
+          <Button
+            color="primary"
+            data-color="primary"
+            data-container="body"
+            data-content="This is a very beautiful popover, show some love."
+            data-placement="top"
+            id="tooltip165342254"
+            type="button"
+          >
+            Primary popover
+          </Button>
+          <UncontrolledPopover placement="top" target="tooltip165342254">
+            <PopoverBody>
+              This is a very beautiful popover, show some love.
+            </PopoverBody>
+          </UncontrolledPopover>
+          <Button
+            color="secondary"
+            data-color="secondary"
+            data-container="body"
+            data-content="This is a very beautiful popover, show some love."
+            data-placement="top"
+            id="tooltip538314748"
+            type="button"
+          >
+            Secondary popover
+          </Button>
+          <UncontrolledPopover placement="top" target="tooltip538314748">
+            <PopoverBody>
+              This is a very beautiful popover, show some love.
+            </PopoverBody>
+          </UncontrolledPopover>
+          <Button
+            color="info"
+            data-color="info"
+            data-container="body"
+            data-content="This is a very beautiful popover, show some love."
+            data-placement="top"
+            id="tooltip751185789"
+            type="button"
+          >
+            Info popover
+          </Button>
+          <UncontrolledPopover placement="top" target="tooltip751185789">
+            <PopoverBody>
+              This is a very beautiful popover, show some love.
+            </PopoverBody>
+          </UncontrolledPopover>
+          <Button
+            color="success"
+            data-color="success"
+            data-container="body"
+            data-content="This is a very beautiful popover, show some love."
+            data-placement="top"
+            id="tooltip518437705"
+            type="button"
+          >
+            Success popover
+          </Button>
+          <UncontrolledPopover placement="top" target="tooltip518437705">
+            <PopoverBody>
+              This is a very beautiful popover, show some love.
+            </PopoverBody>
+          </UncontrolledPopover>
+          <Button
+            color="danger"
+            data-color="danger"
+            data-container="body"
+            data-content="This is a very beautiful popover, show some love."
+            data-placement="top"
+            id="tooltip75038580"
+            type="button"
+          >
+            Danger popover
+          </Button>
+          <UncontrolledPopover placement="top" target="tooltip75038580">
+            <PopoverBody>
+              This is a very beautiful popover, show some love.
+            </PopoverBody>
+          </UncontrolledPopover>
+          <Button
+            color="warning"
+            data-color="warning"
+            data-container="body"
+            data-content="This is a very beautiful popover, show some love."
+            data-placement="top"
+            id="tooltip783693128"
+            type="button"
+          >
+            Warning popover
+          </Button>
+          <UncontrolledPopover placement="top" target="tooltip783693128">
+            <PopoverBody>
+              This is a very beautiful popover, show some love.
+            </PopoverBody>
+          </UncontrolledPopover>
         </div>
       </>
     );
