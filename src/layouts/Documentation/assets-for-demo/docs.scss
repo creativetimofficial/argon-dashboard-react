@@ -631,10 +631,10 @@ body:not(.creativetim):not(.mdbootstrap) .partner.mdbootstrap {
 
 .ct-example-row .row>.col,
 .ct-example-row .row>[class^=col-] {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-    background-color: rgba(86, 61, 124, .15);
-    border: 1px solid rgba(86, 61, 124, .2)
+    // padding-top: .75rem;
+    // padding-bottom: .75rem;
+    // background-color: rgba(86, 61, 124, .15);
+    // border: 1px solid rgba(86, 61, 124, .2)
 }
 
 .ct-example-row .flex-items-bottom,
@@ -744,28 +744,10 @@ body:not(.creativetim):not(.mdbootstrap) .partner.mdbootstrap {
     max-width: none
 }
 
-.ct-example {
-    position: relative;
-    padding: 1rem;
-    margin: 1rem -15px;
-    border: solid #f7f7f9;
-    border-width: .2rem 0 0
-}
-
 .ct-example::after {
     display: block;
     clear: both;
     content: ""
-}
-
-@media (min-width:576px) {
-    .ct-example {
-        padding: 1.5rem;
-        margin-right: 0;
-        margin-bottom: 0;
-        margin-left: 0;
-        border-width: .2rem
-    }
 }
 
 .ct-example+.clipboard+.highlight,
