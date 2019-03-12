@@ -208,7 +208,8 @@ class Maps extends React.Component {
             rel="noopener noreferrer"
           >
             react-google-maps documentation
-          </a>.
+          </a>
+          .
         </p>
       </>
     );
