@@ -148,15 +148,17 @@ class Datepicker extends React.Component {
             </Col>
           </Row>
         </div>
-        <h2 id="usage">Usage</h2>
+        <h3 id="initialization">Props</h3>
         <p>
-          In order to use this plugin on your page you will need to include the
-          following script in the “Optional JS” area from the page’s footer:
-        </p>
-        <h3 id="initialization">Initialization</h3>
-        <p>
-          Add the <code className="highlighter-rouge">.datepicker</code>
-          class on the text input that you want to become a datepicker.
+          Please refer to{" "}
+          <a
+            href="https://github.com/YouCanBookMe/react-datetime"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            react-datetime's documentation
+          </a>
+          .
         </p>
       </>
     );
