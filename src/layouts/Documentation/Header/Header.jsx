@@ -108,6 +108,11 @@ class Header extends React.Component {
           data-toggle="collapse"
           id="ct-docs-nav"
           type="button"
+          onClick={() => {
+            document
+              .getElementsByClassName("ct-links")[0]
+              .classList.toggle("show");
+          }}
         >
           <span className="navbar-toggler-icon" />
         </button>

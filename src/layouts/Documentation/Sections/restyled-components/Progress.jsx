@@ -108,7 +108,9 @@ class Progresses extends React.Component {
           <div className="avatar-group mt-3" />
         </div>
         <p className="ct-lead">
-          Documentation and examples for adding custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations and data-attributes for local title storage.
+          Documentation and examples for adding custom Bootstrap tooltips with
+          CSS and JavaScript using CSS3 for animations and data-attributes for
+          local title storage.
         </p>
         <hr />
         <h2 id="example">Example</h2>

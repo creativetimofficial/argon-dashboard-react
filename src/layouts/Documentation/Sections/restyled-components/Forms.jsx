@@ -649,7 +649,8 @@ class Forms extends React.Component {
           <div className="avatar-group mt-3" />
         </div>
         <p className="ct-lead">
-          Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.
+          Examples and usage guidelines for form control styles, layout options,
+          and custom components for creating a wide variety of forms.
         </p>
         <hr />
         <h2 id="form-controls">Form controls</h2>

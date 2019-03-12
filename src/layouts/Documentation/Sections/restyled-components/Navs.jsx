@@ -317,7 +317,8 @@ class Navs extends React.Component {
           <div className="avatar-group mt-3" />
         </div>
         <p className="ct-lead">
-          Documentation and examples for how to use Bootstrap’s included navigation components.
+          Documentation and examples for how to use Bootstrap’s included
+          navigation components.
         </p>
         <hr />
         <h3 id="nav-pills">Nav pills</h3>
