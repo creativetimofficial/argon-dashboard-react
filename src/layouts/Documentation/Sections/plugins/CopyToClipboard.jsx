@@ -23,12 +23,12 @@ class Datepicker extends React.Component {
             onCopy={() => this.setState({ copiedText: "active-40" })}
           >
             <Button
-              className=" btn-icon-clipboard"
+              className="btn-icon-clipboard"
               id="tooltip982655500"
               type="button"
             >
               <div>
-                <i className=" ni ni-active-40" />
+                <i className="ni ni-active-40" />
                 <span>active-40</span>
               </div>
             </Button>
@@ -76,12 +76,12 @@ class Datepicker extends React.Component {
               onCopy={() => this.setState({ copiedText: "active-40" })}
             >
               <Button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 id="tooltip982655500"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-active-40" />
+                  <i className="ni ni-active-40" />
                   <span>active-40</span>
                 </div>
               </Button>

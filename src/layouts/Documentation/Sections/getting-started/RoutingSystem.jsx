@@ -14,7 +14,7 @@ class RoutingSystem extends React.Component {
           </h1>
           <div className="avatar-group mt-3" />
         </div>
-        <p class="ct-lead">
+        <p className="ct-lead">
           We've created these dynamic routes, so we wouldn't have to write them
           in two places. On place would have been inside our{" "}
           <Link to="/documentation/sidebar">Sidebar</Link> and the onther one

@@ -10,7 +10,7 @@ class Footer extends React.Component {
           </h1>
           <div className="avatar-group mt-3" />
         </div>
-        <p class="ct-lead">
+        <p className="ct-lead">
           We've created two demo footers, one used for{" "}
           <code className="highlighter-rouge">src/layouts/Admin.jsx</code> and
           one for{" "}

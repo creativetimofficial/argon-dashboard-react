@@ -63,7 +63,7 @@ class Sidebar extends React.Component {
           </h1>
           <div className="avatar-group mt-3" />
         </div>
-        <p class="ct-lead">
+        <p className="ct-lead">
           This is the left menu that only appears inside the{" "}
           <code className="highlighter-rouge">src/layouts/Admin.jsx</code>.
         </p>

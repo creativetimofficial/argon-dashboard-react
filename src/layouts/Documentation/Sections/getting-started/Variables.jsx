@@ -12,7 +12,7 @@ class Variables extends React.Component {
           </h1>
           <div className="avatar-group mt-3" />
         </div>
-        <p class="ct-lead">
+        <p className="ct-lead">
           To make our demo pages (pages found in{" "}
           <code className="highlighter-rouge">src/views/{`*`}</code>) a bit more
           easy to understand and to have less code, we've created some special

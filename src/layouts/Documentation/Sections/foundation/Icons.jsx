@@ -61,12 +61,12 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "active-40" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 id="tooltip982655500"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-active-40" />
+                  <i className="ni ni-active-40" />
                   <span>active-40</span>
                 </div>
               </button>
@@ -87,13 +87,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "air-baloon" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="air-baloon"
                 id="tooltip47550434"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-air-baloon" />
+                  <i className="ni ni-air-baloon" />
                   <span>air-baloon</span>
                 </div>
               </button>
@@ -114,13 +114,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "album-2" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="album-2"
                 id="tooltip945481346"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-album-2" />
+                  <i className="ni ni-album-2" />
                   <span>album-2</span>
                 </div>
               </button>
@@ -141,13 +141,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "align-center" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="align-center"
                 id="tooltip662352101"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-align-center" />
+                  <i className="ni ni-align-center" />
                   <span>align-center</span>
                 </div>
               </button>
@@ -168,13 +168,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "align-left-2" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="align-left-2"
                 id="tooltip125499785"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-align-left-2" />
+                  <i className="ni ni-align-left-2" />
                   <span>align-left-2</span>
                 </div>
               </button>
@@ -195,13 +195,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "ambulance" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="ambulance"
                 id="tooltip382136785"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-ambulance" />
+                  <i className="ni ni-ambulance" />
                   <span>ambulance</span>
                 </div>
               </button>
@@ -222,13 +222,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "app" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="app"
                 id="tooltip3354607"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-app" />
+                  <i className="ni ni-app" />
                   <span>app</span>
                 </div>
               </button>
@@ -247,13 +247,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "archive-2" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="archive-2"
                 id="tooltip949558633"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-archive-2" />
+                  <i className="ni ni-archive-2" />
                   <span>archive-2</span>
                 </div>
               </button>
@@ -274,13 +274,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "atom" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="atom"
                 id="tooltip742747005"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-atom" />
+                  <i className="ni ni-atom" />
                   <span>atom</span>
                 </div>
               </button>
@@ -299,13 +299,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "badge" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="badge"
                 id="tooltip488565068"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-badge" />
+                  <i className="ni ni-badge" />
                   <span>badge</span>
                 </div>
               </button>
@@ -326,13 +326,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "bag-17" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="bag-17"
                 id="tooltip163626790"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-bag-17" />
+                  <i className="ni ni-bag-17" />
                   <span>bag-17</span>
                 </div>
               </button>
@@ -353,13 +353,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "basket" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="basket"
                 id="tooltip387253692"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-basket" />
+                  <i className="ni ni-basket" />
                   <span>basket</span>
                 </div>
               </button>
@@ -380,13 +380,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "bell-55" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="bell-55"
                 id="tooltip126752761"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-bell-55" />
+                  <i className="ni ni-bell-55" />
                   <span>bell-55</span>
                 </div>
               </button>
@@ -407,13 +407,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "bold-down" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="bold-down"
                 id="tooltip819281856"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-bold-down" />
+                  <i className="ni ni-bold-down" />
                   <span>bold-down</span>
                 </div>
               </button>
@@ -434,13 +434,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "bold-left" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="bold-left"
                 id="tooltip881699027"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-bold-left" />
+                  <i className="ni ni-bold-left" />
                   <span>bold-left</span>
                 </div>
               </button>
@@ -461,13 +461,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "bold-right" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="bold-right"
                 id="tooltip208507461"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-bold-right" />
+                  <i className="ni ni-bold-right" />
                   <span>bold-right</span>
                 </div>
               </button>
@@ -488,13 +488,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "bold-up" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="bold-up"
                 id="tooltip105289310"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-bold-up" />
+                  <i className="ni ni-bold-up" />
                   <span>bold-up</span>
                 </div>
               </button>
@@ -515,13 +515,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "bold" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="bold"
                 id="tooltip832362262"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-bold" />
+                  <i className="ni ni-bold" />
                   <span>bold</span>
                 </div>
               </button>
@@ -540,13 +540,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "book-bookmark" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="book-bookmark"
                 id="tooltip606002875"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-book-bookmark" />
+                  <i className="ni ni-book-bookmark" />
                   <span>book-bookmark</span>
                 </div>
               </button>
@@ -567,13 +567,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "books" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="books"
                 id="tooltip484529730"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-books" />
+                  <i className="ni ni-books" />
                   <span>books</span>
                 </div>
               </button>
@@ -594,13 +594,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "box-2" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="box-2"
                 id="tooltip509205883"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-box-2" />
+                  <i className="ni ni-box-2" />
                   <span>box-2</span>
                 </div>
               </button>
@@ -621,13 +621,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "briefcase-24" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="briefcase-24"
                 id="tooltip147778056"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-briefcase-24" />
+                  <i className="ni ni-briefcase-24" />
                   <span>briefcase-24</span>
                 </div>
               </button>
@@ -648,13 +648,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "building" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="building"
                 id="tooltip157423388"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-building" />
+                  <i className="ni ni-building" />
                   <span>building</span>
                 </div>
               </button>
@@ -675,13 +675,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "bulb-61" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="bulb-61"
                 id="tooltip126210465"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-bulb-61" />
+                  <i className="ni ni-bulb-61" />
                   <span>bulb-61</span>
                 </div>
               </button>
@@ -702,13 +702,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "list-67" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="bullet-list-67"
                 id="tooltip672244852"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-bullet-list-67" />
+                  <i className="ni ni-bullet-list-67" />
                   <span>bullet-list-67</span>
                 </div>
               </button>
@@ -729,13 +729,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "bus-front-12" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="bus-front-12"
                 id="tooltip17383590"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-bus-front-12" />
+                  <i className="ni ni-bus-front-12" />
                   <span>bus-front-12</span>
                 </div>
               </button>
@@ -756,13 +756,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "button-pause" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="button-pause"
                 id="tooltip721295259"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-button-pause" />
+                  <i className="ni ni-button-pause" />
                   <span>button-pause</span>
                 </div>
               </button>
@@ -783,13 +783,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "button-play" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="button-play"
                 id="tooltip397403700"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-button-play" />
+                  <i className="ni ni-button-play" />
                   <span>button-play</span>
                 </div>
               </button>
@@ -810,13 +810,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "button-power" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="button-power"
                 id="tooltip286478188"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-button-power" />
+                  <i className="ni ni-button-power" />
                   <span>button-power</span>
                 </div>
               </button>
@@ -837,13 +837,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "calendar-grid-58" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="calendar-grid-58"
                 id="tooltip332635506"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-calendar-grid-58" />
+                  <i className="ni ni-calendar-grid-58" />
                   <span>calendar-grid-58</span>
                 </div>
               </button>
@@ -864,13 +864,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "camera-compact" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="camera-compact"
                 id="tooltip872817724"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-camera-compact" />
+                  <i className="ni ni-camera-compact" />
                   <span>camera-compact</span>
                 </div>
               </button>
@@ -891,13 +891,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "caps-small" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="caps-small"
                 id="tooltip108271146"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-caps-small" />
+                  <i className="ni ni-caps-small" />
                   <span>caps-small</span>
                 </div>
               </button>
@@ -918,13 +918,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "cart" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="cart"
                 id="tooltip315375170"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-cart" />
+                  <i className="ni ni-cart" />
                   <span>cart</span>
                 </div>
               </button>
@@ -943,13 +943,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "chart-bar-32" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="chart-bar-32"
                 id="tooltip906739900"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-chart-bar-32" />
+                  <i className="ni ni-chart-bar-32" />
                   <span>chart-bar-32</span>
                 </div>
               </button>
@@ -970,13 +970,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "chart-pie-35" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="chart-pie-35"
                 id="tooltip211198935"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-chart-pie-35" />
+                  <i className="ni ni-chart-pie-35" />
                   <span>chart-pie-35</span>
                 </div>
               </button>
@@ -997,13 +997,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "chat-round" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="chat-round"
                 id="tooltip452799920"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-chat-round" />
+                  <i className="ni ni-chat-round" />
                   <span>chat-round</span>
                 </div>
               </button>
@@ -1024,13 +1024,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "check-bold" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="check-bold"
                 id="tooltip204269497"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-check-bold" />
+                  <i className="ni ni-check-bold" />
                   <span>check-bold</span>
                 </div>
               </button>
@@ -1051,13 +1051,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "circle-08" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="circle-08"
                 id="tooltip63796078"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-circle-08" />
+                  <i className="ni ni-circle-08" />
                   <span>circle-08</span>
                 </div>
               </button>
@@ -1078,13 +1078,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "cloud-download-95" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="cloud-download-95"
                 id="tooltip171823822"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-cloud-download-95" />
+                  <i className="ni ni-cloud-download-95" />
                   <span>cloud-download-95</span>
                 </div>
               </button>
@@ -1105,13 +1105,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "cloud-upload-96" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="cloud-upload-96"
                 id="tooltip603641354"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-cloud-upload-96" />
+                  <i className="ni ni-cloud-upload-96" />
                   <span>cloud-upload-96</span>
                 </div>
               </button>
@@ -1132,13 +1132,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "compass-04" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="compass-04"
                 id="tooltip138747611"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-compass-04" />
+                  <i className="ni ni-compass-04" />
                   <span>compass-04</span>
                 </div>
               </button>
@@ -1159,13 +1159,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "controller" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="controller"
                 id="tooltip477306514"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-controller" />
+                  <i className="ni ni-controller" />
                   <span>controller</span>
                 </div>
               </button>
@@ -1186,13 +1186,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "credit-card" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="credit-card"
                 id="tooltip672313572"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-credit-card" />
+                  <i className="ni ni-credit-card" />
                   <span>credit-card</span>
                 </div>
               </button>
@@ -1213,13 +1213,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "curved-next" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="curved-next"
                 id="tooltip228405488"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-curved-next" />
+                  <i className="ni ni-curved-next" />
                   <span>curved-next</span>
                 </div>
               </button>
@@ -1240,13 +1240,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "delivery-fast" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="delivery-fast"
                 id="tooltip405559"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-delivery-fast" />
+                  <i className="ni ni-delivery-fast" />
                   <span>delivery-fast</span>
                 </div>
               </button>
@@ -1267,13 +1267,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "diamond" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="diamond"
                 id="tooltip842334307"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-diamond" />
+                  <i className="ni ni-diamond" />
                   <span>diamond</span>
                 </div>
               </button>
@@ -1294,13 +1294,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "email-83" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="email-83"
                 id="tooltip695661232"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-email-83" />
+                  <i className="ni ni-email-83" />
                   <span>email-83</span>
                 </div>
               </button>
@@ -1321,13 +1321,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "fat-add" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="fat-add"
                 id="tooltip112280005"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-fat-add" />
+                  <i className="ni ni-fat-add" />
                   <span>fat-add</span>
                 </div>
               </button>
@@ -1348,13 +1348,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "fat-delete" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="fat-delete"
                 id="tooltip361927124"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-fat-delete" />
+                  <i className="ni ni-fat-delete" />
                   <span>fat-delete</span>
                 </div>
               </button>
@@ -1375,13 +1375,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "fat-remove" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="fat-remove"
                 id="tooltip451275187"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-fat-remove" />
+                  <i className="ni ni-fat-remove" />
                   <span>fat-remove</span>
                 </div>
               </button>
@@ -1402,13 +1402,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "favourite-28" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="favourite-28"
                 id="tooltip893689512"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-favourite-28" />
+                  <i className="ni ni-favourite-28" />
                   <span>favourite-28</span>
                 </div>
               </button>
@@ -1429,13 +1429,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "folder-17" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="folder-17"
                 id="tooltip988458715"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-folder-17" />
+                  <i className="ni ni-folder-17" />
                   <span>folder-17</span>
                 </div>
               </button>
@@ -1456,13 +1456,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "glasses-2" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="glasses-2"
                 id="tooltip576477258"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-glasses-2" />
+                  <i className="ni ni-glasses-2" />
                   <span>glasses-2</span>
                 </div>
               </button>
@@ -1483,13 +1483,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "hat-3" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="hat-3"
                 id="tooltip977228923"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-hat-3" />
+                  <i className="ni ni-hat-3" />
                   <span>hat-3</span>
                 </div>
               </button>
@@ -1510,13 +1510,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "headphones" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="headphones"
                 id="tooltip711983709"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-headphones" />
+                  <i className="ni ni-headphones" />
                   <span>headphones</span>
                 </div>
               </button>
@@ -1537,13 +1537,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "html5" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="html5"
                 id="tooltip346497134"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-html5" />
+                  <i className="ni ni-html5" />
                   <span>html5</span>
                 </div>
               </button>
@@ -1564,13 +1564,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "istanbul" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="istanbul"
                 id="tooltip344591402"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-istanbul" />
+                  <i className="ni ni-istanbul" />
                   <span>istanbul</span>
                 </div>
               </button>
@@ -1591,13 +1591,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "circle-08" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="circle-08"
                 id="tooltip815029398"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-circle-08" />
+                  <i className="ni ni-circle-08" />
                   <span>circle-08</span>
                 </div>
               </button>
@@ -1618,13 +1618,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "key-25" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="key-25"
                 id="tooltip580511416"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-key-25" />
+                  <i className="ni ni-key-25" />
                   <span>key-25</span>
                 </div>
               </button>
@@ -1645,13 +1645,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "laptop" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="laptop"
                 id="tooltip455996160"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-laptop" />
+                  <i className="ni ni-laptop" />
                   <span>laptop</span>
                 </div>
               </button>
@@ -1672,13 +1672,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "like-2" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="like-2"
                 id="tooltip928932853"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-like-2" />
+                  <i className="ni ni-like-2" />
                   <span>like-2</span>
                 </div>
               </button>
@@ -1699,13 +1699,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "lock-circle-open" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="lock-circle-open"
                 id="tooltip634042199"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-lock-circle-open" />
+                  <i className="ni ni-lock-circle-open" />
                   <span>lock-circle-open</span>
                 </div>
               </button>
@@ -1726,13 +1726,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "map-big" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="map-big"
                 id="tooltip615611081"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-map-big" />
+                  <i className="ni ni-map-big" />
                   <span>map-big</span>
                 </div>
               </button>
@@ -1753,13 +1753,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "mobile-button" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="mobile-button"
                 id="tooltip426682279"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-mobile-button" />
+                  <i className="ni ni-mobile-button" />
                   <span>mobile-button</span>
                 </div>
               </button>
@@ -1780,13 +1780,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "money-coins" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="money-coins"
                 id="tooltip198953665"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-money-coins" />
+                  <i className="ni ni-money-coins" />
                   <span>money-coins</span>
                 </div>
               </button>
@@ -1807,13 +1807,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "note-03" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="note-03"
                 id="tooltip909975995"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-note-03" />
+                  <i className="ni ni-note-03" />
                   <span>note-03</span>
                 </div>
               </button>
@@ -1834,13 +1834,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "notification-70" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="notification-70"
                 id="tooltip942089221"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-notification-70" />
+                  <i className="ni ni-notification-70" />
                   <span>notification-70</span>
                 </div>
               </button>
@@ -1861,13 +1861,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "palette" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="palette"
                 id="tooltip721048582"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-palette" />
+                  <i className="ni ni-palette" />
                   <span>palette</span>
                 </div>
               </button>
@@ -1888,13 +1888,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "paper-diploma" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="paper-diploma"
                 id="tooltip875782946"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-paper-diploma" />
+                  <i className="ni ni-paper-diploma" />
                   <span>paper-diploma</span>
                 </div>
               </button>
@@ -1915,13 +1915,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "pin-3" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="pin-3"
                 id="tooltip945087492"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-pin-3" />
+                  <i className="ni ni-pin-3" />
                   <span>pin-3</span>
                 </div>
               </button>
@@ -1942,13 +1942,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "planet" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="planet"
                 id="tooltip482139663"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-planet" />
+                  <i className="ni ni-planet" />
                   <span>planet</span>
                 </div>
               </button>
@@ -1969,13 +1969,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "ruler-pencil" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="ruler-pencil"
                 id="tooltip693938896"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-ruler-pencil" />
+                  <i className="ni ni-ruler-pencil" />
                   <span>ruler-pencil</span>
                 </div>
               </button>
@@ -1996,13 +1996,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "satisfied" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="satisfied"
                 id="tooltip634575265"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-satisfied" />
+                  <i className="ni ni-satisfied" />
                   <span>satisfied</span>
                 </div>
               </button>
@@ -2023,13 +2023,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "scissors" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="scissors"
                 id="tooltip688473648"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-scissors" />
+                  <i className="ni ni-scissors" />
                   <span>scissors</span>
                 </div>
               </button>
@@ -2050,13 +2050,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "send" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="send"
                 id="tooltip161268791"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-send" />
+                  <i className="ni ni-send" />
                   <span>send</span>
                 </div>
               </button>
@@ -2075,13 +2075,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "settings-gear-65" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="settings-gear-65"
                 id="tooltip487959296"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-settings-gear-65" />
+                  <i className="ni ni-settings-gear-65" />
                   <span>settings-gear-65</span>
                 </div>
               </button>
@@ -2102,13 +2102,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "settings" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="settings"
                 id="tooltip156598208"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-settings" />
+                  <i className="ni ni-settings" />
                   <span>settings</span>
                 </div>
               </button>
@@ -2129,13 +2129,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "single-02" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="single-02"
                 id="tooltip487356467"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-single-02" />
+                  <i className="ni ni-single-02" />
                   <span>single-02</span>
                 </div>
               </button>
@@ -2156,13 +2156,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "single-copy-04" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="single-copy-04"
                 id="tooltip340498904"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-single-copy-04" />
+                  <i className="ni ni-single-copy-04" />
                   <span>single-copy-04</span>
                 </div>
               </button>
@@ -2183,13 +2183,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "sound-wave" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="sound-wave"
                 id="tooltip289156059"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-sound-wave" />
+                  <i className="ni ni-sound-wave" />
                   <span>sound-wave</span>
                 </div>
               </button>
@@ -2210,13 +2210,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "spaceship" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="spaceship"
                 id="tooltip603604642"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-spaceship" />
+                  <i className="ni ni-spaceship" />
                   <span>spaceship</span>
                 </div>
               </button>
@@ -2237,13 +2237,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "square-pin" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="square-pin"
                 id="tooltip153036405"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-square-pin" />
+                  <i className="ni ni-square-pin" />
                   <span>square-pin</span>
                 </div>
               </button>
@@ -2264,13 +2264,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "support-16" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="support-16"
                 id="tooltip906422211"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-support-16" />
+                  <i className="ni ni-support-16" />
                   <span>support-16</span>
                 </div>
               </button>
@@ -2291,13 +2291,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "tablet-button" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="tablet-button"
                 id="tooltip517579618"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-tablet-button" />
+                  <i className="ni ni-tablet-button" />
                   <span>tablet-button</span>
                 </div>
               </button>
@@ -2318,13 +2318,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "tag" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="tag"
                 id="tooltip297195808"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-tag" />
+                  <i className="ni ni-tag" />
                   <span>tag</span>
                 </div>
               </button>
@@ -2343,13 +2343,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "tie-bow" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="tie-bow"
                 id="tooltip793084796"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-tie-bow" />
+                  <i className="ni ni-tie-bow" />
                   <span>tie-bow</span>
                 </div>
               </button>
@@ -2370,13 +2370,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "time-alarm" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="time-alarm"
                 id="tooltip258891035"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-time-alarm" />
+                  <i className="ni ni-time-alarm" />
                   <span>time-alarm</span>
                 </div>
               </button>
@@ -2397,13 +2397,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "trophy" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="trophy"
                 id="tooltip881235890"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-trophy" />
+                  <i className="ni ni-trophy" />
                   <span>trophy</span>
                 </div>
               </button>
@@ -2424,13 +2424,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "tv-2" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="tv-2"
                 id="tooltip330279137"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-tv-2" />
+                  <i className="ni ni-tv-2" />
                   <span>tv-2</span>
                 </div>
               </button>
@@ -2449,13 +2449,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "umbrella-13" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="umbrella-13"
                 id="tooltip412313570"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-umbrella-13" />
+                  <i className="ni ni-umbrella-13" />
                   <span>umbrella-13</span>
                 </div>
               </button>
@@ -2476,13 +2476,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "user-run" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="user-run"
                 id="tooltip176201858"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-user-run" />
+                  <i className="ni ni-user-run" />
                   <span>user-run</span>
                 </div>
               </button>
@@ -2503,13 +2503,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "vector" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="vector"
                 id="tooltip71164138"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-vector" />
+                  <i className="ni ni-vector" />
                   <span>vector</span>
                 </div>
               </button>
@@ -2530,13 +2530,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "watch-time" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="watch-time"
                 id="tooltip495578192"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-watch-time" />
+                  <i className="ni ni-watch-time" />
                   <span>watch-time</span>
                 </div>
               </button>
@@ -2557,13 +2557,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "world" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="world"
                 id="tooltip604848245"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-world" />
+                  <i className="ni ni-world" />
                   <span>world</span>
                 </div>
               </button>
@@ -2584,13 +2584,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "zoom-split-in" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="zoom-split-in"
                 id="tooltip916423293"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-zoom-split-in" />
+                  <i className="ni ni-zoom-split-in" />
                   <span>zoom-split-in</span>
                 </div>
               </button>
@@ -2611,13 +2611,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "collection" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="collection"
                 id="tooltip142934658"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-collection" />
+                  <i className="ni ni-collection" />
                   <span>collection</span>
                 </div>
               </button>
@@ -2638,13 +2638,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "image" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="image"
                 id="tooltip842947283"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-image" />
+                  <i className="ni ni-image" />
                   <span>image</span>
                 </div>
               </button>
@@ -2665,13 +2665,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "shop" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="shop"
                 id="tooltip531866818"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-shop" />
+                  <i className="ni ni-shop" />
                   <span>shop</span>
                 </div>
               </button>
@@ -2690,13 +2690,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "ungroup" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="ungroup"
                 id="tooltip470734151"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-ungroup" />
+                  <i className="ni ni-ungroup" />
                   <span>ungroup</span>
                 </div>
               </button>
@@ -2717,13 +2717,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "world-2" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="world-2"
                 id="tooltip932383030"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-world-2" />
+                  <i className="ni ni-world-2" />
                   <span>world-2</span>
                 </div>
               </button>
@@ -2744,13 +2744,13 @@ class Icons extends React.Component {
               onCopy={() => this.setState({ copiedText: "ui-04" })}
             >
               <button
-                className=" btn-icon-clipboard"
+                className="btn-icon-clipboard"
                 data-clipboard-text="ui-04"
                 id="tooltip9332484"
                 type="button"
               >
                 <div>
-                  <i className=" ni ni-ui-04" />
+                  <i className="ni ni-ui-04" />
                   <span>ui-04</span>
                 </div>
               </button>

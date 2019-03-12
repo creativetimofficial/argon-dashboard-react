@@ -10,7 +10,7 @@ class PageHeader extends React.Component {
           </h1>
           <div className="avatar-group mt-3" />
         </div>
-        <p class="ct-lead">
+        <p className="ct-lead">
           In our template product, we have two demo headers that can be found
           inside{" "}
           <code className="highlighter-rouge">
