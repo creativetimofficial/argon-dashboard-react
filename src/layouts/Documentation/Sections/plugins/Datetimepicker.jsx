@@ -1,4 +1,6 @@
 import React from "react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // react plugin used to create datetimepicker
 import ReactDatetime from "react-datetime";
 
@@ -11,6 +13,171 @@ import {
   Col,
   Row
 } from "reactstrap";
+
+const codeSingle = `import React from "react";
+// react plugin used to create datetimepicker
+import ReactDatetime from "react-datetime";
+
+// reactstrap components
+import {
+  FormGroup,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  Col,
+  Row
+} from "reactstrap";
+
+class Datepicker extends React.Component {
+  state = {};
+  render() {
+    return (
+      <>
+        <FormGroup>
+          <InputGroup className="input-group-alternative">
+            <InputGroupAddon addonType="prepend">
+              <InputGroupText>
+                <i className="ni ni-calendar-grid-58" />
+              </InputGroupText>
+            </InputGroupAddon>
+            <ReactDatetime
+              inputProps={{
+                placeholder: "Date Picker Here"
+              }}
+              timeFormat={false}
+            />
+          </InputGroup>
+        </FormGroup>
+      </>
+    );
+  }
+}
+
+export default Datepicker;
+`;
+
+const codeRange = `import React from "react";
+// react plugin used to create datetimepicker
+import ReactDatetime from "react-datetime";
+
+// reactstrap components
+import {
+  FormGroup,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  Col,
+  Row
+} from "reactstrap";
+
+class Datepicker extends React.Component {
+  state = {};
+  render() {
+    return (
+      <>
+        <Row>
+          <Col xs={6}>
+            <FormGroup>
+              <InputGroup className="input-group-alternative">
+                <InputGroupAddon addonType="prepend">
+                  <InputGroupText>
+                    <i className="ni ni-calendar-grid-58" />
+                  </InputGroupText>
+                </InputGroupAddon>
+                <ReactDatetime
+                  inputProps={{
+                    placeholder: "Date Picker Here"
+                  }}
+                  timeFormat={false}
+                  renderDay={(props, currentDate, selectedDate) => {
+                    let classes = props.className;
+                    if (
+                      this.state.startDate &&
+                      this.state.endDate &&
+                      this.state.startDate._d + "" === currentDate._d + ""
+                    ) {
+                      classes += " start-date";
+                    } else if (
+                      this.state.startDate &&
+                      this.state.endDate &&
+                      new Date(this.state.startDate._d + "") <
+                        new Date(currentDate._d + "") &&
+                      new Date(this.state.endDate._d + "") >
+                        new Date(currentDate._d + "")
+                    ) {
+                      classes += " middle-date";
+                    } else if (
+                      this.state.endDate &&
+                      this.state.endDate._d + "" === currentDate._d + ""
+                    ) {
+                      classes += " end-date";
+                    }
+                    return (
+                      <td {...props} className={classes}>
+                        {currentDate.date()}
+                      </td>
+                    );
+                  }}
+                  onChange={e => this.setState({ startDate: e })}
+                />
+              </InputGroup>
+            </FormGroup>
+          </Col>
+          <Col xs={6}>
+            <FormGroup>
+              <InputGroup className="input-group-alternative">
+                <InputGroupAddon addonType="prepend">
+                  <InputGroupText>
+                    <i className="ni ni-calendar-grid-58" />
+                  </InputGroupText>
+                </InputGroupAddon>
+                <ReactDatetime
+                  inputProps={{
+                    placeholder: "Date Picker Here"
+                  }}
+                  timeFormat={false}
+                  renderDay={(props, currentDate, selectedDate) => {
+                    let classes = props.className;
+                    if (
+                      this.state.startDate &&
+                      this.state.endDate &&
+                      this.state.startDate._d + "" === currentDate._d + ""
+                    ) {
+                      classes += " start-date";
+                    } else if (
+                      this.state.startDate &&
+                      this.state.endDate &&
+                      new Date(this.state.startDate._d + "") <
+                        new Date(currentDate._d + "") &&
+                      new Date(this.state.endDate._d + "") >
+                        new Date(currentDate._d + "")
+                    ) {
+                      classes += " middle-date";
+                    } else if (
+                      this.state.endDate &&
+                      this.state.endDate._d + "" === currentDate._d + ""
+                    ) {
+                      classes += " end-date";
+                    }
+                    return (
+                      <td {...props} className={classes}>
+                        {currentDate.date()}
+                      </td>
+                    );
+                  }}
+                  onChange={e => this.setState({ endDate: e })}
+                />
+              </InputGroup>
+            </FormGroup>
+          </Col>
+        </Row>
+      </>
+    );
+  }
+}
+
+export default Datepicker;
+`;
 
 class Datepicker extends React.Component {
   state = {};
@@ -47,6 +214,9 @@ class Datepicker extends React.Component {
             </InputGroup>
           </FormGroup>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeSingle}
+        </SyntaxHighlighter>
         <h2 id="range-datepicker">Range datepicker</h2>
         <div className="ct-example">
           <Row>
@@ -146,6 +316,9 @@ class Datepicker extends React.Component {
             </Col>
           </Row>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeRange}
+        </SyntaxHighlighter>
         <h3 id="initialization">Props</h3>
         <p>
           Please refer to{" "}
