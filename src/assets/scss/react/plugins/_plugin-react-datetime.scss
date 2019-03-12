@@ -126,7 +126,7 @@
   &.end-date:hover,
   &.middle-date:hover {
     background-color: $info !important;
-    color: $white;
+    color: $white !important;
   }
   &.start-date{
     border-top-right-radius: 0;
