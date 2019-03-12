@@ -317,8 +317,7 @@ class Navs extends React.Component {
           <div className="avatar-group mt-3" />
         </div>
         <p className="ct-lead">
-          Use Bootstrap’s JavaScript modal plugin to add dialogs to your site
-          for lightboxes, user notifications, or completely custom content.
+          Documentation and examples for how to use Bootstrap’s included navigation components.
         </p>
         <hr />
         <h3 id="nav-pills">Nav pills</h3>

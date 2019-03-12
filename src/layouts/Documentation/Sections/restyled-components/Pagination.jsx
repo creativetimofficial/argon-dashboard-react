@@ -72,7 +72,7 @@ class Paginations extends React.Component {
               <PaginationLink
                 href="#pablo"
                 onClick={e => e.preventDefault()}
-                tabindex="-1"
+                tabIndex="-1"
               >
                 <i className="fa fa-angle-left" />
                 <span className="sr-only">Previous</span>
@@ -118,13 +118,13 @@ class Paginations extends React.Component {
         <nav aria-label="...">
           <Pagination
             className="pagination pagination-lg"
-            listclassName="pagination-lg"
+            listClassName="pagination-lg"
           >
             <PaginationItem className="disabled">
               <PaginationLink
                 href="#pablo"
                 onClick={e => e.preventDefault()}
-                tabindex="-1"
+                tabIndex="-1"
               >
                 1
               </PaginationLink>
@@ -158,13 +158,13 @@ class Paginations extends React.Component {
         <nav aria-label="...">
           <Pagination
             className="pagination pagination-sm"
-            listclassName="pagination-sm"
+            listClassName="pagination-sm"
           >
             <PaginationItem className="disabled">
               <PaginationLink
                 href="#pablo"
                 onClick={e => e.preventDefault()}
-                tabindex="-1"
+                tabIndex="-1"
               >
                 1
               </PaginationLink>
@@ -198,13 +198,13 @@ class Paginations extends React.Component {
         <nav aria-label="Page navigation example">
           <Pagination
             className="pagination justify-content-center"
-            listclassName="justify-content-center"
+            listClassName="justify-content-center"
           >
             <PaginationItem className="disabled">
               <PaginationLink
                 href="#pablo"
                 onClick={e => e.preventDefault()}
-                tabindex="-1"
+                tabIndex="-1"
               >
                 <i className="fa fa-angle-left" />
                 <span className="sr-only">Previous</span>
@@ -250,13 +250,13 @@ class Paginations extends React.Component {
         <nav aria-label="Page navigation example">
           <Pagination
             className="pagination justify-content-end"
-            listclassName="justify-content-end"
+            listClassName="justify-content-end"
           >
             <PaginationItem className="disabled">
               <PaginationLink
                 href="#pablo"
                 onClick={e => e.preventDefault()}
-                tabindex="-1"
+                tabIndex="-1"
               >
                 <i className="fa fa-angle-left" />
                 <span className="sr-only">Previous</span>
@@ -360,7 +360,7 @@ class Paginations extends React.Component {
                 <PaginationLink
                   href="#pablo"
                   onClick={e => e.preventDefault()}
-                  tabindex="-1"
+                  tabIndex="-1"
                 >
                   <i className="fa fa-angle-left" />
                   <span className="sr-only">Previous</span>
@@ -404,13 +404,13 @@ class Paginations extends React.Component {
           <nav aria-label="...">
             <Pagination
               className="pagination pagination-lg"
-              listclassName="pagination-lg"
+              listClassName="pagination-lg"
             >
               <PaginationItem className="disabled">
                 <PaginationLink
                   href="#pablo"
                   onClick={e => e.preventDefault()}
-                  tabindex="-1"
+                  tabIndex="-1"
                 >
                   1
                 </PaginationLink>
@@ -435,13 +435,13 @@ class Paginations extends React.Component {
           <nav aria-label="...">
             <Pagination
               className="pagination pagination-sm"
-              listclassName="pagination-sm"
+              listClassName="pagination-sm"
             >
               <PaginationItem className="disabled">
                 <PaginationLink
                   href="#pablo"
                   onClick={e => e.preventDefault()}
-                  tabindex="-1"
+                  tabIndex="-1"
                 >
                   1
                 </PaginationLink>
@@ -471,13 +471,13 @@ class Paginations extends React.Component {
           <nav aria-label="Page navigation example">
             <Pagination
               className="pagination justify-content-center"
-              listclassName="justify-content-center"
+              listClassName="justify-content-center"
             >
               <PaginationItem className="disabled">
                 <PaginationLink
                   href="#pablo"
                   onClick={e => e.preventDefault()}
-                  tabindex="-1"
+                  tabIndex="-1"
                 >
                   <i className="fa fa-angle-left" />
                   <span className="sr-only">Previous</span>
@@ -514,13 +514,13 @@ class Paginations extends React.Component {
           <nav aria-label="Page navigation example">
             <Pagination
               className="pagination justify-content-end"
-              listclassName="justify-content-end"
+              listClassName="justify-content-end"
             >
               <PaginationItem className="disabled">
                 <PaginationLink
                   href="#pablo"
                   onClick={e => e.preventDefault()}
-                  tabindex="-1"
+                  tabIndex="-1"
                 >
                   <i className="fa fa-angle-left" />
                   <span className="sr-only">Previous</span>

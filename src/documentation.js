@@ -122,7 +122,7 @@ var docsRoutes = [
         name: "Footer"
       },
       {
-        path: "/documentation/navbars",
+        path: "/documentation/app-navigation",
         component: Navbars,
         name: "App Navbars"
       },

@@ -163,9 +163,7 @@ class Popovers extends React.Component {
           <div className="avatar-group mt-3" />
         </div>
         <p className="ct-lead">
-          Documentation and examples for Bootstrap’s powerful, responsive
-          navigation header, the navbar. Includes support for branding,
-          navigation, and more, including support for our collapse plugin.
+          Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.
         </p>
         <hr />
         <h2 id="example">Example</h2>

@@ -649,8 +649,7 @@ class Forms extends React.Component {
           <div className="avatar-group mt-3" />
         </div>
         <p className="ct-lead">
-          Use Bootstrap’s custom button styles for actions in forms, dialogs,
-          and more with support for multiple sizes, states, and more.
+          Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.
         </p>
         <hr />
         <h2 id="form-controls">Form controls</h2>
