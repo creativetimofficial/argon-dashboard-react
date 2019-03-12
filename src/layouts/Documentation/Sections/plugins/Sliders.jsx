@@ -78,7 +78,7 @@ class Sliders extends React.Component {
       <>
         <div className="ct-page-title">
           <h1 className="ct-title" id="content">
-            Datepicker
+            noUiSlider v13.1.1
           </h1>
           <div className="avatar-group mt-3" />
         </div>

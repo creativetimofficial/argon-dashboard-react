@@ -162,7 +162,7 @@ class Maps extends React.Component {
       <>
         <div className="ct-page-title">
           <h1 className="ct-title" id="content">
-            Maps
+            React Google Maps v9.4.5
           </h1>
           <div className="avatar-group mt-3" />
         </div>
