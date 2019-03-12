@@ -24,7 +24,9 @@ class Datepicker extends React.Component {
           <div className="avatar-group mt-3" />
         </div>
         <p className="ct-lead">
-          A date and time picker in the same React.js component. It can be used as a datepicker, timepicker or both at the same time. It is highly customizable and it even allows to edit date's milliseconds.
+          A date and time picker in the same React.js component. It can be used
+          as a datepicker, timepicker or both at the same time. It is highly
+          customizable and it even allows to edit date's milliseconds.
         </p>
         <hr />
         <h2 id="single-datepicker">Single datepicker</h2>
