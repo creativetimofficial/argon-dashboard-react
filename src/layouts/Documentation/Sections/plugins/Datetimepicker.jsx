@@ -19,16 +19,12 @@ class Datepicker extends React.Component {
       <>
         <div className="ct-page-title">
           <h1 className="ct-title" id="content">
-            Datepicker
+            React Datetime v2.16.3
           </h1>
           <div className="avatar-group mt-3" />
         </div>
         <p className="ct-lead">
-          The datepicker is tied to a standard form input field. Focus on the
-          input (click, or use the tab key) to open an interactive calendar in a
-          small overlay. Choose a date, click elsewhere on the page (blur the
-          input), or hit the Esc key to close. If a date is chosen, feedback is
-          shown as the input’s value.
+          A date and time picker in the same React.js component. It can be used as a datepicker, timepicker or both at the same time. It is highly customizable and it even allows to edit date's milliseconds.
         </p>
         <hr />
         <h2 id="single-datepicker">Single datepicker</h2>
