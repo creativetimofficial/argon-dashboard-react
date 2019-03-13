@@ -80,7 +80,7 @@ class Maps extends React.Component {
             <div className="col">
               <Card className="shadow border-0">
                 <MapWrapper
-                  googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
+                  googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"
                   loadingElement={<div style={{ height: `100%` }} />}
                   containerElement={
                     <div
