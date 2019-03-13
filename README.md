@@ -38,32 +38,32 @@
 
 | NodeJS | Laravel |
 | ---  | --- |
-| [![Argon Dashboard NodeJS](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-nodejs/argon-dashboard-nodejs.jpg?raw=true)](https://www.creative-tim.com/product/material-kit-react-native) | [![Argon Dashboard Laravel](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-laravel/argon-dashboard-laravel.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-laravel) |
+| [![Argon Dashboard NodeJS](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-nodejs/argon-dashboard-nodejs.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-nodejs) | [![Argon Dashboard Laravel](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-laravel/argon-dashboard-laravel.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-laravel) |
 
 ## Demo
 
-| Buttons | Inputs | Navbars  |
-| --- | --- | ---  |
-| [![Buttons](https://github.com/creativetimofficial/public-assets/blob/master/material-kit/buttons.png?raw=true)](https://demos.creative-tim.com/material-kit/index.html#buttons)  | [![Inputs](https://github.com/creativetimofficial/public-assets/blob/master/material-kit/inputs.png?raw=true)](https://demos.creative-tim.com/material-kit/index.html#inputs)  | [![Navbar](https://github.com/creativetimofficial/public-assets/blob/master/material-kit/navbar-section.png?raw=true)](https://demos.creative-tim.com/material-kit/index.html#navigation)  
+| Dashboard Page | Icons Page | Tables Page | Maps Page |
+| --- | --- | ---  | ---  |
+| [![Dashboard Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-react/dashboard-page.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-react/#/admin/index)  | [![Icons Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-react/icons-page.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-react/#/admin/icons)  | [![Tables Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-react/tables-page.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-react/#/admin/tables)  | [![Maps Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-react/maps-page.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-react/#/admin/maps)  
 
-| Login Page | Landing Page | Profile Page  |
+| Register Page | Login Page Page | Profile Page  |
 | --- | --- | ---  |
-| [![Login Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-kit/login-page.png)](https://demos.creative-tim.com/material-kit/index.html#carousel)  | [![Landing Page](https://github.com/creativetimofficial/public-assets/blob/master/material-kit/landing-page.png?raw=true)](https://demos.creative-tim.com/material-kit/examples/landing-page.html)  | [![Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/material-kit/profile-page.png?raw=true)](https://demos.creative-tim.com/material-kit/examples/profile-page.html)  
+| [![Login Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-react/register-page.png)](https://demos.creative-tim.com/argon-dashboard-react/#/auth/register)  | [![Login Page Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-react/login-page.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-react/#/auth/login)  | [![Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-react/user-page.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-react/#/admin/user-profile)  
 
-[View More](https://demos.creative-tim.com/material-kit/index.html)
+[View More](https://demos.creative-tim.com/argon-dashboard-react)
 
 
 ## Quick start
 
-- `npm i material-kit`
-- [Download from Github](https://github.com/creativetimofficial/material-kit/archive/master.zip).
-- [Download from Creative Tim](https://www.creative-tim.com/product/material-kit).
-- Install with [Bower](https://bower.io/): ```bower install material-kit```.
-- Clone the repo: `git clone https://github.com/creativetimofficial/material-kit.git`.
+- `npm i argon-dashboard-react`
+- [Download from Github](https://github.com/creativetimofficial/argon-dashboard-react/archive/master.zip).
+- [Download from Creative Tim](https://www.creative-tim.com/product/argon-dashboard-react).
+- Install with [Bower](https://bower.io/): ```bower install argon-dashboard-react```.
+- Clone the repo: `git clone https://github.com/creativetimofficial/argon-dashboard-react.git`.
 
 
 ## Documentation
-The documentation for the Material Kit is hosted at our [website](https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html).
+The documentation for the Material Kit is hosted at our [website](https://demos.creative-tim.com/argon-dashboard-react/documentation/overview).
 
 
 ## File Structure
@@ -189,21 +189,17 @@ At present, we officially aim to support the last two versions of the following 
 
 
 ## Resources
-- Demo: <https://demos.creative-tim.com/material-kit/index.html>
-- Download Page: <https://www.creative-tim.com/product/material-kit>
-- Documentation: <https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html>
+- Demo: <https://demos.creative-tim.com/argon-dashboard-react/#/admin/index>
+- Download Page: <https://www.creative-tim.com/product/argon-dashboard-react>
+- Documentation: <https://demos.creative-tim.com/argon-dashboard-react/#/documentation/overview>
 - License Agreement: <https://www.creative-tim.com/license>
 - Support: <https://www.creative-tim.com/contact-us>
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/material-kit/issues)
-- **Dashboards:**
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/argon-dashboard-react/issues)
+- **Kit:**
 
-| HTML | React | Vue  | Angular |
-| --- | --- | ---  | ---  |
-| [![Material Dashboard  HTML](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-html/material-dashboard.jpeg?raw=true)](https://www.creative-tim.com/product/material-dashboard) | [![Material Dashboard  React](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-react/material-dashboard-react.jpeg?raw=true)](https://www.creative-tim.com/product/material-dashboard-react) | [![Vue Material Dashboard](https://github.com/creativetimofficial/public-assets/blob/master/vue-material-dashboard/vue-material-dashboard.jpeg?raw=true)](https://www.creative-tim.com/product/vue-material-dashboard)  | [![ Material Dashboard Angular](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-angular/material-dashboard-angular.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-angular2)
-
-| HTML Dark | Vuetify  |
+| HTML | Vue |
 | --- | --- |
-| [![Material Dashboard Dark](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-dark/material-dashboard-dark.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-dark) | [![Material Dashboard Vuetify](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-vuetify/material-dashboard-vuetify.jpg?raw=true)](https://www.creative-tim.com/product/vuetify-material-dashboard)
+| [![Argon Design System  HTML](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system/argon-design-system.jpeg?raw=true)](https://www.creative-tim.com/product/argon-design-system) | [![Vue Argon Design System](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-design-system/vue-argon-design-system.jpeg?raw=true)](https://www.creative-tim.com/product/vue-argon-design-system) |
 
 ## Reporting Issues
 
@@ -217,7 +213,7 @@ We use GitHub Issues as the official bug tracker for the Material Kit. Here are 
 
 - Copyright 2018 Creative Tim (https://www.creative-tim.com/)
 
-- Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
+- Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
 
 ## Useful Links
 
