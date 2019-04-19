@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
 describe("Register Page", function() {
   beforeEach(function() {
-    browser.url("./admin/register");
+    browser.url("./auth/register");
   });
   it("renders Register page", function() {
     var results = browser.checkDocument();
