@@ -2,3 +2,9 @@
 /node_modules
 package-lock.json
 /build
+
+# WebdriverIO Specific Files
+errorShots/
+screenshots/
+.reg
+reg.json
