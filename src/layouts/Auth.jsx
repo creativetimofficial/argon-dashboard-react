@@ -16,7 +16,7 @@
 
 */
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
 
@@ -86,7 +86,10 @@ class Auth extends React.Component {
           {/* Page content */}
           <Container className="mt--8 pb-5">
             <Row className="justify-content-center">
-              <Switch>{this.getRoutes(routes)}</Switch>
+              <Switch>
+                {this.getRoutes(routes)}
+                <Redirect from="*" to="/auth/login" />
+              </Switch>
             </Row>
           </Container>
         </div>
