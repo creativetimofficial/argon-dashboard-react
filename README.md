@@ -77,7 +77,7 @@ If you want to get inspiration or just show something directly to your clients, 
 
 
 ## Documentation
-The documentation for the Material Kit is hosted at our [website](https://demos.creative-tim.com/argon-dashboard-react/documentation/overview).
+The documentation for the Material Kit is hosted at our [website](https://demos.creative-tim.com/argon-dashboard-react/#/documentation/overview).
 
 
 ## File Structure
