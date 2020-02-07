@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.0.0
+* Argon Dashboard React - v1.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
