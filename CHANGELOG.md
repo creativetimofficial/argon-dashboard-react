@@ -4,6 +4,7 @@
 - https://github.com/creativetimofficial/argon-dashboard-react/issues/15
 - https://github.com/creativetimofficial/argon-dashboard-react/issues/12
 - https://github.com/creativetimofficial/argon-dashboard-react/issues/3
+- Changed `componentWillMount` with `constructor` function inside `src/views/Index.js` (this was for initializing the charts)
 ### Major style changes
 - Changed the whole `src/assets/scss/*` folder
 - Changed the whole `src/assets/css/*` folder
