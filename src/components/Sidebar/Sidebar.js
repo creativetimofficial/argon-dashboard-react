@@ -268,7 +268,7 @@ class Sidebar extends React.Component {
               <NavItem className="active-pro active">
                 <NavLink href="https://www.creative-tim.com/product/argon-dashboard-pro-react?ref=adr-admin-sidebar">
                   <i className="ni ni-spaceship" />
-                  Download PRO
+                  Upgrade to PRO
                 </NavLink>
               </NavItem>
             </Nav>
