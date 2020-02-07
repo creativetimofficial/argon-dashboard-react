@@ -264,6 +264,17 @@ class Sidebar extends React.Component {
                 </NavLink>
               </NavItem>
             </Nav>
+            <Nav navbar>
+              <NavItem className="active-pro active">
+                <NavLink
+                  href="https://www.creative-tim.com/product/argon-dashboard-pro-react?ref=adr-sidebar"
+                  target="_blank"
+                >
+                  <i className="ni ni-spaceship" />
+                  Upgrade to PRO
+                </NavLink>
+              </NavItem>
+            </Nav>
           </Collapse>
         </Container>
       </Navbar>
