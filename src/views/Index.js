@@ -49,10 +49,16 @@ import {
 import Header from "components/Headers/Header.js";
 
 class Index extends React.Component {
-  state = {
-    activeNav: 1,
-    chartExample1Data: "data1"
-  };
+  constructor(props){
+    super(props);
+    this.state = {
+      activeNav: 1,
+      chartExample1Data: "data1"
+    };
+    if (window.Chart) {
+      parseOptions(Chart, chartOptions());
+    }
+  }
   toggleNavs = (e, index) => {
     e.preventDefault();
     this.setState({
@@ -67,11 +73,6 @@ class Index extends React.Component {
     setTimeout(() => wow(), 1000);
     // this.chartReference.update();
   };
-  componentWillMount() {
-    if (window.Chart) {
-      parseOptions(Chart, chartOptions());
-    }
-  }
   render() {
     return (
       <>
