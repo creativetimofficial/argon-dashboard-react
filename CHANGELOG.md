@@ -14,6 +14,8 @@
 ### Added dependencies
 + eslint-plugin-flowtype@3.13.0 (To stop following Warning: `npm **WARN** eslint-config-react-app@5.2.0 requires a peer of eslint-plugin-flowtype@3.x but none is installed. You must install peer dependencies yourself.`)
 + @fortawesome/fontawesome-free@5.12.1 (Easier to maintain as a dependency, rather than having to download new versions)
++ gulp@4.0.2 (For licenses copyrights)
++ gulp-append-prepend@1.0.8 (For licenses copyrights)
 ### Updated dependencies
 ```
 chart.js                     2.7.3   →     2.9.3
