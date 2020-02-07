@@ -1,0 +1,8 @@
+@include media-breakpoint-up(lg) {
+  .nav-item.active-pro {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    background: $gray-100;
+  }
+}
