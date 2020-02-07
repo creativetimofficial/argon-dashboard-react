@@ -89,6 +89,17 @@ class Header extends React.Component {
           </Nav>
         </div>
         <Button
+          className="btn-icon ml-sm-3 d-none d-md-block"
+          color="primary"
+          href="https://www.creative-tim.com/product/argon-dashboard-pro-react?ref=adr-documentation-header"
+          target="_blank"
+        >
+          <span className="btn-inner--icon">
+            <i className="fas fa-rocket mr-2" />
+          </span>
+          <span className="nav-link-inner--text">Upgrade to PRO</span>
+        </Button>
+        <Button
           className="btn-neutral btn-icon ml-sm-3 d-none d-md-block"
           color="default"
           href="https://www.creative-tim.com/product/argon-dashboard-react?ref=adr-documentation-header"
