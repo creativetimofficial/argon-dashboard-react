@@ -66,12 +66,6 @@ class Index extends React.Component {
       chartExample1Data:
         this.state.chartExample1Data === "data1" ? "data2" : "data1"
     });
-    let wow = () => {
-      console.log(this.state);
-    };
-    wow.bind(this);
-    setTimeout(() => wow(), 1000);
-    // this.chartReference.update();
   };
   render() {
     return (
