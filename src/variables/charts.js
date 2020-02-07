@@ -284,8 +284,7 @@ function chartOptions() {
     },
     ticks: {
       padding: 20
-    },
-    maxBarThickness: 10
+    }
   });
 
   return options;
@@ -400,7 +399,8 @@ let chartExample2 = {
     datasets: [
       {
         label: "Sales",
-        data: [25, 20, 30, 22, 17, 29]
+        data: [25, 20, 30, 22, 17, 29],
+        maxBarThickness: 10
       }
     ]
   }
