@@ -7,7 +7,7 @@ const codeUsage = `import React from "react";
 ...other code
 // core components
 ...other code
-import Sidebar from "components/Sidebar/Sidebar.jsx";
+import Sidebar from "components/Sidebar/Sidebar.js";
 ...other code
 import routes from "routes.js";
 ...other code
@@ -65,7 +65,7 @@ class Sidebar extends React.Component {
         </div>
         <p className="ct-lead">
           This is the left menu that only appears inside the{" "}
-          <code className="highlighter-rouge">src/layouts/Admin.jsx</code>.
+          <code className="highlighter-rouge">src/layouts/Admin.js</code>.
         </p>
         <hr />
         <h2 id="primary-colors">Short description and usage</h2>

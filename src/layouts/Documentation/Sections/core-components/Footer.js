@@ -12,20 +12,20 @@ class Footer extends React.Component {
         </div>
         <p className="ct-lead">
           We've created two demo footers, one used for{" "}
-          <code className="highlighter-rouge">src/layouts/Admin.jsx</code> and
+          <code className="highlighter-rouge">src/layouts/Admin.js</code> and
           one for{" "}
-          <code className="highlighter-rouge">src/layouts/Auth.jsx</code>.
+          <code className="highlighter-rouge">src/layouts/Auth.js</code>.
         </p>
         <hr />
         <h2 id="primary-colors">Short description and usage</h2>
         <p>
           These two can be found inside{" "}
           <code className="highlighter-rouge">
-            src/components/Footers/AdminFooter.jsx
+            src/components/Footers/AdminFooter.js
           </code>{" "}
           and{" "}
           <code className="highlighter-rouge">
-            src/components/Footers/AuthFooter.jsx
+            src/components/Footers/AuthFooter.js
           </code>
           .
         </p>

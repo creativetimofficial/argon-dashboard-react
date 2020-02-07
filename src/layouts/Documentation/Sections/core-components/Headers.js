@@ -14,39 +14,39 @@ class PageHeader extends React.Component {
           In our template product, we have two demo headers that can be found
           inside{" "}
           <code className="highlighter-rouge">
-            src/components/Headers/Header.jsx
+            src/components/Headers/Header.js
           </code>{" "}
           and{" "}
           <code className="highlighter-rouge">
-            src/components/Headers/UserHeader.jsx
+            src/components/Headers/UserHeader.js
           </code>
           .
         </p>
         <h2 id="content">
           <code className="highlighter-rouge">
-            src/components/Headers/Header.jsx
+            src/components/Headers/Header.js
           </code>
         </h2>
         <p>
           It is used to create the component on which the{" "}
           <code className="highlighter-rouge">
-            src/components/Navbars/AdminNavbar.jsx
+            src/components/Navbars/AdminNavbar.js
           </code>{" "}
           sits on top of and it has four stats cards.
         </p>
         <h2 id="content">
           <code className="highlighter-rouge">
-            src/components/Headers/UserHeader.jsx
+            src/components/Headers/UserHeader.js
           </code>
         </h2>
         <p>
           It is used to create the component on which the{" "}
           <code className="highlighter-rouge">
-            src/components/Navbars/AdminNavbar.jsx
+            src/components/Navbars/AdminNavbar.js
           </code>{" "}
           sits on top of inside the{" "}
           <code className="highlighter-rouge">
-            src/views/examples/Profile.jsx
+            src/views/examples/Profile.js
           </code>
           .
         </p>

@@ -14,22 +14,22 @@ class Navbar extends React.Component {
           In our template product, we have two demo navbars that can be found
           inside{" "}
           <code className="highlighter-rouge">
-            src/components/Navbars/AdminNavbar.jsx
+            src/components/Navbars/AdminNavbar.js
           </code>{" "}
           and{" "}
           <code className="highlighter-rouge">
-            src/components/Navbars/AuthNavbar.jsx
+            src/components/Navbars/AuthNavbar.js
           </code>
           .
         </p>
         <h2 id="content">
           <code className="highlighter-rouge">
-            src/components/Navbars/AdminNavbar.jsx
+            src/components/Navbars/AdminNavbar.js
           </code>
         </h2>
         <p>
           It is used to create the navbar / header that appears on the{" "}
-          <code className="highlighter-rouge">src/layouts/Admin.jsx</code>.
+          <code className="highlighter-rouge">src/layouts/Admin.js</code>.
         </p>
         <p>
           It is diveded in two parts, the left one, that is used for the page
@@ -37,12 +37,12 @@ class Navbar extends React.Component {
         </p>
         <h2 id="content">
           <code className="highlighter-rouge">
-            src/components/Navbars/AuthNavbar.jsx
+            src/components/Navbars/AuthNavbar.js
           </code>
         </h2>
         <p>
           It is used to create the navbar / header that appears on the{" "}
-          <code className="highlighter-rouge">src/layouts/Auth.jsx</code>.
+          <code className="highlighter-rouge">src/layouts/Auth.js</code>.
         </p>
         <p>
           It is diveded in two parts, the left one, that is used for the product

@@ -14,7 +14,7 @@ import {
   parseOptions,
   chartExample1,
   chartExample2
-} from "variables/charts.jsx";
+} from "variables/charts.js";
 
 const codeExample = `import React from "react";
 // javascipt plugin for creating charts
@@ -29,7 +29,7 @@ import {
   chartOptions,
   parseOptions,
   chartExample2
-} from "variables/charts.jsx";
+} from "variables/charts.js";
 
 class Charts extends React.Component {
   componentWillMount() {
@@ -72,7 +72,7 @@ import {
   chartOptions,
   parseOptions,
   chartExample1
-} from "variables/charts.jsx";
+} from "variables/charts.js";
 
 class Charts extends React.Component {
   componentWillMount() {
