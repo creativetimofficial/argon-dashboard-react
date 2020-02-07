@@ -43,6 +43,7 @@
     "not op_mini all"
   ],
   "dependencies": {
+    "@fortawesome/fontawesome-free": "5.12.1",
     "chart.js": "2.9.3",
     "classnames": "2.2.6",
     "moment": "2.24.0",
