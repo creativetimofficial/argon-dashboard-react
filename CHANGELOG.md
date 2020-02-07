@@ -3,6 +3,7 @@
 - https://github.com/creativetimofficial/argon-dashboard-react/issues/17
 - https://github.com/creativetimofficial/argon-dashboard-react/issues/15
 - https://github.com/creativetimofficial/argon-dashboard-react/issues/12
+- https://github.com/creativetimofficial/argon-dashboard-react/issues/3
 ### Major style changes
 - Changed the whole `src/assets/scss/*` folder
 - Changed the whole `src/assets/css/*` folder
