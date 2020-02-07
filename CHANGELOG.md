@@ -1,5 +1,7 @@
 ## [version] 2020-02-07
 ### Bug fixing
+- https://github.com/creativetimofficial/argon-dashboard-react/issues/17
+- https://github.com/creativetimofficial/argon-dashboard-react/issues/15
 ### Major style changes
 - Changed the whole `src/assets/scss/*` folder
 - Changed the whole `src/assets/css/*` folder
