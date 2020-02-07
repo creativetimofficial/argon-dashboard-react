@@ -1,6 +1,8 @@
 ## [version] 2020-02-07
 ### Bug fixing
 ### Major style changes
+- Changed the whole `src/assets/scss/*` folder
+- Changed the whole `src/assets/css/*` folder
 ### Deleted components
 ### Added components
 ### Deleted dependencies
