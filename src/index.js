@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.0.0
+* Argon Dashboard React - v1.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
@@ -19,12 +19,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-import "assets/vendor/nucleo/css/nucleo.css";
-import "assets/vendor/@fortawesome/fontawesome-free/css/all.min.css";
+import "assets/plugins/nucleo/css/nucleo.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import "assets/scss/argon-dashboard-react.scss";
 
-import AdminLayout from "layouts/Admin.jsx";
-import AuthLayout from "layouts/Auth.jsx";
+import AdminLayout from "layouts/Admin.js";
+import AuthLayout from "layouts/Auth.js";
 
 ReactDOM.render(
   <BrowserRouter>
