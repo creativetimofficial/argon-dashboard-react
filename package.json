@@ -32,7 +32,7 @@
     "compile-sass": "node-sass src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.css",
     "minify-sass": "node-sass src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.min.css --output-style compressed",
     "map-sass": "node-sass src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.css --source-map true",
-    "copy-broken-links": "cp -R broken-links/* build",
+    "copy-broken-links": "cp -R broken-links/* build && node broken-links",
     "deploy": "npm run build && npm run copy-broken-links && gulp licenses && gh-pages -d build"
   },
   "eslintConfig": {
