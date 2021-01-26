@@ -390,7 +390,7 @@ class Buttons extends React.Component {
             className="active"
             color="primary"
             href="#pablo"
-            onClick={e => e.preventDefault()}
+            onClick={(e) => e.preventDefault()}
             role="button"
             size="lg"
           >
@@ -401,7 +401,7 @@ class Buttons extends React.Component {
             className="active"
             color="secondary"
             href="#pablo"
-            onClick={e => e.preventDefault()}
+            onClick={(e) => e.preventDefault()}
             role="button"
             size="lg"
           >
