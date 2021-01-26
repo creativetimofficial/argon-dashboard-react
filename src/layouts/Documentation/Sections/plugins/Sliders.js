@@ -64,13 +64,13 @@ class Sliders extends React.Component {
       start: [40],
       connect: [true, false],
       step: 1,
-      range: { min: 0, max: 100 }
+      range: { min: 0, max: 100 },
     });
     Slider.create(slider2, {
       start: [20, 60],
       connect: [false, true, false],
       step: 1,
-      range: { min: 0, max: 100 }
+      range: { min: 0, max: 100 },
     });
   }
   render() {
