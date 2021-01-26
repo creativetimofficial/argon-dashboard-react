@@ -15,8 +15,8 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React, { useEffect, useRef } from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import React from "react";
+import { useLocation, Route, Switch, Redirect } from "react-router-dom";
 // reactstrap components
 import { Container } from "reactstrap";
 // core components
@@ -27,13 +27,14 @@ import Sidebar from "components/Sidebar/Sidebar.js";
 import routes from "routes.js";
 
 const Admin = (props) => {
-  const mainContent = useRef();
+  const mainContent = React.useRef(null);
+  const location = useLocation();
 
-  useEffect(() => {
+  React.useEffect(() => {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     mainContent.current.scrollTop = 0;
-  }, []);
+  }, [location]);
 
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
