@@ -15,8 +15,8 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React, { useEffect } from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import React from "react";
+import { useLocation, Route, Switch, Redirect } from "react-router-dom";
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
 
@@ -27,12 +27,20 @@ import AuthFooter from "components/Footers/AuthFooter.js";
 import routes from "routes.js";
 
 const Auth = (props) => {
-  useEffect(() => {
+  const mainContent = React.useRef(null);
+  const location = useLocation();
+
+  React.useEffect(() => {
     document.body.classList.add("bg-default");
     return () => {
       document.body.classList.remove("bg-default");
     };
   }, []);
+  React.useEffect(() => {
+    document.documentElement.scrollTop = 0;
+    document.scrollingElement.scrollTop = 0;
+    mainContent.current.scrollTop = 0;
+  }, [location]);
 
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
@@ -52,7 +60,7 @@ const Auth = (props) => {
 
   return (
     <>
-      <div className="main-content">
+      <div className="main-content" ref={mainContent}>
         <AuthNavbar />
         <div className="header bg-gradient-info py-7 py-lg-8">
           <Container>
