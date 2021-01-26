@@ -52,7 +52,10 @@ const Login = () => {
                 <span className="btn-inner--icon">
                   <img
                     alt="..."
-                    src={require("../../assets/img/icons/common/github.svg")}
+                    src={
+                      require("../../assets/img/icons/common/github.svg")
+                        .default
+                    }
                   />
                 </span>
                 <span className="btn-inner--text">Github</span>
@@ -66,7 +69,10 @@ const Login = () => {
                 <span className="btn-inner--icon">
                   <img
                     alt="..."
-                    src={require("../../assets/img/icons/common/google.svg")}
+                    src={
+                      require("../../assets/img/icons/common/google.svg")
+                        .default
+                    }
                   />
                 </span>
                 <span className="btn-inner--text">Google</span>
