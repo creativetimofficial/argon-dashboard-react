@@ -14,7 +14,8 @@
 - @types/react (we'll use simple Google Maps API with Vanilla JS instead)
 - react-google-maps (we'll use simple Google Maps API with Vanilla JS instead)
 ### Added dependencies
-
++ bootstrap@4.6.0
++ jquery@3.5.1 (since bootstrap requires it - we are not using, we are only using bootstrap scss)
 ### Updated dependencies
 ```
 @fortawesome/fontawesome-free    5.12.1   →   5.15.2
@@ -34,7 +35,7 @@ eslint-plugin-flowtype           3.13.0   →    5.2.0
 typescript                        3.7.5   →    4.1.3
 ```
 ### Warning
-**The TypeScript dependencies are installed only to stop console warnings on install. They are not actually used in our product. So the product is not on TypeScript!**
+**The TypeScript and jQuery dependencies are installed only to stop console warnings on install. They are not actually used in our product. So the product is not based on TypeScript or jQuery!**
 _The following warnings will appear when running the installation command, but they do not affect the UI or the functionality of the product (they will be solved in our next update):_
 ```
 npm WARN react-datetime@3.0.4 requires a peer of react@^16.5.0 but none is installed. You must install peer dependencies yourself.
