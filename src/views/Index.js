@@ -59,7 +59,7 @@ const Index = (props) => {
   const toggleNavs = (e, index) => {
     e.preventDefault();
     setActiveNav(index);
-    setChartExample1Data((data) => (data === "data1" ? "data2" : "data1"));
+    setChartExample1Data("data" + index);
   };
   return (
     <>
