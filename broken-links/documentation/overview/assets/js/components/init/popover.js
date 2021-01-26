@@ -2,38 +2,37 @@
 // Popover
 //
 
-'use strict';
+"use strict";
 
-var Popover = (function() {
+var Popover = (function () {
+  // Variables
 
-	// Variables
+  var $popover = $('[data-toggle="popover"]'),
+    $popoverClass = "";
 
-	var $popover = $('[data-toggle="popover"]'),
-		$popoverClass = '';
+  // Methods
 
+  function init($this) {
+    if ($this.data("color")) {
+      $popoverClass = "popover-" + $this.data("color");
+    }
 
-	// Methods
+    var options = {
+      trigger: "focus",
+      template:
+        '<div class="popover ' +
+        $popoverClass +
+        '" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>',
+    };
 
-	function init($this) {
-		if ($this.data('color')) {
-			$popoverClass = 'popover-' + $this.data('color');
-		}
+    $this.popover(options);
+  }
 
-		var options = {
-			trigger: 'focus',
-			template: '<div class="popover ' + $popoverClass + '" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
-		};
+  // Events
 
-		$this.popover(options);
-	}
-
-
-	// Events
-
-	if ($popover.length) {
-		$popover.each(function() {
-			init($(this));
-		});
-	}
-
+  if ($popover.length) {
+    $popover.each(function () {
+      init($(this));
+    });
+  }
 })();
