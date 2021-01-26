@@ -47,44 +47,44 @@ var docsRoutes = [
       {
         path: "/documentation/overview",
         component: Overview,
-        name: "Overview"
+        name: "Overview",
       },
       {
         path: "/documentation/quick-start",
         component: QuickStart,
-        name: "Quick Start"
+        name: "Quick Start",
       },
       {
         path: "/documentation/license",
         component: License,
-        name: "License"
+        name: "License",
       },
       {
         path: "/documentation/download",
         component: Download,
-        name: "Download"
+        name: "Download",
       },
       {
         path: "/documentation/contents",
         component: Contents,
-        name: "Contents"
+        name: "Contents",
       },
       {
         path: "/documentation/build-tools",
         component: BuildTools,
-        name: "Build Tools"
+        name: "Build Tools",
       },
       {
         path: "/documentation/variables",
         component: Variables,
-        name: "Variables"
+        name: "Variables",
       },
       {
         path: "/documentation/routing-system",
         component: RoutingSystem,
-        name: "Routing System"
-      }
-    ]
+        name: "Routing System",
+      },
+    ],
   },
   {
     name: "Foundation",
@@ -93,24 +93,24 @@ var docsRoutes = [
       {
         path: "/documentation/colors",
         component: Colors,
-        name: "Colors"
+        name: "Colors",
       },
       {
         path: "/documentation/grid",
         component: Grid,
-        name: "Grid"
+        name: "Grid",
       },
       {
         path: "/documentation/typography",
         component: Typography,
-        name: "Typography"
+        name: "Typography",
       },
       {
         path: "/documentation/icons",
         component: Icons,
-        name: "Icons"
-      }
-    ]
+        name: "Icons",
+      },
+    ],
   },
   {
     name: "Core Components",
@@ -119,24 +119,24 @@ var docsRoutes = [
       {
         path: "/documentation/footer",
         component: Footer,
-        name: "Footer"
+        name: "Footer",
       },
       {
         path: "/documentation/app-navigation",
         component: Navbars,
-        name: "App Navbars"
+        name: "App Navbars",
       },
       {
         path: "/documentation/page-header",
         component: Headers,
-        name: "Headers"
+        name: "Headers",
       },
       {
         path: "/documentation/sidebar",
         component: Sidebar,
-        name: "Sidebar"
-      }
-    ]
+        name: "Sidebar",
+      },
+    ],
   },
   {
     name: "Restyled Components",
@@ -145,69 +145,69 @@ var docsRoutes = [
       {
         path: "/documentation/alert",
         component: Alerts,
-        name: "Alerts"
+        name: "Alerts",
       },
       {
         path: "/documentation/badge",
         component: Badge,
-        name: "Badge"
+        name: "Badge",
       },
       {
         path: "/documentation/buttons",
         component: Buttons,
-        name: "Buttons"
+        name: "Buttons",
       },
       {
         path: "/documentation/cards",
         component: Cards,
-        name: "Cards"
+        name: "Cards",
       },
       {
         path: "/documentation/forms",
         component: Forms,
-        name: "Forms"
+        name: "Forms",
       },
       {
         path: "/documentation/modal",
         component: Modals,
-        name: "Modals"
+        name: "Modals",
       },
       {
         path: "/documentation/navbar",
         component: Navbar,
-        name: "Navbars"
+        name: "Navbars",
       },
       {
         path: "/documentation/navs",
         component: Navs,
-        name: "Navs"
+        name: "Navs",
       },
       {
         path: "/documentation/pagination",
         component: Pagination,
-        name: "Pagination"
+        name: "Pagination",
       },
       {
         path: "/documentation/popovers",
         component: Popovers,
-        name: "Popovers"
+        name: "Popovers",
       },
       {
         path: "/documentation/progress",
         component: Progress,
-        name: "Progress"
+        name: "Progress",
       },
       {
         path: "/documentation/tables",
         component: Tables,
-        name: "Tables"
+        name: "Tables",
       },
       {
         path: "/documentation/tooltips",
         component: Tooltips,
-        name: "Tooltips"
-      }
-    ]
+        name: "Tooltips",
+      },
+    ],
   },
   {
     name: "Plugins",
@@ -217,18 +217,18 @@ var docsRoutes = [
       {
         path: "/documentation/copy-to-clipboard",
         component: CopyToClipboard,
-        name: "Copy To Clipboard"
+        name: "Copy To Clipboard",
       },
       {
         path: "/documentation/date-time-picker",
         component: Datetimepicker,
-        name: "DateTimePicker"
+        name: "DateTimePicker",
       },
       { path: "/documentation/maps", component: Maps, name: "Maps" },
-      { path: "/documentation/sliders", component: Sliders, name: "Sliders" }
-    ]
+      { path: "/documentation/sliders", component: Sliders, name: "Sliders" },
+    ],
   },
-  { redirect: true, path: "/documentation", pathTo: "/documentation/overview" }
+  { redirect: true, path: "/documentation", pathTo: "/documentation/overview" },
 ];
 
 export default docsRoutes;
