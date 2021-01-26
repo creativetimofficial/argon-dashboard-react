@@ -26,7 +26,7 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledTooltip
+  UncontrolledTooltip,
 } from "reactstrap";
 // core components
 import Header from "../../components/Headers/Header.js";
@@ -50,9 +50,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"active-40"}
-                      onCopy={() =>
-                        setCopiedText("active-40")
-                      }
+                      onCopy={() => setCopiedText("active-40")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -78,9 +76,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"air-baloon"}
-                      onCopy={() =>
-                        setCopiedText("air-baloon")
-                      }
+                      onCopy={() => setCopiedText("air-baloon")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -107,7 +103,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"album-2"}
-                      onCopy={() => setCopiedText("album-2") }
+                      onCopy={() => setCopiedText("album-2")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -126,17 +122,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip945481346"
                     >
-                      {copiedText === "album-2"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "album-2" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"align-center"}
-                      onCopy={() =>
-                        setCopiedText("align-center")
-                      }
+                      onCopy={() => setCopiedText("align-center")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -163,9 +155,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"left-2"}
-                      onCopy={() =>
-                        setCopiedText("align-left-2")
-                      }
+                      onCopy={() => setCopiedText("align-left-2")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -192,9 +182,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"ambulance"}
-                      onCopy={() =>
-                        setCopiedText("ambulance")
-                      }
+                      onCopy={() => setCopiedText("ambulance")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -221,7 +209,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"asdasdsafsdsad"}
-                      onCopy={() => setCopiedText("app") }
+                      onCopy={() => setCopiedText("app")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -240,17 +228,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip3354607"
                     >
-                      {copiedText === "app"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "app" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"archive-2"}
-                      onCopy={() =>
-                        setCopiedText("archive-2")
-                      }
+                      onCopy={() => setCopiedText("archive-2")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -296,9 +280,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip742747005"
                     >
-                      {copiedText === "atom"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "atom" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -323,9 +305,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip488565068"
                     >
-                      {copiedText === "badge"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "badge" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -350,9 +330,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip163626790"
                     >
-                      {copiedText === "bag-17"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "bag-17" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -377,9 +355,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip387253692"
                     >
-                      {copiedText === "basket"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "basket" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -404,17 +380,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip126752761"
                     >
-                      {copiedText === "bell-55"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "bell-55" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"bold-down"}
-                      onCopy={() =>
-                        setCopiedText("bold-down")
-                      }
+                      onCopy={() => setCopiedText("bold-down")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -441,9 +413,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"bold-left"}
-                      onCopy={() =>
-                        setCopiedText("bold-left")
-                      }
+                      onCopy={() => setCopiedText("bold-left")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -470,9 +440,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"bold-right"}
-                      onCopy={() =>
-                        setCopiedText("bold-right")
-                      }
+                      onCopy={() => setCopiedText("bold-right")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -518,9 +486,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip105289310"
                     >
-                      {copiedText === "bold-up"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "bold-up" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -545,17 +511,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip832362262"
                     >
-                      {copiedText === "bold"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "bold" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"book-bookmark"}
-                      onCopy={() =>
-                        setCopiedText("book-bookmark")
-                      }
+                      onCopy={() => setCopiedText("book-bookmark")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -601,9 +563,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip484529730"
                     >
-                      {copiedText === "books"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "books" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -628,17 +588,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip509205883"
                     >
-                      {copiedText === "box-2"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "box-2" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"briefcase-24"}
-                      onCopy={() =>
-                        setCopiedText("briefcase-24")
-                      }
+                      onCopy={() => setCopiedText("briefcase-24")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -711,9 +667,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip126210465"
                     >
-                      {copiedText === "bulb-61"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "bulb-61" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -738,17 +692,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip672244852"
                     >
-                      {copiedText === "list-67"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "list-67" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"bus-front-12"}
-                      onCopy={() =>
-                        setCopiedText("bus-front-12")
-                      }
+                      onCopy={() => setCopiedText("bus-front-12")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -775,9 +725,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"button-pause"}
-                      onCopy={() =>
-                        setCopiedText("button-pause")
-                      }
+                      onCopy={() => setCopiedText("button-pause")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -804,9 +752,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"button-play"}
-                      onCopy={() =>
-                        setCopiedText("button-play")
-                      }
+                      onCopy={() => setCopiedText("button-play")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -833,9 +779,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"button-power"}
-                      onCopy={() =>
-                        setCopiedText("button-power")
-                      }
+                      onCopy={() => setCopiedText("button-power")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -862,9 +806,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"calendar-grid-58"}
-                      onCopy={() =>
-                        setCopiedText("calendar-grid-58")
-                      }
+                      onCopy={() => setCopiedText("calendar-grid-58")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -891,9 +833,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"camera-compact"}
-                      onCopy={() =>
-                        setCopiedText("camera-compact")
-                      }
+                      onCopy={() => setCopiedText("camera-compact")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -920,9 +860,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"caps-small"}
-                      onCopy={() =>
-                        setCopiedText("caps-small")
-                      }
+                      onCopy={() => setCopiedText("caps-small")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -968,17 +906,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip315375170"
                     >
-                      {copiedText === "cart"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "cart" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"chart-bar-32"}
-                      onCopy={() =>
-                        setCopiedText("chart-bar-32")
-                      }
+                      onCopy={() => setCopiedText("chart-bar-32")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1005,9 +939,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"chart-pie-35"}
-                      onCopy={() =>
-                        setCopiedText("chart-pie-35")
-                      }
+                      onCopy={() => setCopiedText("chart-pie-35")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1034,9 +966,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"chat-round"}
-                      onCopy={() =>
-                        setCopiedText("chat-round")
-                      }
+                      onCopy={() => setCopiedText("chat-round")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1063,9 +993,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"check-bold"}
-                      onCopy={() =>
-                        setCopiedText("check-bold")
-                      }
+                      onCopy={() => setCopiedText("check-bold")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1092,9 +1020,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"circle-08"}
-                      onCopy={() =>
-                        setCopiedText("circle-08")
-                      }
+                      onCopy={() => setCopiedText("circle-08")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1121,9 +1047,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"cloud-download-95"}
-                      onCopy={() =>
-                        setCopiedText("cloud-download-95")
-                      }
+                      onCopy={() => setCopiedText("cloud-download-95")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1150,9 +1074,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"cloud-upload-96"}
-                      onCopy={() =>
-                        setCopiedText("cloud-upload-96")
-                      }
+                      onCopy={() => setCopiedText("cloud-upload-96")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1179,9 +1101,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"compass-04"}
-                      onCopy={() =>
-                        setCopiedText("compass-04")
-                      }
+                      onCopy={() => setCopiedText("compass-04")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1208,9 +1128,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"controller"}
-                      onCopy={() =>
-                        setCopiedText("controller")
-                      }
+                      onCopy={() => setCopiedText("controller")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1237,9 +1155,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"credit-card"}
-                      onCopy={() =>
-                        setCopiedText("credit-card")
-                      }
+                      onCopy={() => setCopiedText("credit-card")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1266,9 +1182,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"curved-next"}
-                      onCopy={() =>
-                        setCopiedText("curved-next")
-                      }
+                      onCopy={() => setCopiedText("curved-next")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1295,9 +1209,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"delivery-fast"}
-                      onCopy={() =>
-                        setCopiedText("delivery-fast")
-                      }
+                      onCopy={() => setCopiedText("delivery-fast")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1343,9 +1255,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip842334307"
                     >
-                      {copiedText === "diamond"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "diamond" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -1397,17 +1307,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip112280005"
                     >
-                      {copiedText === "fat-add"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "fat-add" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"fat-delete"}
-                      onCopy={() =>
-                        setCopiedText("fat-delete")
-                      }
+                      onCopy={() => setCopiedText("fat-delete")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1434,9 +1340,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"fat-remove"}
-                      onCopy={() =>
-                        setCopiedText("fat-remove")
-                      }
+                      onCopy={() => setCopiedText("fat-remove")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1463,9 +1367,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"favourite-28"}
-                      onCopy={() =>
-                        setCopiedText("favourite-28")
-                      }
+                      onCopy={() => setCopiedText("favourite-28")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1492,9 +1394,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"folder-17"}
-                      onCopy={() =>
-                        setCopiedText("folder-17")
-                      }
+                      onCopy={() => setCopiedText("folder-17")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1521,9 +1421,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"glasses-2"}
-                      onCopy={() =>
-                        setCopiedText("glasses-2")
-                      }
+                      onCopy={() => setCopiedText("glasses-2")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1569,17 +1467,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip977228923"
                     >
-                      {copiedText === "hat-3"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "hat-3" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"headphones"}
-                      onCopy={() =>
-                        setCopiedText("headphones")
-                      }
+                      onCopy={() => setCopiedText("headphones")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1625,9 +1519,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip346497134"
                     >
-                      {copiedText === "html5"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "html5" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -1660,9 +1552,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"circle-08"}
-                      onCopy={() =>
-                        setCopiedText("circle-08")
-                      }
+                      onCopy={() => setCopiedText("circle-08")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1708,9 +1598,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip580511416"
                     >
-                      {copiedText === "key-25"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "key-25" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -1735,9 +1623,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip455996160"
                     >
-                      {copiedText === "laptop"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "laptop" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -1762,17 +1648,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip928932853"
                     >
-                      {copiedText === "like-2"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "like-2" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"lock-circle-open"}
-                      onCopy={() =>
-                        setCopiedText("lock-circle-open")
-                      }
+                      onCopy={() => setCopiedText("lock-circle-open")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1818,17 +1700,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip615611081"
                     >
-                      {copiedText === "map-big"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "map-big" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"mobile-button"}
-                      onCopy={() =>
-                        setCopiedText("mobile-button")
-                      }
+                      onCopy={() => setCopiedText("mobile-button")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1855,9 +1733,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"money-coins"}
-                      onCopy={() =>
-                        setCopiedText("money-coins")
-                      }
+                      onCopy={() => setCopiedText("money-coins")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1903,17 +1779,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip909975995"
                     >
-                      {copiedText === "note-03"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "note-03" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"notification-70"}
-                      onCopy={() =>
-                        setCopiedText("notification-70")
-                      }
+                      onCopy={() => setCopiedText("notification-70")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -1959,17 +1831,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip721048582"
                     >
-                      {copiedText === "palette"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "palette" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"paper-diploma"}
-                      onCopy={() =>
-                        setCopiedText("paper-diploma")
-                      }
+                      onCopy={() => setCopiedText("paper-diploma")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -2015,9 +1883,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip945087492"
                     >
-                      {copiedText === "pin-3"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "pin-3" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -2042,17 +1908,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip482139663"
                     >
-                      {copiedText === "planet"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "planet" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"ruler-pencil"}
-                      onCopy={() =>
-                        setCopiedText("ruler-pencil")
-                      }
+                      onCopy={() => setCopiedText("ruler-pencil")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -2079,9 +1941,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"satisfied"}
-                      onCopy={() =>
-                        setCopiedText("satisfied")
-                      }
+                      onCopy={() => setCopiedText("satisfied")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -2154,17 +2014,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip161268791"
                     >
-                      {copiedText === "send"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "send" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"settings-gear-65"}
-                      onCopy={() =>
-                        setCopiedText("settings-gear-65")
-                      }
+                      onCopy={() => setCopiedText("settings-gear-65")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -2218,9 +2074,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"single-02"}
-                      onCopy={() =>
-                        setCopiedText("single-02")
-                      }
+                      onCopy={() => setCopiedText("single-02")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -2247,9 +2101,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"single-copy-04"}
-                      onCopy={() =>
-                        setCopiedText("single-copy-04")
-                      }
+                      onCopy={() => setCopiedText("single-copy-04")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -2276,9 +2128,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"sound-wave"}
-                      onCopy={() =>
-                        setCopiedText("sound-wave")
-                      }
+                      onCopy={() => setCopiedText("sound-wave")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -2305,9 +2155,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"spaceship"}
-                      onCopy={() =>
-                        setCopiedText("spaceship")
-                      }
+                      onCopy={() => setCopiedText("spaceship")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -2334,9 +2182,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"square-pin"}
-                      onCopy={() =>
-                        setCopiedText("square-pin")
-                      }
+                      onCopy={() => setCopiedText("square-pin")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -2363,9 +2209,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"support-16"}
-                      onCopy={() =>
-                        setCopiedText("support-16")
-                      }
+                      onCopy={() => setCopiedText("support-16")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -2392,9 +2236,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"tablet-button"}
-                      onCopy={() =>
-                        setCopiedText("tablet-button")
-                      }
+                      onCopy={() => setCopiedText("tablet-button")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -2440,9 +2282,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip297195808"
                     >
-                      {copiedText === "tag"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "tag" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -2467,17 +2307,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip793084796"
                     >
-                      {copiedText === "tie-bow"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "tie-bow" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"time-alarm"}
-                      onCopy={() =>
-                        setCopiedText("time-alarm")
-                      }
+                      onCopy={() => setCopiedText("time-alarm")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -2523,9 +2359,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip881235890"
                     >
-                      {copiedText === "trophy"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "trophy" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -2550,17 +2384,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip330279137"
                     >
-                      {copiedText === "tv-2"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "tv-2" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"umbrella-13"}
-                      onCopy={() =>
-                        setCopiedText("umbrella-13")
-                      }
+                      onCopy={() => setCopiedText("umbrella-13")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -2633,17 +2463,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip71164138"
                     >
-                      {copiedText === "vector"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "vector" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"watch-time"}
-                      onCopy={() =>
-                        setCopiedText("watch-time")
-                      }
+                      onCopy={() => setCopiedText("watch-time")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -2689,17 +2515,13 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip604848245"
                     >
-                      {copiedText === "world"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "world" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"zoom-split-in"}
-                      onCopy={() =>
-                        setCopiedText("zoom-split-in")
-                      }
+                      onCopy={() => setCopiedText("zoom-split-in")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -2726,9 +2548,7 @@ const Icons = () => {
                   <Col lg="3" md="6">
                     <CopyToClipboard
                       text={"collection"}
-                      onCopy={() =>
-                        setCopiedText("collection")
-                      }
+                      onCopy={() => setCopiedText("collection")}
                     >
                       <button
                         className=" btn-icon-clipboard"
@@ -2774,9 +2594,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip842947283"
                     >
-                      {copiedText === "image"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "image" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -2801,9 +2619,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip531866818"
                     >
-                      {copiedText === "shop"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "shop" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -2828,9 +2644,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip470734151"
                     >
-                      {copiedText === "ungroup"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "ungroup" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -2855,9 +2669,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip932383030"
                     >
-                      {copiedText === "world-2"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "world-2" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                   <Col lg="3" md="6">
@@ -2882,9 +2694,7 @@ const Icons = () => {
                       trigger="hover focus"
                       target="tooltip9332484"
                     >
-                      {copiedText === "ui-04"
-                        ? "Copied"
-                        : "Copy To Clipbord"}
+                      {copiedText === "ui-04" ? "Copied" : "Copy To Clipbord"}
                     </UncontrolledTooltip>
                   </Col>
                 </Row>
@@ -2895,6 +2705,6 @@ const Icons = () => {
       </Container>
     </>
   );
-}
+};
 
 export default Icons;
