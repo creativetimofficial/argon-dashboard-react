@@ -233,41 +233,45 @@ class Badges extends React.Component {
           <Badge
             className="badge-default"
             href="#pablo"
-            onClick={e => e.preventDefault()}
+            onClick={(e) => e.preventDefault()}
           >
             Default
           </Badge>
           <Badge
             color="primary"
             href="#pablo"
-            onClick={e => e.preventDefault()}
+            onClick={(e) => e.preventDefault()}
           >
             Primary
           </Badge>
           <Badge
             color="secondary"
             href="#pablo"
-            onClick={e => e.preventDefault()}
+            onClick={(e) => e.preventDefault()}
           >
             Secondary
           </Badge>
-          <Badge color="info" href="#pablo" onClick={e => e.preventDefault()}>
+          <Badge color="info" href="#pablo" onClick={(e) => e.preventDefault()}>
             Info
           </Badge>
           <Badge
             color="success"
             href="#pablo"
-            onClick={e => e.preventDefault()}
+            onClick={(e) => e.preventDefault()}
           >
             Success
           </Badge>
-          <Badge color="danger" href="#pablo" onClick={e => e.preventDefault()}>
+          <Badge
+            color="danger"
+            href="#pablo"
+            onClick={(e) => e.preventDefault()}
+          >
             Danger
           </Badge>
           <Badge
             color="warning"
             href="#pablo"
-            onClick={e => e.preventDefault()}
+            onClick={(e) => e.preventDefault()}
           >
             Warning
           </Badge>
