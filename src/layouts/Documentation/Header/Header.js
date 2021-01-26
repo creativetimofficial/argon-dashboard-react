@@ -16,7 +16,7 @@ class Header extends React.Component {
           to="/documentation/overview"
           tag={Link}
         >
-          <img alt="..." src={require("assets/img/brand/white.png")} />
+          <img alt="..." src={require("assets/img/brand/white.png").default} />
           <sup>Docs</sup>
         </NavbarBrand>
         <Nav className="flex-row mr-auto ml-4 d-none d-md-flex" navbar>
