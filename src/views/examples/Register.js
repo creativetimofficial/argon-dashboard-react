@@ -30,7 +30,7 @@ import {
   InputGroupText,
   InputGroup,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 const Register = () => {
@@ -47,7 +47,7 @@ const Register = () => {
                 className="btn-neutral btn-icon mr-4"
                 color="default"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 <span className="btn-inner--icon">
                   <img
@@ -61,7 +61,7 @@ const Register = () => {
                 className="btn-neutral btn-icon"
                 color="default"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 <span className="btn-inner--icon">
                   <img
@@ -95,7 +95,11 @@ const Register = () => {
                       <i className="ni ni-email-83" />
                     </InputGroupText>
                   </InputGroupAddon>
-                  <Input placeholder="Email" type="email" autoComplete="new-email"/>
+                  <Input
+                    placeholder="Email"
+                    type="email"
+                    autoComplete="new-email"
+                  />
                 </InputGroup>
               </FormGroup>
               <FormGroup>
@@ -105,7 +109,11 @@ const Register = () => {
                       <i className="ni ni-lock-circle-open" />
                     </InputGroupText>
                   </InputGroupAddon>
-                  <Input placeholder="Password" type="password" autoComplete="new-password"/>
+                  <Input
+                    placeholder="Password"
+                    type="password"
+                    autoComplete="new-password"
+                  />
                 </InputGroup>
               </FormGroup>
               <div className="text-muted font-italic">
@@ -128,7 +136,7 @@ const Register = () => {
                     >
                       <span className="text-muted">
                         I agree with the{" "}
-                        <a href="#pablo" onClick={e => e.preventDefault()}>
+                        <a href="#pablo" onClick={(e) => e.preventDefault()}>
                           Privacy Policy
                         </a>
                       </span>
@@ -147,6 +155,6 @@ const Register = () => {
       </Col>
     </>
   );
-}
+};
 
 export default Register;
