@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.1.0
+* Argon Dashboard React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -22,40 +22,40 @@
 @import "argon-dashboard/custom/variables";
 @import "argon-dashboard/custom/mixins";
 
-// bootstrap (4.3.1) components
+// bootstrap (4.6.0) components
 
-@import "argon-dashboard/bootstrap/root";
-@import "argon-dashboard/bootstrap/reboot";
-@import "argon-dashboard/bootstrap/type";
-@import "argon-dashboard/bootstrap/images";
-@import "argon-dashboard/bootstrap/code";
-@import "argon-dashboard/bootstrap/grid";
-@import "argon-dashboard/bootstrap/tables";
-@import "argon-dashboard/bootstrap/forms";
-@import "argon-dashboard/bootstrap/buttons";
-@import "argon-dashboard/bootstrap/transitions";
-@import "argon-dashboard/bootstrap/dropdown";
-@import "argon-dashboard/bootstrap/button-group";
-@import "argon-dashboard/bootstrap/input-group";
-@import "argon-dashboard/bootstrap/custom-forms";
-@import "argon-dashboard/bootstrap/nav";
-@import "argon-dashboard/bootstrap/navbar";
-@import "argon-dashboard/bootstrap/card";
-@import "argon-dashboard/bootstrap/breadcrumb";
-@import "argon-dashboard/bootstrap/pagination";
-@import "argon-dashboard/bootstrap/badge";
-@import "argon-dashboard/bootstrap/jumbotron";
-@import "argon-dashboard/bootstrap/alert";
-@import "argon-dashboard/bootstrap/progress";
-@import "argon-dashboard/bootstrap/media";
-@import "argon-dashboard/bootstrap/list-group";
-@import "argon-dashboard/bootstrap/close";
-@import "argon-dashboard/bootstrap/modal";
-@import "argon-dashboard/bootstrap/tooltip";
-@import "argon-dashboard/bootstrap/popover";
-@import "argon-dashboard/bootstrap/carousel";
-@import "argon-dashboard/bootstrap/utilities";
-@import "argon-dashboard/bootstrap/print";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
 
 // Argon utilities and components
 

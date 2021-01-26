@@ -1,3 +1,51 @@
+## [1.2.0] 2021-01-26
+### Bug fixing
+- https://github.com/creativetimofficial/argon-dashboard-react/pull/38
+- https://github.com/creativetimofficial/argon-dashboard-react/pull/33
+- https://github.com/creativetimofficial/argon-dashboard-react/issues/29
+- https://github.com/creativetimofficial/argon-dashboard-react/issues/23
+### Major style changes
+- Moved all `src/scss/argon-dashboard/bootstrap` files to `node_modules/bootstrap`
+### Deleted components
+### Added components
+### Deleted dependencies
+- @types/googlemaps (we'll use simple Google Maps API with Vanilla JS instead)
+- @types/markerclustererplus (we'll use simple Google Maps API with Vanilla JS instead)
+- @types/react (we'll use simple Google Maps API with Vanilla JS instead)
+- react-google-maps (we'll use simple Google Maps API with Vanilla JS instead)
+### Added dependencies
++ bootstrap@4.6.0 (so that we can easily update bootstrap version)
++ jquery@3.5.1 (since bootstrap requires it - we are not using, we are only using bootstrap scss)
++ node-sass-package-importer@5.3.2 (so that we can import bootstrap scss from `node_modules`)
+### Updated dependencies
+```
+@fortawesome/fontawesome-free    5.12.1   →   5.15.2
+chart.js                          2.9.3   →    2.9.4
+moment                           2.24.0   →   2.29.1
+node-sass                        4.13.1   →   4.14.1
+nouislider                       14.1.1   →   14.6.3
+react                           16.12.0   →   17.0.1
+react-chartjs-2                   2.9.0   →   2.11.1
+react-copy-to-clipboard           5.0.2   →    5.0.3
+react-datetime                   2.16.3   →    3.0.4
+react-dom                       16.12.0   →   17.0.1
+react-router-dom                  5.1.2   →    5.2.0
+react-scripts                    ^3.4.0   →    4.0.1
+reactstrap                        8.4.1   →    8.9.0
+eslint-plugin-flowtype           3.13.0   →    5.2.0
+typescript                        3.7.5   →    4.1.3
+```
+### Warning
+**The TypeScript and jQuery dependencies are installed only to stop console warnings on install. They are not actually used in our product. So the product is not based on TypeScript or jQuery!**
+_The following warnings will appear when running the installation command, but they do not affect the UI or the functionality of the product (they will be solved in our next update):_
+```
+npm WARN react-datetime@3.0.4 requires a peer of react@^16.5.0 but none is installed. You must install peer dependencies yourself.
+npm WARN react-popper@1.3.7 requires a peer of react@0.14.x || ^15.0.0 || ^16.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN create-react-context@0.3.0 requires a peer of react@^0.14.0 || ^15.0.0 || ^16.0.0 but none is installed. You must install peer dependencies yourself.
+```
+_If they will persist in our 2.*.* version, we will drop their usages and replace them with other plugins._
+_In development mode, some of the above plugins will throw a warning because they still use React v16 syntax. If the error will persist in our 2.*.* version, we will drop their usage and replace them with other plugins._
+
 ## [1.1.0] 2020-02-10
 ### Bug fixing
 - https://github.com/creativetimofficial/argon-dashboard-react/issues/18 (Added this in live docs, we need for our product to have a homepage prop inside the package.json. If build is not working, just delete the homepage prop from inside the package.json, or configure it to your own specs.)
