@@ -31,7 +31,7 @@ class Cards extends React.Component {
         <Card style={{ width: "18rem" }}>
           <CardImg
             alt="..."
-            src={require("assets/img/theme/img-1-1000x900.jpg")}
+            src={require("assets/img/theme/img-1-1000x900.jpg").default}
             top
           />
           <CardBody>
@@ -128,7 +128,7 @@ class Cards extends React.Component {
           <Card style={{ width: "18rem" }}>
             <CardImg
               alt="..."
-              src={require("assets/img/theme/img-1-1000x900.jpg")}
+              src={require("assets/img/theme/img-1-1000x900.jpg").default}
               top
             />
             <CardBody>
