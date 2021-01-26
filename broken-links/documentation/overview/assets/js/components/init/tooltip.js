@@ -2,26 +2,22 @@
 // Tooltip
 //
 
-'use strict';
+"use strict";
 
-var Tooltip = (function() {
+var Tooltip = (function () {
+  // Variables
 
-	// Variables
+  var $tooltip = $('[data-toggle="tooltip"]');
 
-	var $tooltip = $('[data-toggle="tooltip"]');
+  // Methods
 
+  function init() {
+    $tooltip.tooltip();
+  }
 
-	// Methods
+  // Events
 
-	function init() {
-		$tooltip.tooltip();
-	}
-
-
-	// Events
-
-	if ($tooltip.length) {
-		init();
-	}
-
+  if ($tooltip.length) {
+    init();
+  }
 })();
