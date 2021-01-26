@@ -36,48 +36,48 @@ const MapWrapper = () => {
       center: myLatlng,
       scrollwheel: false,
       zoomControl: true,
-              styles: [
-                {
-                  featureType: "administrative",
-                  elementType: "labels.text.fill",
-                  stylers: [{ color: "#444444" }]
-                },
-                {
-                  featureType: "landscape",
-                  elementType: "all",
-                  stylers: [{ color: "#f2f2f2" }]
-                },
-                {
-                  featureType: "poi",
-                  elementType: "all",
-                  stylers: [{ visibility: "off" }]
-                },
-                {
-                  featureType: "road",
-                  elementType: "all",
-                  stylers: [{ saturation: -100 }, { lightness: 45 }]
-                },
-                {
-                  featureType: "road.highway",
-                  elementType: "all",
-                  stylers: [{ visibility: "simplified" }]
-                },
-                {
-                  featureType: "road.arterial",
-                  elementType: "labels.icon",
-                  stylers: [{ visibility: "off" }]
-                },
-                {
-                  featureType: "transit",
-                  elementType: "all",
-                  stylers: [{ visibility: "off" }]
-                },
-                {
-                  featureType: "water",
-                  elementType: "all",
-                  stylers: [{ color: "#5e72e4" }, { visibility: "on" }]
-                }
-              ]
+      styles: [
+        {
+          featureType: "administrative",
+          elementType: "labels.text.fill",
+          stylers: [{ color: "#444444" }],
+        },
+        {
+          featureType: "landscape",
+          elementType: "all",
+          stylers: [{ color: "#f2f2f2" }],
+        },
+        {
+          featureType: "poi",
+          elementType: "all",
+          stylers: [{ visibility: "off" }],
+        },
+        {
+          featureType: "road",
+          elementType: "all",
+          stylers: [{ saturation: -100 }, { lightness: 45 }],
+        },
+        {
+          featureType: "road.highway",
+          elementType: "all",
+          stylers: [{ visibility: "simplified" }],
+        },
+        {
+          featureType: "road.arterial",
+          elementType: "labels.icon",
+          stylers: [{ visibility: "off" }],
+        },
+        {
+          featureType: "transit",
+          elementType: "all",
+          stylers: [{ visibility: "off" }],
+        },
+        {
+          featureType: "water",
+          elementType: "all",
+          stylers: [{ color: "#5e72e4" }, { visibility: "on" }],
+        },
+      ],
     };
 
     map = new google.maps.Map(map, mapOptions);
@@ -103,12 +103,15 @@ const MapWrapper = () => {
   }, []);
   return (
     <>
-        <div style={{ height: `600px` }}
+      <div
+        style={{ height: `600px` }}
         className="map-canvas"
-        id="map-canvas" ref={mapRef}></div>
+        id="map-canvas"
+        ref={mapRef}
+      ></div>
     </>
   );
-}
+};
 
 const Maps = () => {
   return (
@@ -126,7 +129,6 @@ const Maps = () => {
       </Container>
     </>
   );
-
-}
+};
 
 export default Maps;
