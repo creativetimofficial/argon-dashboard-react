@@ -85,6 +85,6 @@ const Footer = () => {
       </Row>
     </footer>
   );
-}
+};
 
 export default Footer;
