@@ -26,8 +26,7 @@ import Sidebar from "../components/Sidebar/Sidebar.js";
 
 import routes from "../routes.js";
 
-const Admin = props => {
-
+const Admin = (props) => {
   const mainContent = useRef();
 
   useEffect(() => {
@@ -36,7 +35,7 @@ const Admin = props => {
     mainContent.current.scrollTop = 0;
   }, []);
 
-  const getRoutes = routes => {
+  const getRoutes = (routes) => {
     return routes.map((prop, key) => {
       if (prop.layout === "/admin") {
         return (
@@ -52,12 +51,11 @@ const Admin = props => {
     });
   };
 
-  const getBrandText = path => {
+  const getBrandText = (path) => {
     for (let i = 0; i < routes.length; i++) {
       if (
-        props.location.pathname.indexOf(
-          routes[i].layout + routes[i].path
-        ) !== -1
+        props.location.pathname.indexOf(routes[i].layout + routes[i].path) !==
+        -1
       ) {
         return routes[i].name;
       }
@@ -73,7 +71,7 @@ const Admin = props => {
         logo={{
           innerLink: "/admin/index",
           imgSrc: require("../assets/img/brand/argon-react.png"),
-          imgAlt: "..."
+          imgAlt: "...",
         }}
       />
       <div className="main-content" ref={mainContent}>
@@ -91,7 +89,6 @@ const Admin = props => {
       </div>
     </>
   );
-
-}
+};
 
 export default Admin;
