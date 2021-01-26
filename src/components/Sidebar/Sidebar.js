@@ -49,27 +49,27 @@ import {
   Table,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 var ps;
 
-const Sidebar = props => {
+const Sidebar = (props) => {
   const [collapseOpen, setCollapseOpen] = useState();
   // verifies if routeName is the one active (in browser input)
-  const activeRoute = routeName => {
+  const activeRoute = (routeName) => {
     return props.location.pathname.indexOf(routeName) > -1 ? "active" : "";
-  }
+  };
   // toggles collapse between opened and closed (true/false)
   const toggleCollapse = () => {
-    setCollapseOpen(data => !data);
+    setCollapseOpen((data) => !data);
   };
   // closes the collapse
   const closeCollapse = () => {
     setCollapseOpen(false);
   };
   // creates the links that appear in the left menu / Sidebar
-  const createLinks = routes => {
+  const createLinks = (routes) => {
     return routes.map((prop, key) => {
       return (
         <NavItem key={key}>
@@ -92,12 +92,12 @@ const Sidebar = props => {
   if (logo && logo.innerLink) {
     navbarBrandProps = {
       to: logo.innerLink,
-      tag: Link
+      tag: Link,
     };
   } else if (logo && logo.outterLink) {
     navbarBrandProps = {
       href: logo.outterLink,
-      target: "_blank"
+      target: "_blank",
     };
   }
 
@@ -175,7 +175,7 @@ const Sidebar = props => {
                 <span>Support</span>
               </DropdownItem>
               <DropdownItem divider />
-              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                 <i className="ni ni-user-run" />
                 <span>Logout</span>
               </DropdownItem>
@@ -267,10 +267,10 @@ const Sidebar = props => {
       </Container>
     </Navbar>
   );
-}
+};
 
 Sidebar.defaultProps = {
-  routes: [{}]
+  routes: [{}],
 };
 
 Sidebar.propTypes = {
@@ -286,8 +286,8 @@ Sidebar.propTypes = {
     // the image src of the logo
     imgSrc: PropTypes.string.isRequired,
     // the alt for the img
-    imgAlt: PropTypes.string.isRequired
-  })
+    imgAlt: PropTypes.string.isRequired,
+  }),
 };
 
 export default Sidebar;
