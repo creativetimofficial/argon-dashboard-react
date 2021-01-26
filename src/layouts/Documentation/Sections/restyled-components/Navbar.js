@@ -67,7 +67,7 @@ class Navbars extends React.Component {
                     <Link to="/">
                       <img
                         alt="..."
-                        src={require("assets/img/brand/blue.png")}
+                        src={require("assets/img/brand/blue.png").default}
                       />
                     </Link>
                   </Col>
@@ -216,7 +216,7 @@ class Navbars extends React.Component {
                     <Link to="/">
                       <img
                         alt="..."
-                        src={require("assets/img/brand/blue.png")}
+                        src={require("assets/img/brand/blue.png").default}
                       />
                     </Link>
                   </Col>
@@ -317,7 +317,7 @@ class Navbars extends React.Component {
                     <Link to="/">
                       <img
                         alt="..."
-                        src={require("assets/img/brand/blue.png")}
+                        src={require("assets/img/brand/blue.png").default}
                       />
                     </Link>
                   </Col>
@@ -436,7 +436,7 @@ class Navbars extends React.Component {
                     <Link to="/">
                       <img
                         alt="..."
-                        src={require("assets/img/brand/blue.png")}
+                        src={require("assets/img/brand/blue.png").default}
                       />
                     </Link>
                   </Col>
@@ -538,7 +538,7 @@ class Navbars extends React.Component {
                     <Link to="/">
                       <img
                         alt="..."
-                        src={require("assets/img/brand/blue.png")}
+                        src={require("assets/img/brand/blue.png").default}
                       />
                     </Link>
                   </Col>
@@ -626,7 +626,7 @@ class Navbars extends React.Component {
                     <Link to="/">
                       <img
                         alt="..."
-                        src={require("assets/img/brand/blue.png")}
+                        src={require("assets/img/brand/blue.png").default}
                       />
                     </Link>
                   </Col>
@@ -735,7 +735,7 @@ class Navbars extends React.Component {
                       <Link to="/">
                         <img
                           alt="..."
-                          src={require("assets/img/brand/blue.png")}
+                          src={require("assets/img/brand/blue.png").default}
                         />
                       </Link>
                     </Col>
@@ -859,7 +859,7 @@ class Navbars extends React.Component {
                     <Link to="/">
                       <img
                         alt="..."
-                        src={require("assets/img/brand/blue.png")}
+                        src={require("assets/img/brand/blue.png").default}
                       />
                     </Link>
                   </Col>
@@ -960,7 +960,7 @@ class Navbars extends React.Component {
                     <Link to="/">
                       <img
                         alt="..."
-                        src={require("assets/img/brand/blue.png")}
+                        src={require("assets/img/brand/blue.png").default}
                       />
                     </Link>
                   </Col>
@@ -1079,7 +1079,7 @@ class Navbars extends React.Component {
                     <Link to="/">
                       <img
                         alt="..."
-                        src={require("assets/img/brand/blue.png")}
+                        src={require("assets/img/brand/blue.png").default}
                       />
                     </Link>
                   </Col>
@@ -1181,7 +1181,7 @@ class Navbars extends React.Component {
                     <Link to="/">
                       <img
                         alt="..."
-                        src={require("assets/img/brand/blue.png")}
+                        src={require("assets/img/brand/blue.png").default}
                       />
                     </Link>
                   </Col>
@@ -1269,7 +1269,7 @@ class Navbars extends React.Component {
                     <Link to="/">
                       <img
                         alt="..."
-                        src={require("assets/img/brand/blue.png")}
+                        src={require("assets/img/brand/blue.png").default}
                       />
                     </Link>
                   </Col>
