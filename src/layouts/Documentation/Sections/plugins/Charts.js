@@ -13,7 +13,7 @@ import {
   chartOptions,
   parseOptions,
   chartExample1,
-  chartExample2
+  chartExample2,
 } from "variables/charts.js";
 
 const codeExample = `import React from "react";
@@ -181,7 +181,7 @@ class Charts extends React.Component {
                 <Line
                   data={chartExample1.data1}
                   options={chartExample1.options}
-                  getDatasetAtEvent={e => console.log(e)}
+                  getDatasetAtEvent={(e) => console.log(e)}
                 />
               </div>
             </CardBody>
