@@ -6,7 +6,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
 
 * Coded by www.creative-tim.com
@@ -614,7 +614,7 @@ var NavbarCollapse = (function() {
 				 $('body').removeClass('nav-open');
 					navbar_menu_visible = 0;
 					$('.bodyClick').remove();
-					
+
 			 });
 
 		 $('body').addClass('nav-open');
