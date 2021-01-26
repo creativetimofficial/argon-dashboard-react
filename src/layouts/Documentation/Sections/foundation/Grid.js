@@ -228,7 +228,7 @@ class Grid extends React.Component {
         </p>
         <p>
           <strong>New to or unfamiliar with flexbox?</strong>
-          <a href="#pablo" onClick={e => e.preventDefault()}>
+          <a href="#pablo" onClick={(e) => e.preventDefault()}>
             Read this CSS Tricks flexbox guide
           </a>
           for background, terminology, guidelines, and code snippets.
@@ -266,7 +266,7 @@ class Grid extends React.Component {
           sizes, <code className="highlighter-rouge">px</code>s are used for
           grid breakpoints and container widths. This is because the viewport
           width is in pixels and does not change with the{" "}
-          <a href="#pablo" onClick={e => e.preventDefault()}>
+          <a href="#pablo" onClick={(e) => e.preventDefault()}>
             font size
           </a>
           .
@@ -407,7 +407,7 @@ class Grid extends React.Component {
         </SyntaxHighlighter>
         <p>
           Equal-width columns can be broken into multiple lines, but there was a{" "}
-          <a href="#pablo" onClick={e => e.preventDefault()}>
+          <a href="#pablo" onClick={(e) => e.preventDefault()}>
             Safari flexbox bug
           </a>
           that prevented this from working without an explicit{" "}
