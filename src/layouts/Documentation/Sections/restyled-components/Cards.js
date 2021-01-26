@@ -10,7 +10,7 @@ import {
   CardTitle,
   CardText,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 const codeExamples = `import React from "react";
@@ -140,7 +140,7 @@ class Cards extends React.Component {
               <Button
                 color="primary"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 Go somewhere
               </Button>
