@@ -14,8 +14,9 @@
 - @types/react (we'll use simple Google Maps API with Vanilla JS instead)
 - react-google-maps (we'll use simple Google Maps API with Vanilla JS instead)
 ### Added dependencies
-+ bootstrap@4.6.0
++ bootstrap@4.6.0 (so that we can easily update bootstrap version)
 + jquery@3.5.1 (since bootstrap requires it - we are not using, we are only using bootstrap scss)
++ node-sass-package-importer@5.3.2 (so that we can import bootstrap scss from `node_modules`)
 ### Updated dependencies
 ```
 @fortawesome/fontawesome-free    5.12.1   →   5.15.2
