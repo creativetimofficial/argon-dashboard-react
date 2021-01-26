@@ -26,16 +26,15 @@ import AuthFooter from "../components/Footers/AuthFooter.js";
 
 import routes from "../routes.js";
 
-const Auth = props => {
-
+const Auth = (props) => {
   useEffect(() => {
     document.body.classList.add("bg-default");
     return () => {
       document.body.classList.remove("bg-default");
-    }
+    };
   }, []);
 
-  const getRoutes = routes => {
+  const getRoutes = (routes) => {
     return routes.map((prop, key) => {
       if (prop.layout === "/auth") {
         return (
@@ -98,6 +97,6 @@ const Auth = props => {
       <AuthFooter />
     </>
   );
-}
+};
 
 export default Auth;
