@@ -30,11 +30,10 @@ import {
   InputGroupText,
   InputGroup,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 const Login = () => {
-
   return (
     <>
       <Col lg="5" md="7">
@@ -48,7 +47,7 @@ const Login = () => {
                 className="btn-neutral btn-icon"
                 color="default"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 <span className="btn-inner--icon">
                   <img
@@ -62,7 +61,7 @@ const Login = () => {
                 className="btn-neutral btn-icon"
                 color="default"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 <span className="btn-inner--icon">
                   <img
@@ -86,7 +85,11 @@ const Login = () => {
                       <i className="ni ni-email-83" />
                     </InputGroupText>
                   </InputGroupAddon>
-                  <Input placeholder="Email" type="email" autoComplete="new-email"/>
+                  <Input
+                    placeholder="Email"
+                    type="email"
+                    autoComplete="new-email"
+                  />
                 </InputGroup>
               </FormGroup>
               <FormGroup>
@@ -96,7 +99,11 @@ const Login = () => {
                       <i className="ni ni-lock-circle-open" />
                     </InputGroupText>
                   </InputGroupAddon>
-                  <Input placeholder="Password" type="password" autoComplete="new-password"/>
+                  <Input
+                    placeholder="Password"
+                    type="password"
+                    autoComplete="new-password"
+                  />
                 </InputGroup>
               </FormGroup>
               <div className="custom-control custom-control-alternative custom-checkbox">
@@ -125,7 +132,7 @@ const Login = () => {
             <a
               className="text-light"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               <small>Forgot password?</small>
             </a>
@@ -134,7 +141,7 @@ const Login = () => {
             <a
               className="text-light"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               <small>Create new account</small>
             </a>
@@ -143,7 +150,6 @@ const Login = () => {
       </Col>
     </>
   );
-
-}
+};
 
 export default Login;
