@@ -80,6 +80,6 @@ const Login = () => {
       </footer>
     </>
   );
-}
+};
 
 export default Login;
