@@ -29,9 +29,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
-    "compile-sass": "node-sass src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.css",
-    "minify-sass": "node-sass src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.min.css --output-style compressed",
-    "map-sass": "node-sass src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.css --source-map true"
+    "compile:scss": "node-sass src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.css",
+    "minify:scss": "node-sass src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.min.css --output-style compressed",
+    "map:scss": "node-sass src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.css --source-map true",
+    "build:scss": "npm run compile:scss && npm run minify:scss && npm run map:scss"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,29 +44,25 @@
     "not op_mini all"
   ],
   "dependencies": {
-    "@fortawesome/fontawesome-free": "5.12.1",
-    "chart.js": "2.9.3",
+    "@fortawesome/fontawesome-free": "5.15.2",
+    "chart.js": "2.9.4",
     "classnames": "2.2.6",
-    "moment": "2.24.0",
-    "node-sass": "4.13.1",
-    "nouislider": "14.1.1",
-    "react": "16.12.0",
-    "react-chartjs-2": "2.9.0",
-    "react-copy-to-clipboard": "5.0.2",
-    "react-datetime": "2.16.3",
-    "react-dom": "16.12.0",
-    "react-google-maps": "9.4.5",
-    "react-router-dom": "5.1.2",
-    "react-scripts": "^3.4.0",
-    "reactstrap": "8.4.1"
+    "moment": "2.29.1",
+    "node-sass": "4.14.1",
+    "nouislider": "14.6.3",
+    "react": "17.0.1",
+    "react-chartjs-2": "2.11.1",
+    "react-copy-to-clipboard": "5.0.3",
+    "react-datetime": "3.0.4",
+    "react-dom": "17.0.1",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.1",
+    "reactstrap": "8.9.0"
   },
   "devDependencies": {
-    "@types/googlemaps": "3.39.2",
-    "@types/markerclustererplus": "2.1.33",
-    "@types/react": "16.9.19",
-    "eslint-plugin-flowtype": "3.13.0",
+    "eslint-plugin-flowtype": "5.2.0",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
-    "typescript": "3.7.5"
+    "typescript": "4.1.3"
   }
 }
