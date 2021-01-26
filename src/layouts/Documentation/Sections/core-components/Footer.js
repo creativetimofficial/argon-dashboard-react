@@ -13,8 +13,8 @@ class Footer extends React.Component {
         <p className="ct-lead">
           We've created two demo footers, one used for{" "}
           <code className="highlighter-rouge">src/layouts/Admin.js</code> and
-          one for{" "}
-          <code className="highlighter-rouge">src/layouts/Auth.js</code>.
+          one for <code className="highlighter-rouge">src/layouts/Auth.js</code>
+          .
         </p>
         <hr />
         <h2 id="primary-colors">Short description and usage</h2>
