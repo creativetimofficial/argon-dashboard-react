@@ -27,19 +27,19 @@ import {
   Nav,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 const AdminNavbar = () => {
   return (
     <>
-      <Navbar
-        className="navbar-top navbar-horizontal navbar-dark"
-        expand="md"
-      >
+      <Navbar className="navbar-top navbar-horizontal navbar-dark" expand="md">
         <Container className="px-4">
           <NavbarBrand to="/" tag={Link}>
-            <img alt="..." src={require("../../assets/img/brand/argon-react-white.png")} />
+            <img
+              alt="..."
+              src={require("../../assets/img/brand/argon-react-white.png")}
+            />
           </NavbarBrand>
           <button className="navbar-toggler" id="navbar-collapse-main">
             <span className="navbar-toggler-icon" />
@@ -56,10 +56,7 @@ const AdminNavbar = () => {
                   </Link>
                 </Col>
                 <Col className="collapse-close" xs="6">
-                  <button
-                    className="navbar-toggler"
-                    id="navbar-collapse-main"
-                  >
+                  <button className="navbar-toggler" id="navbar-collapse-main">
                     <span />
                     <span />
                   </button>
@@ -84,11 +81,7 @@ const AdminNavbar = () => {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink
-                  className="nav-link-icon"
-                  to="/auth/login"
-                  tag={Link}
-                >
+                <NavLink className="nav-link-icon" to="/auth/login" tag={Link}>
                   <i className="ni ni-key-25" />
                   <span className="nav-link-inner--text">Login</span>
                 </NavLink>
@@ -109,6 +102,6 @@ const AdminNavbar = () => {
       </Navbar>
     </>
   );
-}
+};
 
 export default AdminNavbar;
