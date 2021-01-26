@@ -1,13 +1,13 @@
-## [1.2.0] 2021-01-25
+## [1.2.0] 2021-01-26
 ### Bug fixing
 - https://github.com/creativetimofficial/argon-dashboard-react/pull/38
 - https://github.com/creativetimofficial/argon-dashboard-react/pull/33
+- https://github.com/creativetimofficial/argon-dashboard-react/issues/29
+- https://github.com/creativetimofficial/argon-dashboard-react/issues/23
 ### Major style changes
-
+- Moved all `src/scss/argon-dashboard/bootstrap` files to `node_modules/bootstrap`
 ### Deleted components
-
 ### Added components
-
 ### Deleted dependencies
 - @types/googlemaps (we'll use simple Google Maps API with Vanilla JS instead)
 - @types/markerclustererplus (we'll use simple Google Maps API with Vanilla JS instead)
