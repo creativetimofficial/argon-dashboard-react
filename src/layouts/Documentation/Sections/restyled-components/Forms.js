@@ -10,7 +10,7 @@ import {
   InputGroupText,
   InputGroup,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 const codeFormControls = `import React from "react";
