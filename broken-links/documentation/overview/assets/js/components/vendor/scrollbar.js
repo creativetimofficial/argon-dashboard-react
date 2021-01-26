@@ -2,26 +2,22 @@
 // Scrollbar
 //
 
-'use strict';
+"use strict";
 
-var Scrollbar = (function() {
+var Scrollbar = (function () {
+  // Variables
 
-	// Variables
+  var $scrollbar = $(".scrollbar-inner");
 
-	var $scrollbar = $('.scrollbar-inner');
+  // Methods
 
+  function init() {
+    $scrollbar.scrollbar().scrollLock();
+  }
 
-	// Methods
+  // Events
 
-	function init() {
-		$scrollbar.scrollbar().scrollLock()
-	}
-
-
-	// Events
-
-	if ($scrollbar.length) {
-		init();
-	}
-
+  if ($scrollbar.length) {
+    init();
+  }
 })();
