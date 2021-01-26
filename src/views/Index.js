@@ -35,7 +35,7 @@ import {
   Table,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
@@ -43,14 +43,14 @@ import {
   chartOptions,
   parseOptions,
   chartExample1,
-  chartExample2
+  chartExample2,
 } from "../variables/charts.js";
 
 import Header from "../components/Headers/Header.js";
 
-const Index = props => {
+const Index = (props) => {
   const [activeNav, setActiveNav] = useState(1);
-  const [chartExample1Data, setChartExample1Data] = useState('data1');
+  const [chartExample1Data, setChartExample1Data] = useState("data1");
 
   if (window.Chart) {
     parseOptions(Chart, chartOptions());
@@ -59,7 +59,7 @@ const Index = props => {
   const toggleNavs = (e, index) => {
     e.preventDefault();
     setActiveNav(index);
-    setChartExample1Data(data => data === 'data1' ? 'data2' : 'data1');
+    setChartExample1Data((data) => (data === "data1" ? "data2" : "data1"));
   };
   return (
     <>
@@ -82,10 +82,10 @@ const Index = props => {
                       <NavItem>
                         <NavLink
                           className={classnames("py-2 px-3", {
-                            active: activeNav === 1
+                            active: activeNav === 1,
                           })}
                           href="#pablo"
-                          onClick={e => toggleNavs(e, 1)}
+                          onClick={(e) => toggleNavs(e, 1)}
                         >
                           <span className="d-none d-md-block">Month</span>
                           <span className="d-md-none">M</span>
@@ -94,11 +94,11 @@ const Index = props => {
                       <NavItem>
                         <NavLink
                           className={classnames("py-2 px-3", {
-                            active: activeNav === 2
+                            active: activeNav === 2,
                           })}
                           data-toggle="tab"
                           href="#pablo"
-                          onClick={e => toggleNavs(e, 2)}
+                          onClick={(e) => toggleNavs(e, 2)}
                         >
                           <span className="d-none d-md-block">Week</span>
                           <span className="d-md-none">W</span>
@@ -114,7 +114,7 @@ const Index = props => {
                   <Line
                     data={chartExample1[chartExample1Data]}
                     options={chartExample1.options}
-                    getDatasetAtEvent={e => console.log(e)}
+                    getDatasetAtEvent={(e) => console.log(e)}
                   />
                 </div>
               </CardBody>
@@ -156,7 +156,7 @@ const Index = props => {
                     <Button
                       color="primary"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                       size="sm"
                     >
                       See all
@@ -179,8 +179,7 @@ const Index = props => {
                     <td>4,569</td>
                     <td>340</td>
                     <td>
-                      <i className="fas fa-arrow-up text-success mr-3" />{" "}
-                      46,53%
+                      <i className="fas fa-arrow-up text-success mr-3" /> 46,53%
                     </td>
                   </tr>
                   <tr>
@@ -206,8 +205,7 @@ const Index = props => {
                     <td>2,050</td>
                     <td>147</td>
                     <td>
-                      <i className="fas fa-arrow-up text-success mr-3" />{" "}
-                      50,87%
+                      <i className="fas fa-arrow-up text-success mr-3" /> 50,87%
                     </td>
                   </tr>
                   <tr>
@@ -234,7 +232,7 @@ const Index = props => {
                     <Button
                       color="primary"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                       size="sm"
                     >
                       See all
