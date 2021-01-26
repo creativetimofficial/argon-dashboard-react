@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.1.0
+* Argon Dashboard React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -69,9 +69,7 @@ const Header = () => {
                         >
                           New users
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">
-                          2,356
-                        </span>
+                        <span className="h2 font-weight-bold mb-0">2,356</span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-warning text-white rounded-circle shadow">
@@ -127,9 +125,7 @@ const Header = () => {
                         >
                           Performance
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">
-                          49,65%
-                        </span>
+                        <span className="h2 font-weight-bold mb-0">49,65%</span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-info text-white rounded-circle shadow">
@@ -152,6 +148,6 @@ const Header = () => {
       </div>
     </>
   );
-}
+};
 
 export default Header;

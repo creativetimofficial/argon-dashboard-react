@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.1.0
+* Argon Dashboard React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -28,10 +28,10 @@ import {
   Input,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 // core components
-import UserHeader from "../../components/Headers/UserHeader.js";
+import UserHeader from "components/Headers/UserHeader.js";
 
 const Profile = () => {
   return (
@@ -45,11 +45,14 @@ const Profile = () => {
               <Row className="justify-content-center">
                 <Col className="order-lg-2" lg="3">
                   <div className="card-profile-image">
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
                         className="rounded-circle"
-                        src={require("../../assets/img/theme/team-4-800x800.jpg")}
+                        src={
+                          require("../../assets/img/theme/team-4-800x800.jpg")
+                            .default
+                        }
                       />
                     </a>
                   </div>
@@ -61,7 +64,7 @@ const Profile = () => {
                     className="mr-4"
                     color="info"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                     size="sm"
                   >
                     Connect
@@ -70,7 +73,7 @@ const Profile = () => {
                     className="float-right"
                     color="default"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                     size="sm"
                   >
                     Message
@@ -119,7 +122,7 @@ const Profile = () => {
                     Nick Murphy — writes, performs and records all of his own
                     music.
                   </p>
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
+                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     Show more
                   </a>
                 </div>
@@ -137,7 +140,7 @@ const Profile = () => {
                     <Button
                       color="primary"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                       size="sm"
                     >
                       Settings
@@ -325,7 +328,6 @@ const Profile = () => {
       </Container>
     </>
   );
-
-}
+};
 
 export default Profile;

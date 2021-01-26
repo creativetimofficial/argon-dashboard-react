@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.1.0
+* Argon Dashboard React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -27,19 +27,21 @@ import {
   Nav,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 const AdminNavbar = () => {
   return (
     <>
-      <Navbar
-        className="navbar-top navbar-horizontal navbar-dark"
-        expand="md"
-      >
+      <Navbar className="navbar-top navbar-horizontal navbar-dark" expand="md">
         <Container className="px-4">
           <NavbarBrand to="/" tag={Link}>
-            <img alt="..." src={require("../../assets/img/brand/argon-react-white.png")} />
+            <img
+              alt="..."
+              src={
+                require("../../assets/img/brand/argon-react-white.png").default
+              }
+            />
           </NavbarBrand>
           <button className="navbar-toggler" id="navbar-collapse-main">
             <span className="navbar-toggler-icon" />
@@ -51,15 +53,15 @@ const AdminNavbar = () => {
                   <Link to="/">
                     <img
                       alt="..."
-                      src={require("../../assets/img/brand/argon-react.png")}
+                      src={
+                        require("../../assets/img/brand/argon-react.png")
+                          .default
+                      }
                     />
                   </Link>
                 </Col>
                 <Col className="collapse-close" xs="6">
-                  <button
-                    className="navbar-toggler"
-                    id="navbar-collapse-main"
-                  >
+                  <button className="navbar-toggler" id="navbar-collapse-main">
                     <span />
                     <span />
                   </button>
@@ -84,11 +86,7 @@ const AdminNavbar = () => {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink
-                  className="nav-link-icon"
-                  to="/auth/login"
-                  tag={Link}
-                >
+                <NavLink className="nav-link-icon" to="/auth/login" tag={Link}>
                   <i className="ni ni-key-25" />
                   <span className="nav-link-inner--text">Login</span>
                 </NavLink>
@@ -109,6 +107,6 @@ const AdminNavbar = () => {
       </Navbar>
     </>
   );
-}
+};
 
 export default AdminNavbar;

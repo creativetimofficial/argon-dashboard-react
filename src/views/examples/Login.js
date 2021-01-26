@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.1.0
+* Argon Dashboard React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -30,11 +30,10 @@ import {
   InputGroupText,
   InputGroup,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 const Login = () => {
-
   return (
     <>
       <Col lg="5" md="7">
@@ -48,12 +47,15 @@ const Login = () => {
                 className="btn-neutral btn-icon"
                 color="default"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 <span className="btn-inner--icon">
                   <img
                     alt="..."
-                    src={require("../../assets/img/icons/common/github.svg")}
+                    src={
+                      require("../../assets/img/icons/common/github.svg")
+                        .default
+                    }
                   />
                 </span>
                 <span className="btn-inner--text">Github</span>
@@ -62,12 +64,15 @@ const Login = () => {
                 className="btn-neutral btn-icon"
                 color="default"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 <span className="btn-inner--icon">
                   <img
                     alt="..."
-                    src={require("../../assets/img/icons/common/google.svg")}
+                    src={
+                      require("../../assets/img/icons/common/google.svg")
+                        .default
+                    }
                   />
                 </span>
                 <span className="btn-inner--text">Google</span>
@@ -86,7 +91,11 @@ const Login = () => {
                       <i className="ni ni-email-83" />
                     </InputGroupText>
                   </InputGroupAddon>
-                  <Input placeholder="Email" type="email" autoComplete="new-email"/>
+                  <Input
+                    placeholder="Email"
+                    type="email"
+                    autoComplete="new-email"
+                  />
                 </InputGroup>
               </FormGroup>
               <FormGroup>
@@ -96,7 +105,11 @@ const Login = () => {
                       <i className="ni ni-lock-circle-open" />
                     </InputGroupText>
                   </InputGroupAddon>
-                  <Input placeholder="Password" type="password" autoComplete="new-password"/>
+                  <Input
+                    placeholder="Password"
+                    type="password"
+                    autoComplete="new-password"
+                  />
                 </InputGroup>
               </FormGroup>
               <div className="custom-control custom-control-alternative custom-checkbox">
@@ -125,7 +138,7 @@ const Login = () => {
             <a
               className="text-light"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               <small>Forgot password?</small>
             </a>
@@ -134,7 +147,7 @@ const Login = () => {
             <a
               className="text-light"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               <small>Create new account</small>
             </a>
@@ -143,7 +156,6 @@ const Login = () => {
       </Col>
     </>
   );
-
-}
+};
 
 export default Login;

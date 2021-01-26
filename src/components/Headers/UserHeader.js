@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.1.0
+* Argon Dashboard React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -28,9 +28,11 @@ const UserHeader = () => {
         style={{
           minHeight: "600px",
           backgroundImage:
-            "url(" + require("../../assets/img/theme/profile-cover.jpg") + ")",
+            "url(" +
+            require("../../assets/img/theme/profile-cover.jpg").default +
+            ")",
           backgroundSize: "cover",
-          backgroundPosition: "center top"
+          backgroundPosition: "center top",
         }}
       >
         {/* Mask */}
@@ -41,13 +43,13 @@ const UserHeader = () => {
             <Col lg="7" md="10">
               <h1 className="display-2 text-white">Hello Jesse</h1>
               <p className="text-white mt-0 mb-5">
-                This is your profile page. You can see the progress you've
-                made with your work and manage your projects or assigned tasks
+                This is your profile page. You can see the progress you've made
+                with your work and manage your projects or assigned tasks
               </p>
               <Button
                 color="info"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 Edit profile
               </Button>
@@ -57,6 +59,6 @@ const UserHeader = () => {
       </div>
     </>
   );
-}
+};
 
 export default UserHeader;
