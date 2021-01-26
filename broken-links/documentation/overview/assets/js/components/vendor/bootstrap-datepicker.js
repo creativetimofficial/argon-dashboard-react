@@ -2,33 +2,29 @@
 // Bootstrap Datepicker
 //
 
-'use strict';
+"use strict";
 
-var Datepicker = (function() {
+var Datepicker = (function () {
+  // Variables
 
-	// Variables
+  var $datepicker = $(".datepicker");
 
-	var $datepicker = $('.datepicker');
+  // Methods
 
+  function init($this) {
+    var options = {
+      disableTouchKeyboard: true,
+      autoclose: false,
+    };
 
-	// Methods
+    $this.datepicker(options);
+  }
 
-	function init($this) {
-		var options = {
-			disableTouchKeyboard: true,
-			autoclose: false
-		};
+  // Events
 
-		$this.datepicker(options);
-	}
-
-
-	// Events
-
-	if ($datepicker.length) {
-		$datepicker.each(function() {
-			init($(this));
-		});
-	}
-
+  if ($datepicker.length) {
+    $datepicker.each(function () {
+      init($(this));
+    });
+  }
 })();
