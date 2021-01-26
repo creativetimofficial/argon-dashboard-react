@@ -11,7 +11,7 @@ import {
   InputGroupText,
   InputGroup,
   Col,
-  Row
+  Row,
 } from "reactstrap";
 
 const codeSingle = `import React from "react";
@@ -207,7 +207,7 @@ class Datepicker extends React.Component {
               </InputGroupAddon>
               <ReactDatetime
                 inputProps={{
-                  placeholder: "Date Picker Here"
+                  placeholder: "Date Picker Here",
                 }}
                 timeFormat={false}
               />
@@ -230,7 +230,7 @@ class Datepicker extends React.Component {
                   </InputGroupAddon>
                   <ReactDatetime
                     inputProps={{
-                      placeholder: "Date Picker Here"
+                      placeholder: "Date Picker Here",
                     }}
                     timeFormat={false}
                     renderDay={(props, currentDate, selectedDate) => {
@@ -262,7 +262,7 @@ class Datepicker extends React.Component {
                         </td>
                       );
                     }}
-                    onChange={e => this.setState({ startDate: e })}
+                    onChange={(e) => this.setState({ startDate: e })}
                   />
                 </InputGroup>
               </FormGroup>
@@ -277,7 +277,7 @@ class Datepicker extends React.Component {
                   </InputGroupAddon>
                   <ReactDatetime
                     inputProps={{
-                      placeholder: "Date Picker Here"
+                      placeholder: "Date Picker Here",
                     }}
                     timeFormat={false}
                     renderDay={(props, currentDate, selectedDate) => {
@@ -309,7 +309,7 @@ class Datepicker extends React.Component {
                         </td>
                       );
                     }}
-                    onChange={e => this.setState({ endDate: e })}
+                    onChange={(e) => this.setState({ endDate: e })}
                   />
                 </InputGroup>
               </FormGroup>
