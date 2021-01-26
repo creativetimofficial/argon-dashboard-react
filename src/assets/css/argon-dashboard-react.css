@@ -12488,8 +12488,7 @@ textarea[resize="horizontal"] {
   .icon i, .icon svg {
     font-size: 2.25rem; }
   .icon + .icon-text {
-    padding-left: 1rem;
-    width: calc(100% - 3rem - 1); }
+    padding-left: 1rem; }
 
 .icon-xl {
   width: 5rem;
@@ -16143,5 +16142,12 @@ button:focus, :focus {
 
 .table .badge i {
   margin-right: 10px; }
+
+@media (min-width: 992px) {
+  .nav-item.active-pro {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    background: #f6f9fc; } }
 
 /*# sourceMappingURL=argon-dashboard-react.css.map */
