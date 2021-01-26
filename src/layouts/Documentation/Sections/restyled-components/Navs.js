@@ -10,7 +10,7 @@ import {
   NavLink,
   Nav,
   TabContent,
-  TabPane
+  TabPane,
 } from "reactstrap";
 
 const codeNavPills = `import React from "react";
@@ -299,12 +299,12 @@ class Navs extends React.Component {
   state = {
     navPills: 1,
     circledNavPills: 3,
-    tabs: 1
+    tabs: 1,
   };
   toggleNavs = (e, state, index) => {
     e.preventDefault();
     this.setState({
-      [state]: index
+      [state]: index,
     });
   };
   render() {
@@ -333,9 +333,9 @@ class Navs extends React.Component {
               <NavLink
                 aria-selected={this.state.navPills === 1}
                 className={classnames("mb-sm-3 mb-md-0", {
-                  active: this.state.navPills === 1
+                  active: this.state.navPills === 1,
                 })}
-                onClick={e => this.toggleNavs(e, "navPills", 1)}
+                onClick={(e) => this.toggleNavs(e, "navPills", 1)}
                 href="#pablo"
                 role="tab"
               >
@@ -346,9 +346,9 @@ class Navs extends React.Component {
               <NavLink
                 aria-selected={this.state.navPills === 2}
                 className={classnames("mb-sm-3 mb-md-0", {
-                  active: this.state.navPills === 2
+                  active: this.state.navPills === 2,
                 })}
-                onClick={e => this.toggleNavs(e, "navPills", 2)}
+                onClick={(e) => this.toggleNavs(e, "navPills", 2)}
                 href="#pablo"
                 role="tab"
               >
@@ -359,9 +359,9 @@ class Navs extends React.Component {
               <NavLink
                 aria-selected={this.state.navPills === 3}
                 className={classnames("mb-sm-3 mb-md-0", {
-                  active: this.state.navPills === 3
+                  active: this.state.navPills === 3,
                 })}
-                onClick={e => this.toggleNavs(e, "navPills", 3)}
+                onClick={(e) => this.toggleNavs(e, "navPills", 3)}
                 href="#pablo"
                 role="tab"
               >
@@ -380,9 +380,9 @@ class Navs extends React.Component {
               <NavLink
                 aria-selected={this.state.circledNavPills === 1}
                 className={classnames("rounded-circle", {
-                  active: this.state.circledNavPills === 1
+                  active: this.state.circledNavPills === 1,
                 })}
-                onClick={e => this.toggleNavs(e, "circledNavPills", 1)}
+                onClick={(e) => this.toggleNavs(e, "circledNavPills", 1)}
                 href="#pablo"
                 role="tab"
               >
@@ -395,9 +395,9 @@ class Navs extends React.Component {
               <NavLink
                 aria-selected={this.state.circledNavPills === 2}
                 className={classnames("rounded-circle", {
-                  active: this.state.circledNavPills === 2
+                  active: this.state.circledNavPills === 2,
                 })}
-                onClick={e => this.toggleNavs(e, "circledNavPills", 2)}
+                onClick={(e) => this.toggleNavs(e, "circledNavPills", 2)}
                 href="#pablo"
                 role="tab"
               >
@@ -410,9 +410,9 @@ class Navs extends React.Component {
               <NavLink
                 aria-selected={this.state.circledNavPills === 3}
                 className={classnames("rounded-circle", {
-                  active: this.state.circledNavPills === 3
+                  active: this.state.circledNavPills === 3,
                 })}
-                onClick={e => this.toggleNavs(e, "circledNavPills", 3)}
+                onClick={(e) => this.toggleNavs(e, "circledNavPills", 3)}
                 href="#pablo"
                 role="tab"
               >
@@ -439,9 +439,9 @@ class Navs extends React.Component {
                 <NavLink
                   aria-selected={this.state.tabs === 1}
                   className={classnames("mb-sm-3 mb-md-0", {
-                    active: this.state.tabs === 1
+                    active: this.state.tabs === 1,
                   })}
-                  onClick={e => this.toggleNavs(e, "tabs", 1)}
+                  onClick={(e) => this.toggleNavs(e, "tabs", 1)}
                   href="#pablo"
                   role="tab"
                 >
@@ -453,9 +453,9 @@ class Navs extends React.Component {
                 <NavLink
                   aria-selected={this.state.tabs === 2}
                   className={classnames("mb-sm-3 mb-md-0", {
-                    active: this.state.tabs === 2
+                    active: this.state.tabs === 2,
                   })}
-                  onClick={e => this.toggleNavs(e, "tabs", 2)}
+                  onClick={(e) => this.toggleNavs(e, "tabs", 2)}
                   href="#pablo"
                   role="tab"
                 >
@@ -467,9 +467,9 @@ class Navs extends React.Component {
                 <NavLink
                   aria-selected={this.state.tabs === 3}
                   className={classnames("mb-sm-3 mb-md-0", {
-                    active: this.state.tabs === 3
+                    active: this.state.tabs === 3,
                   })}
-                  onClick={e => this.toggleNavs(e, "tabs", 3)}
+                  onClick={(e) => this.toggleNavs(e, "tabs", 3)}
                   href="#pablo"
                   role="tab"
                 >
