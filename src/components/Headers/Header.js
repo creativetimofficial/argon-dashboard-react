@@ -69,9 +69,7 @@ const Header = () => {
                         >
                           New users
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">
-                          2,356
-                        </span>
+                        <span className="h2 font-weight-bold mb-0">2,356</span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-warning text-white rounded-circle shadow">
@@ -127,9 +125,7 @@ const Header = () => {
                         >
                           Performance
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">
-                          49,65%
-                        </span>
+                        <span className="h2 font-weight-bold mb-0">49,65%</span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-info text-white rounded-circle shadow">
@@ -152,6 +148,6 @@ const Header = () => {
       </div>
     </>
   );
-}
+};
 
 export default Header;
