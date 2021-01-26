@@ -25,7 +25,7 @@ class Sidebar extends React.Component {
                       key={k}
                       className={classnames({
                         "active ct-sidenav-active":
-                          this.props.location.pathname.indexOf(p.path) !== -1
+                          this.props.location.pathname.indexOf(p.path) !== -1,
                       })}
                     >
                       <Link to={p.path}>{p.name}</Link>
