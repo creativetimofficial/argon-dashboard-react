@@ -3,7 +3,7 @@ import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 
-import {Alert} from "reactstrap";
+import { Alert } from "reactstrap";
 
 class QuickStart extends React.Component {
   render() {
@@ -202,8 +202,18 @@ class QuickStart extends React.Component {
           additional configs to deploy it on these servers (Our demo product
           needs no adition configs):
         </p>
-        <Alert color="info">You may need to delete or change our <code>homepage</code> prop, from inside the <code>package.json</code> to your deployment requirements. For example, in our case, the <code>homepage</code> prop has to be set to <code>{`https://demos.creative-tim.com/argon-dashboard-react/`}</code>.</Alert>
-        <Alert color="info">If your build does not properly work, delete the <code>homepage</code> prop from inside <code>package.json</code> file and try again.</Alert>
+        <Alert color="info">
+          You may need to delete or change our <code>homepage</code> prop, from
+          inside the <code>package.json</code> to your deployment requirements.
+          For example, in our case, the <code>homepage</code> prop has to be set
+          to{" "}
+          <code>{`https://demos.creative-tim.com/argon-dashboard-react/`}</code>
+          .
+        </Alert>
+        <Alert color="info">
+          If your build does not properly work, delete the <code>homepage</code>{" "}
+          prop from inside <code>package.json</code> file and try again.
+        </Alert>
         <ul>
           <li>
             <a
