@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.1.0
+* Argon Dashboard React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -18,9 +18,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
-import ReactPixel from "react-facebook-pixel";
 
-import "assets/plugins/nucleo/css/nucleo.css";
+import "./assets/plugins/nucleo/css/nucleo.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "assets/scss/argon-dashboard-react.scss";
 import "layouts/Documentation/assets-for-demo/docs.scss";
@@ -29,10 +28,6 @@ import "layouts/Documentation/assets-for-demo/react-docs.scss";
 import AdminLayout from "layouts/Admin.js";
 import AuthLayout from "layouts/Auth.js";
 import Documentation from "layouts/Documentation/Documentation.js";
-
-ReactPixel.init("111649226022273");
-ReactPixel.pageView();
-ReactPixel.fbq("track", "PageView");
 
 ReactDOM.render(
   <HashRouter>
