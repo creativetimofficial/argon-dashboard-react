@@ -15,7 +15,7 @@ import {
   InputGroup,
   Modal,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 const codeExample = `import React from "react";
@@ -364,11 +364,11 @@ class Modals extends React.Component {
     exampleModal: false,
     defaultModal: false,
     notificationModal: false,
-    formModal: false
+    formModal: false,
   };
-  toggleModal = state => {
+  toggleModal = (state) => {
     this.setState({
-      [state]: !this.state[state]
+      [state]: !this.state[state],
     });
   };
   render() {
@@ -578,12 +578,15 @@ class Modals extends React.Component {
                           className="btn-neutral btn-icon"
                           color="default"
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <span className="btn-inner--icon">
                             <img
                               alt="..."
-                              src={require("assets/img/icons/common/github.svg").default}
+                              src={
+                                require("assets/img/icons/common/github.svg")
+                                  .default
+                              }
                             />
                           </span>
                           <span className="btn-inner--text">Github</span>
@@ -592,12 +595,15 @@ class Modals extends React.Component {
                           className="btn-neutral btn-icon"
                           color="default"
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           <span className="btn-inner--icon">
                             <img
                               alt="..."
-                              src={require("assets/img/icons/common/google.svg").default}
+                              src={
+                                require("assets/img/icons/common/google.svg")
+                                  .default
+                              }
                             />
                           </span>
                           <span className="btn-inner--text">Google</span>
