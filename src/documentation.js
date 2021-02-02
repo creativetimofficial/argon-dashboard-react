@@ -2,6 +2,7 @@
 // import Colors from "layouts/Documentation/Sections/Colors.js";
 import Overview from "layouts/Documentation/Sections/getting-started/Overview.js";
 import QuickStart from "layouts/Documentation/Sections/getting-started/QuickStart.js";
+import QuickStartNodeJS from "layouts/Documentation/Sections/getting-started/QuickStartNodeJS.js";
 import Download from "layouts/Documentation/Sections/getting-started/Download.js";
 import License from "layouts/Documentation/Sections/getting-started/License.js";
 import Contents from "layouts/Documentation/Sections/getting-started/Contents.js";
@@ -53,6 +54,11 @@ var docsRoutes = [
         path: "/documentation/quick-start",
         component: QuickStart,
         name: "Quick Start",
+      },
+      {
+        path: "/documentation/quick-start-nodejs",
+        component: QuickStartNodeJS,
+        name: "Quick Start NodeJS",
       },
       {
         path: "/documentation/license",
