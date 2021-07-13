@@ -1,6 +1,6 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 // javascipt plugin for creating charts
 import Chart from "chart.js";
 // react plugin used to create charts

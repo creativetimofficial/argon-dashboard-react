@@ -1,7 +1,7 @@
 /*eslint-disable*/
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 import { Alert } from "reactstrap";
 
@@ -46,7 +46,8 @@ class QuickStart extends React.Component {
         </p>
         <h2 id="get-characters">Login</h2>
         <p>
-          <b>POST</b> <code class="higlighted">{`{{ BASE_URL }}/users/login`}</code>
+          <b>POST</b>{" "}
+          <code class="higlighted">{`{{ BASE_URL }}/users/login`}</code>
         </p>
         <h4>QUERY PARAMETERS</h4>
         <table>
@@ -189,7 +190,8 @@ class QuickStart extends React.Component {
         </p>
         <h2 id="get-characters">Login</h2>
         <p>
-          <b>POST</b> <code class="higlighted">{`{{ BASE_URL }}/users/login`}</code>
+          <b>POST</b>{" "}
+          <code class="higlighted">{`{{ BASE_URL }}/users/login`}</code>
         </p>
         <h4>QUERY PARAMETERS</h4>
         <table>
