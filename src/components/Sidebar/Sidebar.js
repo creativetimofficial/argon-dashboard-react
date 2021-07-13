@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.2.0
+* Argon Dashboard React - v1.2.1
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
@@ -16,7 +16,7 @@
 
 */
 /*eslint-disable*/
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink as NavLinkRRD, Link } from "react-router-dom";
 // nodejs library to set properties for components
 import { PropTypes } from "prop-types";
