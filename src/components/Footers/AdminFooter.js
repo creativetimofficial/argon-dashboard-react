@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.2.0
+* Argon Dashboard React - v1.2.1
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
@@ -16,7 +16,6 @@
 
 */
 /*eslint-disable*/
-import React from "react";
 
 // reactstrap components
 import { Container, Row, Col, Nav, NavItem, NavLink } from "reactstrap";
