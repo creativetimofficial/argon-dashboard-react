@@ -35,7 +35,7 @@ class QuickStart extends React.Component {
         <p>Follow the next steps to start using our product:</p>
         <ul>
           <li>
-            Install NodeJs from{" "}
+            Install NodeJs LTS version from{" "}
             <a href="https://nodejs.org/en/?ref=creativetim" target="_blank">
               NodeJs Official Page
             </a>
