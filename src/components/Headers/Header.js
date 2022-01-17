@@ -18,26 +18,39 @@
 
 // reactstrap components
 import { Card, CardBody, CardTitle, Container, Row, Col } from "reactstrap";
+import Reservation from "views/pages/Reservation";
 
 const Header = () => {
   return (
     <>
-      <div className="header bg-gradient-info pb-8 pt-5 pt-md-8">
+      <div className="header bg-gradient-info pb-6 pt-6 pt-md-3">
+      </div>
+      {/*<div className="header bg-gradient-info pb-8 pt-5 pt-md-8">
         <Container fluid>
           <div className="header-body">
-            {/* Card stats */}
+            {/* Card stats
             <Row>
-              <Col lg="6" xl="3">
-                <Card className="card-stats mb-4 mb-xl-0">
+              <Col>
+                <Card className="card-stats mb-4 mb-xl-0 col-md-30 col-sm-60 h-100">
+                  <CardBody className="bg-primary">
+                  <div className="col">
+                      <CardTitle
+                      tag="h1"
+                      className="text-uppercase mb-0"  
+                    >
+                      오늘 예약 및 매장 현황
+                    </CardTitle>
+                      </div>
+                  </CardBody>
                   <CardBody>
                     <Row>
-                      <div className="col">
-                        <CardTitle
-                          tag="h5"
-                          className="text-uppercase text-muted mb-0"
-                        >
-                          Traffic
-                        </CardTitle>
+                    <div className="col">
+                      <CardTitle
+                      tag="h1"
+                      className="text-uppercase mb-0"  
+                    >
+                      오늘 예약 및 매장 현황
+                    </CardTitle>
                         <span className="h2 font-weight-bold mb-0">
                           350,897
                         </span>
@@ -57,16 +70,50 @@ const Header = () => {
                   </CardBody>
                 </Card>
               </Col>
-              <Col lg="6" xl="3">
+              <Col xl="4">
+                <Card className="card-stats mb-4 mb-xl-0 col-md-30 col-sm-60 h-">
+                  <CardBody className="bg-primary">
+                  <div className="col">
+                      <CardTitle
+                      tag="h1"
+                      className="text-uppercase mb-0"
+                    >
+                      관리 메모
+                    </CardTitle>
+                      </div>
+                  </CardBody>
+                  <CardBody>
+                    <Row>
+                    <div className="col">
+                        <p className="h2 font-weight-bold mb-0">
+                          골프채 교체1
+                        </p>
+                        <p className="h2 font-weight-bold mb-0">
+                          골프채 교체2
+                        </p>
+                        <p className="h2 font-weight-bold mb-0">
+                          골프채 교체3
+                        </p>
+                        <p className="h2 font-weight-bold mb-0">
+                          유동적으로 추가하는 부분
+                        </p>
+                      </div>
+                    </Row>
+                  </CardBody>
+                </Card>
+              </Col>
+              </Row>
+              <Row classname="row mt-4">
+              <Col lg="6" xl="4">
                 <Card className="card-stats mb-4 mb-xl-0">
                   <CardBody>
                     <Row>
                       <div className="col">
                         <CardTitle
-                          tag="h5"
+                          tag="h3"
                           className="text-uppercase text-muted mb-0"
                         >
-                          New users
+                          매장 현황
                         </CardTitle>
                         <span className="h2 font-weight-bold mb-0">2,356</span>
                       </div>
@@ -85,16 +132,16 @@ const Header = () => {
                   </CardBody>
                 </Card>
               </Col>
-              <Col lg="6" xl="3">
+              <Col lg="6" xl="4">
                 <Card className="card-stats mb-4 mb-xl-0">
                   <CardBody>
                     <Row>
                       <div className="col">
                         <CardTitle
-                          tag="h5"
+                          tag="h3"
                           className="text-uppercase text-muted mb-0"
                         >
-                          Sales
+                          매장 후기
                         </CardTitle>
                         <span className="h2 font-weight-bold mb-0">924</span>
                       </div>
@@ -113,16 +160,16 @@ const Header = () => {
                   </CardBody>
                 </Card>
               </Col>
-              <Col lg="6" xl="3">
+              <Col lg="6" xl="4">
                 <Card className="card-stats mb-4 mb-xl-0">
                   <CardBody>
                     <Row>
                       <div className="col">
                         <CardTitle
-                          tag="h5"
+                          tag="h3"
                           className="text-uppercase text-muted mb-0"
                         >
-                          Performance
+                          정산 관리
                         </CardTitle>
                         <span className="h2 font-weight-bold mb-0">49,65%</span>
                       </div>
@@ -144,7 +191,7 @@ const Header = () => {
             </Row>
           </div>
         </Container>
-      </div>
+      </div>*/}
     </>
   );
 };
