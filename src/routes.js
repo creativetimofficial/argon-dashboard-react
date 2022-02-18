@@ -31,7 +31,7 @@ import Store from "views/pages/Store.js";
 import Review from "views/pages/Review.js";
 import Signin from "views/pages/Signin";
 import Signup from "views/pages/Signup";
-
+import StoreEdit from "views/pages/StoreEdit";
 var routes = [
   {
     path: "/dashboard",
@@ -62,6 +62,14 @@ var routes = [
     layout: "/admin",
   },
   {
+    path: "/storeedit",
+    name: "매장 정보 설정",
+    icon: "ni ni-favourite-28",
+    component: StoreEdit,
+    layout: "/admin",
+  },
+  
+  {
     path: "/price",
     name: "가격 관리",
     icon: "ni ni-money-coins",
@@ -89,7 +97,7 @@ var routes = [
     component: Signup,
     layout: "/auth",
   },
-  
+ 
   {
     path: "/icons",
     name: "Icons - 참고용!",
