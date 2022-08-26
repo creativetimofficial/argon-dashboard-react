@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.2.1
+* Argon Dashboard React - v1.2.2
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -26,7 +26,7 @@ import {
   Nav,
   Container,
   Row,
-  Col,
+  Col
 } from "reactstrap";
 
 const AdminNavbar = () => {
@@ -37,9 +37,7 @@ const AdminNavbar = () => {
           <NavbarBrand to="/" tag={Link}>
             <img
               alt="..."
-              src={
-                require("../../assets/img/brand/argon-react-white.png").default
-              }
+              src={require("../../assets/img/brand/argon-react-white.png")}
             />
           </NavbarBrand>
           <button className="navbar-toggler" id="navbar-collapse-main">
@@ -52,10 +50,7 @@ const AdminNavbar = () => {
                   <Link to="/">
                     <img
                       alt="..."
-                      src={
-                        require("../../assets/img/brand/argon-react.png")
-                          .default
-                      }
+                      src={require("../../assets/img/brand/argon-react.png")}
                     />
                   </Link>
                 </Col>
