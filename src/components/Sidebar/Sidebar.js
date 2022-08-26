@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.2.1
+* Argon Dashboard React - v1.2.2
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -49,7 +49,7 @@ import {
   Table,
   Container,
   Row,
-  Col,
+  Col
 } from "reactstrap";
 
 var ps;
@@ -92,12 +92,12 @@ const Sidebar = (props) => {
   if (logo && logo.innerLink) {
     navbarBrandProps = {
       to: logo.innerLink,
-      tag: Link,
+      tag: Link
     };
   } else if (logo && logo.outterLink) {
     navbarBrandProps = {
       href: logo.outterLink,
-      target: "_blank",
+      target: "_blank"
     };
   }
 
@@ -149,10 +149,7 @@ const Sidebar = (props) => {
                 <span className="avatar avatar-sm rounded-circle">
                   <img
                     alt="..."
-                    src={
-                      require("../../assets/img/theme/team-1-800x800.jpg")
-                        .default
-                    }
+                    src={require("../../assets/img/theme/team-1-800x800.jpg")}
                   />
                 </span>
               </Media>
@@ -273,7 +270,7 @@ const Sidebar = (props) => {
 };
 
 Sidebar.defaultProps = {
-  routes: [{}],
+  routes: [{}]
 };
 
 Sidebar.propTypes = {
@@ -289,8 +286,8 @@ Sidebar.propTypes = {
     // the image src of the logo
     imgSrc: PropTypes.string.isRequired,
     // the alt for the img
-    imgAlt: PropTypes.string.isRequired,
-  }),
+    imgAlt: PropTypes.string.isRequired
+  })
 };
 
 export default Sidebar;
