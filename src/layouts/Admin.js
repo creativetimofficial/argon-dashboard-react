@@ -16,7 +16,7 @@
 
 */
 import React from "react";
-import { useLocation, Route, Switch, Redirect } from "react-router-dom";
+import { useLocation, Route, Routes, Navigate } from "react-router-dom";
 // reactstrap components
 import { Container } from "reactstrap";
 // core components
@@ -40,11 +40,7 @@ const Admin = (props) => {
     return routes.map((prop, key) => {
       if (prop.layout === "/admin") {
         return (
-          <Route
-            path={prop.layout + prop.path}
-            component={prop.component}
-            key={key}
-          />
+          <Route path={prop.path} element={prop.component} key={key} exact />
         );
       } else {
         return null;
@@ -55,7 +51,7 @@ const Admin = (props) => {
   const getBrandText = (path) => {
     for (let i = 0; i < routes.length; i++) {
       if (
-        props.location.pathname.indexOf(routes[i].layout + routes[i].path) !==
+        props?.location?.pathname.indexOf(routes[i].layout + routes[i].path) !==
         -1
       ) {
         return routes[i].name;
@@ -72,18 +68,18 @@ const Admin = (props) => {
         logo={{
           innerLink: "/admin/index",
           imgSrc: require("../assets/img/brand/argon-react.png"),
-          imgAlt: "..."
+          imgAlt: "...",
         }}
       />
       <div className="main-content" ref={mainContent}>
         <AdminNavbar
           {...props}
-          brandText={getBrandText(props.location.pathname)}
+          brandText={getBrandText(props?.location?.pathname)}
         />
-        <Switch>
+        <Routes>
           {getRoutes(routes)}
-          <Redirect from="*" to="/admin/index" />
-        </Switch>
+          <Route path="*" element={<Navigate to="/admin/index" replace />} />
+        </Routes>
         <Container fluid>
           <AdminFooter />
         </Container>
