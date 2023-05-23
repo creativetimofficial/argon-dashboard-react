@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.2.3] 2023-05-11
+## [1.2.3] 2023-05-23
 
 - Update dependencies
 - Fix issues
