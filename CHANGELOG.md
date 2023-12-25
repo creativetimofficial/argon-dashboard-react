@@ -1,10 +1,11 @@
 # Change Log
 
+
 ## [1.2.4] 2023-12-25
 
 - Update dependencies
 
-## [1.2.3] 2023-05-11
+## [1.2.3] 2023-05-23
 
 - Update dependencies
 - Fix issues
