@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.2.4] 2024-01-01
+
+- Update dependencies
+
 ## [1.2.3] 2023-05-23
 
 - Update dependencies
