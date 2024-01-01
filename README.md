@@ -213,7 +213,7 @@ We use GitHub Issues as the official bug tracker for the Material Kit. Here are 
 
 ## Licensing
 
-- Copyright 2023 Creative Tim (https://www.creative-tim.com/?ref=adr-github-readme)
+- Copyright 2024 Creative Tim (https://www.creative-tim.com/?ref=adr-github-readme)
 
 - Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md?ref=creativetim)
 
