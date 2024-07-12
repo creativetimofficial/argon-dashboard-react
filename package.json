@@ -25,7 +25,7 @@
   "homepage": "https://demos.creative-tim.com/argon-dashboard-react/",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env PUBLIC_URL=/ react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
@@ -44,6 +44,7 @@
   ],
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.5.1",
+    "ajv": "^8.16.0",
     "bootstrap": "4.6.2",
     "chart.js": "2.9.4",
     "classnames": "2.3.2",
@@ -61,7 +62,8 @@
   },
   "devDependencies": {
     "gulp": "4.0.2",
-    "gulp-append-prepend": "1.0.9"
+    "gulp-append-prepend": "1.0.9",
+    "cross-env": "^7.0.3"
   },
   "optionalDependencies": {
     "eslint-plugin-flowtype": "8.0.3",

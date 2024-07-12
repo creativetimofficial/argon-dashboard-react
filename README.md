@@ -25,6 +25,7 @@ If you want to get inspiration or just show something directly to your clients, 
 - [Versions](#versions)
 - [Demo](#demo)
 - [Quick Start](#quick-start)
+- [Deploy](#deploy)
 - [Documentation](#documentation)
 - [File Structure](#file-structure)
 - [Browser Support](#browser-support)
@@ -64,6 +65,13 @@ If you want to get inspiration or just show something directly to your clients, 
 - [Download from Creative Tim](https://www.creative-tim.com/product/argon-dashboard-react?ref=adr-github-readme).
 - Install with [Bower](https://bower.io/?ref=creativetim): `bower install argon-dashboard-react`.
 - Clone the repo: `git clone https://github.com/creativetimofficial/argon-dashboard-react.git`.
+
+## Deploy
+
+:rocket: You can deploy your own version of the template to Genezio with one click:
+
+[![Deploy to Genezio](https://raw.githubusercontent.com/Genez-io/graphics/main/svg/deploy-button.svg)](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/argon-dashboard-react&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)
+
 
 ## Documentation
 
