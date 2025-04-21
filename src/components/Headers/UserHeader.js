@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.2.0
+* Argon Dashboard React - v1.2.4
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2024 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -15,8 +15,6 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
-
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
 
@@ -28,9 +26,7 @@ const UserHeader = () => {
         style={{
           minHeight: "600px",
           backgroundImage:
-            "url(" +
-            require("../../assets/img/theme/profile-cover.jpg").default +
-            ")",
+            "url(" + require("../../assets/img/theme/profile-cover.jpg") + ")",
           backgroundSize: "cover",
           backgroundPosition: "center top",
         }}
@@ -43,11 +39,10 @@ const UserHeader = () => {
             <Col lg="7" md="10">
               <h1 className="display-2 text-white">Hello Jesse</h1>
               <p className="text-white mt-0 mb-5">
-                This is your profile page. You can see the progress you've made
-                with your work and manage your projects or assigned tasks
+                This is your profile page. You can set and edit your contact information.
               </p>
               <Button
-                color="info"
+
                 href="#pablo"
                 onClick={(e) => e.preventDefault()}
               >

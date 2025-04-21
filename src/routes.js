@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.2.0
+* Argon Dashboard React - v1.2.4
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2024 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -17,60 +17,67 @@
 */
 import Index from "views/Index.js";
 import Profile from "views/examples/Profile.js";
+import ProductForm from "views/ProductForm.js";
 import Maps from "views/examples/Maps.js";
 import Register from "views/examples/Register.js";
 import Login from "views/examples/Login.js";
-import Tables from "views/examples/Tables.js";
-import Icons from "views/examples/Icons.js";
+import Listings from "views/examples/Listings.js";
+//import Icons from "views/examples/Icons.js";
 
 var routes = [
-  {
+  { // dashboard
     path: "/index",
     name: "Dashboard",
     icon: "ni ni-tv-2 text-primary",
-    component: Index,
+    component: <Index />,
     layout: "/admin",
   },
-  {
+  /*{
     path: "/icons",
     name: "Icons",
     icon: "ni ni-planet text-blue",
-    component: Icons,
+    component: <Icons />,
     layout: "/admin",
-  },
+  },*/
   {
     path: "/maps",
     name: "Maps",
     icon: "ni ni-pin-3 text-orange",
-    component: Maps,
+    component: <Maps />,
     layout: "/admin",
   },
   {
     path: "/user-profile",
     name: "User Profile",
     icon: "ni ni-single-02 text-yellow",
-    component: Profile,
+    component: <Profile />,
     layout: "/admin",
   },
   {
-    path: "/tables",
-    name: "Tables",
+    path: "/item-listing",
+    name: "Sell Product",
+    icon: "ni ni-single-02 text-yellow",
+    component: <ProductForm />,
+    layout: "/admin",
+  },
+  {
+    name: "Listings",
     icon: "ni ni-bullet-list-67 text-red",
-    component: Tables,
+    component: <Listings />,
     layout: "/admin",
   },
   {
     path: "/login",
     name: "Login",
     icon: "ni ni-key-25 text-info",
-    component: Login,
+    component: <Login />,
     layout: "/auth",
   },
   {
     path: "/register",
     name: "Register",
     icon: "ni ni-circle-08 text-pink",
-    component: Register,
+    component: <Register />,
     layout: "/auth",
   },
 ];

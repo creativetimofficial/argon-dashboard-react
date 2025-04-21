@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.2.0
+* Argon Dashboard React - v1.2.4
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2024 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -16,7 +16,7 @@
 
 */
 import React from "react";
-import { useLocation, Route, Switch, Redirect } from "react-router-dom";
+import { useLocation, Route, Routes, Navigate } from "react-router-dom";
 // reactstrap components
 import { Container } from "reactstrap";
 // core components
@@ -40,11 +40,7 @@ const Admin = (props) => {
     return routes.map((prop, key) => {
       if (prop.layout === "/admin") {
         return (
-          <Route
-            path={prop.layout + prop.path}
-            component={prop.component}
-            key={key}
-          />
+          <Route path={prop.path} element={prop.component} key={key} exact />
         );
       } else {
         return null;
@@ -55,7 +51,7 @@ const Admin = (props) => {
   const getBrandText = (path) => {
     for (let i = 0; i < routes.length; i++) {
       if (
-        props.location.pathname.indexOf(routes[i].layout + routes[i].path) !==
+        props?.location?.pathname.indexOf(routes[i].layout + routes[i].path) !==
         -1
       ) {
         return routes[i].name;
@@ -71,19 +67,20 @@ const Admin = (props) => {
         routes={routes}
         logo={{
           innerLink: "/admin/index",
-          imgSrc: require("../assets/img/brand/argon-react.png").default,
+          imgSrc: require("../assets/img/brand/argon-react.png"),
+          imgSrc: require("../assets/img/brand/hand2hand.png"),
           imgAlt: "...",
         }}
       />
       <div className="main-content" ref={mainContent}>
         <AdminNavbar
           {...props}
-          brandText={getBrandText(props.location.pathname)}
+          brandText={getBrandText(props?.location?.pathname)}
         />
-        <Switch>
+        <Routes>
           {getRoutes(routes)}
-          <Redirect from="*" to="/admin/index" />
-        </Switch>
+          <Route path="*" element={<Navigate to="/admin/index" replace />} />
+        </Routes>
         <Container fluid>
           <AdminFooter />
         </Container>

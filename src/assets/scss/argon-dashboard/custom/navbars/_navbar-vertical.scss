@@ -98,7 +98,7 @@
                 border: none;
 
                 .dropdown-menu {
-                    margin-left: $dropdown-item-padding-x / 2;
+                    margin-left: calc($dropdown-item-padding-x / 2);
                 }
             }
         }

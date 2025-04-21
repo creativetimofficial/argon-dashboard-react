@@ -1,11 +1,11 @@
 /*!
 
 =========================================================
-* Argon Dashboard React - v1.2.0
+* Argon Dashboard React - v1.2.4
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2024 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -16,7 +16,7 @@
 
 */
 import React from "react";
-import { useLocation, Route, Switch, Redirect } from "react-router-dom";
+import { useLocation, Route, Routes, Navigate } from "react-router-dom";
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
 
@@ -46,11 +46,7 @@ const Auth = (props) => {
     return routes.map((prop, key) => {
       if (prop.layout === "/auth") {
         return (
-          <Route
-            path={prop.layout + prop.path}
-            component={prop.component}
-            key={key}
-          />
+          <Route path={prop.path} element={prop.component} key={key} exact />
         );
       } else {
         return null;
@@ -95,10 +91,10 @@ const Auth = (props) => {
         {/* Page content */}
         <Container className="mt--8 pb-5">
           <Row className="justify-content-center">
-            <Switch>
+            <Routes>
               {getRoutes(routes)}
-              <Redirect from="*" to="/auth/login" />
-            </Switch>
+              <Route path="*" element={<Navigate to="/auth/login" replace />} />
+            </Routes>
           </Row>
         </Container>
       </div>
