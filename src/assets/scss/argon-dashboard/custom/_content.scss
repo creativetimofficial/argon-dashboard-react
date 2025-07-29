@@ -45,3 +45,10 @@
         }
     }
 }
+
+.main-content.sidebar-collapsed {
+  @media (min-width: 768px) {
+    margin-left: 60px !important;
+    transition: margin-left 0.2s;
+  }
+}

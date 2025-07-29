@@ -1,21 +1,4 @@
-/*!
-
-=========================================================
-* Argon Dashboard React - v1.2.4
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // reactstrap components
 import {
   DropdownMenu,
@@ -33,19 +16,43 @@ import {
   Container,
   Media,
 } from "reactstrap";
+import Cookies from 'js-cookie';
+import { logout } from '../../api/authApi';
 
 const AdminNavbar = (props) => {
+  // Lấy thông tin người dùng từ localStorage
+  const user = JSON.parse(localStorage.getItem('user')) || {};
+  const fullName = user.full_name || 'Guest';
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    try {
+      // Gọi API đăng xuất
+      await logout();
+    } catch (err) {
+      console.error('Logout failed:', err);
+    } finally {
+      // Xóa access_token từ cookie và user từ localStorage
+      Cookies.remove('access_token');
+      localStorage.removeItem('user');
+      // Chuyển hướng về trang đăng nhập
+      navigate('/auth/login');
+    }
+  };
+
   return (
     <>
       <Navbar className="navbar-top navbar-dark" expand="md" id="navbar-main">
         <Container fluid>
-          <Link
-            className="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block"
-            to="/"
+          <button
+            className="btn btn-link text-white mr-3"
+            style={{fontSize: '1.5rem'}}
+            onClick={props.toggleSidebar}
+            aria-label="Toggle sidebar"
           >
-            {props.brandText}
-          </Link>
-          <Form className="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+            <i className="fas fa-bars" />
+          </button>
+          {/* <Form className="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
             <FormGroup className="mb-0">
               <InputGroup className="input-group-alternative">
                 <InputGroupAddon addonType="prepend">
@@ -56,7 +63,7 @@ const AdminNavbar = (props) => {
                 <Input placeholder="Search" type="text" />
               </InputGroup>
             </FormGroup>
-          </Form>
+          </Form> */}
           <Nav className="align-items-center d-none d-md-flex" navbar>
             <UncontrolledDropdown nav>
               <DropdownToggle className="pr-0" nav>
@@ -69,7 +76,7 @@ const AdminNavbar = (props) => {
                   </span>
                   <Media className="ml-2 d-none d-lg-block">
                     <span className="mb-0 text-sm font-weight-bold">
-                      Jessica Jones
+                      {fullName}
                     </span>
                   </Media>
                 </Media>
@@ -95,7 +102,7 @@ const AdminNavbar = (props) => {
                   <span>Support</span>
                 </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+                <DropdownItem onClick={handleLogout}>
                   <i className="ni ni-user-run" />
                   <span>Logout</span>
                 </DropdownItem>

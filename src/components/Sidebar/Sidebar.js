@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Argon Dashboard React - v1.2.4
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-/*eslint-disable*/
 import { useState } from "react";
 import { NavLink as NavLinkRRD, Link } from "react-router-dom";
 // nodejs library to set properties for components
@@ -55,6 +37,7 @@ import {
 var ps;
 
 const Sidebar = (props) => {
+  const { bgColor, routes, logo, collapsed } = props;
   const [collapseOpen, setCollapseOpen] = useState();
   // verifies if routeName is the one active (in browser input)
   const activeRoute = (routeName) => {
@@ -77,16 +60,16 @@ const Sidebar = (props) => {
             to={prop.layout + prop.path}
             tag={NavLinkRRD}
             onClick={closeCollapse}
+            style={collapsed ? { justifyContent: 'center' } : {}}
           >
-            <i className={prop.icon} />
-            {prop.name}
+            <i className={prop.icon} style={{ fontSize: '1.25rem', minWidth: 24, textAlign: 'center' }} />
+            {!collapsed && <span style={{ marginLeft: 12 }}>{prop.name}</span>}
           </NavLink>
         </NavItem>
       );
     });
   };
 
-  const { bgColor, routes, logo } = props;
   let navbarBrandProps;
   if (logo && logo.innerLink) {
     navbarBrandProps = {
@@ -102,9 +85,10 @@ const Sidebar = (props) => {
 
   return (
     <Navbar
-      className="navbar-vertical fixed-left navbar-light bg-white"
+      className={`navbar-vertical fixed-left navbar-light bg-white${collapsed ? ' sidebar-collapsed' : ''}`}
       expand="md"
       id="sidenav-main"
+      style={collapsed ? {maxWidth: '60px', minWidth: '60px', width: '60px', transition: 'all 0.2s'} : {maxWidth: '250px', minWidth: '250px', width: '250px', transition: 'all 0.2s'}}
     >
       <Container fluid>
         {/* Toggler */}
@@ -120,8 +104,9 @@ const Sidebar = (props) => {
           <NavbarBrand className="pt-0" {...navbarBrandProps}>
             <img
               alt={logo.imgAlt}
-              className="navbar-brand-img"
+              // className="navbar-brand-img"
               src={logo.imgSrc}
+              style={collapsed ? {width: '30px', transition: 'all 0.2s', objectFit: 'contain'} : {width: '90%', transition: 'all 0.5s'}}
             />
           </NavbarBrand>
         ) : null}
@@ -232,9 +217,9 @@ const Sidebar = (props) => {
           {/* Divider */}
           <hr className="my-3" />
           {/* Heading */}
-          <h6 className="navbar-heading text-muted">Documentation</h6>
+          {/* <h6 className="navbar-heading text-muted">Documentation</h6> */}
           {/* Navigation */}
-          <Nav className="mb-md-3" navbar>
+          {/* <Nav className="mb-md-3" navbar>
             <NavItem>
               <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/#/documentation/overview?ref=adr-admin-sidebar">
                 <i className="ni ni-spaceship" />
@@ -253,15 +238,15 @@ const Sidebar = (props) => {
                 Components
               </NavLink>
             </NavItem>
-          </Nav>
-          <Nav className="mb-md-3" navbar>
+          </Nav> */}
+          {/* <Nav className="mb-md-3" navbar>
             <NavItem className="active-pro active">
               <NavLink href="https://www.creative-tim.com/product/argon-dashboard-pro-react?ref=adr-admin-sidebar">
                 <i className="ni ni-spaceship" />
                 Upgrade to PRO
               </NavLink>
             </NavItem>
-          </Nav>
+          </Nav> */}
         </Collapse>
       </Container>
     </Navbar>

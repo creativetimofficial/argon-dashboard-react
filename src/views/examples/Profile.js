@@ -33,6 +33,11 @@ import {
 import UserHeader from "components/Headers/UserHeader.js";
 
 const Profile = () => {
+  // Lấy thông tin người dùng từ localStorage
+  const user = JSON.parse(localStorage.getItem('user')) || {};
+  const username = user.username || 'lucky.jesse';
+  const fullName = user.full_name || 'Jessica Jones';
+
   return (
     <>
       <UserHeader />
@@ -97,7 +102,7 @@ const Profile = () => {
                 </Row>
                 <div className="text-center">
                   <h3>
-                    Jessica Jones
+                    {fullName}
                     <span className="font-weight-light">, 27</span>
                   </h3>
                   <div className="h5 font-weight-300">
@@ -161,7 +166,7 @@ const Profile = () => {
                           </label>
                           <Input
                             className="form-control-alternative"
-                            defaultValue="lucky.jesse"
+                            defaultValue={username}
                             id="input-username"
                             placeholder="Username"
                             type="text"

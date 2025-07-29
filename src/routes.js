@@ -16,12 +16,14 @@
 
 */
 import Index from "views/Index.js";
-import Profile from "views/examples/Profile.js";
-import Maps from "views/examples/Maps.js";
-import Register from "views/examples/Register.js";
-import Login from "views/examples/Login.js";
 import Tables from "views/examples/Tables.js";
-import Icons from "views/examples/Icons.js";
+import Upload from "views/examples/Upload.js";
+import RealtimeMonitoring from "./views/examples/RealtimeMonitoring";
+import Profile from "views/examples/Profile.js";
+// import Maps from "views/examples/Maps.js";
+// import Register from "views/examples/Register.js";
+import Login from "views/examples/Login.js";
+// import Icons from "views/examples/Icons.js";
 
 var routes = [
   {
@@ -31,20 +33,20 @@ var routes = [
     component: <Index />,
     layout: "/admin",
   },
-  {
-    path: "/icons",
-    name: "Icons",
-    icon: "ni ni-planet text-blue",
-    component: <Icons />,
-    layout: "/admin",
-  },
-  {
-    path: "/maps",
-    name: "Maps",
-    icon: "ni ni-pin-3 text-orange",
-    component: <Maps />,
-    layout: "/admin",
-  },
+  // {
+  //   path: "/icons",
+  //   name: "Icons",
+  //   icon: "ni ni-planet text-blue",
+  //   component: <Icons />,
+  //   layout: "/admin",
+  // },
+  // {
+  //   path: "/maps",
+  //   name: "Maps",
+  //   icon: "ni ni-pin-3 text-orange",
+  //   component: <Maps />,
+  //   layout: "/admin",
+  // },
   {
     path: "/user-profile",
     name: "User Profile",
@@ -66,12 +68,26 @@ var routes = [
     component: <Login />,
     layout: "/auth",
   },
+  // {
+  //   path: "/register",
+  //   name: "Register",
+  //   icon: "ni ni-circle-08 text-pink",
+  //   component: <Register />,
+  //   layout: "/auth",
+  // },
   {
-    path: "/register",
-    name: "Register",
-    icon: "ni ni-circle-08 text-pink",
-    component: <Register />,
-    layout: "/auth",
+    path: "/admin/upload",
+    name: "Upload PCAP",
+    icon: "ni ni-cloud-upload-96 text-primary",
+    component: <Upload/>,
+    layout: "/admin",
   },
+  // {
+  //   path: "/admin/realtime",
+  //   name: "Realtime Monitoring",
+  //   icon: "ni ni-chart-bar-32 text-primary",
+  //   component: <RealtimeMonitoring/>,
+  //   layout: "/admin",
+  // },
 ];
 export default routes;

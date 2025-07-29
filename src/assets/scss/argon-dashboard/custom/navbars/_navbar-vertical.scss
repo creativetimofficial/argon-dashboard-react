@@ -32,7 +32,7 @@
     .navbar-brand-img,
     .navbar-brand > img {
         max-width: 100%;
-        max-height: 2rem;
+        max-height: 5rem;
     }
 
 
@@ -260,7 +260,7 @@
                     }
 
                     .navbar-brand-img {
-                        max-height: 2.5rem;
+                        max-height: 5rem;
                     }
 
                     // Navbar user
@@ -283,4 +283,71 @@
             }
         }
     }
+}
+
+.navbar-vertical {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1030;
+  background: $navbar-light-bg;
+  box-shadow: $navbar-vertical-box-shadow;
+  border-radius: 0;
+  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: width, transform;
+}
+
+.navbar-vertical.sidebar-collapsed {
+  max-width: 60px !important;
+  min-width: 60px !important;
+  width: 60px !important;
+  border-radius: 0;
+  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  .navbar-brand-img,
+  .navbar-brand > img {
+    width: 32px !important;
+    max-height: 500px !important;
+    margin: 0 auto;
+    display: block;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-link span,
+  .navbar-brand span {
+    display: none !important;
+  }
+  .nav-link {
+    text-align: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    min-width: 60px;
+    justify-content: center;
+    transition: background 0.2s, color 0.2s, width 0.35s;
+  }
+}
+
+.navbar-vertical.hide-sidebar {
+  transform: translateX(-100%);
+}
+
+.navbar-vertical.show-sidebar {
+  transform: translateX(0);
+}
+
+.navbar-vertical .nav-link {
+  color: inherit;
+  border-radius: 0;
+  margin: 0;
+  background: none;
+  box-shadow: none;
+  transition: background 0.2s, color 0.2s;
+  &:hover {
+    background: $navbar-light-hover-bg;
+    color: $navbar-light-hover-color;
+  }
+  &.active, &.active:focus {
+    background: $navbar-light-active-bg;
+    color: $navbar-light-active-color;
+    box-shadow: none;
+  }
 }

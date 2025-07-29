@@ -4064,7 +4064,7 @@ input[type="button"].btn-block {
   ~ .custom-control-label::before {
   border-color: #5e72e4;
   background-color: #5e72e4;
-  box-shadow: ;
+  box-shadow: none;
 }
 
 .custom-checkbox
@@ -17528,7 +17528,7 @@ textarea[resize="horizontal"] {
 .navbar-vertical .navbar-brand-img,
 .navbar-vertical .navbar-brand > img {
   max-width: 100%;
-  max-height: 2rem;
+  max-height: 5rem;
 }
 @media (min-width: 768px) {
   .navbar-vertical .navbar-collapse {
@@ -17683,7 +17683,7 @@ textarea[resize="horizontal"] {
   padding-bottom: 1rem;
 }
 .navbar-vertical.navbar-expand-xs .navbar-brand-img {
-  max-height: 2.5rem;
+  max-height: 5rem;
 }
 .navbar-vertical.navbar-expand-xs .navbar-user {
   margin-left: -1.5rem;
@@ -17776,7 +17776,7 @@ textarea[resize="horizontal"] {
     padding-bottom: 1rem;
   }
   .navbar-vertical.navbar-expand-sm .navbar-brand-img {
-    max-height: 2.5rem;
+    max-height: 5rem;
   }
   .navbar-vertical.navbar-expand-sm .navbar-user {
     margin-left: -1.5rem;
@@ -17870,7 +17870,7 @@ textarea[resize="horizontal"] {
     padding-bottom: 1rem;
   }
   .navbar-vertical.navbar-expand-md .navbar-brand-img {
-    max-height: 2.5rem;
+    max-height: 5rem;
   }
   .navbar-vertical.navbar-expand-md .navbar-user {
     margin-left: -1.5rem;
@@ -17964,7 +17964,7 @@ textarea[resize="horizontal"] {
     padding-bottom: 1rem;
   }
   .navbar-vertical.navbar-expand-lg .navbar-brand-img {
-    max-height: 2.5rem;
+    max-height: 5rem;
   }
   .navbar-vertical.navbar-expand-lg .navbar-user {
     margin-left: -1.5rem;
@@ -18058,7 +18058,7 @@ textarea[resize="horizontal"] {
     padding-bottom: 1rem;
   }
   .navbar-vertical.navbar-expand-xl .navbar-brand-img {
-    max-height: 2.5rem;
+    max-height: 5rem;
   }
   .navbar-vertical.navbar-expand-xl .navbar-user {
     margin-left: -1.5rem;
